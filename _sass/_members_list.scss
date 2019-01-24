@@ -1,4 +1,4 @@
-.webis-list {
+.members-list {
     @extend .uk-margin-medium;
 
     .date {
@@ -7,7 +7,7 @@
     }
 
     .entry {
-        border-top: 1px solid darken($global-border, 15);
+        //border-top: 1px solid darken($global-border, 15);
         @extend .uk-padding-small;
     }
 

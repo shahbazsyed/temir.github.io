@@ -1,13 +1,16 @@
 // Index page
 
 .index-main-cover {
-    // background: $global-secondary-background url("../img/index-cover-optimized.jpg") no-repeat center center fixed;
-    // background-size: cover;
-    height: 650px;
+    height: 450px;
     font-size: 1.05rem;
+    background-color: $global-main-cover-background;
 
     h1 {
         font-size: 2.65rem;
+    }
+
+    p{
+        font-family: 'Source Sans Pro';
     }
 }
 
@@ -19,7 +22,7 @@
 
 @media (max-width: 400px) {
     .index-main-cover {
-        height: 550px;
+        height: 450px;
     }
 }
 
@@ -31,6 +34,6 @@
 
 @media (min-width: $breakpoint-medium) {
     .index-main-cover {
-        height: 50vh;
+        height: 30vh;
     }
 }

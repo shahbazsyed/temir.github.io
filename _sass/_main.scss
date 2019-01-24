@@ -48,7 +48,7 @@ html {
 
             &:hover, &:focus, &.uk-open[aria-expanded] {
                 color: #fff;
-                text-decoration: underline;
+                font-weight: bold;
             }
         }
     }
@@ -76,7 +76,7 @@ html {
     }
 
     a:hover, a:focus {
-        text-decoration: underline;
+        font-weight: bold;
     }
 }
 
