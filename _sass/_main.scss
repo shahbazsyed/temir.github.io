@@ -21,6 +21,7 @@ html {
 
 .global-nav {
     border-bottom: 1px solid lighten($global-secondary-background, 25);
+    background-color: $global-secondary-background;
 
     .uk-logo {
         height: 4rem;
@@ -39,6 +40,7 @@ html {
 .desktop-nav {
     // made visible by media query later
     display: none;
+    
 }
 
 .uk-navbar-nav {
@@ -48,7 +50,7 @@ html {
 
             &:hover, &:focus, &.uk-open[aria-expanded] {
                 color: #fff;
-                font-weight: bold;
+                font-weight: bold
             }
         }
     }
