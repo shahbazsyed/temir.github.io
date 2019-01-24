@@ -1,0 +1,1723 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Webis Lecturnotes Browser Information Retrieval</title>
+    <meta charset="utf-8">
+    <meta name="description" content="SlideHub is a presentation/slide/talk explorer">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="copyright" content="&copy; 2019 Temir">
+    <link rel="icon" type="image/png" href="/img/favicon.png">
+
+    <link rel="stylesheet" href="/css/style.css?1548321565">
+    <link rel="stylesheet" href="/css/browser.css?1548321565">
+    <link rel="stylesheet" href="/css/browser-compatibility.css?1548321565">
+</head>
+<body class="uk-offcanvas-content">
+<script src="/js/thirdparty/uikit/uikit.min.js"></script>
+<script src="/js/thirdparty/uikit/uikit-icons.min.js"></script>
+
+<div id="offcanvas-nav" class="uk-hidden@m" data-uk-offcanvas="overlay: true; flip: true;">
+    <div class="uk-offcanvas-bar">
+        <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+
+        <!-- Mobile navigation -->
+        <nav class="uk-margin-large-top">
+            <ul class="uk-nav uk-nav-primary uk-nav-parent-icon" data-uk-nav>
+                <li>
+                    <a href="/people.html">People</a>
+                </li>
+                <li class="uk-active" class="uk-parent">
+                    <a href="#">Lecturenotes</a>
+                    <ul class="uk-nav-sub">
+                        <li><a href="/lecturenotes/overview.html">Overview</a></li>
+                        <li><a href="/lecturenotes/slides.html">Slides</a></li>
+                        <li class="uk-parent">
+                            Browser
+                            <ul class="uk-nav-sub">
+                                <li><a href="/lecturenotes/browser/algorithms-and-datastructures.html">Algorithmen und Datenstrukturen</a></li>
+                                <li><a href="/lecturenotes/browser/information-retrieval.html">Information Retrieval</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/research.html">Research</a>
+                </li>
+                <li>
+                    <a href="/publications.html">Publications</a>
+                </li>
+                <li>
+                    <a href="/data.html">Data</a>
+                </li>
+                <li>
+                    <a href="/facilities.html">Facilities</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<div class="uk-background-secondary desktop-nav global-nav" data-uk-sticky="media: @m">
+    <!-- Desktop navigation -->
+    <nav class="uk-navbar-container uk-navbar-transparent uk-container uk-light" data-uk-navbar="mode: click">
+        <div class="uk-navbar-left">
+            <ul class="uk-navbar-nav">
+                <li>
+                    <a href="/"><img src="/img/uni_leipzig_logo_v2_white-01_opt_2.png" alt="TEMIR LOGO" class="uk-logo"> Temir</a>
+                </li>
+            </ul>
+        </div>
+        <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav">
+                <li>
+                    <a href="/people.html">People</a>
+                </li>
+                <li class="nav-group-start uk-active">
+                    <a href="#">Lecturenotes</a>
+                    <div class="uk-navbar-dropdown uk-navbar-dropdown-width-3 uk-padding-remove">
+                        <div class="uk-navbar-dropdown-grid" data-uk-grid>
+                            <div class="uk-width-1-3">
+                                <ul class="uk-nav uk-navbar-dropdown-nav uk-padding-small">
+                                    <li><a href="/lecturenotes/overview.html">Overview</a></li>
+                                    <li><a href="/lecturenotes/slides.html">Slides</a></li>
+                                    <li class="nav-left-open-category">Browser</li>
+                                </ul>
+                            </div>
+                            <div class="uk-width-2-3">
+                                <ul class="uk-nav uk-navbar-dropdown-nav nav-right-open-sub uk-padding-small">
+                                    <li><a href="/lecturenotes/browser/algorithms-and-datastructures.html">Algorithmen und Datenstrukturen</a></li>
+                                    <li><a href="/lecturenotes/browser/information-retrieval.html">Information Retrieval</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="/research.html">Research</a>
+                </li>
+                <li>
+                    <a href="/publications.html">Publications</a>
+                </li>
+                <li class="nav-group-start">
+                    <a href="/data.html">Data</a>
+                </li>
+                <li>
+                    <a href="/facilities.html">Facilities</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<div class="uk-background-secondary mobile-nav global-nav" data-uk-sticky>
+    <div class="uk-navbar-container uk-navbar-transparent uk-container uk-light mobile-nav-toggle" data-uk-navbar>
+        <div class="">
+            <ul class="uk-navbar-nav">
+                <li>
+                    <a href="/"><img src="/img/uni_leipzig_logo_v2_white-01_opt_2.png" alt="TEMIR LOGO" class="uk-logo"> Temir</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="uk-navbar-right">
+            <button class="uk-button uk-navbar-item uk-light uk-button-large" type="button" data-uk-icon="icon: menu"
+                    data-uk-toggle="target: #offcanvas-nav"></button>
+        </div>
+    </div>
+</div>
+
+<div data-uk-height-viewport="expand: true">
+<script src="/js/browser.js"></script>
+
+<main class="uk-margin-medium" data-slidehub="">
+<!-- SlideHub will hook itself as a child element into [data-slidehub] -->
+<div class="slidehub-container">
+
+<!-- units start -->
+
+
+
+<div class="sh-doc" id="unit-en-ir-organization.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-organization.pdf" style="--sh-pages: 9"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Information Retrieval Matthias Hagen" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-organization/unit-en-ir-organization-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Contents I. Introduction" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-organization/unit-en-ir-organization-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Objectives " src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-organization/unit-en-ir-organization-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Related Fields 1. Statistics" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-organization/unit-en-ir-organization-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Literature Information Retrieval:" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-organization/unit-en-ir-organization-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Literature Information Retrieval:" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-organization/unit-en-ir-organization-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Literature “Core” information retrieval conferences:" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-organization/unit-en-ir-organization-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Software Industry (Open Source):" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-organization/unit-en-ir-organization-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Software Services:" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-organization/unit-en-ir-organization-9.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-en-ir-introduction.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-introduction.pdf" style="--sh-pages: 75"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Chapter IR:I I. Introduction" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-introduction/unit-en-ir-introduction-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Examples of Retrieval Tasks Task: Learn everything there is to learn about information retrieval." src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-introduction/unit-en-ir-introduction-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Examples of Retrieval Tasks Task: Learn everything there is to learn about information retrieval." src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-introduction/unit-en-ir-introduction-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-introduction/unit-en-ir-introduction-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Examples of Retrieval Tasks Task: Plan a trip from San Francisco to Paris, France." src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-introduction/unit-en-ir-introduction-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Examples of Retrieval Tasks Task: Plan a trip from San Francisco to Paris, France." src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-introduction/unit-en-ir-introduction-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-introduction/unit-en-ir-introduction-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Examples of Retrieval Tasks Task: What were the news of the day?" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-introduction/unit-en-ir-introduction-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Examples of Retrieval Tasks Task: What were the news of the day?" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-introduction/unit-en-ir-introduction-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Examples of Retrieval Tasks Task: What were the news of the day?" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-introduction/unit-en-ir-introduction-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-introduction/unit-en-ir-introduction-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Examples of Retrieval Tasks Task: Answer “Can Kangaroos jump higher than the Empire State Building?”" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-introduction/unit-en-ir-introduction-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Examples of Retrieval Tasks Task: Answer “Can Kangaroos jump higher than the Empire State Building?”" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-introduction/unit-en-ir-introduction-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="Examples of Retrieval Tasks Task: Answer “Can Kangaroos jump higher than the Empire State Building?”" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-introduction/unit-en-ir-introduction-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-introduction/unit-en-ir-introduction-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="Examples of Retrieval Tasks Task: Build a fence." src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-introduction/unit-en-ir-introduction-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="Examples of Retrieval Tasks Task: Build a fence." src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-introduction/unit-en-ir-introduction-17.png"></div>
+
+<div class="sh-page" data-page="18"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-introduction/unit-en-ir-introduction-18.png"></div>
+
+<div class="sh-page" data-page="19"><img alt="Examples of Retrieval Tasks Task: Write an essay on video surveillance." src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-introduction/unit-en-ir-introduction-19.png"></div>
+
+<div class="sh-page" data-page="20"><img alt="Examples of Retrieval Tasks Task: Write an essay on video surveillance." src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-introduction/unit-en-ir-introduction-20.png"></div>
+
+<div class="sh-page" data-page="21"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-introduction/unit-en-ir-introduction-21.png"></div>
+
+<div class="sh-page" data-page="22"><img alt="Examples of Retrieval Tasks Task: Given an example image, find more like it." src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-introduction/unit-en-ir-introduction-22.png"></div>
+
+<div class="sh-page" data-page="23"><img alt="Examples of Retrieval Tasks Task: Given an example image, find more like it." src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-introduction/unit-en-ir-introduction-23.png"></div>
+
+<div class="sh-page" data-page="24"><img alt="Examples of Retrieval Tasks Task: Given an example text, find more like it." src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-introduction/unit-en-ir-introduction-24.png"></div>
+
+<div class="sh-page" data-page="25"><img alt="Examples of Retrieval Tasks Task: Given an example text, find more like it." src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-introduction/unit-en-ir-introduction-25.png"></div>
+
+<div class="sh-page" data-page="26"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-introduction/unit-en-ir-introduction-26.png"></div>
+
+<div class="sh-page" data-page="27"><img alt="Examples of Retrieval Tasks Task: Find out what people commonly write in the phrase how to ? this." src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-introduction/unit-en-ir-introduction-27.png"></div>
+
+<div class="sh-page" data-page="28"><img alt="Examples of Retrieval Tasks Task: Find out what people commonly write in the phrase how to ? this." src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-introduction/unit-en-ir-introduction-28.png"></div>
+
+<div class="sh-page" data-page="29"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-introduction/unit-en-ir-introduction-29.png"></div>
+
+<div class="sh-page" data-page="30"><img alt="Terminology Information science distinguishes the concepts data, information, and knowledge." src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-introduction/unit-en-ir-introduction-30.png"></div>
+
+<div class="sh-page" data-page="31"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-introduction/unit-en-ir-introduction-31.png"></div>
+
+<div class="sh-page" data-page="32"><img alt="Terminology Definition 4 (Information System)" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-introduction/unit-en-ir-introduction-32.png"></div>
+
+<div class="sh-page" data-page="33"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-introduction/unit-en-ir-introduction-33.png"></div>
+
+<div class="sh-page" data-page="34"><img alt="Terminology " src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-introduction/unit-en-ir-introduction-34.png"></div>
+
+<div class="sh-page" data-page="35"><img alt="Terminology " src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-introduction/unit-en-ir-introduction-35.png"></div>
+
+<div class="sh-page" data-page="36"><img alt="Terminology " src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-introduction/unit-en-ir-introduction-36.png"></div>
+
+<div class="sh-page" data-page="37"><img alt="Terminology " src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-introduction/unit-en-ir-introduction-37.png"></div>
+
+<div class="sh-page" data-page="38"><img alt="Terminology " src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-introduction/unit-en-ir-introduction-38.png"></div>
+
+<div class="sh-page" data-page="39"><img alt="Terminology " src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-introduction/unit-en-ir-introduction-39.png"></div>
+
+<div class="sh-page" data-page="40"><img alt="Terminology " src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-introduction/unit-en-ir-introduction-40.png"></div>
+
+<div class="sh-page" data-page="41"><img alt="Terminology " src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-introduction/unit-en-ir-introduction-41.png"></div>
+
+<div class="sh-page" data-page="42"><img alt="Terminology " src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-introduction/unit-en-ir-introduction-42.png"></div>
+
+<div class="sh-page" data-page="43"><img alt="Terminology " src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-introduction/unit-en-ir-introduction-43.png"></div>
+
+<div class="sh-page" data-page="44"><img alt="Terminology Definition 7 (Information Retrieval)" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-introduction/unit-en-ir-introduction-44.png"></div>
+
+<div class="sh-page" data-page="45"><img alt="Terminology Definition 7 (Information Retrieval)" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-introduction/unit-en-ir-introduction-45.png"></div>
+
+<div class="sh-page" data-page="46"><img alt="Terminology Definition 7 (Information Retrieval)" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-introduction/unit-en-ir-introduction-46.png"></div>
+
+<div class="sh-page" data-page="47"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-introduction/unit-en-ir-introduction-47.png"></div>
+
+<div class="sh-page" data-page="48"><img alt="Delineation Databases, Data Retrieval" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-introduction/unit-en-ir-introduction-48.png"></div>
+
+<div class="sh-page" data-page="49"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-introduction/unit-en-ir-introduction-49.png"></div>
+
+<div class="sh-page" data-page="50"><img alt="Delineation Semiotics" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-introduction/unit-en-ir-introduction-50.png"></div>
+
+<div class="sh-page" data-page="51"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-introduction/unit-en-ir-introduction-51.png"></div>
+
+<div class="sh-page" data-page="52"><img alt="Delineation Machine Learning, Data Mining" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-introduction/unit-en-ir-introduction-52.png"></div>
+
+<div class="sh-page" data-page="53"><img alt="Delineation Machine Learning, Data Mining" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-introduction/unit-en-ir-introduction-53.png"></div>
+
+<div class="sh-page" data-page="54"><img alt="Delineation Machine Learning, Data Mining" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-introduction/unit-en-ir-introduction-54.png"></div>
+
+<div class="sh-page" data-page="55"><img alt="Delineation Retrieval" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-introduction/unit-en-ir-introduction-55.png"></div>
+
+<div class="sh-page" data-page="56"><img alt="Historical Background Manual Retrieval" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-introduction/unit-en-ir-introduction-56.png"></div>
+
+<div class="sh-page" data-page="57"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-introduction/unit-en-ir-introduction-57.png"></div>
+
+<div class="sh-page" data-page="58"><img alt="Historical Background Manual Retrieval" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-introduction/unit-en-ir-introduction-58.png"></div>
+
+<div class="sh-page" data-page="59"><img alt="Historical Background Manual Retrieval" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-introduction/unit-en-ir-introduction-59.png"></div>
+
+<div class="sh-page" data-page="60"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-introduction/unit-en-ir-introduction-60.png"></div>
+
+<div class="sh-page" data-page="61"><img alt="Historical Background Mechanical Retrieval" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-introduction/unit-en-ir-introduction-61.png"></div>
+
+<div class="sh-page" data-page="62"><img alt="Historical Background Mechanical Retrieval" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-introduction/unit-en-ir-introduction-62.png"></div>
+
+<div class="sh-page" data-page="63"><img alt="Historical Background Computerized Retrieval" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-introduction/unit-en-ir-introduction-63.png"></div>
+
+<div class="sh-page" data-page="64"><img alt="Historical Background Computerized Retrieval" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-introduction/unit-en-ir-introduction-64.png"></div>
+
+<div class="sh-page" data-page="65"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-introduction/unit-en-ir-introduction-65.png"></div>
+
+<div class="sh-page" data-page="66"><img alt="Historical Background Information Retrieval (1950s)" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-introduction/unit-en-ir-introduction-66.png"></div>
+
+<div class="sh-page" data-page="67"><img alt="Historical Background Information Retrieval (1960s)" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-introduction/unit-en-ir-introduction-67.png"></div>
+
+<div class="sh-page" data-page="68"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-introduction/unit-en-ir-introduction-68.png"></div>
+
+<div class="sh-page" data-page="69"><img alt="Historical Background Information Retrieval (1970s)" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-introduction/unit-en-ir-introduction-69.png"></div>
+
+<div class="sh-page" data-page="70"><img alt="Historical Background Information Retrieval (1980s - mid-1990s)" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-introduction/unit-en-ir-introduction-70.png"></div>
+
+<div class="sh-page" data-page="71"><img alt="Historical Background Information Retrieval (mid-1990s - 2000s)" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-introduction/unit-en-ir-introduction-71.png"></div>
+
+<div class="sh-page" data-page="72"><img alt="Web Search " src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-introduction/unit-en-ir-introduction-72.png"></div>
+
+<div class="sh-page" data-page="73"><img alt="Web Search " src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-introduction/unit-en-ir-introduction-73.png"></div>
+
+<div class="sh-page" data-page="74"><img alt="Web Search " src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-introduction/unit-en-ir-introduction-74.png"></div>
+
+<div class="sh-page" data-page="75"><img alt="Web Search " src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-introduction/unit-en-ir-introduction-75.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-en-ir-architecture.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-architecture.pdf" style="--sh-pages: 64"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Chapter IR:II II. Architecture of a Search Engine" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-architecture/unit-en-ir-architecture-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-architecture/unit-en-ir-architecture-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="IR:II-84 " src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-architecture/unit-en-ir-architecture-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="? " src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-architecture/unit-en-ir-architecture-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Indexing Process " src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-architecture/unit-en-ir-architecture-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Acquisition conversion to" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-architecture/unit-en-ir-architecture-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Indexing Process Acquisition" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-architecture/unit-en-ir-architecture-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Indexing Process Acquisition: Crawler" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-architecture/unit-en-ir-architecture-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Indexing Process Acquisition: Crawler" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-architecture/unit-en-ir-architecture-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-architecture/unit-en-ir-architecture-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Indexing Process Acquisition: Converter" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-architecture/unit-en-ir-architecture-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Indexing Process Acquisition: Document Store" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-architecture/unit-en-ir-architecture-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Indexing Process Acquisition: Document Store" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-architecture/unit-en-ir-architecture-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="Acquisition conversion to" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-architecture/unit-en-ir-architecture-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="d " src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-architecture/unit-en-ir-architecture-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="Indexing Process Text Transformation" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-architecture/unit-en-ir-architecture-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="Indexing Process Text Transformation" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-architecture/unit-en-ir-architecture-17.png"></div>
+
+<div class="sh-page" data-page="18"><img alt="Indexing Process Text Transformation: Segmenter" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-architecture/unit-en-ir-architecture-18.png"></div>
+
+<div class="sh-page" data-page="19"><img alt="Indexing Process Text Transformation: Segmenter" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-architecture/unit-en-ir-architecture-19.png"></div>
+
+<div class="sh-page" data-page="20"><img alt="Indexing Process Text Transformation: Stopping" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-architecture/unit-en-ir-architecture-20.png"></div>
+
+<div class="sh-page" data-page="21"><img alt="Indexing Process Text Transformation: Stemmer \u002f Lemmatizer" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-architecture/unit-en-ir-architecture-21.png"></div>
+
+<div class="sh-page" data-page="22"><img alt="Indexing Process Text Transformation: Stemmer \u002f Lemmatizer" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-architecture/unit-en-ir-architecture-22.png"></div>
+
+<div class="sh-page" data-page="23"><img alt="Indexing Process Text Transformation: Link Extraction" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-architecture/unit-en-ir-architecture-23.png"></div>
+
+<div class="sh-page" data-page="24"><img alt="Indexing Process Text Transformation: Information Extraction" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-architecture/unit-en-ir-architecture-24.png"></div>
+
+<div class="sh-page" data-page="25"><img alt="Indexing Process Text Transformation: Classification" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-architecture/unit-en-ir-architecture-25.png"></div>
+
+<div class="sh-page" data-page="26"><img alt="d " src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-architecture/unit-en-ir-architecture-26.png"></div>
+
+<div class="sh-page" data-page="27"><img alt="conversion to plain text, and" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-architecture/unit-en-ir-architecture-27.png"></div>
+
+<div class="sh-page" data-page="28"><img alt="Indexing Process Indexing" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-architecture/unit-en-ir-architecture-28.png"></div>
+
+<div class="sh-page" data-page="29"><img alt="Indexing Process Indexing: Document Statistics" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-architecture/unit-en-ir-architecture-29.png"></div>
+
+<div class="sh-page" data-page="30"><img alt="Indexing Process Indexing: Weighting" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-architecture/unit-en-ir-architecture-30.png"></div>
+
+<div class="sh-page" data-page="31"><img alt="Indexing Process Indexing: Inversion" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-architecture/unit-en-ir-architecture-31.png"></div>
+
+<div class="sh-page" data-page="32"><img alt="Indexing Process Indexing: Distribution" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-architecture/unit-en-ir-architecture-32.png"></div>
+
+<div class="sh-page" data-page="33"><img alt="Indexing Process Indexing: Distribution" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-architecture/unit-en-ir-architecture-33.png"></div>
+
+<div class="sh-page" data-page="34"><img alt="conversion to plain text, and" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-architecture/unit-en-ir-architecture-34.png"></div>
+
+<div class="sh-page" data-page="35"><img alt="conversion to plain text, and" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-architecture/unit-en-ir-architecture-35.png"></div>
+
+<div class="sh-page" data-page="36"><img alt="Search Process User Interaction" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-architecture/unit-en-ir-architecture-36.png"></div>
+
+<div class="sh-page" data-page="37"><img alt="Search Process User Interaction" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-architecture/unit-en-ir-architecture-37.png"></div>
+
+<div class="sh-page" data-page="38"><img alt="Search Process User Interaction" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-architecture/unit-en-ir-architecture-38.png"></div>
+
+<div class="sh-page" data-page="39"><img alt="Search Process User Interaction: Query Language" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-architecture/unit-en-ir-architecture-39.png"></div>
+
+<div class="sh-page" data-page="40"><img alt="Search Process User Interaction: Query Language" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-architecture/unit-en-ir-architecture-40.png"></div>
+
+<div class="sh-page" data-page="41"><img alt="Search Process User Interaction: Query Transformation" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-architecture/unit-en-ir-architecture-41.png"></div>
+
+<div class="sh-page" data-page="42"><img alt="conversion to plain text, and" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-architecture/unit-en-ir-architecture-42.png"></div>
+
+<div class="sh-page" data-page="43"><img alt="conversion to plain text, and" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-architecture/unit-en-ir-architecture-43.png"></div>
+
+<div class="sh-page" data-page="44"><img alt="Search Process Ranking" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-architecture/unit-en-ir-architecture-44.png"></div>
+
+<div class="sh-page" data-page="45"><img alt="Search Process Ranking: Document Scoring" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-architecture/unit-en-ir-architecture-45.png"></div>
+
+<div class="sh-page" data-page="46"><img alt="Search Process Ranking: Document Scoring" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-architecture/unit-en-ir-architecture-46.png"></div>
+
+<div class="sh-page" data-page="47"><img alt="Search Process Ranking: Document Scoring" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-architecture/unit-en-ir-architecture-47.png"></div>
+
+<div class="sh-page" data-page="48"><img alt="Search Process Ranking: Efficient Document Scoring" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-architecture/unit-en-ir-architecture-48.png"></div>
+
+<div class="sh-page" data-page="49"><img alt="Search Process Ranking: Distribution" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-architecture/unit-en-ir-architecture-49.png"></div>
+
+<div class="sh-page" data-page="50"><img alt="conversion to plain text, and" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-architecture/unit-en-ir-architecture-50.png"></div>
+
+<div class="sh-page" data-page="51"><img alt="conversion to plain text, and" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-architecture/unit-en-ir-architecture-51.png"></div>
+
+<div class="sh-page" data-page="52"><img alt="Search Process User Interaction: Results Output" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-architecture/unit-en-ir-architecture-52.png"></div>
+
+<div class="sh-page" data-page="53"><img alt="conversion to plain text, and" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-architecture/unit-en-ir-architecture-53.png"></div>
+
+<div class="sh-page" data-page="54"><img alt="conversion to plain text, and" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-architecture/unit-en-ir-architecture-54.png"></div>
+
+<div class="sh-page" data-page="55"><img alt="Search Process User Interaction: Query Transformation" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-architecture/unit-en-ir-architecture-55.png"></div>
+
+<div class="sh-page" data-page="56"><img alt="Search Process User Interaction: Query Transformation" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-architecture/unit-en-ir-architecture-56.png"></div>
+
+<div class="sh-page" data-page="57"><img alt="conversion to plain text, and" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-architecture/unit-en-ir-architecture-57.png"></div>
+
+<div class="sh-page" data-page="58"><img alt="t1 t2" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-architecture/unit-en-ir-architecture-58.png"></div>
+
+<div class="sh-page" data-page="59"><img alt="Search Process Logging" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-architecture/unit-en-ir-architecture-59.png"></div>
+
+<div class="sh-page" data-page="60"><img alt="t1 t2" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-architecture/unit-en-ir-architecture-60.png"></div>
+
+<div class="sh-page" data-page="61"><img alt="t1 t2" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-architecture/unit-en-ir-architecture-61.png"></div>
+
+<div class="sh-page" data-page="62"><img alt="Evaluation Overview" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-architecture/unit-en-ir-architecture-62.png"></div>
+
+<div class="sh-page" data-page="63"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-architecture/unit-en-ir-architecture-63.png"></div>
+
+<div class="sh-page" data-page="64"><img alt="Architecture of a Search Engine " src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-architecture/unit-en-ir-architecture-64.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-en-ir-architecture-karaoke.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-architecture-karaoke.pdf" style="--sh-pages: 12"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Architecture of a Search Engine (Karaoke Version) " src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-architecture-karaoke/unit-en-ir-architecture-karaoke-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Architecture of a Search Engine (Karaoke Version) " src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-architecture-karaoke/unit-en-ir-architecture-karaoke-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Architecture of a Search Engine (Karaoke Version) " src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-architecture-karaoke/unit-en-ir-architecture-karaoke-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Architecture of a Search Engine (Karaoke Version) Acquisition" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-architecture-karaoke/unit-en-ir-architecture-karaoke-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Architecture of a Search Engine (Karaoke Version) d" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-architecture-karaoke/unit-en-ir-architecture-karaoke-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Architecture of a Search Engine (Karaoke Version) " src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-architecture-karaoke/unit-en-ir-architecture-karaoke-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Architecture of a Search Engine (Karaoke Version) " src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-architecture-karaoke/unit-en-ir-architecture-karaoke-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Architecture of a Search Engine (Karaoke Version) " src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-architecture-karaoke/unit-en-ir-architecture-karaoke-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Architecture of a Search Engine (Karaoke Version) " src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-architecture-karaoke/unit-en-ir-architecture-karaoke-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Architecture of a Search Engine (Karaoke Version) " src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-architecture-karaoke/unit-en-ir-architecture-karaoke-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Architecture of a Search Engine (Karaoke Version) " src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-architecture-karaoke/unit-en-ir-architecture-karaoke-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Architecture of a Search Engine (Karaoke Version) " src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-architecture-karaoke/unit-en-ir-architecture-karaoke-12.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-en-text-statistics.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-text-statistics.pdf" style="--sh-pages: 24"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Chapter IR:III III. Text Transformation" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-text-statistics/unit-en-text-statistics-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Text Statistics Questions" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-text-statistics/unit-en-text-statistics-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Text Statistics Vocabulary Growth: Heaps’ Law" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-text-statistics/unit-en-text-statistics-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Text Statistics Vocabulary Growth: Heaps’ Law" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-text-statistics/unit-en-text-statistics-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Text Statistics Term Frequency: Zipf’s Law" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-text-statistics/unit-en-text-statistics-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Text Statistics Term Frequency: Zipf’s Law" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-text-statistics/unit-en-text-statistics-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Text Statistics Term Frequency: Zipf’s Law" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-text-statistics/unit-en-text-statistics-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Text Statistics Term Frequency: Zipf’s Law" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-text-statistics/unit-en-text-statistics-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-text-statistics/unit-en-text-statistics-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Text Statistics Term Frequency: Zipf’s Law" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-text-statistics/unit-en-text-statistics-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Text Statistics Term Frequency: Zipf’s Law" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-text-statistics/unit-en-text-statistics-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-text-statistics/unit-en-text-statistics-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Text Statistics Term Frequency: Zipf’s Law" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-text-statistics/unit-en-text-statistics-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="Text Statistics Estimating Result Set Size" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-text-statistics/unit-en-text-statistics-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-text-statistics/unit-en-text-statistics-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="Text Statistics Estimating Result Set Size: Joint Probability" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-text-statistics/unit-en-text-statistics-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="Text Statistics Estimating Result Set Size: Conditional Probability" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-text-statistics/unit-en-text-statistics-17.png"></div>
+
+<div class="sh-page" data-page="18"><img alt="Text Statistics Estimating Result Set Size: Initial Result Set-based Estimation" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-text-statistics/unit-en-text-statistics-18.png"></div>
+
+<div class="sh-page" data-page="19"><img alt="Text Statistics Estimating Result Set Size: Initial Result Set-based Estimation" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-text-statistics/unit-en-text-statistics-19.png"></div>
+
+<div class="sh-page" data-page="20"><img alt="Text Statistics Estimating Collection Size: Joint Probability-based" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-text-statistics/unit-en-text-statistics-20.png"></div>
+
+<div class="sh-page" data-page="21"><img alt="Text Statistics Estimating Collection Size: Proportionality" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-text-statistics/unit-en-text-statistics-21.png"></div>
+
+<div class="sh-page" data-page="22"><img alt="Text Statistics Estimating Collection Size: Proportionality" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-text-statistics/unit-en-text-statistics-22.png"></div>
+
+<div class="sh-page" data-page="23"><img alt="Remarks: 1." src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-text-statistics/unit-en-text-statistics-23.png"></div>
+
+<div class="sh-page" data-page="24"><img alt="22. 23." src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-text-statistics/unit-en-text-statistics-24.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-en-parsing.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-parsing.pdf" style="--sh-pages: 34"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Chapter IR:III III. Text Transformation" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-parsing/unit-en-parsing-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Parsing Documents Retrieval Unit" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-parsing/unit-en-parsing-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Parsing Documents Index Term" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-parsing/unit-en-parsing-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Parsing Documents Document Structure and Markup" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-parsing/unit-en-parsing-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Parsing Documents Document Structure and Markup" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-parsing/unit-en-parsing-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Parsing Documents Document Structure and Markup" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-parsing/unit-en-parsing-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Parsing Documents Tokenization" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-parsing/unit-en-parsing-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-parsing/unit-en-parsing-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Parsing Documents Tokenization Problems" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-parsing/unit-en-parsing-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Parsing Documents Tokenization Problems" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-parsing/unit-en-parsing-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Parsing Documents Stopping (Token Removal)" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-parsing/unit-en-parsing-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Parsing Documents Token Normalization" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-parsing/unit-en-parsing-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Parsing Documents Stemming" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-parsing/unit-en-parsing-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="Parsing Documents Stemming: Principles" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-parsing/unit-en-parsing-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="Parsing Documents Stemming: Affix Elimination" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-parsing/unit-en-parsing-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="Parsing Documents Stemming: Affix Elimination" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-parsing/unit-en-parsing-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="Parsing Documents Stemming: Porter Stemmer" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-parsing/unit-en-parsing-17.png"></div>
+
+<div class="sh-page" data-page="18"><img alt="Parsing Documents Stemming: Porter Stemmer" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-parsing/unit-en-parsing-18.png"></div>
+
+<div class="sh-page" data-page="19"><img alt="Parsing Documents Stemming: Porter Stemmer" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-parsing/unit-en-parsing-19.png"></div>
+
+<div class="sh-page" data-page="20"><img alt="Parsing Documents Stemming: Porter Stemmer" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-parsing/unit-en-parsing-20.png"></div>
+
+<div class="sh-page" data-page="21"><img alt="Parsing Documents Stemming: Porter Stemmer" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-parsing/unit-en-parsing-21.png"></div>
+
+<div class="sh-page" data-page="22"><img alt="Parsing Documents Stemming: Krovetz Stemmer" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-parsing/unit-en-parsing-22.png"></div>
+
+<div class="sh-page" data-page="23"><img alt="Parsing Documents Stemming: Stemmer Comparison" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-parsing/unit-en-parsing-23.png"></div>
+
+<div class="sh-page" data-page="24"><img alt="Parsing Documents Stemming: Character n-grams" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-parsing/unit-en-parsing-24.png"></div>
+
+<div class="sh-page" data-page="25"><img alt="Parsing Documents Stemming: Character n-grams" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-parsing/unit-en-parsing-25.png"></div>
+
+<div class="sh-page" data-page="26"><img alt="Parsing Documents Phrases (Multi-Token Index Terms)" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-parsing/unit-en-parsing-26.png"></div>
+
+<div class="sh-page" data-page="27"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-parsing/unit-en-parsing-27.png"></div>
+
+<div class="sh-page" data-page="28"><img alt="Parsing Documents Phrases: N-Grams" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-parsing/unit-en-parsing-28.png"></div>
+
+<div class="sh-page" data-page="29"><img alt="Parsing Documents Phrases: N-Grams" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-parsing/unit-en-parsing-29.png"></div>
+
+<div class="sh-page" data-page="30"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-parsing/unit-en-parsing-30.png"></div>
+
+<div class="sh-page" data-page="31"><img alt="IR:III-55 " src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-parsing/unit-en-parsing-31.png"></div>
+
+<div class="sh-page" data-page="32"><img alt="IR:III-56 " src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-parsing/unit-en-parsing-32.png"></div>
+
+<div class="sh-page" data-page="33"><img alt="IR:III-57 " src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-parsing/unit-en-parsing-33.png"></div>
+
+<div class="sh-page" data-page="34"><img alt="IR:III-58 " src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-parsing/unit-en-parsing-34.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-en-link-analysis.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-link-analysis.pdf" style="--sh-pages: 14"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Content III. Text Transformation" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-link-analysis/unit-en-link-analysis-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Link Analysis Hyperlinks" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-link-analysis/unit-en-link-analysis-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Link Analysis Anchor Text" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-link-analysis/unit-en-link-analysis-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-link-analysis/unit-en-link-analysis-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Link Analysis PageRank" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-link-analysis/unit-en-link-analysis-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Link Analysis PageRank: Random Surfer Model" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-link-analysis/unit-en-link-analysis-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Link Analysis PageRank: Random Surfer Model" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-link-analysis/unit-en-link-analysis-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Link Analysis PageRank: Definition" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-link-analysis/unit-en-link-analysis-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Link Analysis PageRank: Example" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-link-analysis/unit-en-link-analysis-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Link Analysis Algorithm:" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-link-analysis/unit-en-link-analysis-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Link Analysis Algorithm:" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-link-analysis/unit-en-link-analysis-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Link Analysis Algorithm:" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-link-analysis/unit-en-link-analysis-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Link Analysis PageRank: Convergence" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-link-analysis/unit-en-link-analysis-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="Link Analysis PageRank: Variants" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-link-analysis/unit-en-link-analysis-14.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-en-information-extraction.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-information-extraction.pdf" style="--sh-pages: 18"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Chapter IR:III III. Text Transformation" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-information-extraction/unit-en-information-extraction-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Information Extraction Overview" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-information-extraction/unit-en-information-extraction-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Information Extraction Overview" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-information-extraction/unit-en-information-extraction-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Information Extraction Part-of-Speech Tagging" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-information-extraction/unit-en-information-extraction-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Information Extraction Part-of-Speech Tagging: Example" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-information-extraction/unit-en-information-extraction-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Information Extraction Part-of-Speech Tagging: Brill Tagger" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-information-extraction/unit-en-information-extraction-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Information Extraction Part-of-Speech Tagging: Brill Tagger" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-information-extraction/unit-en-information-extraction-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Information Extraction Part-of-Speech Tagging: Brill Tagger" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-information-extraction/unit-en-information-extraction-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-information-extraction/unit-en-information-extraction-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Information Extraction Noun Phrase" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-information-extraction/unit-en-information-extraction-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Information Extraction Noun Phrase" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-information-extraction/unit-en-information-extraction-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Information Extraction Noun Phrase Extraction" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-information-extraction/unit-en-information-extraction-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Information Extraction Named Entity" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-information-extraction/unit-en-information-extraction-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="Information Extraction Named Entity" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-information-extraction/unit-en-information-extraction-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="Information Extraction Named Entity Recognition" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-information-extraction/unit-en-information-extraction-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="Information Extraction Named Entity Recognition: Hidden Markov Models (informal)" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-information-extraction/unit-en-information-extraction-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="Information Extraction Named Entity Recognition: Hidden Markov Models (informal)" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-information-extraction/unit-en-information-extraction-17.png"></div>
+
+<div class="sh-page" data-page="18"><img alt="Information Extraction Named Entity Recognition: Hidden Markov Models (informal)" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-information-extraction/unit-en-information-extraction-18.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-en-inverted-indexes.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-inverted-indexes.pdf" style="--sh-pages: 15"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Chapter IR:IV IV. Indexes" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-inverted-indexes/unit-en-inverted-indexes-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Inverted Indexes Index" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-inverted-indexes/unit-en-inverted-indexes-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Inverted Indexes Index" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-inverted-indexes/unit-en-inverted-indexes-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Inverted Indexes Index" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-inverted-indexes/unit-en-inverted-indexes-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-inverted-indexes/unit-en-inverted-indexes-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Inverted Indexes Data Structure" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-inverted-indexes/unit-en-inverted-indexes-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Inverted Indexes Data Structure" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-inverted-indexes/unit-en-inverted-indexes-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Inverted Indexes Data Structure" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-inverted-indexes/unit-en-inverted-indexes-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Inverted Indexes Data Structure" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-inverted-indexes/unit-en-inverted-indexes-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-inverted-indexes/unit-en-inverted-indexes-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Inverted Index Postings" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-inverted-indexes/unit-en-inverted-indexes-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Inverted Index Postings" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-inverted-indexes/unit-en-inverted-indexes-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Inverted Index Postings" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-inverted-indexes/unit-en-inverted-indexes-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="Inverted Index Postings Lists" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-inverted-indexes/unit-en-inverted-indexes-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-inverted-indexes/unit-en-inverted-indexes-15.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-en-query-processing.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-query-processing.pdf" style="--sh-pages: 36"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Chapter IR:IV IV. Indexes" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-query-processing/unit-en-query-processing-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Query Processing Query Types" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-query-processing/unit-en-query-processing-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Query Processing Postlist Intersection" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-query-processing/unit-en-query-processing-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Query Processing Postlist Intersection" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-query-processing/unit-en-query-processing-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Query Processing Postlist Intersection" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-query-processing/unit-en-query-processing-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Query Processing Postlist Intersection" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-query-processing/unit-en-query-processing-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Query Processing Postlist Intersection" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-query-processing/unit-en-query-processing-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Query Processing Postlist Intersection" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-query-processing/unit-en-query-processing-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Query Processing Postlist Intersection" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-query-processing/unit-en-query-processing-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Query Processing Postlist Intersection" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-query-processing/unit-en-query-processing-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Query Processing Postlist Intersection" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-query-processing/unit-en-query-processing-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Query Processing Postlist Intersection" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-query-processing/unit-en-query-processing-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Query Processing Postlist Intersection" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-query-processing/unit-en-query-processing-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="Query Processing Postlist Intersection" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-query-processing/unit-en-query-processing-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="Query Processing Postlist Intersection" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-query-processing/unit-en-query-processing-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="Query Processing Postlist Intersection" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-query-processing/unit-en-query-processing-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="Query Processing Postlist Intersection" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-query-processing/unit-en-query-processing-17.png"></div>
+
+<div class="sh-page" data-page="18"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-query-processing/unit-en-query-processing-18.png"></div>
+
+<div class="sh-page" data-page="19"><img alt="Query Processing Postlist Intersection" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-query-processing/unit-en-query-processing-19.png"></div>
+
+<div class="sh-page" data-page="20"><img alt="Query Processing Positional Indexing" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-query-processing/unit-en-query-processing-20.png"></div>
+
+<div class="sh-page" data-page="21"><img alt="Query Processing Positional Indexing" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-query-processing/unit-en-query-processing-21.png"></div>
+
+<div class="sh-page" data-page="22"><img alt="Query Processing Positional Indexing" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-query-processing/unit-en-query-processing-22.png"></div>
+
+<div class="sh-page" data-page="23"><img alt="Query Processing Positional Indexing" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-query-processing/unit-en-query-processing-23.png"></div>
+
+<div class="sh-page" data-page="24"><img alt="Query Processing Positional Indexing" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-query-processing/unit-en-query-processing-24.png"></div>
+
+<div class="sh-page" data-page="25"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-query-processing/unit-en-query-processing-25.png"></div>
+
+<div class="sh-page" data-page="26"><img alt="Query Processing Document Scoring" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-query-processing/unit-en-query-processing-26.png"></div>
+
+<div class="sh-page" data-page="27"><img alt="Query Processing Document Scoring" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-query-processing/unit-en-query-processing-27.png"></div>
+
+<div class="sh-page" data-page="28"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-query-processing/unit-en-query-processing-28.png"></div>
+
+<div class="sh-page" data-page="29"><img alt="Query Processing Document Scoring" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-query-processing/unit-en-query-processing-29.png"></div>
+
+<div class="sh-page" data-page="30"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-query-processing/unit-en-query-processing-30.png"></div>
+
+<div class="sh-page" data-page="31"><img alt="Query Processing Document Scoring" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-query-processing/unit-en-query-processing-31.png"></div>
+
+<div class="sh-page" data-page="32"><img alt="Query Processing Document Scoring" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-query-processing/unit-en-query-processing-32.png"></div>
+
+<div class="sh-page" data-page="33"><img alt="Query Processing Document Scoring" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-query-processing/unit-en-query-processing-33.png"></div>
+
+<div class="sh-page" data-page="34"><img alt="Query Processing Top-k Retrieval" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-query-processing/unit-en-query-processing-34.png"></div>
+
+<div class="sh-page" data-page="35"><img alt="Query Processing Index Distribution" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-query-processing/unit-en-query-processing-35.png"></div>
+
+<div class="sh-page" data-page="36"><img alt="Query Processing Caching" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-query-processing/unit-en-query-processing-36.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-en-index-construction.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-index-construction.pdf" style="--sh-pages: 22"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Chapter IR:IV IV. Indexes" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-index-construction/unit-en-index-construction-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Index Construction Inversion and Indexing" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-index-construction/unit-en-index-construction-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Index Construction Index Merging" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-index-construction/unit-en-index-construction-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Index Construction Index Merging" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-index-construction/unit-en-index-construction-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Index Construction Index Merging" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-index-construction/unit-en-index-construction-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Index Construction Index Merging" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-index-construction/unit-en-index-construction-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Index Construction Index Merging" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-index-construction/unit-en-index-construction-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Index Construction Index Merging" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-index-construction/unit-en-index-construction-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Index Construction Index Merging" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-index-construction/unit-en-index-construction-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Index Construction Index Merging" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-index-construction/unit-en-index-construction-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Index Construction Index Merging" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-index-construction/unit-en-index-construction-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Index Construction Index Merging" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-index-construction/unit-en-index-construction-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Index Construction Index Merging" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-index-construction/unit-en-index-construction-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="Index Construction Index Merging" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-index-construction/unit-en-index-construction-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="Index Construction Index Merging" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-index-construction/unit-en-index-construction-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="Index Construction Index Merging" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-index-construction/unit-en-index-construction-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-index-construction/unit-en-index-construction-17.png"></div>
+
+<div class="sh-page" data-page="18"><img alt="Index Construction Distributed Indexing" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-index-construction/unit-en-index-construction-18.png"></div>
+
+<div class="sh-page" data-page="19"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-index-construction/unit-en-index-construction-19.png"></div>
+
+<div class="sh-page" data-page="20"><img alt="Index Construction Distributed Indexing" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-index-construction/unit-en-index-construction-20.png"></div>
+
+<div class="sh-page" data-page="21"><img alt="Index Construction Distributed Indexing: Example Netspeak" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-index-construction/unit-en-index-construction-21.png"></div>
+
+<div class="sh-page" data-page="22"><img alt="Index Construction Index Updates" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-index-construction/unit-en-index-construction-22.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-en-retrieval-models.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-retrieval-models.pdf" style="--sh-pages: 10"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Chapter IR:V V. Retrieval Models" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-retrieval-models/unit-en-retrieval-models-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Overview of Retrieval Models Document Views" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-retrieval-models/unit-en-retrieval-models-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Overview of Retrieval Models Retrieval Models" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-retrieval-models/unit-en-retrieval-models-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Overview of Retrieval Models Retrieval Models" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-retrieval-models/unit-en-retrieval-models-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Overview of Retrieval Models Retrieval Models" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-retrieval-models/unit-en-retrieval-models-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Overview of Retrieval Models Retrieval Models" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-retrieval-models/unit-en-retrieval-models-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Overview of Retrieval Models Definition 1 (Retrieval Model, Relevance Function)" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-retrieval-models/unit-en-retrieval-models-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Overview of Retrieval Models Definition 1 (Retrieval Model, Relevance Function)" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-retrieval-models/unit-en-retrieval-models-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-retrieval-models/unit-en-retrieval-models-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Overview of Retrieval Models History of Retrieval Models" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-retrieval-models/unit-en-retrieval-models-10.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-en-rm-empirical.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-empirical.pdf" style="--sh-pages: 25"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Chapter IR:V V. Retrieval Models" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-empirical/unit-en-rm-empirical-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Empirical Models " src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-empirical/unit-en-rm-empirical-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Boolean Retrieval Retrieval Model R = hD, Q, ρi" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-empirical/unit-en-rm-empirical-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Boolean Retrieval Retrieval Model R = hD, Q, ρi" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-empirical/unit-en-rm-empirical-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Boolean Retrieval Relevance Function ρ" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-empirical/unit-en-rm-empirical-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Boolean Retrieval Relevance Function ρ" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-empirical/unit-en-rm-empirical-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Boolean Retrieval Example" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-empirical/unit-en-rm-empirical-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-empirical/unit-en-rm-empirical-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Boolean Retrieval Query Refinement: “Searching by Numbers”" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-empirical/unit-en-rm-empirical-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Boolean Retrieval Query Refinement: “Searching by Numbers”" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-empirical/unit-en-rm-empirical-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Boolean Retrieval Discussion" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-empirical/unit-en-rm-empirical-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Vector Space Model Retrieval Model R = hD, Q, ρi" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-empirical/unit-en-rm-empirical-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Vector Space Model Retrieval Model R = hD, Q, ρi" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-empirical/unit-en-rm-empirical-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="Vector Space Model Relevance Function ρ: Cosine Similarity" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-empirical/unit-en-rm-empirical-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="Vector Space Model Relevance Function ρ: Cosine Similarity" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-empirical/unit-en-rm-empirical-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="Vector Space Model Relevance Function ρ: Cosine Similarity" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-empirical/unit-en-rm-empirical-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="Vector Space Model Example" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-empirical/unit-en-rm-empirical-17.png"></div>
+
+<div class="sh-page" data-page="18"><img alt="Vector Space Model Term Weighting: tf ·idf" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-empirical/unit-en-rm-empirical-18.png"></div>
+
+<div class="sh-page" data-page="19"><img alt="Vector Space Model Term Weighting: tf ·idf" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-empirical/unit-en-rm-empirical-19.png"></div>
+
+<div class="sh-page" data-page="20"><img alt="Vector Space Model Term Weighting: tf ·idf" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-empirical/unit-en-rm-empirical-20.png"></div>
+
+<div class="sh-page" data-page="21"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-empirical/unit-en-rm-empirical-21.png"></div>
+
+<div class="sh-page" data-page="22"><img alt="Vector Space Model Term Weighting: tf ·idf" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-empirical/unit-en-rm-empirical-22.png"></div>
+
+<div class="sh-page" data-page="23"><img alt="Vector Space Model Query Refinement: Relevance Feedback" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-empirical/unit-en-rm-empirical-23.png"></div>
+
+<div class="sh-page" data-page="24"><img alt="Vector Space Model Query Refinement: Relevance Feedback" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-empirical/unit-en-rm-empirical-24.png"></div>
+
+<div class="sh-page" data-page="25"><img alt="Vector Space Model Discussion" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-empirical/unit-en-rm-empirical-25.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-en-rm-probabilistic.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-probabilistic.pdf" style="--sh-pages: 54"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Chapter IR:V V. Retrieval Models" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-probabilistic/unit-en-rm-probabilistic-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Probabilistic Models " src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-probabilistic/unit-en-rm-probabilistic-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Probabilistic Models Probability Ranking Principle" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-probabilistic/unit-en-rm-probabilistic-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Probabilistic Models Probability Ranking Principle" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-probabilistic/unit-en-rm-probabilistic-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-probabilistic/unit-en-rm-probabilistic-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Binary Independence Model Retrieval Model R = hD, Q, ρi" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-probabilistic/unit-en-rm-probabilistic-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Binary Independence Model Retrieval Model R = hD, Q, ρi" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-probabilistic/unit-en-rm-probabilistic-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-probabilistic/unit-en-rm-probabilistic-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Binary Independence Model Relevance Function ρ: Derivation" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-probabilistic/unit-en-rm-probabilistic-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Binary Independence Model Relevance Function ρ: Derivation" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-probabilistic/unit-en-rm-probabilistic-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Binary Independence Model Relevance Function ρ: Derivation" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-probabilistic/unit-en-rm-probabilistic-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Binary Independence Model Relevance Function ρ: Derivation" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-probabilistic/unit-en-rm-probabilistic-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Binary Independence Model Relevance Function ρ: Derivation" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-probabilistic/unit-en-rm-probabilistic-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="Binary Independence Model Relevance Function ρ: Derivation" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-probabilistic/unit-en-rm-probabilistic-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="Binary Independence Model Relevance Function ρ: Derivation" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-probabilistic/unit-en-rm-probabilistic-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="Binary Independence Model Relevance Function ρ: Derivation" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-probabilistic/unit-en-rm-probabilistic-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="Binary Independence Model Relevance Function ρ: Derivation" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-probabilistic/unit-en-rm-probabilistic-17.png"></div>
+
+<div class="sh-page" data-page="18"><img alt="Binary Independence Model Relevance Function ρ: Derivation" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-probabilistic/unit-en-rm-probabilistic-18.png"></div>
+
+<div class="sh-page" data-page="19"><img alt="Binary Independence Model Relevance Function ρ: Derivation" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-probabilistic/unit-en-rm-probabilistic-19.png"></div>
+
+<div class="sh-page" data-page="20"><img alt="Binary Independence Model Relevance Function ρ: Derivation" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-probabilistic/unit-en-rm-probabilistic-20.png"></div>
+
+<div class="sh-page" data-page="21"><img alt="Binary Independence Model Relevance Function ρ: Derivation" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-probabilistic/unit-en-rm-probabilistic-21.png"></div>
+
+<div class="sh-page" data-page="22"><img alt="Binary Independence Model Relevance Function ρ: Derivation" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-probabilistic/unit-en-rm-probabilistic-22.png"></div>
+
+<div class="sh-page" data-page="23"><img alt="Binary Independence Model Relevance Function ρ: Derivation" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-probabilistic/unit-en-rm-probabilistic-23.png"></div>
+
+<div class="sh-page" data-page="24"><img alt="Binary Independence Model Relevance Function ρ: Estimation" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-probabilistic/unit-en-rm-probabilistic-24.png"></div>
+
+<div class="sh-page" data-page="25"><img alt="Binary Independence Model Relevance Function ρ: Estimation" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-probabilistic/unit-en-rm-probabilistic-25.png"></div>
+
+<div class="sh-page" data-page="26"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-probabilistic/unit-en-rm-probabilistic-26.png"></div>
+
+<div class="sh-page" data-page="27"><img alt="Binary Independence Model Relevance Function ρ: Example" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-probabilistic/unit-en-rm-probabilistic-27.png"></div>
+
+<div class="sh-page" data-page="28"><img alt="Binary Independence Model Relevance Function ρ: Example" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-probabilistic/unit-en-rm-probabilistic-28.png"></div>
+
+<div class="sh-page" data-page="29"><img alt="Binary Independence Model Relevance Function ρ: Example" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-probabilistic/unit-en-rm-probabilistic-29.png"></div>
+
+<div class="sh-page" data-page="30"><img alt="Binary Independence Model Relevance Function ρ: Example" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-probabilistic/unit-en-rm-probabilistic-30.png"></div>
+
+<div class="sh-page" data-page="31"><img alt="Binary Independence Model Relevance Function ρ: Example" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-probabilistic/unit-en-rm-probabilistic-31.png"></div>
+
+<div class="sh-page" data-page="32"><img alt="Binary Independence Model Relevance Function ρ: Example" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-probabilistic/unit-en-rm-probabilistic-32.png"></div>
+
+<div class="sh-page" data-page="33"><img alt="Binary Independence Model Relevance Function ρ: Example" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-probabilistic/unit-en-rm-probabilistic-33.png"></div>
+
+<div class="sh-page" data-page="34"><img alt="Binary Independence Model Relevance Function ρ: Summary" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-probabilistic/unit-en-rm-probabilistic-34.png"></div>
+
+<div class="sh-page" data-page="35"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-probabilistic/unit-en-rm-probabilistic-35.png"></div>
+
+<div class="sh-page" data-page="36"><img alt="Binary Independence Model Query Refinement: Relevance Feedback" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-probabilistic/unit-en-rm-probabilistic-36.png"></div>
+
+<div class="sh-page" data-page="37"><img alt="Binary Independence Model Query Refinement: Relevance Feedback Example" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-probabilistic/unit-en-rm-probabilistic-37.png"></div>
+
+<div class="sh-page" data-page="38"><img alt="Binary Independence Model Query Refinement: Relevance Feedback" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-probabilistic/unit-en-rm-probabilistic-38.png"></div>
+
+<div class="sh-page" data-page="39"><img alt="Binary Independence Model Query Refinement: Relevance Feedback" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-probabilistic/unit-en-rm-probabilistic-39.png"></div>
+
+<div class="sh-page" data-page="40"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-probabilistic/unit-en-rm-probabilistic-40.png"></div>
+
+<div class="sh-page" data-page="41"><img alt="Binary Independence Model Discussion" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-probabilistic/unit-en-rm-probabilistic-41.png"></div>
+
+<div class="sh-page" data-page="42"><img alt="Okapi BM25 Retrieval Model R = hD, Q, ρi" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-probabilistic/unit-en-rm-probabilistic-42.png"></div>
+
+<div class="sh-page" data-page="43"><img alt="Okapi BM25 Background" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-probabilistic/unit-en-rm-probabilistic-43.png"></div>
+
+<div class="sh-page" data-page="44"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-probabilistic/unit-en-rm-probabilistic-44.png"></div>
+
+<div class="sh-page" data-page="45"><img alt="Okapi BM25 Term Weighting" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-probabilistic/unit-en-rm-probabilistic-45.png"></div>
+
+<div class="sh-page" data-page="46"><img alt="Okapi BM25 Term Weighting" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-probabilistic/unit-en-rm-probabilistic-46.png"></div>
+
+<div class="sh-page" data-page="47"><img alt="Okapi BM25 Term Weighting" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-probabilistic/unit-en-rm-probabilistic-47.png"></div>
+
+<div class="sh-page" data-page="48"><img alt="Okapi BM25 Term Weighting" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-probabilistic/unit-en-rm-probabilistic-48.png"></div>
+
+<div class="sh-page" data-page="49"><img alt="Okapi BM25 Term Weighting" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-probabilistic/unit-en-rm-probabilistic-49.png"></div>
+
+<div class="sh-page" data-page="50"><img alt="Okapi BM25 Term Weighting" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-probabilistic/unit-en-rm-probabilistic-50.png"></div>
+
+<div class="sh-page" data-page="51"><img alt="Okapi BM25 Term Weighting" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-probabilistic/unit-en-rm-probabilistic-51.png"></div>
+
+<div class="sh-page" data-page="52"><img alt="Okapi BM25 Term Weighting" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-probabilistic/unit-en-rm-probabilistic-52.png"></div>
+
+<div class="sh-page" data-page="53"><img alt="Okapi BM25 Term Weighting" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-probabilistic/unit-en-rm-probabilistic-53.png"></div>
+
+<div class="sh-page" data-page="54"><img alt="Okapi BM25 Discussion" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-probabilistic/unit-en-rm-probabilistic-54.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-en-rm-algebraic.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-algebraic.pdf" style="--sh-pages: 52"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Chapter IR:V V. Retrieval Models" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-algebraic/unit-en-rm-algebraic-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Hidden Variable Models Obviously, the terms found in a document d ∈ D are somehow related to the" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-algebraic/unit-en-rm-algebraic-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Hidden Variable Models " src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-algebraic/unit-en-rm-algebraic-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Hidden Variable Models Term-Document Matrix" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-algebraic/unit-en-rm-algebraic-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Hidden Variable Models Term-Document Matrix" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-algebraic/unit-en-rm-algebraic-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Hidden Variable Models Term-Document Matrix" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-algebraic/unit-en-rm-algebraic-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Hidden Variable Models Term-Document Matrix" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-algebraic/unit-en-rm-algebraic-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Hidden Variable Models Term-Document Matrix" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-algebraic/unit-en-rm-algebraic-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-algebraic/unit-en-rm-algebraic-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Latent Semantic Indexing Singular Value Decomposition" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-algebraic/unit-en-rm-algebraic-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Latent Semantic Indexing Singular Value Decomposition" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-algebraic/unit-en-rm-algebraic-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Latent Semantic Indexing Singular Value Decomposition" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-algebraic/unit-en-rm-algebraic-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Latent Semantic Indexing Singular Value Decomposition" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-algebraic/unit-en-rm-algebraic-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="Latent Semantic Indexing Singular Value Decomposition" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-algebraic/unit-en-rm-algebraic-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="Latent Semantic Indexing Singular Value Decomposition" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-algebraic/unit-en-rm-algebraic-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="Latent Semantic Indexing Singular Value Decomposition" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-algebraic/unit-en-rm-algebraic-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="Latent Semantic Indexing Singular Value Decomposition" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-algebraic/unit-en-rm-algebraic-17.png"></div>
+
+<div class="sh-page" data-page="18"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-algebraic/unit-en-rm-algebraic-18.png"></div>
+
+<div class="sh-page" data-page="19"><img alt="Latent Semantic Indexing Retrieval Model R = hD, Q, ρi" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-algebraic/unit-en-rm-algebraic-19.png"></div>
+
+<div class="sh-page" data-page="20"><img alt="Latent Semantic Indexing Retrieval Model R = hD, Q, ρi" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-algebraic/unit-en-rm-algebraic-20.png"></div>
+
+<div class="sh-page" data-page="21"><img alt="Latent Semantic Indexing Example" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-algebraic/unit-en-rm-algebraic-21.png"></div>
+
+<div class="sh-page" data-page="22"><img alt="Latent Semantic Indexing Example" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-algebraic/unit-en-rm-algebraic-22.png"></div>
+
+<div class="sh-page" data-page="23"><img alt="Latent Semantic Indexing Example" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-algebraic/unit-en-rm-algebraic-23.png"></div>
+
+<div class="sh-page" data-page="24"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-algebraic/unit-en-rm-algebraic-24.png"></div>
+
+<div class="sh-page" data-page="25"><img alt="Latent Semantic Indexing Example: Term-Document Matrix A" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-algebraic/unit-en-rm-algebraic-25.png"></div>
+
+<div class="sh-page" data-page="26"><img alt="Latent Semantic Indexing Example: Singular Value Decomposition A = U S V T" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-algebraic/unit-en-rm-algebraic-26.png"></div>
+
+<div class="sh-page" data-page="27"><img alt="Latent Semantic Indexing Example: Singular Value Decomposition A = U S V T" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-algebraic/unit-en-rm-algebraic-27.png"></div>
+
+<div class="sh-page" data-page="28"><img alt="Latent Semantic Indexing Example: Singular Value Decomposition A = U S V T" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-algebraic/unit-en-rm-algebraic-28.png"></div>
+
+<div class="sh-page" data-page="29"><img alt="Latent Semantic Indexing Example: Dimensionality Reduction Ak = Uk Sk VkT" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-algebraic/unit-en-rm-algebraic-29.png"></div>
+
+<div class="sh-page" data-page="30"><img alt="Latent Semantic Indexing Example: Dimensionality Reduction Ak = Uk Sk VkT" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-algebraic/unit-en-rm-algebraic-30.png"></div>
+
+<div class="sh-page" data-page="31"><img alt="Latent Semantic Indexing Example: Dimensionality Reduction Ak = Uk Sk VkT" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-algebraic/unit-en-rm-algebraic-31.png"></div>
+
+<div class="sh-page" data-page="32"><img alt="Latent Semantic Indexing Example: Retrieval in Concept Space" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-algebraic/unit-en-rm-algebraic-32.png"></div>
+
+<div class="sh-page" data-page="33"><img alt="Latent Semantic Indexing Retrieval Model R = hD, Q, ρi" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-algebraic/unit-en-rm-algebraic-33.png"></div>
+
+<div class="sh-page" data-page="34"><img alt="Latent Semantic Indexing Retrieval Model R = hD, Q, ρi" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-algebraic/unit-en-rm-algebraic-34.png"></div>
+
+<div class="sh-page" data-page="35"><img alt="Latent Semantic Indexing Example 2" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-algebraic/unit-en-rm-algebraic-35.png"></div>
+
+<div class="sh-page" data-page="36"><img alt="Latent Semantic Indexing Example 2" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-algebraic/unit-en-rm-algebraic-36.png"></div>
+
+<div class="sh-page" data-page="37"><img alt="Latent Semantic Indexing Example 2" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-algebraic/unit-en-rm-algebraic-37.png"></div>
+
+<div class="sh-page" data-page="38"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-algebraic/unit-en-rm-algebraic-38.png"></div>
+
+<div class="sh-page" data-page="39"><img alt="Latent Semantic Indexing Example 2: Document Similarity Matrix AT A" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-algebraic/unit-en-rm-algebraic-39.png"></div>
+
+<div class="sh-page" data-page="40"><img alt="Latent Semantic Indexing Example 2: Document Similarity Matrix AT A" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-algebraic/unit-en-rm-algebraic-40.png"></div>
+
+<div class="sh-page" data-page="41"><img alt="Latent Semantic Indexing Example 2: Document Similarity Matrix AT A" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-algebraic/unit-en-rm-algebraic-41.png"></div>
+
+<div class="sh-page" data-page="42"><img alt="Latent Semantic Indexing Example 2: Term Similarity Matrix AAT" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-algebraic/unit-en-rm-algebraic-42.png"></div>
+
+<div class="sh-page" data-page="43"><img alt="Latent Semantic Indexing Example 2: Term Similarity Matrix AAT" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-algebraic/unit-en-rm-algebraic-43.png"></div>
+
+<div class="sh-page" data-page="44"><img alt="Latent Semantic Indexing Example 2: Term Similarity Matrix AAT" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-algebraic/unit-en-rm-algebraic-44.png"></div>
+
+<div class="sh-page" data-page="45"><img alt="Latent Semantic Indexing Discussion" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-algebraic/unit-en-rm-algebraic-45.png"></div>
+
+<div class="sh-page" data-page="46"><img alt="Explicit Semantic Analysis Concept Hypothesis" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-algebraic/unit-en-rm-algebraic-46.png"></div>
+
+<div class="sh-page" data-page="47"><img alt="Explicit Semantic Analysis Retrieval Model R = hD, Q, ρi" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-algebraic/unit-en-rm-algebraic-47.png"></div>
+
+<div class="sh-page" data-page="48"><img alt="Explicit Semantic Analysis Retrieval Model R = hD, Q, ρi" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-algebraic/unit-en-rm-algebraic-48.png"></div>
+
+<div class="sh-page" data-page="49"><img alt="Explicit Semantic Analysis Document Representation" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-algebraic/unit-en-rm-algebraic-49.png"></div>
+
+<div class="sh-page" data-page="50"><img alt="Explicit Semantic Analysis Relevance Function ρ" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-algebraic/unit-en-rm-algebraic-50.png"></div>
+
+<div class="sh-page" data-page="51"><img alt="Explicit Semantic Analysis Relevance Function ρ" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-algebraic/unit-en-rm-algebraic-51.png"></div>
+
+<div class="sh-page" data-page="52"><img alt="Explicit Semantic Analysis Discussion" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-algebraic/unit-en-rm-algebraic-52.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-en-rm-generative.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-generative.pdf" style="--sh-pages: 59"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Chapter IR:V V. Retrieval Models" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-generative/unit-en-rm-generative-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Generative Models " src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-generative/unit-en-rm-generative-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Language Models Background" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-generative/unit-en-rm-generative-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Language Models Basics: Grammar" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-generative/unit-en-rm-generative-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Language Models Basics: Grammar" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-generative/unit-en-rm-generative-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Remarks [Kastens 2005] :" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-generative/unit-en-rm-generative-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Language Models Basics: Grammar" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-generative/unit-en-rm-generative-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-generative/unit-en-rm-generative-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Language Models Basics: Grammar" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-generative/unit-en-rm-generative-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Language Models Basics: Grammar" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-generative/unit-en-rm-generative-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-generative/unit-en-rm-generative-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Language Models Basics: Chomsky Hierarchy" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-generative/unit-en-rm-generative-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Language Models Basics: Chomsky Hierarchy" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-generative/unit-en-rm-generative-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="Language Models Basics: Chomsky Hierarchy" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-generative/unit-en-rm-generative-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="Language Models Basics: Chomsky Hierarchy" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-generative/unit-en-rm-generative-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-generative/unit-en-rm-generative-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="Language Models Basics: Calculi" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-generative/unit-en-rm-generative-17.png"></div>
+
+<div class="sh-page" data-page="18"><img alt="Language Models Basics: Calculi" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-generative/unit-en-rm-generative-18.png"></div>
+
+<div class="sh-page" data-page="19"><img alt="Language Models Example: Deterministic Language Model" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-generative/unit-en-rm-generative-19.png"></div>
+
+<div class="sh-page" data-page="20"><img alt="Language Models Example: Deterministic Language Model" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-generative/unit-en-rm-generative-20.png"></div>
+
+<div class="sh-page" data-page="21"><img alt="Language Models Example: Deterministic Language Model" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-generative/unit-en-rm-generative-21.png"></div>
+
+<div class="sh-page" data-page="22"><img alt="Language Models Example: Deterministic Language Model" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-generative/unit-en-rm-generative-22.png"></div>
+
+<div class="sh-page" data-page="23"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-generative/unit-en-rm-generative-23.png"></div>
+
+<div class="sh-page" data-page="24"><img alt="Language Models Example: Statistical Language Model" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-generative/unit-en-rm-generative-24.png"></div>
+
+<div class="sh-page" data-page="25"><img alt="Language Models Example: Statistical Language Model" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-generative/unit-en-rm-generative-25.png"></div>
+
+<div class="sh-page" data-page="26"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-generative/unit-en-rm-generative-26.png"></div>
+
+<div class="sh-page" data-page="27"><img alt="Language Models Retrieval Model R = hD, Q, ρi" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-generative/unit-en-rm-generative-27.png"></div>
+
+<div class="sh-page" data-page="28"><img alt="Language Models Retrieval Model R = hD, Q, ρi" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-generative/unit-en-rm-generative-28.png"></div>
+
+<div class="sh-page" data-page="29"><img alt="Language Models Relevance Function ρ: Derivation" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-generative/unit-en-rm-generative-29.png"></div>
+
+<div class="sh-page" data-page="30"><img alt="Language Models Relevance Function ρ: Derivation" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-generative/unit-en-rm-generative-30.png"></div>
+
+<div class="sh-page" data-page="31"><img alt="Language Models Relevance Function ρ: Derivation" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-generative/unit-en-rm-generative-31.png"></div>
+
+<div class="sh-page" data-page="32"><img alt="Language Models Relevance Function ρ: Derivation" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-generative/unit-en-rm-generative-32.png"></div>
+
+<div class="sh-page" data-page="33"><img alt="Language Models Relevance Function ρ: Derivation" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-generative/unit-en-rm-generative-33.png"></div>
+
+<div class="sh-page" data-page="34"><img alt="Language Models Relevance Function ρ: Derivation" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-generative/unit-en-rm-generative-34.png"></div>
+
+<div class="sh-page" data-page="35"><img alt="Language Models Relevance Function ρ: Derivation" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-generative/unit-en-rm-generative-35.png"></div>
+
+<div class="sh-page" data-page="36"><img alt="Language Models Relevance Function ρ: Derivation" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-generative/unit-en-rm-generative-36.png"></div>
+
+<div class="sh-page" data-page="37"><img alt="Language Models Relevance Function ρ: Estimation" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-generative/unit-en-rm-generative-37.png"></div>
+
+<div class="sh-page" data-page="38"><img alt="Language Models Relevance Function ρ: Estimation" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-generative/unit-en-rm-generative-38.png"></div>
+
+<div class="sh-page" data-page="39"><img alt="Language Models Relevance Function ρ: Estimation" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-generative/unit-en-rm-generative-39.png"></div>
+
+<div class="sh-page" data-page="40"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-generative/unit-en-rm-generative-40.png"></div>
+
+<div class="sh-page" data-page="41"><img alt="Language Models Relevance Function ρ: Estimation" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-generative/unit-en-rm-generative-41.png"></div>
+
+<div class="sh-page" data-page="42"><img alt="Language Models Relevance Function ρ: Estimation" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-generative/unit-en-rm-generative-42.png"></div>
+
+<div class="sh-page" data-page="43"><img alt="Language Models Relevance Function ρ: Estimation" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-generative/unit-en-rm-generative-43.png"></div>
+
+<div class="sh-page" data-page="44"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-generative/unit-en-rm-generative-44.png"></div>
+
+<div class="sh-page" data-page="45"><img alt="Language Models Relevance Function ρ: Example" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-generative/unit-en-rm-generative-45.png"></div>
+
+<div class="sh-page" data-page="46"><img alt="Language Models Relevance Function ρ: Example" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-generative/unit-en-rm-generative-46.png"></div>
+
+<div class="sh-page" data-page="47"><img alt="Language Models Relevance Function ρ: Summary" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-generative/unit-en-rm-generative-47.png"></div>
+
+<div class="sh-page" data-page="48"><img alt="Language Models Query Refinement: Relevance Feedback" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-generative/unit-en-rm-generative-48.png"></div>
+
+<div class="sh-page" data-page="49"><img alt="Language Models Query Refinement: Relevance Feedback" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-generative/unit-en-rm-generative-49.png"></div>
+
+<div class="sh-page" data-page="50"><img alt="Language Models Query Refinement: Relevance Feedback" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-generative/unit-en-rm-generative-50.png"></div>
+
+<div class="sh-page" data-page="51"><img alt="Language Models Query Refinement: Relevance Feedback" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-generative/unit-en-rm-generative-51.png"></div>
+
+<div class="sh-page" data-page="52"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-generative/unit-en-rm-generative-52.png"></div>
+
+<div class="sh-page" data-page="53"><img alt="Language Models Query Refinement: Relevance Feedback" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-generative/unit-en-rm-generative-53.png"></div>
+
+<div class="sh-page" data-page="54"><img alt="Language Models Query Refinement: Relevance Feedback" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-generative/unit-en-rm-generative-54.png"></div>
+
+<div class="sh-page" data-page="55"><img alt="Language Models Query Refinement: Relevance Feedback" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-generative/unit-en-rm-generative-55.png"></div>
+
+<div class="sh-page" data-page="56"><img alt="Language Models Query Refinement: Relevance Feedback" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-generative/unit-en-rm-generative-56.png"></div>
+
+<div class="sh-page" data-page="57"><img alt="Language Models Query Refinement: Relevance Feedback" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-generative/unit-en-rm-generative-57.png"></div>
+
+<div class="sh-page" data-page="58"><img alt="Language Models Query Refinement: Relevance Feedback" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-generative/unit-en-rm-generative-58.png"></div>
+
+<div class="sh-page" data-page="59"><img alt="Language Models Discussion" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-rm-generative/unit-en-rm-generative-59.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-en-information-needs.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-information-needs.pdf" style="--sh-pages: 7"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Chapter IR:VI VI. Users and Queries" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-information-needs/unit-en-information-needs-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Information Needs and Queries Information Needs" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-information-needs/unit-en-information-needs-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Information Needs and Queries Queries" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-information-needs/unit-en-information-needs-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Information Needs and Queries Interaction" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-information-needs/unit-en-information-needs-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Information Needs and Queries ASK Hypothesis" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-information-needs/unit-en-information-needs-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Information Needs and Queries Keyword Queries" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-information-needs/unit-en-information-needs-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Information Needs and Queries Keyword Queries" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-information-needs/unit-en-information-needs-7.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-en-laboratory-experiments.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-laboratory-experiments.pdf" style="--sh-pages: 20"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Chapter IR:VIII VIII. Evaluation" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-laboratory-experiments/unit-en-laboratory-experiments-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Laboratory Experiments Retrieval Tasks" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-laboratory-experiments/unit-en-laboratory-experiments-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-laboratory-experiments/unit-en-laboratory-experiments-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Laboratory Experiments Experimental Setup" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-laboratory-experiments/unit-en-laboratory-experiments-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-laboratory-experiments/unit-en-laboratory-experiments-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Laboratory Experiments Experimental Setup: Document Collections \u002f Corpora" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-laboratory-experiments/unit-en-laboratory-experiments-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-laboratory-experiments/unit-en-laboratory-experiments-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Laboratory Experiments Experimental Setup: Topics" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-laboratory-experiments/unit-en-laboratory-experiments-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-laboratory-experiments/unit-en-laboratory-experiments-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Laboratory Experiments Experimental Setup: Relevance Judgments" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-laboratory-experiments/unit-en-laboratory-experiments-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Laboratory Experiments Experimental Setup: Relevance Judgments" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-laboratory-experiments/unit-en-laboratory-experiments-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Laboratory Experiments Experimental Setup: Relevance Judgments" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-laboratory-experiments/unit-en-laboratory-experiments-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Laboratory Experiments Experimental Setup: Relevance Judgments" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-laboratory-experiments/unit-en-laboratory-experiments-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-laboratory-experiments/unit-en-laboratory-experiments-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="Laboratory Experiments Experimental Setup: Pooling" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-laboratory-experiments/unit-en-laboratory-experiments-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="Laboratory Experiments Assessor Reliability" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-laboratory-experiments/unit-en-laboratory-experiments-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="Laboratory Experiments Assessor Reliability: Kappa Statistics" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-laboratory-experiments/unit-en-laboratory-experiments-17.png"></div>
+
+<div class="sh-page" data-page="18"><img alt="Laboratory Experiments Assessor Reliability: Kappa Statistics" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-laboratory-experiments/unit-en-laboratory-experiments-18.png"></div>
+
+<div class="sh-page" data-page="19"><img alt="Laboratory Experiments Assessor Reliability: Kappa Statistics" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-laboratory-experiments/unit-en-laboratory-experiments-19.png"></div>
+
+<div class="sh-page" data-page="20"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-laboratory-experiments/unit-en-laboratory-experiments-20.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-en-ir-performance-measures.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-performance-measures.pdf" style="--sh-pages: 44"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Chapter IR:VIII VIII. Evaluation" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-performance-measures/unit-en-ir-performance-measures-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Performance Measures Effectiveness and Efficiency" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-performance-measures/unit-en-ir-performance-measures-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Performance Measures Effectiveness Measures" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-performance-measures/unit-en-ir-performance-measures-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Performance Measures Effectiveness Measures" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-performance-measures/unit-en-ir-performance-measures-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Performance Measures Effectiveness Measures" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-performance-measures/unit-en-ir-performance-measures-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Performance Measures Effectiveness Measures" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-performance-measures/unit-en-ir-performance-measures-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Performance Measures Set Retrieval Effectiveness: Precision and Recall" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-performance-measures/unit-en-ir-performance-measures-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Performance Measures Set Retrieval Effectiveness: Precision and Recall" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-performance-measures/unit-en-ir-performance-measures-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Performance Measures Set Retrieval Effectiveness: Precision and Recall" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-performance-measures/unit-en-ir-performance-measures-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-performance-measures/unit-en-ir-performance-measures-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Performance Measures Set Retrieval Effectiveness: F -Measure" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-performance-measures/unit-en-ir-performance-measures-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Performance Measures Set Retrieval Effectiveness: F -Measure" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-performance-measures/unit-en-ir-performance-measures-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-performance-measures/unit-en-ir-performance-measures-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="Performance Measures Set Retrieval Effectiveness: Illustration" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-performance-measures/unit-en-ir-performance-measures-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="Performance Measures Set Retrieval Effectiveness: Illustration" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-performance-measures/unit-en-ir-performance-measures-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="Performance Measures Set Retrieval Effectiveness: Illustration" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-performance-measures/unit-en-ir-performance-measures-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="Performance Measures Set Retrieval Effectiveness: Recall Estimation" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-performance-measures/unit-en-ir-performance-measures-17.png"></div>
+
+<div class="sh-page" data-page="18"><img alt="Performance Measures Ranking Effectiveness" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-performance-measures/unit-en-ir-performance-measures-18.png"></div>
+
+<div class="sh-page" data-page="19"><img alt="Performance Measures Ranking Effectiveness: Precision@k and Recall@k" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-performance-measures/unit-en-ir-performance-measures-19.png"></div>
+
+<div class="sh-page" data-page="20"><img alt="Performance Measures Ranking Effectiveness: Precision@k and Recall@k" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-performance-measures/unit-en-ir-performance-measures-20.png"></div>
+
+<div class="sh-page" data-page="21"><img alt="Performance Measures Ranking Effectiveness: Precision-Recall Curves" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-performance-measures/unit-en-ir-performance-measures-21.png"></div>
+
+<div class="sh-page" data-page="22"><img alt="Performance Measures Ranking Effectiveness: Precision-Recall Curves" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-performance-measures/unit-en-ir-performance-measures-22.png"></div>
+
+<div class="sh-page" data-page="23"><img alt="Performance Measures Ranking Effectiveness: Precision-Recall Curves" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-performance-measures/unit-en-ir-performance-measures-23.png"></div>
+
+<div class="sh-page" data-page="24"><img alt="Performance Measures Ranking Effectiveness: Average Precision" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-performance-measures/unit-en-ir-performance-measures-24.png"></div>
+
+<div class="sh-page" data-page="25"><img alt="Performance Measures Ranking Effectiveness: Average Precision" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-performance-measures/unit-en-ir-performance-measures-25.png"></div>
+
+<div class="sh-page" data-page="26"><img alt="Performance Measures Ranking Effectiveness: Average Precision" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-performance-measures/unit-en-ir-performance-measures-26.png"></div>
+
+<div class="sh-page" data-page="27"><img alt="Performance Measures Ranking Effectiveness: Average Precision" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-performance-measures/unit-en-ir-performance-measures-27.png"></div>
+
+<div class="sh-page" data-page="28"><img alt="Performance Measures Ranking Effectiveness: Average Precision (Alternative 1)" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-performance-measures/unit-en-ir-performance-measures-28.png"></div>
+
+<div class="sh-page" data-page="29"><img alt="Performance Measures Ranking Effectiveness: Average Precision (Alternative 2)" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-performance-measures/unit-en-ir-performance-measures-29.png"></div>
+
+<div class="sh-page" data-page="30"><img alt="Performance Measures Ranking Effectiveness: Average Precision" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-performance-measures/unit-en-ir-performance-measures-30.png"></div>
+
+<div class="sh-page" data-page="31"><img alt="Performance Measures Ranking Effectiveness: Average Precision-Recall Curves" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-performance-measures/unit-en-ir-performance-measures-31.png"></div>
+
+<div class="sh-page" data-page="32"><img alt="Performance Measures Ranking Effectiveness: Average Precision-Recall Curves" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-performance-measures/unit-en-ir-performance-measures-32.png"></div>
+
+<div class="sh-page" data-page="33"><img alt="Performance Measures Ranking Effectiveness: Average Precision-Recall Curves" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-performance-measures/unit-en-ir-performance-measures-33.png"></div>
+
+<div class="sh-page" data-page="34"><img alt="Performance Measures Ranking Effectiveness: Average Precision-Recall Curves" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-performance-measures/unit-en-ir-performance-measures-34.png"></div>
+
+<div class="sh-page" data-page="35"><img alt="Performance Measures Ranking Effectiveness: Average Precision-Recall Curves" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-performance-measures/unit-en-ir-performance-measures-35.png"></div>
+
+<div class="sh-page" data-page="36"><img alt="Performance Measures Ranking Effectiveness: Average Precision-Recall Curves" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-performance-measures/unit-en-ir-performance-measures-36.png"></div>
+
+<div class="sh-page" data-page="37"><img alt="Performance Measures Ranking Effectiveness: Mean Average Precision (MAP)" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-performance-measures/unit-en-ir-performance-measures-37.png"></div>
+
+<div class="sh-page" data-page="38"><img alt="Performance Measures Ranking Effectiveness: Mean Average Precision (MAP)" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-performance-measures/unit-en-ir-performance-measures-38.png"></div>
+
+<div class="sh-page" data-page="39"><img alt="Performance Measures Ranking Effectiveness: Mean Average Precision (MAP)" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-performance-measures/unit-en-ir-performance-measures-39.png"></div>
+
+<div class="sh-page" data-page="40"><img alt="Performance Measures Ranking Effectiveness: Mean Average Precision (MAP)" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-performance-measures/unit-en-ir-performance-measures-40.png"></div>
+
+<div class="sh-page" data-page="41"><img alt="Performance Measures Ranking Effectiveness: Mean Reciprocal Rank (MRR)" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-performance-measures/unit-en-ir-performance-measures-41.png"></div>
+
+<div class="sh-page" data-page="42"><img alt="Remarks: [Fuhr 2017]" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-performance-measures/unit-en-ir-performance-measures-42.png"></div>
+
+<div class="sh-page" data-page="43"><img alt="Performance Measures Ranking Effectiveness: Discounted Cumulative Gain (DCG)" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-performance-measures/unit-en-ir-performance-measures-43.png"></div>
+
+<div class="sh-page" data-page="44"><img alt="Performance Measures Ranking Effectiveness: Normalized Discounted Cumulative Gain (NDCG)" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-ir-performance-measures/unit-en-ir-performance-measures-44.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-en-training-and-testing.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-training-and-testing.pdf" style="--sh-pages: 17"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Chapter IR:VIII VIII. Evaluation" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-training-and-testing/unit-en-training-and-testing-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Training and Testing Statistical Hypothesis Testing" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-training-and-testing/unit-en-training-and-testing-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Training and Testing Statistical Hypothesis Testing" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-training-and-testing/unit-en-training-and-testing-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Training and Testing Statistical Hypothesis Testing" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-training-and-testing/unit-en-training-and-testing-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Training and Testing Statistical Hypothesis Testing" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-training-and-testing/unit-en-training-and-testing-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Training and Testing Statistical Hypothesis Testing" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-training-and-testing/unit-en-training-and-testing-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Training and Testing Statistical Hypothesis Testing" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-training-and-testing/unit-en-training-and-testing-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-training-and-testing/unit-en-training-and-testing-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Training and Testing Statistical Hypothesis Testing: Sign Test" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-training-and-testing/unit-en-training-and-testing-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Training and Testing Statistical Hypothesis Testing: Sign Test" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-training-and-testing/unit-en-training-and-testing-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Training and Testing Statistical Hypothesis Testing: Sign Test" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-training-and-testing/unit-en-training-and-testing-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Training and Testing Statistical Hypothesis Testing: Student’s t-test" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-training-and-testing/unit-en-training-and-testing-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Training and Testing Statistical Hypothesis Testing: Student’s t-test" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-training-and-testing/unit-en-training-and-testing-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="Training and Testing Statistical Hypothesis Testing: Student’s t-test" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-training-and-testing/unit-en-training-and-testing-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="Training and Testing Statistical Hypothesis Testing: Power and Effect Size" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-training-and-testing/unit-en-training-and-testing-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-training-and-testing/unit-en-training-and-testing-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="Training and Testing Hyperparameter Optimization" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-training-and-testing/unit-en-training-and-testing-17.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-en-crawling.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-crawling.pdf" style="--sh-pages: 39"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Chapter IR:IX IX. Acquisition" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-crawling/unit-en-crawling-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Crawling the Web Web Technology" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-crawling/unit-en-crawling-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Crawling the Web Web Technology: Internet" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-crawling/unit-en-crawling-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Crawling the Web Web Technology: Internet" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-crawling/unit-en-crawling-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Crawling the Web Web Technology: Internet" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-crawling/unit-en-crawling-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="[Internet Systems Consortium, www.isc.org] " src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-crawling/unit-en-crawling-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Crawling the Web Web Technology: World Wide Web" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-crawling/unit-en-crawling-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Crawling the Web Web Technology: World Wide Web" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-crawling/unit-en-crawling-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Crawling the Web Web Technology: World Wide Web" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-crawling/unit-en-crawling-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Crawling the Web Web Technology: Addressing" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-crawling/unit-en-crawling-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Crawling the Web Web Technology: Addressing" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-crawling/unit-en-crawling-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Crawling the Web Web Technology: Addressing" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-crawling/unit-en-crawling-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Crawling the Web Web Technology: Hypertext Transfer Protocol (HTTP)" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-crawling/unit-en-crawling-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="Crawling the Web Web Technology: Hypertext Transfer Protocol (HTTP)" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-crawling/unit-en-crawling-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="Crawling the Web Web Technology: Hypertext Transfer Protocol (HTTP)" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-crawling/unit-en-crawling-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="Crawling the Web Web Technology: Hypertext Markup Language (HTML)" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-crawling/unit-en-crawling-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="Crawling the Web The Web Graph" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-crawling/unit-en-crawling-17.png"></div>
+
+<div class="sh-page" data-page="18"><img alt="Crawling the Web The Web Graph" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-crawling/unit-en-crawling-18.png"></div>
+
+<div class="sh-page" data-page="19"><img alt="Crawling the Web The Web Graph" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-crawling/unit-en-crawling-19.png"></div>
+
+<div class="sh-page" data-page="20"><img alt="Crawling the Web Crawling Hypertext" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-crawling/unit-en-crawling-20.png"></div>
+
+<div class="sh-page" data-page="21"><img alt="Crawling the Web Requirements" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-crawling/unit-en-crawling-21.png"></div>
+
+<div class="sh-page" data-page="22"><img alt="Crawling the Web Selectivity" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-crawling/unit-en-crawling-22.png"></div>
+
+<div class="sh-page" data-page="23"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-crawling/unit-en-crawling-23.png"></div>
+
+<div class="sh-page" data-page="24"><img alt="Crawling the Web Selectivity: Malicious Pages (Black-hat SEO∗, Spam)" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-crawling/unit-en-crawling-24.png"></div>
+
+<div class="sh-page" data-page="25"><img alt="Crawling the Web Politeness" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-crawling/unit-en-crawling-25.png"></div>
+
+<div class="sh-page" data-page="26"><img alt="Crawling the Web Politeness: Robots Exclusion Protocol (robots.txt)" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-crawling/unit-en-crawling-26.png"></div>
+
+<div class="sh-page" data-page="27"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-crawling/unit-en-crawling-27.png"></div>
+
+<div class="sh-page" data-page="28"><img alt="Crawling the Web Politeness: Crawling Algorithm Revisited" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-crawling/unit-en-crawling-28.png"></div>
+
+<div class="sh-page" data-page="29"><img alt="Crawling the Web Freshness" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-crawling/unit-en-crawling-29.png"></div>
+
+<div class="sh-page" data-page="30"><img alt="Crawling the Web Freshness: Metric" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-crawling/unit-en-crawling-30.png"></div>
+
+<div class="sh-page" data-page="31"><img alt="Crawling the Web Freshness: Metric" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-crawling/unit-en-crawling-31.png"></div>
+
+<div class="sh-page" data-page="32"><img alt="Crawling the Web Freshness: Age Metric" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-crawling/unit-en-crawling-32.png"></div>
+
+<div class="sh-page" data-page="33"><img alt="Crawling the Web Freshness: Age Metric" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-crawling/unit-en-crawling-33.png"></div>
+
+<div class="sh-page" data-page="34"><img alt="Crawling the Web Freshness: Age Metric" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-crawling/unit-en-crawling-34.png"></div>
+
+<div class="sh-page" data-page="35"><img alt="Crawling the Web Freshness: Age Metric" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-crawling/unit-en-crawling-35.png"></div>
+
+<div class="sh-page" data-page="36"><img alt="Crawling the Web Freshness: Age Metric" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-crawling/unit-en-crawling-36.png"></div>
+
+<div class="sh-page" data-page="37"><img alt="Crawling the Web Efficiency and Scalability" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-crawling/unit-en-crawling-37.png"></div>
+
+<div class="sh-page" data-page="38"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-crawling/unit-en-crawling-38.png"></div>
+
+<div class="sh-page" data-page="39"><img alt="Crawling the Web Extensibility" src="https://webis.de/downloads/lecturenotes/information-retrieval/unit-en-crawling/unit-en-crawling-39.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+<!-- units end -->
+</div>
+</main>
+
+<div class="sh-modal closed" data-modal-help="" aria-hidden="true" aria-labelledby="sh-help-title" role="dialog">
+  <div class="sh-modal-content" role="document">
+    <button class="sh-modal__close sh-button sh-button--close" data-close-modal="" aria-label="Close">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" aria-labelledby="sh-close-help-title"><path d="M4 0l8 8 8-8 4 4-8 8 8 8-4 4-8-8-8 8-4-4 8-8-8-8z"/></svg>
+    </button>
+    <h2 class="sh-modal__title" id="sh-help-title">Help</h2>
+    <div class="sh-shortcut-table-wrapper">
+      <table class="sh-shortcut-table">
+        <caption class="sh-visually-hidden">Document-specific controls</caption>
+        <thead>
+          <tr>
+            <th class="sh-shortcut-table__input">
+              <span class="sh-visually-hidden">Shortcut</span>
+            </th>
+            <th class="sh-shortcut-table__action">Documents</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="sh-shortcut-table__input">
+              <div class="sh-shortcut-group">
+                <kbd aria-label="Up or down arrow key">↑/↓</kbd>
+              </div>
+            </td>
+            <td class="sh-shortcut-table__action">Navigate documents</td>
+          </tr>
+          <tr>
+            <td class="sh-shortcut-table__input">
+              <div class="sh-shortcut-group">
+                <kbd>Shift</kbd> + <kbd aria-label="Up or down arrow key">↑/↓</kbd>
+              </div>
+            </td>
+            <td class="sh-shortcut-table__action">Navigate 3 documents</td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="sh-shortcut-table">
+        <caption class="sh-visually-hidden">Page-specific controls</caption>
+        <thead>
+          <tr>
+            <th class="sh-shortcut-table__input">
+              <span class="sh-visually-hidden">Shortcut</span>
+            </th>
+            <th class="sh-shortcut-table__action">Pages</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="sh-shortcut-table__input">
+              <div class="sh-shortcut-group">
+                <kbd aria-label="Left or right arrow key">←/→</kbd>
+              </div>
+            </td>
+            <td class="sh-shortcut-table__action">Navigate pages</td>
+          </tr>
+          <tr>
+            <td class="sh-shortcut-table__input">
+              <div class="sh-shortcut-group">
+                <kbd>Shift</kbd> + <kbd>MouseWheel</kbd>
+              </div>
+            </td>
+            <td class="sh-shortcut-table__action">Navigate pages</td>
+          </tr>
+          <tr>
+            <td class="sh-shortcut-table__input">
+              <div class="sh-shortcut-group">
+                <kbd>Shift</kbd> + <kbd aria-label="Left or right arrow key">←/→</kbd>
+              </div>
+            </td>
+            <td class="sh-shortcut-table__action">Navigate 3 pages</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<footer class="uk-section uk-section-default footer-section">
+    <div class="uk-container">
+        <div class="uk-align-right@m uk-margin-top">
+            Copyright &copy; 2019 Temir Group
+            <address></address>
+        </div>
+    </div>
+</footer>
+
+<script>
+    UIkit.util.ready(() => {
+        const nav = UIkit.util.$(".global-nav");
+        const navHeight = UIkit.util.height(nav);
+
+        // correct scroll offset due to fixed navigation after page load
+        let fixScrollHeight = () => {
+            if (location.hash === "" || !UIkit.util.$(location.hash)) {
+                return;
+            }
+
+            const pos = document.documentElement.scrollTop;
+            const offset = UIkit.util.offset(UIkit.util.$(location.hash));
+
+            if (pos > navHeight * .8 && offset) {
+                document.documentElement.scrollTop = offset.top - navHeight - 20;
+            }
+        };
+
+        window.addEventListener("hashchange", fixScrollHeight, false);
+        setTimeout(fixScrollHeight, 100);
+    });
+</script>
+
+</body>
+</html>

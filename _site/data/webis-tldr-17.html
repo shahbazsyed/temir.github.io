@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Webis Data Webis-TLDR-17</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Overview of corpora that are used by the Webis research group">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="copyright" content="&copy; 2019 Temir">
+    <link rel="icon" type="image/png" href="/img/favicon.png">
+
+    <link rel="stylesheet" href="/css/style.css?1548321565">
+</head>
+<body class="uk-offcanvas-content">
+<script src="/js/thirdparty/uikit/uikit.min.js"></script>
+<script src="/js/thirdparty/uikit/uikit-icons.min.js"></script>
+
+<div id="offcanvas-nav" class="uk-hidden@m" data-uk-offcanvas="overlay: true; flip: true;">
+    <div class="uk-offcanvas-bar">
+        <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+
+        <!-- Mobile navigation -->
+        <nav class="uk-margin-large-top">
+            <ul class="uk-nav uk-nav-primary uk-nav-parent-icon" data-uk-nav>
+                <li>
+                    <a href="/people.html">People</a>
+                </li>
+                <li class="uk-parent">
+                    <a href="#">Lecturenotes</a>
+                    <ul class="uk-nav-sub">
+                        <li><a href="/lecturenotes/overview.html">Overview</a></li>
+                        <li><a href="/lecturenotes/slides.html">Slides</a></li>
+                        <li class="uk-parent">
+                            Browser
+                            <ul class="uk-nav-sub">
+                                <li><a href="/lecturenotes/browser/algorithms-and-datastructures.html">Algorithmen und Datenstrukturen</a></li>
+                                <li><a href="/lecturenotes/browser/information-retrieval.html">Information Retrieval</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/research.html">Research</a>
+                </li>
+                <li>
+                    <a href="/publications.html">Publications</a>
+                </li>
+                <li class="uk-active">
+                    <a href="/data.html">Data</a>
+                </li>
+                <li>
+                    <a href="/facilities.html">Facilities</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<div class="uk-background-secondary desktop-nav global-nav" data-uk-sticky="media: @m">
+    <!-- Desktop navigation -->
+    <nav class="uk-navbar-container uk-navbar-transparent uk-container uk-light" data-uk-navbar="mode: click">
+        <div class="uk-navbar-left">
+            <ul class="uk-navbar-nav">
+                <li>
+                    <a href="/"><img src="/img/uni_leipzig_logo_v2_white-01_opt_2.png" alt="TEMIR LOGO" class="uk-logo"> Temir</a>
+                </li>
+            </ul>
+        </div>
+        <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav">
+                <li>
+                    <a href="/people.html">People</a>
+                </li>
+                <li class="nav-group-start">
+                    <a href="#">Lecturenotes</a>
+                    <div class="uk-navbar-dropdown uk-navbar-dropdown-width-3 uk-padding-remove">
+                        <div class="uk-navbar-dropdown-grid" data-uk-grid>
+                            <div class="uk-width-1-3">
+                                <ul class="uk-nav uk-navbar-dropdown-nav uk-padding-small">
+                                    <li><a href="/lecturenotes/overview.html">Overview</a></li>
+                                    <li><a href="/lecturenotes/slides.html">Slides</a></li>
+                                    <li class="nav-left-open-category">Browser</li>
+                                </ul>
+                            </div>
+                            <div class="uk-width-2-3">
+                                <ul class="uk-nav uk-navbar-dropdown-nav nav-right-open-sub uk-padding-small">
+                                    <li><a href="/lecturenotes/browser/algorithms-and-datastructures.html">Algorithmen und Datenstrukturen</a></li>
+                                    <li><a href="/lecturenotes/browser/information-retrieval.html">Information Retrieval</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="/research.html">Research</a>
+                </li>
+                <li>
+                    <a href="/publications.html">Publications</a>
+                </li>
+                <li class="nav-group-start uk-active">
+                    <a href="/data.html">Data</a>
+                </li>
+                <li>
+                    <a href="/facilities.html">Facilities</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<div class="uk-background-secondary mobile-nav global-nav" data-uk-sticky>
+    <div class="uk-navbar-container uk-navbar-transparent uk-container uk-light mobile-nav-toggle" data-uk-navbar>
+        <div class="">
+            <ul class="uk-navbar-nav">
+                <li>
+                    <a href="/"><img src="/img/uni_leipzig_logo_v2_white-01_opt_2.png" alt="TEMIR LOGO" class="uk-logo"> Temir</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="uk-navbar-right">
+            <button class="uk-button uk-navbar-item uk-light uk-button-large" type="button" data-uk-icon="icon: menu"
+                    data-uk-toggle="target: #offcanvas-nav"></button>
+        </div>
+    </div>
+</div>
+
+<div data-uk-height-viewport="expand: true">
+<script type="application/ld+json">
+{
+    "@context":"http://schema.org/",
+    "@type":"Dataset",
+    "name":"Webis-TLDR-17",
+    "description":"The Webis TLDR Corpus (2017) consists of approximately 4 Million content-summary pairs extracted for Abstractive Summarization, from the Reddit dataset for the years 2006-2016. This corpus is first of its kind from the social media domain in English and has been created to compensate the lack of variety in the datasets used for abstractive summarization research using deep learning models. ",
+    "text":"Abstractive summarization is the process of generating intuitive summaries by including novel words like we humans do. Deep learning models have provided encouraging results for generating summaries to relatively short texts. However, the most commonly used corpora are from the news domain which represent only the formal aspect of written text. There is a need for corpora from more informal domains such as social media, whose poorly structured texts present interesting challenges, encouraging further research into abstractive summarization. We believe that the Webis-TLDR-17 corpus shows how various information sources such as discussion forums and blogs can be leveraged to create suitable datasets for summarization. Following is an example of a content-summary pair from the corpus which can be used for abstractive summarization: content I finished Path of Daggers earlier this month and took a break to read I Am Pilgrim ( I HIGHLY recommend ) and I am now ready to start my journey into book 9. One thing , I ' ve forgotten a few plot threads . I can ' t search for them as possible spoilers , so what do I need to know going in ? Oh , and SPOILERS for those not up to here and please , no spoilers for me. I love this series to much for it to be ruined . I know Faile has been taken but I ' m not sure about the other main characters whereabouts and smaller character plots. summary where are the characters at and what are they hoping to do ? People refreshing my memory would be greatly appreciated.",
+    "url":"https://webis.de/data/webis-tldr-17.html",
+    "sameAs":"https://doi.org/10.5281/zenodo.1043504",
+    "keywords":[
+        "summarization", 
+        "summary", 
+        "Abstractive summarization", 
+        "tldr"
+    ], 
+    "datePublished":"2017",
+    "creator":[
+        {
+            "@type":"Organization",
+            "url":"https://webis.de/",
+            "name":"The Web Technology & Information Systems Network",
+            "alternateName":"Webis"
+        },
+        {
+            "@type":"Person", 
+            "url":"http://www.uni-weimar.de/medien/webis/people/#syed",
+            "affiliation":"Bauhaus-Universit\u00e4t Weimar", 
+            "name":"Syed, Shahbaz"
+        },
+        {
+            "@type":"Person", 
+            "url":"http://www.uni-weimar.de/medien/webis/people/#voelske",
+            "affiliation":"Bauhaus-Universit\u00e4t Weimar", 
+            "name":"Michael V\u00F6lske"
+        },
+        {
+            "@type":"Person", 
+            "url":"http://www.uni-weimar.de/medien/webis/people/#potthast",
+            "affiliation":"Bauhaus-Universit\u00e4t Weimar", 
+            "name":"Potthast, Martin"
+        },
+        {
+            "@type":"Person", 
+            "url":"http://www.uni-weimar.de/medien/webis/people/#stein",
+            "affiliation":"Bauhaus-Universit\u00e4t Weimar", 
+            "name":"Stein, Benno"
+        }
+    ],
+    "includedInDataCatalog":{
+        "@type":"DataCatalog",
+        "name":"Webis Data Catalog",
+        "url":"https://webis.de/data/"
+    },
+    "distribution":[
+        {
+            "@type":"DataDownload",
+            "@id":"https://doi.org/10.5281/zenodo.1043504",
+            "url":"https://zenodo.org/record/1043504#.W7cr5BSxVtg"
+        }
+    ]
+}
+</script>
+
+<main class="uk-section uk-section-default">
+    <div class="uk-container">
+        <h1>Webis-TLDR-17</h1>
+
+        <ul class="uk-list">
+            <!-- Comment out sections you do not provide -->
+            <li><span data-uk-icon="chevron-down"></span> <a href="#synopsis">Synopsis</a></li>
+            <li><span data-uk-icon="chevron-down"></span> <a href="#download">Download</a></li>
+            <li><span data-uk-icon="chevron-down"></span> <a href="#research">Research</a></li>
+            <li><span data-uk-icon="chevron-down"></span> <a href="#people">People</a></li>
+            <li><span data-uk-icon="chevron-down"></span> <a href="#publications">Publications</a></li>
+        </ul>
+    </div>
+
+    <div class="uk-container uk-margin-medium">
+        <!--
+        SECTION Synopsis
+        -->
+        <h2 id="synopsis">Synopsis</h2>
+
+        <p>The Webis TLDR Corpus (2017) consists of approximately 4 Million content-summary pairs extracted for Abstractive Summarization, from the Reddit dataset for the years 2006-2016. This corpus is first of its kind from the social media domain in English and has been created to compensate the lack of variety in the datasets used for abstractive summarization research using deep learning models. </p>
+
+
+
+        <!--
+        SECTION Download
+        -->
+        <h2 id="download">Download</h2>
+        <p>To download the corpus use the following link:</p>
+
+        <ul>
+             <li><a href="http://doi.org/10.5281/zenodo.1043504">corpus-webis-tldr-17</a></li>
+        </ul>
+
+        <!-- OPTIONAL -->
+        <p>If you use the dataset in your research, please send us a copy of your publication. We kindly ask you to refer to the corpus via [<a href="https://webis.de/publications.html#filter:bibid:stein_2017s">bib</a>].</p>
+
+        <!--
+        SECTION Research
+        -->
+        <h2 id="research">Research</h2>
+
+        <p>Abstractive summarization is the process of generating intuitive summaries by including novel words like we humans do. Deep learning models have provided encouraging results for generating summaries to relatively short texts. However, the most commonly used corpora are from the news domain which represent only the formal aspect of written text. There is a need for corpora from more informal domains such as social media, whose poorly structured texts present interesting challenges, encouraging further research into abstractive summarization. We believe that the Webis-TLDR-17 corpus shows how various information sources such as discussion forums and blogs can be leveraged to create suitable datasets for summarization. Following is an example of a content-summary pair from the corpus which can be used for abstractive summarization: </p>
+        <p><strong>Content</strong> I finished Path of Daggers earlier this month and took a break to read I Am Pilgrim ( I HIGHLY recommend ) and I am now ready to start my journey into book 9. One thing , I ' ve forgotten a few plot threads . I can ' t search for them as possible spoilers , so what do I need to know going in ? Oh , and SPOILERS for those not up to here and please , no spoilers for me. I love this series to much for it to be ruined . I know Faile has been taken but I ' m not sure about the other main characters whereabouts and smaller character plots </p>
+        <p><strong>Summary</strong> where are the characters at and what are they hoping to do ? People refreshing my memory would be greatly appreciated.</p>    
+
+        <p>For more information on the construction of the dataset see the publication below.</p>
+
+
+        <!--
+        SECTION People
+        -->
+        <h2 id="people">People</h2>
+        <ul>
+            <li><a href="http://www.uni-weimar.de/medien/webis/people/#syed" title="Shahbaz Syed">Shahbaz Syed</a></li>
+            <li><a href="http://www.uni-weimar.de/medien/webis/people/#voelske" title="Michael Voelske">Michael Voelske</a></li>
+            <li><a href="http://www.uni-weimar.de/medien/webis/people/#potthast" title="Martin Potthast">Martin Potthast</a></li>
+            <li><a href="http://www.uni-weimar.de/medien/webis/people/#stein" title="Benno Stein">Benno Stein</a></li>
+        </ul>
+
+	<!--
+	SECTION Publications
+	-->
+	<h2 id="publications">Publications</h2>
+        <div id="publications-list">
+        </div>
+
+        </div>
+</main>
+
+<script src="https://webis.de/js/bibentry.js"></script>
+<script>
+includeBibentries(document.getElementById("publications-list"), "data:corpus-webis-tldr-17");
+</script>
+
+</div>
+
+<footer class="uk-section uk-section-default footer-section">
+    <div class="uk-container">
+        <div class="uk-align-right@m uk-margin-top">
+            Copyright &copy; 2019 Temir Group
+            <address></address>
+        </div>
+    </div>
+</footer>
+
+<script>
+    UIkit.util.ready(() => {
+        const nav = UIkit.util.$(".global-nav");
+        const navHeight = UIkit.util.height(nav);
+
+        // correct scroll offset due to fixed navigation after page load
+        let fixScrollHeight = () => {
+            if (location.hash === "" || !UIkit.util.$(location.hash)) {
+                return;
+            }
+
+            const pos = document.documentElement.scrollTop;
+            const offset = UIkit.util.offset(UIkit.util.$(location.hash));
+
+            if (pos > navHeight * .8 && offset) {
+                document.documentElement.scrollTop = offset.top - navHeight - 20;
+            }
+        };
+
+        window.addEventListener("hashchange", fixScrollHeight, false);
+        setTimeout(fixScrollHeight, 100);
+    });
+</script>
+
+</body>
+</html>

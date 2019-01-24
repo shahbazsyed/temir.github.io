@@ -1,0 +1,1697 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Webis Lecturnotes Browser Logik</title>
+    <meta charset="utf-8">
+    <meta name="description" content="SlideHub is a presentation/slide/talk explorer">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="copyright" content="&copy; 2019 Temir">
+    <link rel="icon" type="image/png" href="/img/favicon.png">
+
+    <link rel="stylesheet" href="/css/style.css?1548321565">
+    <link rel="stylesheet" href="/css/browser.css?1548321565">
+    <link rel="stylesheet" href="/css/browser-compatibility.css?1548321565">
+</head>
+<body class="uk-offcanvas-content">
+<script src="/js/thirdparty/uikit/uikit.min.js"></script>
+<script src="/js/thirdparty/uikit/uikit-icons.min.js"></script>
+
+<div id="offcanvas-nav" class="uk-hidden@m" data-uk-offcanvas="overlay: true; flip: true;">
+    <div class="uk-offcanvas-bar">
+        <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+
+        <!-- Mobile navigation -->
+        <nav class="uk-margin-large-top">
+            <ul class="uk-nav uk-nav-primary uk-nav-parent-icon" data-uk-nav>
+                <li>
+                    <a href="/people.html">People</a>
+                </li>
+                <li class="uk-active" class="uk-parent">
+                    <a href="#">Lecturenotes</a>
+                    <ul class="uk-nav-sub">
+                        <li><a href="/lecturenotes/overview.html">Overview</a></li>
+                        <li><a href="/lecturenotes/slides.html">Slides</a></li>
+                        <li class="uk-parent">
+                            Browser
+                            <ul class="uk-nav-sub">
+                                <li><a href="/lecturenotes/browser/algorithms-and-datastructures.html">Algorithmen und Datenstrukturen</a></li>
+                                <li><a href="/lecturenotes/browser/information-retrieval.html">Information Retrieval</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/research.html">Research</a>
+                </li>
+                <li>
+                    <a href="/publications.html">Publications</a>
+                </li>
+                <li>
+                    <a href="/data.html">Data</a>
+                </li>
+                <li>
+                    <a href="/facilities.html">Facilities</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<div class="uk-background-secondary desktop-nav global-nav" data-uk-sticky="media: @m">
+    <!-- Desktop navigation -->
+    <nav class="uk-navbar-container uk-navbar-transparent uk-container uk-light" data-uk-navbar="mode: click">
+        <div class="uk-navbar-left">
+            <ul class="uk-navbar-nav">
+                <li>
+                    <a href="/"><img src="/img/uni_leipzig_logo_v2_white-01_opt_2.png" alt="TEMIR LOGO" class="uk-logo"> Temir</a>
+                </li>
+            </ul>
+        </div>
+        <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav">
+                <li>
+                    <a href="/people.html">People</a>
+                </li>
+                <li class="nav-group-start uk-active">
+                    <a href="#">Lecturenotes</a>
+                    <div class="uk-navbar-dropdown uk-navbar-dropdown-width-3 uk-padding-remove">
+                        <div class="uk-navbar-dropdown-grid" data-uk-grid>
+                            <div class="uk-width-1-3">
+                                <ul class="uk-nav uk-navbar-dropdown-nav uk-padding-small">
+                                    <li><a href="/lecturenotes/overview.html">Overview</a></li>
+                                    <li><a href="/lecturenotes/slides.html">Slides</a></li>
+                                    <li class="nav-left-open-category">Browser</li>
+                                </ul>
+                            </div>
+                            <div class="uk-width-2-3">
+                                <ul class="uk-nav uk-navbar-dropdown-nav nav-right-open-sub uk-padding-small">
+                                    <li><a href="/lecturenotes/browser/algorithms-and-datastructures.html">Algorithmen und Datenstrukturen</a></li>
+                                    <li><a href="/lecturenotes/browser/information-retrieval.html">Information Retrieval</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="/research.html">Research</a>
+                </li>
+                <li>
+                    <a href="/publications.html">Publications</a>
+                </li>
+                <li class="nav-group-start">
+                    <a href="/data.html">Data</a>
+                </li>
+                <li>
+                    <a href="/facilities.html">Facilities</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<div class="uk-background-secondary mobile-nav global-nav" data-uk-sticky>
+    <div class="uk-navbar-container uk-navbar-transparent uk-container uk-light mobile-nav-toggle" data-uk-navbar>
+        <div class="">
+            <ul class="uk-navbar-nav">
+                <li>
+                    <a href="/"><img src="/img/uni_leipzig_logo_v2_white-01_opt_2.png" alt="TEMIR LOGO" class="uk-logo"> Temir</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="uk-navbar-right">
+            <button class="uk-button uk-navbar-item uk-light uk-button-large" type="button" data-uk-icon="icon: menu"
+                    data-uk-toggle="target: #offcanvas-nav"></button>
+        </div>
+    </div>
+</div>
+
+<div data-uk-height-viewport="expand: true">
+<script src="/js/browser.js"></script>
+
+<main class="uk-margin-medium" data-slidehub="">
+<!-- SlideHub will hook itself as a child element into [data-slidehub] -->
+<div class="slidehub-container">
+
+<!-- units start -->
+
+
+
+<div class="sh-doc" id="unit-de-logics-organization.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/logics/unit-de-logics-organization.pdf" style="--sh-pages: 5"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Logik Theo Lettmann" src="https://webis.de/downloads/lecturenotes/logics/unit-de-logics-organization/unit-de-logics-organization-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Inhalt I. Einführung" src="https://webis.de/downloads/lecturenotes/logics/unit-de-logics-organization/unit-de-logics-organization-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Ziele Wie können aus vorhandenem Wissen Schlussfolgerungen gezogen werden?" src="https://webis.de/downloads/lecturenotes/logics/unit-de-logics-organization/unit-de-logics-organization-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Angrenzende Gebiete 1. Formale Sprachen" src="https://webis.de/downloads/lecturenotes/logics/unit-de-logics-organization/unit-de-logics-organization-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Literatur " src="https://webis.de/downloads/lecturenotes/logics/unit-de-logics-organization/unit-de-logics-organization-5.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-de-propositional-basics.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-basics.pdf" style="--sh-pages: 58"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Kapitel L:II II. Aussagenlogik" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-basics/unit-de-propositional-basics-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Syntax der Aussagenlogik Definition 1 (Sprache der Aussagenlogik)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-basics/unit-de-propositional-basics-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-basics/unit-de-propositional-basics-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Syntax der Aussagenlogik Vereinbarungen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-basics/unit-de-propositional-basics-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Syntax der Aussagenlogik Definition 3 (atoms(α))" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-basics/unit-de-propositional-basics-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Syntax der Aussagenlogik" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-basics/unit-de-propositional-basics-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-basics/unit-de-propositional-basics-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Syntax der Aussagenlogik Definition 4 (Formellänge |α|)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-basics/unit-de-propositional-basics-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Syntax der Aussagenlogik Definition 4 (Formellänge |α|)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-basics/unit-de-propositional-basics-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Semantik der Aussagenlogik Definition 5 (Bewertung, Interpretation)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-basics/unit-de-propositional-basics-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-basics/unit-de-propositional-basics-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Semantik der Aussagenlogik Definition 6 (Bewertung aussagenlogischer Formeln)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-basics/unit-de-propositional-basics-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Semantik der Aussagenlogik Definition 6 (Bewertung aussagenlogischer Formeln" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-basics/unit-de-propositional-basics-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-basics/unit-de-propositional-basics-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="Semantik der Aussagenlogik Die Formalisierung von Aussagen über die Realität mittels der Sprache der" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-basics/unit-de-propositional-basics-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="Semantik der Aussagenlogik Die Formalisierung von Aussagen über die Realität mittels der Sprache der" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-basics/unit-de-propositional-basics-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="Semantik der Aussagenlogik Die Formalisierung von Aussagen über die Realität mittels der Sprache der" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-basics/unit-de-propositional-basics-17.png"></div>
+
+<div class="sh-page" data-page="18"><img alt="Semantik der Aussagenlogik Die Formalisierung von Aussagen über die Realität mittels der Sprache der" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-basics/unit-de-propositional-basics-18.png"></div>
+
+<div class="sh-page" data-page="19"><img alt="Semantik der Aussagenlogik Die Formalisierung von Aussagen über die Realität mittels der Sprache der" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-basics/unit-de-propositional-basics-19.png"></div>
+
+<div class="sh-page" data-page="20"><img alt="Semantik der Aussagenlogik Satz 7 (Koinzidenztheorem)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-basics/unit-de-propositional-basics-20.png"></div>
+
+<div class="sh-page" data-page="21"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-basics/unit-de-propositional-basics-21.png"></div>
+
+<div class="sh-page" data-page="22"><img alt="Semantik der Aussagenlogik Definition 8 (Wahrheitstafel)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-basics/unit-de-propositional-basics-22.png"></div>
+
+<div class="sh-page" data-page="23"><img alt="Semantik der Aussagenlogik Definition 8 (Wahrheitstafel)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-basics/unit-de-propositional-basics-23.png"></div>
+
+<div class="sh-page" data-page="24"><img alt="Semantik der Aussagenlogik Definition 8 (Wahrheitstafel)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-basics/unit-de-propositional-basics-24.png"></div>
+
+<div class="sh-page" data-page="25"><img alt="Semantik der Aussagenlogik Definition 8 (Wahrheitstafel)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-basics/unit-de-propositional-basics-25.png"></div>
+
+<div class="sh-page" data-page="26"><img alt="Semantik der Aussagenlogik Definition 8 (Wahrheitstafel)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-basics/unit-de-propositional-basics-26.png"></div>
+
+<div class="sh-page" data-page="27"><img alt="Semantik der Aussagenlogik Definition 9 (Erfüllbarkeitsbegriffe)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-basics/unit-de-propositional-basics-27.png"></div>
+
+<div class="sh-page" data-page="28"><img alt="Semantik der Aussagenlogik Definition 9 (Erfüllbarkeitsbegriffe)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-basics/unit-de-propositional-basics-28.png"></div>
+
+<div class="sh-page" data-page="29"><img alt="Semantik der Aussagenlogik Definition 9 (Erfüllbarkeitsbegriffe)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-basics/unit-de-propositional-basics-29.png"></div>
+
+<div class="sh-page" data-page="30"><img alt="Semantik der Aussagenlogik Definition 9 (Erfüllbarkeitsbegriffe)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-basics/unit-de-propositional-basics-30.png"></div>
+
+<div class="sh-page" data-page="31"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-basics/unit-de-propositional-basics-31.png"></div>
+
+<div class="sh-page" data-page="32"><img alt="Semantik der Aussagenlogik Satz 10 (Erfüllbarkeitsbegriffe)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-basics/unit-de-propositional-basics-32.png"></div>
+
+<div class="sh-page" data-page="33"><img alt="Semantik der Aussagenlogik Definition 11 (Semantische Folgerung)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-basics/unit-de-propositional-basics-33.png"></div>
+
+<div class="sh-page" data-page="34"><img alt="Semantik der Aussagenlogik Definition 11 (Semantische Folgerung)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-basics/unit-de-propositional-basics-34.png"></div>
+
+<div class="sh-page" data-page="35"><img alt="Semantik der Aussagenlogik Definition 11 (Semantische Folgerung)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-basics/unit-de-propositional-basics-35.png"></div>
+
+<div class="sh-page" data-page="36"><img alt="Semantik der Aussagenlogik Zeichen der Objektsprache" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-basics/unit-de-propositional-basics-36.png"></div>
+
+<div class="sh-page" data-page="37"><img alt="Semantik der Aussagenlogik Zeichen der Metasprache" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-basics/unit-de-propositional-basics-37.png"></div>
+
+<div class="sh-page" data-page="38"><img alt="Semantik der Aussagenlogik Zeichen der Metasprache" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-basics/unit-de-propositional-basics-38.png"></div>
+
+<div class="sh-page" data-page="39"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-basics/unit-de-propositional-basics-39.png"></div>
+
+<div class="sh-page" data-page="40"><img alt="Semantik der Aussagenlogik Beispiele für Formeln aus Aussagenlogik und Algebra:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-basics/unit-de-propositional-basics-40.png"></div>
+
+<div class="sh-page" data-page="41"><img alt="Semantik der Aussagenlogik Beispiele für Formeln aus Aussagenlogik und Algebra:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-basics/unit-de-propositional-basics-41.png"></div>
+
+<div class="sh-page" data-page="42"><img alt="Semantik der Aussagenlogik Beispiele für Formeln aus Aussagenlogik und Algebra:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-basics/unit-de-propositional-basics-42.png"></div>
+
+<div class="sh-page" data-page="43"><img alt="Semantik der Aussagenlogik Weitere Vereinbarungen zur Syntax:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-basics/unit-de-propositional-basics-43.png"></div>
+
+<div class="sh-page" data-page="44"><img alt="Bemerkungen: ∅ |= β ⇔ β tautologisch" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-basics/unit-de-propositional-basics-44.png"></div>
+
+<div class="sh-page" data-page="45"><img alt="Eigenschaften des Folgerungsbegriffs Lemma 12 (über aussagenlogische Formeln α und β)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-basics/unit-de-propositional-basics-45.png"></div>
+
+<div class="sh-page" data-page="46"><img alt="Eigenschaften des Folgerungsbegriffs Lemma 13 (Deduktionstheorem)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-basics/unit-de-propositional-basics-46.png"></div>
+
+<div class="sh-page" data-page="47"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-basics/unit-de-propositional-basics-47.png"></div>
+
+<div class="sh-page" data-page="48"><img alt="Eigenschaften des Folgerungsbegriffs Beweis (Deduktionstheorem)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-basics/unit-de-propositional-basics-48.png"></div>
+
+<div class="sh-page" data-page="49"><img alt="Eigenschaften des Folgerungsbegriffs Korollar 14 (Deduktionstheorem für endliches M )" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-basics/unit-de-propositional-basics-49.png"></div>
+
+<div class="sh-page" data-page="50"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-basics/unit-de-propositional-basics-50.png"></div>
+
+<div class="sh-page" data-page="51"><img alt="Äquivalenz Problematik:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-basics/unit-de-propositional-basics-51.png"></div>
+
+<div class="sh-page" data-page="52"><img alt="Äquivalenz Definition 16 (logische Äquivalenz)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-basics/unit-de-propositional-basics-52.png"></div>
+
+<div class="sh-page" data-page="53"><img alt="Äquivalenz Lemma 17" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-basics/unit-de-propositional-basics-53.png"></div>
+
+<div class="sh-page" data-page="54"><img alt="Äquivalenz Wichtige Äquivalenzen zur Formeltransformation\u002f-vereinfachung" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-basics/unit-de-propositional-basics-54.png"></div>
+
+<div class="sh-page" data-page="55"><img alt="Äquivalenz Wichtige Äquivalenzen zur Formeltransformation\u002f-vereinfachung" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-basics/unit-de-propositional-basics-55.png"></div>
+
+<div class="sh-page" data-page="56"><img alt="Äquivalenz Definition 18 (Erfüllbarkeitsäquivalenz)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-basics/unit-de-propositional-basics-56.png"></div>
+
+<div class="sh-page" data-page="57"><img alt="Äquivalenz Veranschaulichung der Formeln hinsichtlich ihrer Erfüllbarkeit:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-basics/unit-de-propositional-basics-57.png"></div>
+
+<div class="sh-page" data-page="58"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-basics/unit-de-propositional-basics-58.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-de-propositional-transformation.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-transformation.pdf" style="--sh-pages: 33"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Kapitel L:II II. Aussagenlogik" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-transformation/unit-de-propositional-transformation-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Formeltransformation Jede Formel kann als Datenstruktur in der Form eines Baumes interpretiert" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-transformation/unit-de-propositional-transformation-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Formeltransformation Die Ersetzung eines Vorkommens von γ in α durch δ entspricht der Ersetzung" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-transformation/unit-de-propositional-transformation-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Formeltransformation Aus Sicht der maschinellen Verarbeitung hätte man gerne kanonische Formeln" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-transformation/unit-de-propositional-transformation-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Formeltransformation Aus Sicht der maschinellen Verarbeitung hätte man gerne kanonische Formeln" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-transformation/unit-de-propositional-transformation-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Normalformen Erste Stufe einer Normalisierung:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-transformation/unit-de-propositional-transformation-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Normalformen Erste Stufe einer Normalisierung:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-transformation/unit-de-propositional-transformation-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Normalformen Definition 16 (Negationsnormalform)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-transformation/unit-de-propositional-transformation-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Normalformen Algorithmus:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-transformation/unit-de-propositional-transformation-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Normalformen Definition 18 (Literal)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-transformation/unit-de-propositional-transformation-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Normalformen Definition 20 (Konjunktive Normalform)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-transformation/unit-de-propositional-transformation-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Normalformen Lemma 21 (logisch äquivalente KNF)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-transformation/unit-de-propositional-transformation-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Normalformen Algorithmus:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-transformation/unit-de-propositional-transformation-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="Normalformen Beispiel zum exponentiellen Platzbedarf." src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-transformation/unit-de-propositional-transformation-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="Normalformen Beispiel zum exponentiellen Platzbedarf." src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-transformation/unit-de-propositional-transformation-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="Normalformen Beispiel zum exponentiellen Platzbedarf." src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-transformation/unit-de-propositional-transformation-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="Formeltransformation nach Tseitin Andere Idee zur Erzeugung einer KNF aus α:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-transformation/unit-de-propositional-transformation-17.png"></div>
+
+<div class="sh-page" data-page="18"><img alt="Formeltransformation nach Tseitin ∧" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-transformation/unit-de-propositional-transformation-18.png"></div>
+
+<div class="sh-page" data-page="19"><img alt="Formeltransformation nach Tseitin ∧" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-transformation/unit-de-propositional-transformation-19.png"></div>
+
+<div class="sh-page" data-page="20"><img alt="Formeltransformation nach Tseitin ∧" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-transformation/unit-de-propositional-transformation-20.png"></div>
+
+<div class="sh-page" data-page="21"><img alt="Formeltransformation nach Tseitin ∧" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-transformation/unit-de-propositional-transformation-21.png"></div>
+
+<div class="sh-page" data-page="22"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-transformation/unit-de-propositional-transformation-22.png"></div>
+
+<div class="sh-page" data-page="23"><img alt="Formeltransformation nach Tseitin Lemma 22 (erfüllbarkeitsäquivalente KNF)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-transformation/unit-de-propositional-transformation-23.png"></div>
+
+<div class="sh-page" data-page="24"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-transformation/unit-de-propositional-transformation-24.png"></div>
+
+<div class="sh-page" data-page="25"><img alt="Normalformen Frage: Gegeben eine Formel ∈ KNF. Inwieweit lassen sich die Klausellängen" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-transformation/unit-de-propositional-transformation-25.png"></div>
+
+<div class="sh-page" data-page="26"><img alt="Normalformen Frage: Gegeben eine Formel ∈ KNF. Inwieweit lassen sich die Klausellängen" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-transformation/unit-de-propositional-transformation-26.png"></div>
+
+<div class="sh-page" data-page="27"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-transformation/unit-de-propositional-transformation-27.png"></div>
+
+<div class="sh-page" data-page="28"><img alt="Normalformen Definition 25 (disjunktive Normalform)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-transformation/unit-de-propositional-transformation-28.png"></div>
+
+<div class="sh-page" data-page="29"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-transformation/unit-de-propositional-transformation-29.png"></div>
+
+<div class="sh-page" data-page="30"><img alt="Normalformen Definition 27 (duale Formel)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-transformation/unit-de-propositional-transformation-30.png"></div>
+
+<div class="sh-page" data-page="31"><img alt="Normalformen Lemma 28 (duale Formeln und Erfüllbarkeit)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-transformation/unit-de-propositional-transformation-31.png"></div>
+
+<div class="sh-page" data-page="32"><img alt="Normalformen Definition 29 (Mengenschreibweise für Formeln in KNF)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-transformation/unit-de-propositional-transformation-32.png"></div>
+
+<div class="sh-page" data-page="33"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-transformation/unit-de-propositional-transformation-33.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-de-propositional-sat-semantical.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-sat-semantical.pdf" style="--sh-pages: 22"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Kapitel L:II II. Aussagenlogik" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-sat-semantical/unit-de-propositional-sat-semantical-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Bedeutung der Folgerung Q. Warum ist der Begriff der Folgerung so wichtig?" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-sat-semantical/unit-de-propositional-sat-semantical-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Bedeutung der Folgerung Q. Warum ist der Begriff der Folgerung so wichtig?" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-sat-semantical/unit-de-propositional-sat-semantical-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Bedeutung der Folgerung Q. Warum ist der Begriff der Folgerung so wichtig?" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-sat-semantical/unit-de-propositional-sat-semantical-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Bedeutung der Folgerung Q. Wenn Folgern lediglich Explizitmachen ist, warum hat dann das Überprüfen oder Erzeugen" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-sat-semantical/unit-de-propositional-sat-semantical-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Bedeutung der Folgerung Q. Wenn Folgern lediglich Explizitmachen ist, warum hat dann das Überprüfen oder Erzeugen" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-sat-semantical/unit-de-propositional-sat-semantical-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Erfüllbarkeitsalgorithmen Q. Was hat die Beantwortung der Folgerungsfrage „Gilt α |= β ?“ mit dem" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-sat-semantical/unit-de-propositional-sat-semantical-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Erfüllbarkeitsalgorithmen Verschiedene Möglichkeiten, die Erfüllbarkeit einer Formel α zu entscheiden." src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-sat-semantical/unit-de-propositional-sat-semantical-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Erfüllbarkeitsalgorithmen Verschiedene Möglichkeiten, die Erfüllbarkeit einer Formel α zu entscheiden." src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-sat-semantical/unit-de-propositional-sat-semantical-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Erfüllbarkeitsalgorithmen Semantische Bäume" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-sat-semantical/unit-de-propositional-sat-semantical-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-sat-semantical/unit-de-propositional-sat-semantical-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Semantische Bäume Definition 23 (1-Äquivalenzen, 0-Äquivalenzen)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-sat-semantical/unit-de-propositional-sat-semantical-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Semantische Bäume Definition 24 (1-Reduktion, 0-Reduktion)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-sat-semantical/unit-de-propositional-sat-semantical-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="Semantische Bäume α" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-sat-semantical/unit-de-propositional-sat-semantical-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="Semantische Bäume Beschränkung der Formelstruktur: Sei α ∈ KNF, A ∈ atoms(α)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-sat-semantical/unit-de-propositional-sat-semantical-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="Weiterentwicklung semantischer Bäume Verbesserung von SPLIT-SAT." src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-sat-semantical/unit-de-propositional-sat-semantical-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="Weiterentwicklung semantischer Bäume Verallgemeinerung von α[A\u002f1]." src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-sat-semantical/unit-de-propositional-sat-semantical-17.png"></div>
+
+<div class="sh-page" data-page="18"><img alt="Weiterentwicklung semantischer Bäume Davis-Putnam-Algorithmus" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-sat-semantical/unit-de-propositional-sat-semantical-18.png"></div>
+
+<div class="sh-page" data-page="19"><img alt="Weiterentwicklung semantischer Bäume Beispiel für DPLL-SAT:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-sat-semantical/unit-de-propositional-sat-semantical-19.png"></div>
+
+<div class="sh-page" data-page="20"><img alt="Weiterentwicklung semantischer Bäume Auswahlkriterien für Splittingregel:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-sat-semantical/unit-de-propositional-sat-semantical-20.png"></div>
+
+<div class="sh-page" data-page="21"><img alt="Weiterentwicklung semantischer Bäume Auswahlkriterien für Splittingregel:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-sat-semantical/unit-de-propositional-sat-semantical-21.png"></div>
+
+<div class="sh-page" data-page="22"><img alt="Weiterentwicklung semantischer Bäume Auswahlkriterien für Splittingregel:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-sat-semantical/unit-de-propositional-sat-semantical-22.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-de-propositional-sat-syntactical.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-sat-syntactical.pdf" style="--sh-pages: 56"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Kapitel L:II II. Aussagenlogik" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-sat-syntactical/unit-de-propositional-sat-syntactical-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Syntaktische Schlussfolgerungsverfahren Ausgangspunkt ist die Frage: „Gilt α |= β ?“" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-sat-syntactical/unit-de-propositional-sat-syntactical-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Syntaktische Schlussfolgerungsverfahren Definition 25 (Schlussregel, Kalkül)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-sat-syntactical/unit-de-propositional-sat-syntactical-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-sat-syntactical/unit-de-propositional-sat-syntactical-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Syntaktische Schlussfolgerungsverfahren Definition 26 (Herleiten, syntaktisches Schlussfolgern)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-sat-syntactical/unit-de-propositional-sat-syntactical-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-sat-syntactical/unit-de-propositional-sat-syntactical-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Syntaktische Schlussfolgerungsverfahren Die Schlussregel Modus Ponens, MP (drei Schreibweisen)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-sat-syntactical/unit-de-propositional-sat-syntactical-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Syntaktische Schlussfolgerungsverfahren Die Schlussregel Modus Ponens, MP (drei Schreibweisen)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-sat-syntactical/unit-de-propositional-sat-syntactical-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-sat-syntactical/unit-de-propositional-sat-syntactical-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Syntaktische Schlussfolgerungsverfahren Eigenschaften von Kalkülen" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-sat-syntactical/unit-de-propositional-sat-syntactical-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Syntaktische Schlussfolgerungsverfahren Eigenschaften von Kalkülen" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-sat-syntactical/unit-de-propositional-sat-syntactical-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Syntaktische Schlussfolgerungsverfahren Eigenschaften von Kalkülen" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-sat-syntactical/unit-de-propositional-sat-syntactical-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-sat-syntactical/unit-de-propositional-sat-syntactical-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="Syntaktische Schlussfolgerungsverfahren Korrektheit der Schlussregel MP" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-sat-syntactical/unit-de-propositional-sat-syntactical-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="Syntaktische Schlussfolgerungsverfahren Vollständigkeit des MP" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-sat-syntactical/unit-de-propositional-sat-syntactical-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="Syntaktische Schlussfolgerungsverfahren Vollständigkeit des MP" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-sat-syntactical/unit-de-propositional-sat-syntactical-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-sat-syntactical/unit-de-propositional-sat-syntactical-17.png"></div>
+
+<div class="sh-page" data-page="18"><img alt="Syntaktische Schlussfolgerungsverfahren Beispiel: Herleitung von β aus α = γ ∧ (¬γ ∨ β)." src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-sat-syntactical/unit-de-propositional-sat-syntactical-18.png"></div>
+
+<div class="sh-page" data-page="19"><img alt="Syntaktische Schlussfolgerungsverfahren Beispiel: Herleitung von β aus α = γ ∧ (¬γ ∨ β)." src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-sat-syntactical/unit-de-propositional-sat-syntactical-19.png"></div>
+
+<div class="sh-page" data-page="20"><img alt="Syntaktische Schlussfolgerungsverfahren Beispiel: Herleitung von β aus α = γ ∧ (¬γ ∨ β)." src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-sat-syntactical/unit-de-propositional-sat-syntactical-20.png"></div>
+
+<div class="sh-page" data-page="21"><img alt="Syntaktische Schlussfolgerungsverfahren Beispiel: Herleitung von β aus α = γ ∧ (¬γ ∨ β)." src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-sat-syntactical/unit-de-propositional-sat-syntactical-21.png"></div>
+
+<div class="sh-page" data-page="22"><img alt="Syntaktische Schlussfolgerungsverfahren Weitere Schlussregeln sind denkbar – z. B. der Kettenschluss, KS:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-sat-syntactical/unit-de-propositional-sat-syntactical-22.png"></div>
+
+<div class="sh-page" data-page="23"><img alt="L:II-136 " src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-sat-syntactical/unit-de-propositional-sat-syntactical-23.png"></div>
+
+<div class="sh-page" data-page="24"><img alt="Syntaktische Schlussfolgerungsverfahren Die Schlussregel Resolution (Formeln in KNF, Mengenschreibweise)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-sat-syntactical/unit-de-propositional-sat-syntactical-24.png"></div>
+
+<div class="sh-page" data-page="25"><img alt="Syntaktische Schlussfolgerungsverfahren Die Schlussregel Resolution (Formeln in KNF, Mengenschreibweise)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-sat-syntactical/unit-de-propositional-sat-syntactical-25.png"></div>
+
+<div class="sh-page" data-page="26"><img alt="Syntaktische Schlussfolgerungsverfahren Die Schlussregel Resolution" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-sat-syntactical/unit-de-propositional-sat-syntactical-26.png"></div>
+
+<div class="sh-page" data-page="27"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-sat-syntactical/unit-de-propositional-sat-syntactical-27.png"></div>
+
+<div class="sh-page" data-page="28"><img alt="Syntaktische Schlussfolgerungsverfahren Definition 28 (Resolutionskalkül)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-sat-syntactical/unit-de-propositional-sat-syntactical-28.png"></div>
+
+<div class="sh-page" data-page="29"><img alt="Syntaktische Schlussfolgerungsverfahren Definition 28 (Resolutionskalkül)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-sat-syntactical/unit-de-propositional-sat-syntactical-29.png"></div>
+
+<div class="sh-page" data-page="30"><img alt="Syntaktische Schlussfolgerungsverfahren Beispiel (Input-Resolution)." src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-sat-syntactical/unit-de-propositional-sat-syntactical-30.png"></div>
+
+<div class="sh-page" data-page="31"><img alt="Syntaktische Schlussfolgerungsverfahren Beispiel." src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-sat-syntactical/unit-de-propositional-sat-syntactical-31.png"></div>
+
+<div class="sh-page" data-page="32"><img alt="Syntaktische Schlussfolgerungsverfahren Beispiel (reguläre Resolution)." src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-sat-syntactical/unit-de-propositional-sat-syntactical-32.png"></div>
+
+<div class="sh-page" data-page="33"><img alt="Syntaktische Schlussfolgerungsverfahren Beispiel (reguläre Resolution)." src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-sat-syntactical/unit-de-propositional-sat-syntactical-33.png"></div>
+
+<div class="sh-page" data-page="34"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-sat-syntactical/unit-de-propositional-sat-syntactical-34.png"></div>
+
+<div class="sh-page" data-page="35"><img alt="Syntaktische Schlussfolgerungsverfahren Beispiel (lineare Resolution immer möglich)." src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-sat-syntactical/unit-de-propositional-sat-syntactical-35.png"></div>
+
+<div class="sh-page" data-page="36"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-sat-syntactical/unit-de-propositional-sat-syntactical-36.png"></div>
+
+<div class="sh-page" data-page="37"><img alt="Syntaktische Schlussfolgerungsverfahren Beispiel." src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-sat-syntactical/unit-de-propositional-sat-syntactical-37.png"></div>
+
+<div class="sh-page" data-page="38"><img alt="Syntaktische Schlussfolgerungsverfahren Satz 29 (Syntax und Semantik im Resolutionskalkül)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-sat-syntactical/unit-de-propositional-sat-syntactical-38.png"></div>
+
+<div class="sh-page" data-page="39"><img alt="Syntaktische Schlussfolgerungsverfahren Satz 29 (Syntax und Semantik im Resolutionskalkül)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-sat-syntactical/unit-de-propositional-sat-syntactical-39.png"></div>
+
+<div class="sh-page" data-page="40"><img alt="Syntaktische Schlussfolgerungsverfahren Satz 29 (Syntax und Semantik im Resolutionskalkül)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-sat-syntactical/unit-de-propositional-sat-syntactical-40.png"></div>
+
+<div class="sh-page" data-page="41"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-sat-syntactical/unit-de-propositional-sat-syntactical-41.png"></div>
+
+<div class="sh-page" data-page="42"><img alt="Syntaktische Schlussfolgerungsverfahren Beweis (Skizze)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-sat-syntactical/unit-de-propositional-sat-syntactical-42.png"></div>
+
+<div class="sh-page" data-page="43"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-sat-syntactical/unit-de-propositional-sat-syntactical-43.png"></div>
+
+<div class="sh-page" data-page="44"><img alt="Syntaktische Schlussfolgerungsverfahren Satz 30 (Laufzeit des Resolutionskalküls)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-sat-syntactical/unit-de-propositional-sat-syntactical-44.png"></div>
+
+<div class="sh-page" data-page="45"><img alt="Syntaktische Schlussfolgerungsverfahren Satz 30 (Laufzeit des Resolutionskalküls)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-sat-syntactical/unit-de-propositional-sat-syntactical-45.png"></div>
+
+<div class="sh-page" data-page="46"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-sat-syntactical/unit-de-propositional-sat-syntactical-46.png"></div>
+
+<div class="sh-page" data-page="47"><img alt="Syntaktische Schlussfolgerungsverfahren Die Varianten des Resolutionskalküls können als verschiedene Strategien" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-sat-syntactical/unit-de-propositional-sat-syntactical-47.png"></div>
+
+<div class="sh-page" data-page="48"><img alt="Syntaktische Schlussfolgerungsverfahren zu 1. Varianten in der Struktur des Herleitungsbaums" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-sat-syntactical/unit-de-propositional-sat-syntactical-48.png"></div>
+
+<div class="sh-page" data-page="49"><img alt="Syntaktische Schlussfolgerungsverfahren zu 2. Varianten semantischer Konzepte" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-sat-syntactical/unit-de-propositional-sat-syntactical-49.png"></div>
+
+<div class="sh-page" data-page="50"><img alt="Syntaktische Schlussfolgerungsverfahren zu 2. Varianten semantischer Konzepte" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-sat-syntactical/unit-de-propositional-sat-syntactical-50.png"></div>
+
+<div class="sh-page" data-page="51"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-sat-syntactical/unit-de-propositional-sat-syntactical-51.png"></div>
+
+<div class="sh-page" data-page="52"><img alt="Syntaktische Schlussfolgerungsverfahren zu 2. Varianten semantischer Konzepte" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-sat-syntactical/unit-de-propositional-sat-syntactical-52.png"></div>
+
+<div class="sh-page" data-page="53"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-sat-syntactical/unit-de-propositional-sat-syntactical-53.png"></div>
+
+<div class="sh-page" data-page="54"><img alt="Syntaktische Schlussfolgerungsverfahren Wichtige Resultate für Resolutionskalküle" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-sat-syntactical/unit-de-propositional-sat-syntactical-54.png"></div>
+
+<div class="sh-page" data-page="55"><img alt="Syntaktische Schlussfolgerungsverfahren Wichtige Resultate für Resolutionskalküle" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-sat-syntactical/unit-de-propositional-sat-syntactical-55.png"></div>
+
+<div class="sh-page" data-page="56"><img alt="Syntaktische Schlussfolgerungsverfahren Zusammenfassung" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-sat-syntactical/unit-de-propositional-sat-syntactical-56.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-de-propositional-complexity.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-complexity.pdf" style="--sh-pages: 18"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Kapitel L:II II. Aussagenlogik" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-complexity/unit-de-propositional-complexity-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Erfüllbarkeitsprobleme Wiederholung (theoretische Informatik)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-complexity/unit-de-propositional-complexity-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Erfüllbarkeitsprobleme Wiederholung (theoretische Informatik)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-complexity/unit-de-propositional-complexity-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Erfüllbarkeitsprobleme Wiederholung (theoretische Informatik)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-complexity/unit-de-propositional-complexity-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-complexity/unit-de-propositional-complexity-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Erfüllbarkeitsprobleme Wiederholung (theoretische Informatik)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-complexity/unit-de-propositional-complexity-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-complexity/unit-de-propositional-complexity-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Erfüllbarkeitsprobleme Wiederholung (theoretische Informatik)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-complexity/unit-de-propositional-complexity-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Erfüllbarkeitsprobleme Definition 39 (SAT∗)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-complexity/unit-de-propositional-complexity-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Erfüllbarkeitsprobleme Definition 41 (SAT)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-complexity/unit-de-propositional-complexity-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Erfüllbarkeitsprobleme Definition 43 (3SAT)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-complexity/unit-de-propositional-complexity-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Erfüllbarkeitsprobleme Wiederholung (theoretische Informatik)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-complexity/unit-de-propositional-complexity-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Erfüllbarkeitsprobleme Definition 46 (DEDUCT)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-complexity/unit-de-propositional-complexity-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="Erfüllbarkeitsprobleme Definition 48 (EQUIV)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-complexity/unit-de-propositional-complexity-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="Erfüllbarkeitsprobleme Definition 50 (2SAT)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-complexity/unit-de-propositional-complexity-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="Erfüllbarkeitsprobleme Beweis (Skizze: Komplexität von 2SAT)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-complexity/unit-de-propositional-complexity-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="Erfüllbarkeitsprobleme Definition 52 (SAT-Probleme in HORN)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-complexity/unit-de-propositional-complexity-17.png"></div>
+
+<div class="sh-page" data-page="18"><img alt="Erfüllbarkeitsprobleme " src="https://webis.de/downloads/lecturenotes/logics/unit-de-propositional-complexity/unit-de-propositional-complexity-18.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-de-predicate-basics.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-basics.pdf" style="--sh-pages: 36"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Kapitel L:III III. Prädikatenlogik" src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-basics/unit-de-predicate-basics-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Prädikatenlogik Modell, Formalisierung und natürliche Sprache." src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-basics/unit-de-predicate-basics-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Prädikatenlogik Beispiel „Graphentheorie“." src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-basics/unit-de-predicate-basics-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Prädikatenlogik Beispiel „Graphentheorie“ – Formalisierung der Frage." src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-basics/unit-de-predicate-basics-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Prädikatenlogik Beispiel „Graphentheorie“ – alternative Axiomatisierung." src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-basics/unit-de-predicate-basics-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Prädikatenlogik Beispiel „Blocks World“." src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-basics/unit-de-predicate-basics-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Prädikatenlogik Beispiel „Blocks World“." src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-basics/unit-de-predicate-basics-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Prädikatenlogik Charakteristika der Prädikatenlogik erster Stufe:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-basics/unit-de-predicate-basics-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-basics/unit-de-predicate-basics-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Syntax der Prädikatenlogik Definition 1 (Sprache der Prädikatenlogik, Signatur)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-basics/unit-de-predicate-basics-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Syntax der Prädikatenlogik Definition 2 (Terme)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-basics/unit-de-predicate-basics-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Syntax der Prädikatenlogik Definition 3 (prädikatenlogische Formeln)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-basics/unit-de-predicate-basics-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-basics/unit-de-predicate-basics-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="Syntax der Prädikatenlogik Beispiele." src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-basics/unit-de-predicate-basics-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="Syntax der Prädikatenlogik Beispiel „Stetigkeit in x0“." src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-basics/unit-de-predicate-basics-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="Syntax der Prädikatenlogik Beispiel „Stetigkeit in x0“." src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-basics/unit-de-predicate-basics-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="Syntax der Prädikatenlogik Bindungsstärke:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-basics/unit-de-predicate-basics-17.png"></div>
+
+<div class="sh-page" data-page="18"><img alt="Syntax der Prädikatenlogik" src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-basics/unit-de-predicate-basics-18.png"></div>
+
+<div class="sh-page" data-page="19"><img alt="Syntax der Prädikatenlogik Definition 4 (enthaltene Variablen)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-basics/unit-de-predicate-basics-19.png"></div>
+
+<div class="sh-page" data-page="20"><img alt="Syntax der Prädikatenlogik Definition 5 (gebundene und freie Variablen)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-basics/unit-de-predicate-basics-20.png"></div>
+
+<div class="sh-page" data-page="21"><img alt="Syntax der Prädikatenlogik Definition 6 (geschlossene Formel)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-basics/unit-de-predicate-basics-21.png"></div>
+
+<div class="sh-page" data-page="22"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-basics/unit-de-predicate-basics-22.png"></div>
+
+<div class="sh-page" data-page="23"><img alt="Semantik der Prädikatenlogik Definition 7 (Interpretation)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-basics/unit-de-predicate-basics-23.png"></div>
+
+<div class="sh-page" data-page="24"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-basics/unit-de-predicate-basics-24.png"></div>
+
+<div class="sh-page" data-page="25"><img alt="Semantik der Prädikatenlogik Beispiel." src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-basics/unit-de-predicate-basics-25.png"></div>
+
+<div class="sh-page" data-page="26"><img alt="Semantik der Prädikatenlogik Definition 7 (Interpretation – Fortsetzung)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-basics/unit-de-predicate-basics-26.png"></div>
+
+<div class="sh-page" data-page="27"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-basics/unit-de-predicate-basics-27.png"></div>
+
+<div class="sh-page" data-page="28"><img alt="Semantik der Prädikatenlogik Definition 7 (Interpretation – Fortsetzung)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-basics/unit-de-predicate-basics-28.png"></div>
+
+<div class="sh-page" data-page="29"><img alt="Semantik der Prädikatenlogik Lemma 8 (Koinzidenztheorem)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-basics/unit-de-predicate-basics-29.png"></div>
+
+<div class="sh-page" data-page="30"><img alt="Semantik der Prädikatenlogik Beispiel." src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-basics/unit-de-predicate-basics-30.png"></div>
+
+<div class="sh-page" data-page="31"><img alt="Semantik der Prädikatenlogik Analog zur Aussagenlogik seien folgende Begriffe definiert:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-basics/unit-de-predicate-basics-31.png"></div>
+
+<div class="sh-page" data-page="32"><img alt="Semantik der Prädikatenlogik Lemma 9" src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-basics/unit-de-predicate-basics-32.png"></div>
+
+<div class="sh-page" data-page="33"><img alt="Wichtige Äquivalenzen Lemma 11" src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-basics/unit-de-predicate-basics-33.png"></div>
+
+<div class="sh-page" data-page="34"><img alt="Wichtige Äquivalenzen Vererbung" src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-basics/unit-de-predicate-basics-34.png"></div>
+
+<div class="sh-page" data-page="35"><img alt="Wichtige Äquivalenzen (Fortsetzung) Quantorwechsel" src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-basics/unit-de-predicate-basics-35.png"></div>
+
+<div class="sh-page" data-page="36"><img alt="Wichtige Äquivalenzen Folgende Äquivalenzen gelten nicht:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-basics/unit-de-predicate-basics-36.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-de-predicate-transformation.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-transformation.pdf" style="--sh-pages: 23"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Kapitel L:III III. Prädikatenlogik" src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-transformation/unit-de-predicate-transformation-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Einfache Normalformen Definition 8 (Negationsnormalform)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-transformation/unit-de-predicate-transformation-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Einfache Normalformen Definition 10 (pränexe Normalform)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-transformation/unit-de-predicate-transformation-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Einfache Normalformen Erzeugung einer pränexen Normalform." src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-transformation/unit-de-predicate-transformation-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Einfache Normalformen Lemma 11" src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-transformation/unit-de-predicate-transformation-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Substitution Beobachtung." src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-transformation/unit-de-predicate-transformation-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Substitution Definition 12 (Substitution)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-transformation/unit-de-predicate-transformation-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Substitution Definition 12 (Substitution)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-transformation/unit-de-predicate-transformation-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-transformation/unit-de-predicate-transformation-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Substitution Definition 13 (Substitution mit Ersetzungsliste)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-transformation/unit-de-predicate-transformation-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-transformation/unit-de-predicate-transformation-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Substitution Lemma 14" src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-transformation/unit-de-predicate-transformation-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-transformation/unit-de-predicate-transformation-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="Skolem-Normalformen Eigenschaften freier Variablen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-transformation/unit-de-predicate-transformation-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="Skolem-Normalformen Modellierung basiert auf:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-transformation/unit-de-predicate-transformation-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="Skolem-Normalformen Existenzquantoren werden in jeder Interpretation so gedeutet, dass in" src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-transformation/unit-de-predicate-transformation-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="Skolem-Normalformen Definition 15 (Skolemisierung)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-transformation/unit-de-predicate-transformation-17.png"></div>
+
+<div class="sh-page" data-page="18"><img alt="Skolem-Normalformen Definition 17 (Skolem-Normalform)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-transformation/unit-de-predicate-transformation-18.png"></div>
+
+<div class="sh-page" data-page="19"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-transformation/unit-de-predicate-transformation-19.png"></div>
+
+<div class="sh-page" data-page="20"><img alt="Skolem-Normalformen Zusammenfassung: Vorgehensweise zur Umwandlung nach SKNF." src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-transformation/unit-de-predicate-transformation-20.png"></div>
+
+<div class="sh-page" data-page="21"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-transformation/unit-de-predicate-transformation-21.png"></div>
+
+<div class="sh-page" data-page="22"><img alt="Skolem-Normalformen Wiederholung: ∀x (α ∧ β) ≈ ∀x α ∧ ∀xβ" src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-transformation/unit-de-predicate-transformation-22.png"></div>
+
+<div class="sh-page" data-page="23"><img alt="Skolem-Normalformen Analog zur Aussagenlogik können lassen sich weitere Einschränkungen an die" src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-transformation/unit-de-predicate-transformation-23.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-de-predicate-sat-syntactical.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-sat-syntactical.pdf" style="--sh-pages: 27"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Kapitel L:III III. Prädikatenlogik" src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-sat-syntactical/unit-de-predicate-sat-syntactical-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Standard-Erfüllbarkeit Problem." src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-sat-syntactical/unit-de-predicate-sat-syntactical-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-sat-syntactical/unit-de-predicate-sat-syntactical-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Standard-Erfüllbarkeit Beispiele." src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-sat-syntactical/unit-de-predicate-sat-syntactical-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Standard-Erfüllbarkeit Und wie weiter?" src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-sat-syntactical/unit-de-predicate-sat-syntactical-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Standard-Erfüllbarkeit Definition 16 (Herbrand-Interpretation)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-sat-syntactical/unit-de-predicate-sat-syntactical-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Standard-Erfüllbarkeit Satz 17" src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-sat-syntactical/unit-de-predicate-sat-syntactical-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Standard-Erfüllbarkeit Sei α eine geschlossene Formel in Skolem-Normalform und I eine" src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-sat-syntactical/unit-de-predicate-sat-syntactical-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-sat-syntactical/unit-de-predicate-sat-syntactical-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Standard-Erfüllbarkeit Beispiel." src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-sat-syntactical/unit-de-predicate-sat-syntactical-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Standard-Erfüllbarkeit Satz 20 (Endlichkeitssatz)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-sat-syntactical/unit-de-predicate-sat-syntactical-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-sat-syntactical/unit-de-predicate-sat-syntactical-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Prädikatenlogische Resolution Beobachtung." src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-sat-syntactical/unit-de-predicate-sat-syntactical-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="Prädikatenlogische Resolution Motivation." src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-sat-syntactical/unit-de-predicate-sat-syntactical-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-sat-syntactical/unit-de-predicate-sat-syntactical-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="Prädikatenlogische Resolution Aussagenlogische Resolution:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-sat-syntactical/unit-de-predicate-sat-syntactical-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-sat-syntactical/unit-de-predicate-sat-syntactical-17.png"></div>
+
+<div class="sh-page" data-page="18"><img alt="Prädikatenlogische Resolution Ziel bei der Unifikation: So wenig spezialisieren, wie möglich." src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-sat-syntactical/unit-de-predicate-sat-syntactical-18.png"></div>
+
+<div class="sh-page" data-page="19"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-sat-syntactical/unit-de-predicate-sat-syntactical-19.png"></div>
+
+<div class="sh-page" data-page="20"><img alt="Prädikatenlogische Resolution Wie bestimmt man den allgemeinsten Unifikators für zwei Primformeln" src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-sat-syntactical/unit-de-predicate-sat-syntactical-20.png"></div>
+
+<div class="sh-page" data-page="21"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-sat-syntactical/unit-de-predicate-sat-syntactical-21.png"></div>
+
+<div class="sh-page" data-page="22"><img alt="Prädikatenlogische Resolution Definition 23 (Unifikationsverfahren nach Robinson)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-sat-syntactical/unit-de-predicate-sat-syntactical-22.png"></div>
+
+<div class="sh-page" data-page="23"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-sat-syntactical/unit-de-predicate-sat-syntactical-23.png"></div>
+
+<div class="sh-page" data-page="24"><img alt="Prädikatenlogische Resolution Mengenorientierte Schreibweise der Resolutionsregel:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-sat-syntactical/unit-de-predicate-sat-syntactical-24.png"></div>
+
+<div class="sh-page" data-page="25"><img alt="Prädikatenlogische Resolution Satz 25" src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-sat-syntactical/unit-de-predicate-sat-syntactical-25.png"></div>
+
+<div class="sh-page" data-page="26"><img alt="Prädikatenlogische Resolution Sei α eine Formel in Klauselnormalform. Verfahren zur Generierung einer" src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-sat-syntactical/unit-de-predicate-sat-syntactical-26.png"></div>
+
+<div class="sh-page" data-page="27"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-sat-syntactical/unit-de-predicate-sat-syntactical-27.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-de-predicate-complexity.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-complexity.pdf" style="--sh-pages: 6"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Kapitel L:III III. Prädikatenlogik" src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-complexity/unit-de-predicate-complexity-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Grenzen der Prädikatenlogik Dadurch, dass wir bisher keine Möglichkeit vorgesehen haben, in den Formeln die" src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-complexity/unit-de-predicate-complexity-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-complexity/unit-de-predicate-complexity-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Grenzen der Prädikatenlogik Durch die Gleichheit hat man nun die Möglichkeit, bestimmte Anzahlen von" src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-complexity/unit-de-predicate-complexity-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Grenzen der Prädikatenlogik Die Formel" src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-complexity/unit-de-predicate-complexity-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Grenzen der Prädikatenlogik Satz 25" src="https://webis.de/downloads/lecturenotes/logics/unit-de-predicate-complexity/unit-de-predicate-complexity-6.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-de-fuzzy-basics.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/logics/unit-de-fuzzy-basics.pdf" style="--sh-pages: 44"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Kapitel L:IV IV. Nichtklassische Logiken" src="https://webis.de/downloads/lecturenotes/logics/unit-de-fuzzy-basics/unit-de-fuzzy-basics-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Fuzzy-Mengen Unscharfes Wissen" src="https://webis.de/downloads/lecturenotes/logics/unit-de-fuzzy-basics/unit-de-fuzzy-basics-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Fuzzy-Mengen Unscharfes Wissen" src="https://webis.de/downloads/lecturenotes/logics/unit-de-fuzzy-basics/unit-de-fuzzy-basics-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Fuzzy-Mengen Unscharfes Wissen" src="https://webis.de/downloads/lecturenotes/logics/unit-de-fuzzy-basics/unit-de-fuzzy-basics-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-fuzzy-basics/unit-de-fuzzy-basics-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Fuzzy-Mengen Unscharfes Schlussfolgern" src="https://webis.de/downloads/lecturenotes/logics/unit-de-fuzzy-basics/unit-de-fuzzy-basics-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Fuzzy-Mengen Unscharfes Schlussfolgern" src="https://webis.de/downloads/lecturenotes/logics/unit-de-fuzzy-basics/unit-de-fuzzy-basics-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Fuzzy-Mengen Geschichte" src="https://webis.de/downloads/lecturenotes/logics/unit-de-fuzzy-basics/unit-de-fuzzy-basics-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Fuzzy-Mengen (Fuzzy Sets) Die traditionelle Mengenlehre malt ein Schwarz-Weiß-Bild von der Welt: ein" src="https://webis.de/downloads/lecturenotes/logics/unit-de-fuzzy-basics/unit-de-fuzzy-basics-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Fuzzy-Mengen Beispiel Alter (" src="https://webis.de/downloads/lecturenotes/logics/unit-de-fuzzy-basics/unit-de-fuzzy-basics-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Fuzzy-Mengen Definition 1 (Fuzzy-Menge, Zugehörigkeitsfunktion)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-fuzzy-basics/unit-de-fuzzy-basics-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Fuzzy-Mengen Definition 1 (Fuzzy-Menge, Zugehörigkeitsfunktion)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-fuzzy-basics/unit-de-fuzzy-basics-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-fuzzy-basics/unit-de-fuzzy-basics-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="Fuzzy-Mengen Beispiel: Raumtemperatur" src="https://webis.de/downloads/lecturenotes/logics/unit-de-fuzzy-basics/unit-de-fuzzy-basics-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="Fuzzy-Mengen Konstruktion" src="https://webis.de/downloads/lecturenotes/logics/unit-de-fuzzy-basics/unit-de-fuzzy-basics-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="Fuzzy-Mengen Konstruktion" src="https://webis.de/downloads/lecturenotes/logics/unit-de-fuzzy-basics/unit-de-fuzzy-basics-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="Fuzzy-Mengen Konstruktion" src="https://webis.de/downloads/lecturenotes/logics/unit-de-fuzzy-basics/unit-de-fuzzy-basics-17.png"></div>
+
+<div class="sh-page" data-page="18"><img alt="Fuzzy-Mengen Schreibweise" src="https://webis.de/downloads/lecturenotes/logics/unit-de-fuzzy-basics/unit-de-fuzzy-basics-18.png"></div>
+
+<div class="sh-page" data-page="19"><img alt="Fuzzy-Mengen Schreibweise" src="https://webis.de/downloads/lecturenotes/logics/unit-de-fuzzy-basics/unit-de-fuzzy-basics-19.png"></div>
+
+<div class="sh-page" data-page="20"><img alt="Fuzzy-Mengen Charakterisierung" src="https://webis.de/downloads/lecturenotes/logics/unit-de-fuzzy-basics/unit-de-fuzzy-basics-20.png"></div>
+
+<div class="sh-page" data-page="21"><img alt="Fuzzy-Mengen Charakterisierung" src="https://webis.de/downloads/lecturenotes/logics/unit-de-fuzzy-basics/unit-de-fuzzy-basics-21.png"></div>
+
+<div class="sh-page" data-page="22"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-fuzzy-basics/unit-de-fuzzy-basics-22.png"></div>
+
+<div class="sh-page" data-page="23"><img alt="Modifizierer für Fuzzy-Mengen Im täglichen Sprachgebrauch spielen Adverbien bei der Beschreibung von" src="https://webis.de/downloads/lecturenotes/logics/unit-de-fuzzy-basics/unit-de-fuzzy-basics-23.png"></div>
+
+<div class="sh-page" data-page="24"><img alt="Modifizierer für Fuzzy-Mengen Beispiel:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-fuzzy-basics/unit-de-fuzzy-basics-24.png"></div>
+
+<div class="sh-page" data-page="25"><img alt="Modifizierer für Fuzzy-Mengen Definition 3 (Modifizierer für Fuzzy-Menge)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-fuzzy-basics/unit-de-fuzzy-basics-25.png"></div>
+
+<div class="sh-page" data-page="26"><img alt="Modifizierer für Fuzzy-Mengen Beispiel:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-fuzzy-basics/unit-de-fuzzy-basics-26.png"></div>
+
+<div class="sh-page" data-page="27"><img alt="Modifizierer für Fuzzy-Mengen Beispiel" src="https://webis.de/downloads/lecturenotes/logics/unit-de-fuzzy-basics/unit-de-fuzzy-basics-27.png"></div>
+
+<div class="sh-page" data-page="28"><img alt="Operationen auf Fuzzy-Mengen Klassische Mengen A ⊂ X:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-fuzzy-basics/unit-de-fuzzy-basics-28.png"></div>
+
+<div class="sh-page" data-page="29"><img alt="Operationen auf Fuzzy-Mengen Definition 4 (Mengenoperationen auf Fuzzy-Mengen)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-fuzzy-basics/unit-de-fuzzy-basics-29.png"></div>
+
+<div class="sh-page" data-page="30"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-fuzzy-basics/unit-de-fuzzy-basics-30.png"></div>
+
+<div class="sh-page" data-page="31"><img alt="Operationen auf Fuzzy-Mengen Definition 4" src="https://webis.de/downloads/lecturenotes/logics/unit-de-fuzzy-basics/unit-de-fuzzy-basics-31.png"></div>
+
+<div class="sh-page" data-page="32"><img alt="Operationen auf Fuzzy-Mengen Definition 4" src="https://webis.de/downloads/lecturenotes/logics/unit-de-fuzzy-basics/unit-de-fuzzy-basics-32.png"></div>
+
+<div class="sh-page" data-page="33"><img alt="Operationen auf Fuzzy-Mengen Definition 4" src="https://webis.de/downloads/lecturenotes/logics/unit-de-fuzzy-basics/unit-de-fuzzy-basics-33.png"></div>
+
+<div class="sh-page" data-page="34"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-fuzzy-basics/unit-de-fuzzy-basics-34.png"></div>
+
+<div class="sh-page" data-page="35"><img alt="Operationen auf Fuzzy-Mengen Beispiel:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-fuzzy-basics/unit-de-fuzzy-basics-35.png"></div>
+
+<div class="sh-page" data-page="36"><img alt="Operationen auf Fuzzy-Mengen Für ∪, ∩ und ¬ und für beliebige Fuzzy-Mengen A, B und C über einem" src="https://webis.de/downloads/lecturenotes/logics/unit-de-fuzzy-basics/unit-de-fuzzy-basics-36.png"></div>
+
+<div class="sh-page" data-page="37"><img alt="Operationen auf Fuzzy-Mengen Beweis des Satzes von de Morgan für Fuzzy-Mengen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-fuzzy-basics/unit-de-fuzzy-basics-37.png"></div>
+
+<div class="sh-page" data-page="38"><img alt="Operationen auf Fuzzy-Mengen Konstruktion neuer Fuzzy-Mengen" src="https://webis.de/downloads/lecturenotes/logics/unit-de-fuzzy-basics/unit-de-fuzzy-basics-38.png"></div>
+
+<div class="sh-page" data-page="39"><img alt="Operationen auf Fuzzy-Mengen t-Normen" src="https://webis.de/downloads/lecturenotes/logics/unit-de-fuzzy-basics/unit-de-fuzzy-basics-39.png"></div>
+
+<div class="sh-page" data-page="40"><img alt="Operationen auf Fuzzy-Mengen t-Normen" src="https://webis.de/downloads/lecturenotes/logics/unit-de-fuzzy-basics/unit-de-fuzzy-basics-40.png"></div>
+
+<div class="sh-page" data-page="41"><img alt="Operationen auf Fuzzy-Mengen t-Normen" src="https://webis.de/downloads/lecturenotes/logics/unit-de-fuzzy-basics/unit-de-fuzzy-basics-41.png"></div>
+
+<div class="sh-page" data-page="42"><img alt="Operationen auf Fuzzy-Mengen t-Normen" src="https://webis.de/downloads/lecturenotes/logics/unit-de-fuzzy-basics/unit-de-fuzzy-basics-42.png"></div>
+
+<div class="sh-page" data-page="43"><img alt="Operationen auf Fuzzy-Mengen t-Normen" src="https://webis.de/downloads/lecturenotes/logics/unit-de-fuzzy-basics/unit-de-fuzzy-basics-43.png"></div>
+
+<div class="sh-page" data-page="44"><img alt="Operationen auf Fuzzy-Mengen t-Normen" src="https://webis.de/downloads/lecturenotes/logics/unit-de-fuzzy-basics/unit-de-fuzzy-basics-44.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-de-fuzzy-inference.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/logics/unit-de-fuzzy-inference.pdf" style="--sh-pages: 29"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Kapitel L:IV IV. Nichtklassische Logiken" src="https://webis.de/downloads/lecturenotes/logics/unit-de-fuzzy-inference/unit-de-fuzzy-inference-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Fuzzy-Inferenz Aussagenlogik versus Fuzzy-Logik" src="https://webis.de/downloads/lecturenotes/logics/unit-de-fuzzy-inference/unit-de-fuzzy-inference-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-fuzzy-inference/unit-de-fuzzy-inference-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Fuzzy-Inferenz Generalisierter Modus Ponens" src="https://webis.de/downloads/lecturenotes/logics/unit-de-fuzzy-inference/unit-de-fuzzy-inference-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Fuzzy-Inferenz Generalisierter Modus Ponens" src="https://webis.de/downloads/lecturenotes/logics/unit-de-fuzzy-inference/unit-de-fuzzy-inference-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Fuzzy-Inferenz Generalisierter Modus Ponens" src="https://webis.de/downloads/lecturenotes/logics/unit-de-fuzzy-inference/unit-de-fuzzy-inference-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Fuzzy-Inferenz Generalisierter Modus Ponens" src="https://webis.de/downloads/lecturenotes/logics/unit-de-fuzzy-inference/unit-de-fuzzy-inference-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Fuzzy-Inferenz Generalisierter Modus Ponens" src="https://webis.de/downloads/lecturenotes/logics/unit-de-fuzzy-inference/unit-de-fuzzy-inference-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Fuzzy-Inferenz Max-Min-Inferenz [Mamdani 1977]" src="https://webis.de/downloads/lecturenotes/logics/unit-de-fuzzy-inference/unit-de-fuzzy-inference-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Fuzzy-Inferenz Vektor-Matrix-Multiplikation" src="https://webis.de/downloads/lecturenotes/logics/unit-de-fuzzy-inference/unit-de-fuzzy-inference-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Fuzzy-Inferenz Vektor-Matrix-Multiplikation" src="https://webis.de/downloads/lecturenotes/logics/unit-de-fuzzy-inference/unit-de-fuzzy-inference-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Fuzzy-Inferenz Vektor-Matrix-Multiplikation" src="https://webis.de/downloads/lecturenotes/logics/unit-de-fuzzy-inference/unit-de-fuzzy-inference-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Fuzzy-Inferenz Max-Min-Inferenz" src="https://webis.de/downloads/lecturenotes/logics/unit-de-fuzzy-inference/unit-de-fuzzy-inference-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="Fuzzy-Inferenz Max-Min-Inferenz" src="https://webis.de/downloads/lecturenotes/logics/unit-de-fuzzy-inference/unit-de-fuzzy-inference-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="Fuzzy-Inferenz Max-Min-Inferenz" src="https://webis.de/downloads/lecturenotes/logics/unit-de-fuzzy-inference/unit-de-fuzzy-inference-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="Fuzzy-Inferenz Max-Min-Inferenz" src="https://webis.de/downloads/lecturenotes/logics/unit-de-fuzzy-inference/unit-de-fuzzy-inference-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="Fuzzy-Inferenz Max-Min-Inferenz" src="https://webis.de/downloads/lecturenotes/logics/unit-de-fuzzy-inference/unit-de-fuzzy-inference-17.png"></div>
+
+<div class="sh-page" data-page="18"><img alt="Fuzzy-Inferenz Max-Min-Inferenz" src="https://webis.de/downloads/lecturenotes/logics/unit-de-fuzzy-inference/unit-de-fuzzy-inference-18.png"></div>
+
+<div class="sh-page" data-page="19"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-fuzzy-inference/unit-de-fuzzy-inference-19.png"></div>
+
+<div class="sh-page" data-page="20"><img alt="Fuzzy-Inferenz Max-Produkt-Inferenz" src="https://webis.de/downloads/lecturenotes/logics/unit-de-fuzzy-inference/unit-de-fuzzy-inference-20.png"></div>
+
+<div class="sh-page" data-page="21"><img alt="Fuzzy-Inferenz Max-Produkt-Inferenz" src="https://webis.de/downloads/lecturenotes/logics/unit-de-fuzzy-inference/unit-de-fuzzy-inference-21.png"></div>
+
+<div class="sh-page" data-page="22"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-fuzzy-inference/unit-de-fuzzy-inference-22.png"></div>
+
+<div class="sh-page" data-page="23"><img alt="Fuzzy-Inferenz Regeln mit mehreren Prämissen" src="https://webis.de/downloads/lecturenotes/logics/unit-de-fuzzy-inference/unit-de-fuzzy-inference-23.png"></div>
+
+<div class="sh-page" data-page="24"><img alt="Fuzzy-Inferenz Multiple Regeln" src="https://webis.de/downloads/lecturenotes/logics/unit-de-fuzzy-inference/unit-de-fuzzy-inference-24.png"></div>
+
+<div class="sh-page" data-page="25"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-fuzzy-inference/unit-de-fuzzy-inference-25.png"></div>
+
+<div class="sh-page" data-page="26"><img alt="Fuzzy-Inferenz Multiple Regeln" src="https://webis.de/downloads/lecturenotes/logics/unit-de-fuzzy-inference/unit-de-fuzzy-inference-26.png"></div>
+
+<div class="sh-page" data-page="27"><img alt="Fuzzy-Inferenz Multiple Regeln" src="https://webis.de/downloads/lecturenotes/logics/unit-de-fuzzy-inference/unit-de-fuzzy-inference-27.png"></div>
+
+<div class="sh-page" data-page="28"><img alt="Defuzzifizierung Defuzzifizierung ist die Generierung scharfer Werte einer induzierten FuzzyMenge B 0, Grundbereich Y ." src="https://webis.de/downloads/lecturenotes/logics/unit-de-fuzzy-inference/unit-de-fuzzy-inference-28.png"></div>
+
+<div class="sh-page" data-page="29"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-fuzzy-inference/unit-de-fuzzy-inference-29.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-de-rule-systems.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/logics/unit-de-rule-systems.pdf" style="--sh-pages: 58"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Kapitel L:V V. Erweiterungen und Anwendungen zur Logik" src="https://webis.de/downloads/lecturenotes/logics/unit-de-rule-systems/unit-de-rule-systems-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Produktionsregelsysteme Vergleich von Deduktions- und Produktionsregelsystem" src="https://webis.de/downloads/lecturenotes/logics/unit-de-rule-systems/unit-de-rule-systems-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Produktionsregelsysteme Vergleich von Deduktions- und Produktionsregelsystem" src="https://webis.de/downloads/lecturenotes/logics/unit-de-rule-systems/unit-de-rule-systems-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Produktionsregelsysteme Definition 1 (Produktionsregelsystem)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-rule-systems/unit-de-rule-systems-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-rule-systems/unit-de-rule-systems-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Produktionsregelsysteme Definition 2 (Semantik Produktionsregelsystem)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-rule-systems/unit-de-rule-systems-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Produktionsregelsysteme Definition 3 (Ableitung)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-rule-systems/unit-de-rule-systems-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-rule-systems/unit-de-rule-systems-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Produktionsregelsysteme Regelinterpreter" src="https://webis.de/downloads/lecturenotes/logics/unit-de-rule-systems/unit-de-rule-systems-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Produktionsregelsysteme Regelinterpreter" src="https://webis.de/downloads/lecturenotes/logics/unit-de-rule-systems/unit-de-rule-systems-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Produktionsregelsysteme Definition 4 (kommutativ)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-rule-systems/unit-de-rule-systems-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Produktionsregelsysteme Definition 4 (kommutativ)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-rule-systems/unit-de-rule-systems-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Produktionsregelsysteme Realisierung des Interpreters durch Regelverkettung" src="https://webis.de/downloads/lecturenotes/logics/unit-de-rule-systems/unit-de-rule-systems-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="Produktionsregelsysteme Realisierung des Interpreters durch Regelverkettung" src="https://webis.de/downloads/lecturenotes/logics/unit-de-rule-systems/unit-de-rule-systems-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="Inferenz für Produktionsregelsysteme Vorwärtsverkettende Verfahren (Forward-Chaining)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-rule-systems/unit-de-rule-systems-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="Inferenz für Produktionsregelsysteme Vorwärtsverkettende Verfahren (Forward-Chaining)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-rule-systems/unit-de-rule-systems-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="Inferenz für Produktionsregelsysteme Recognize-Act-Zyklus realisiert als Forward-Chaining" src="https://webis.de/downloads/lecturenotes/logics/unit-de-rule-systems/unit-de-rule-systems-17.png"></div>
+
+<div class="sh-page" data-page="18"><img alt="Inferenz für Produktionsregelsysteme Eigenschaften des Algorithmus FC" src="https://webis.de/downloads/lecturenotes/logics/unit-de-rule-systems/unit-de-rule-systems-18.png"></div>
+
+<div class="sh-page" data-page="19"><img alt="Inferenz für Produktionsregelsysteme Ableitbarkeitstest durch Forward-Chaining" src="https://webis.de/downloads/lecturenotes/logics/unit-de-rule-systems/unit-de-rule-systems-19.png"></div>
+
+<div class="sh-page" data-page="20"><img alt="Bemerkung: Eine Verbesserung der Effzienz ist dadruch möglich, dass Regeln, die gefeuert haben, aus der" src="https://webis.de/downloads/lecturenotes/logics/unit-de-rule-systems/unit-de-rule-systems-20.png"></div>
+
+<div class="sh-page" data-page="21"><img alt="Inferenz für Produktionsregelsysteme Recognize-Act-Zyklus realisiert als Backward-Chaining" src="https://webis.de/downloads/lecturenotes/logics/unit-de-rule-systems/unit-de-rule-systems-21.png"></div>
+
+<div class="sh-page" data-page="22"><img alt="Inferenz für Produktionsregelsysteme Definition 7 (Und-Oder-Baum)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-rule-systems/unit-de-rule-systems-22.png"></div>
+
+<div class="sh-page" data-page="23"><img alt="Inferenz für Produktionsregelsysteme Beispiel: Und-Oder-Baum" src="https://webis.de/downloads/lecturenotes/logics/unit-de-rule-systems/unit-de-rule-systems-23.png"></div>
+
+<div class="sh-page" data-page="24"><img alt="Inferenz für Produktionsregelsysteme Algorithmus für das Backward-Chaining" src="https://webis.de/downloads/lecturenotes/logics/unit-de-rule-systems/unit-de-rule-systems-24.png"></div>
+
+<div class="sh-page" data-page="25"><img alt="Backward-Chaining Algorithmus für das Backward-Chaining" src="https://webis.de/downloads/lecturenotes/logics/unit-de-rule-systems/unit-de-rule-systems-25.png"></div>
+
+<div class="sh-page" data-page="26"><img alt="Inferenz für Produktionsregelsysteme Bedingungen ohne Disjunktion" src="https://webis.de/downloads/lecturenotes/logics/unit-de-rule-systems/unit-de-rule-systems-26.png"></div>
+
+<div class="sh-page" data-page="27"><img alt="Inferenz für Produktionsregelsysteme Bedingungen ohne Disjunktion" src="https://webis.de/downloads/lecturenotes/logics/unit-de-rule-systems/unit-de-rule-systems-27.png"></div>
+
+<div class="sh-page" data-page="28"><img alt="Inferenz für Produktionsregelsysteme Definition 8 (Ableitungsbaum)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-rule-systems/unit-de-rule-systems-28.png"></div>
+
+<div class="sh-page" data-page="29"><img alt="Inferenz für Produktionsregelsysteme Beispiel: Ableitungsbaum für Backward-Chaining" src="https://webis.de/downloads/lecturenotes/logics/unit-de-rule-systems/unit-de-rule-systems-29.png"></div>
+
+<div class="sh-page" data-page="30"><img alt="Inferenz für Produktionsregelsysteme Analyse von Backward-Chaining mit Regelgraphen" src="https://webis.de/downloads/lecturenotes/logics/unit-de-rule-systems/unit-de-rule-systems-30.png"></div>
+
+<div class="sh-page" data-page="31"><img alt="Backward-Chaining Analyse von Backward-Chaining mit Regelgraphen" src="https://webis.de/downloads/lecturenotes/logics/unit-de-rule-systems/unit-de-rule-systems-31.png"></div>
+
+<div class="sh-page" data-page="32"><img alt="Inferenz für Produktionsregelsysteme Beispiel: Regelgraph" src="https://webis.de/downloads/lecturenotes/logics/unit-de-rule-systems/unit-de-rule-systems-32.png"></div>
+
+<div class="sh-page" data-page="33"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-rule-systems/unit-de-rule-systems-33.png"></div>
+
+<div class="sh-page" data-page="34"><img alt="Inferenz für Produktionsregelsysteme Beispiel: Zyklische Regelmenge" src="https://webis.de/downloads/lecturenotes/logics/unit-de-rule-systems/unit-de-rule-systems-34.png"></div>
+
+<div class="sh-page" data-page="35"><img alt="Inferenz für Produktionsregelsysteme Laufzeit für Backward-Chaining" src="https://webis.de/downloads/lecturenotes/logics/unit-de-rule-systems/unit-de-rule-systems-35.png"></div>
+
+<div class="sh-page" data-page="36"><img alt="Inferenz für Produktionsregelsysteme Beweis Laufzeit BC-DFS" src="https://webis.de/downloads/lecturenotes/logics/unit-de-rule-systems/unit-de-rule-systems-36.png"></div>
+
+<div class="sh-page" data-page="37"><img alt="Inferenz für Produktionsregelsysteme Verkettungsstrategien" src="https://webis.de/downloads/lecturenotes/logics/unit-de-rule-systems/unit-de-rule-systems-37.png"></div>
+
+<div class="sh-page" data-page="38"><img alt="Inferenz für Produktionsregelsysteme Verkettungsstrategien" src="https://webis.de/downloads/lecturenotes/logics/unit-de-rule-systems/unit-de-rule-systems-38.png"></div>
+
+<div class="sh-page" data-page="39"><img alt="Inferenz für Produktionsregelsysteme Verkettungsstrategien" src="https://webis.de/downloads/lecturenotes/logics/unit-de-rule-systems/unit-de-rule-systems-39.png"></div>
+
+<div class="sh-page" data-page="40"><img alt="Produktionsregelsysteme mit Negation Definition 12 (PS mit Negation)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-rule-systems/unit-de-rule-systems-40.png"></div>
+
+<div class="sh-page" data-page="41"><img alt="Produktionsregelsysteme mit Negation Vereinfachung von Bedingungsteilen mit NOT" src="https://webis.de/downloads/lecturenotes/logics/unit-de-rule-systems/unit-de-rule-systems-41.png"></div>
+
+<div class="sh-page" data-page="42"><img alt="Produktionsregelsysteme mit Negation Vereinfachung von Bedingungsteilen mit NOT" src="https://webis.de/downloads/lecturenotes/logics/unit-de-rule-systems/unit-de-rule-systems-42.png"></div>
+
+<div class="sh-page" data-page="43"><img alt="Produktionsregelsysteme mit Negation Interpretation von NOT als Negation-as-Failure" src="https://webis.de/downloads/lecturenotes/logics/unit-de-rule-systems/unit-de-rule-systems-43.png"></div>
+
+<div class="sh-page" data-page="44"><img alt="Produktionsregelsysteme mit Negation Interpretation von NOT als Negation-as-Failure" src="https://webis.de/downloads/lecturenotes/logics/unit-de-rule-systems/unit-de-rule-systems-44.png"></div>
+
+<div class="sh-page" data-page="45"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-rule-systems/unit-de-rule-systems-45.png"></div>
+
+<div class="sh-page" data-page="46"><img alt="Produktionsregelsysteme mit Negation Algorithm:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-rule-systems/unit-de-rule-systems-46.png"></div>
+
+<div class="sh-page" data-page="47"><img alt="Produktionsregelsysteme mit Negation Algorithm:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-rule-systems/unit-de-rule-systems-47.png"></div>
+
+<div class="sh-page" data-page="48"><img alt="Produktionsregelsysteme mit Negation Zyklische Regelmengen und NOT" src="https://webis.de/downloads/lecturenotes/logics/unit-de-rule-systems/unit-de-rule-systems-48.png"></div>
+
+<div class="sh-page" data-page="49"><img alt="Produktionsregelsysteme mit Negation Negation-as-Failure und Vorwärtsverkettung" src="https://webis.de/downloads/lecturenotes/logics/unit-de-rule-systems/unit-de-rule-systems-49.png"></div>
+
+<div class="sh-page" data-page="50"><img alt="Produktionsregelsysteme mit Negation Negation-as-Failure und Vorwärtsverkettung" src="https://webis.de/downloads/lecturenotes/logics/unit-de-rule-systems/unit-de-rule-systems-50.png"></div>
+
+<div class="sh-page" data-page="51"><img alt="Produktionsregelsysteme mit Negation Interpretation von NOT bzgl. statischer Datenbasis und Vorwärtsverkettung" src="https://webis.de/downloads/lecturenotes/logics/unit-de-rule-systems/unit-de-rule-systems-51.png"></div>
+
+<div class="sh-page" data-page="52"><img alt="Produktionsregelsysteme mit Negation Lemma 15" src="https://webis.de/downloads/lecturenotes/logics/unit-de-rule-systems/unit-de-rule-systems-52.png"></div>
+
+<div class="sh-page" data-page="53"><img alt="Produktionsregelsysteme mit Negation Algorithm:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-rule-systems/unit-de-rule-systems-53.png"></div>
+
+<div class="sh-page" data-page="54"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-rule-systems/unit-de-rule-systems-54.png"></div>
+
+<div class="sh-page" data-page="55"><img alt="Produktionsregelsysteme mit Negation Satz 16 (Korrektheit und Vollständigkeit von FC-N-test)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-rule-systems/unit-de-rule-systems-55.png"></div>
+
+<div class="sh-page" data-page="56"><img alt="Produktionsregelsysteme mit Negation Beweis (Korrektheit und Vollständigkeit von FC-N-test)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-rule-systems/unit-de-rule-systems-56.png"></div>
+
+<div class="sh-page" data-page="57"><img alt="Produktionsregelsysteme mit Negation Nicht-Determinismus von FC-N-test" src="https://webis.de/downloads/lecturenotes/logics/unit-de-rule-systems/unit-de-rule-systems-57.png"></div>
+
+<div class="sh-page" data-page="58"><img alt="Produktionsregelsysteme mit Negation Beweis (Skizze: NP-Vollständigkeit des Ableitbarkeitsproblems)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-rule-systems/unit-de-rule-systems-58.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-de-non-monotonicity.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/logics/unit-de-non-monotonicity.pdf" style="--sh-pages: 21"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Kapitel L:V V. Erweiterungen und Anwendungen zur Logik" src="https://webis.de/downloads/lecturenotes/logics/unit-de-non-monotonicity/unit-de-non-monotonicity-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Nicht-monotones Schließen Problemlösen mittels Logik" src="https://webis.de/downloads/lecturenotes/logics/unit-de-non-monotonicity/unit-de-non-monotonicity-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-non-monotonicity/unit-de-non-monotonicity-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Nicht-monotones Schließen Schlussfolgern in der klassischen Logik" src="https://webis.de/downloads/lecturenotes/logics/unit-de-non-monotonicity/unit-de-non-monotonicity-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Nicht-monotones Schließen Schlussfolgern in der klassischen Logik" src="https://webis.de/downloads/lecturenotes/logics/unit-de-non-monotonicity/unit-de-non-monotonicity-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Nicht-monotones Schließen Schlussfolgern in der klassischen Logik" src="https://webis.de/downloads/lecturenotes/logics/unit-de-non-monotonicity/unit-de-non-monotonicity-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-non-monotonicity/unit-de-non-monotonicity-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Nicht-monotones Schließen Schlussfolgern über Nicht-Wissen: Negation-as-Failure" src="https://webis.de/downloads/lecturenotes/logics/unit-de-non-monotonicity/unit-de-non-monotonicity-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-non-monotonicity/unit-de-non-monotonicity-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Nicht-monotones Schließen Schlussfolgern über Nicht-Wissen: Default-Logik" src="https://webis.de/downloads/lecturenotes/logics/unit-de-non-monotonicity/unit-de-non-monotonicity-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-non-monotonicity/unit-de-non-monotonicity-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Nicht-monotones Schließen Schlussfolgern über Nicht-Wissen" src="https://webis.de/downloads/lecturenotes/logics/unit-de-non-monotonicity/unit-de-non-monotonicity-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-non-monotonicity/unit-de-non-monotonicity-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="Nicht-monotones Schließen Schlussfolgern über Nicht-Wissen" src="https://webis.de/downloads/lecturenotes/logics/unit-de-non-monotonicity/unit-de-non-monotonicity-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="Nicht-monotones Schließen Schlussfolgern über Nicht-Wissen" src="https://webis.de/downloads/lecturenotes/logics/unit-de-non-monotonicity/unit-de-non-monotonicity-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-non-monotonicity/unit-de-non-monotonicity-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="Nicht-monotones Schließen Operationalisierung" src="https://webis.de/downloads/lecturenotes/logics/unit-de-non-monotonicity/unit-de-non-monotonicity-17.png"></div>
+
+<div class="sh-page" data-page="18"><img alt="Nicht-monotones Schließen Operationalisierung" src="https://webis.de/downloads/lecturenotes/logics/unit-de-non-monotonicity/unit-de-non-monotonicity-18.png"></div>
+
+<div class="sh-page" data-page="19"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-non-monotonicity/unit-de-non-monotonicity-19.png"></div>
+
+<div class="sh-page" data-page="20"><img alt="Nicht-monotones Schließen Modellierung" src="https://webis.de/downloads/lecturenotes/logics/unit-de-non-monotonicity/unit-de-non-monotonicity-20.png"></div>
+
+<div class="sh-page" data-page="21"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-non-monotonicity/unit-de-non-monotonicity-21.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-de-logics-algebra.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/logics/unit-de-logics-algebra.pdf" style="--sh-pages: 3"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Kapitel L:V V. Erweiterungen und Anwendungen zur Logik" src="https://webis.de/downloads/lecturenotes/logics/unit-de-logics-algebra/unit-de-logics-algebra-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Logik und abstrakte Algebren Logik" src="https://webis.de/downloads/lecturenotes/logics/unit-de-logics-algebra/unit-de-logics-algebra-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Logik und abstrakte Algebren Interpretation" src="https://webis.de/downloads/lecturenotes/logics/unit-de-logics-algebra/unit-de-logics-algebra-3.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-de-verification1.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/logics/unit-de-verification1.pdf" style="--sh-pages: 46"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Kapitel L:V V. Erweiterungen und Anwendungen zur Logik" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification1/unit-de-verification1-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification1/unit-de-verification1-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Verifikation Software-Qualität" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification1/unit-de-verification1-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Verifikation Software-Qualität" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification1/unit-de-verification1-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Verifikation Software-Qualität" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification1/unit-de-verification1-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Verifikation Anwendungsbedarf" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification1/unit-de-verification1-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Verifikation Anwendungsbedarf" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification1/unit-de-verification1-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Verifikation Testen als Alternative" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification1/unit-de-verification1-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Verifikation Testen als Alternative" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification1/unit-de-verification1-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Verifikation Aufgaben bei der Softwareentwicklung" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification1/unit-de-verification1-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Verifikation Korrektheitsprüfung: Softwaretest" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification1/unit-de-verification1-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Verifikation Algorithmus und Programm" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification1/unit-de-verification1-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Verifikation Algorithmus und Programm" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification1/unit-de-verification1-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="Verifikation Arten von Programmierparadigmen" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification1/unit-de-verification1-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="Verifikation Programmierparadigmen" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification1/unit-de-verification1-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="Verifikation Programmierparadigmen" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification1/unit-de-verification1-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="Verifikation Eine einfache imperative Programmiersprache" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification1/unit-de-verification1-17.png"></div>
+
+<div class="sh-page" data-page="18"><img alt="Verifikation Eine einfache imperative Programmiersprache" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification1/unit-de-verification1-18.png"></div>
+
+<div class="sh-page" data-page="19"><img alt="Verifikation Eine einfache imperative Programmiersprache" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification1/unit-de-verification1-19.png"></div>
+
+<div class="sh-page" data-page="20"><img alt="Verifikation Eine einfache imperative Programmiersprache" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification1/unit-de-verification1-20.png"></div>
+
+<div class="sh-page" data-page="21"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification1/unit-de-verification1-21.png"></div>
+
+<div class="sh-page" data-page="22"><img alt="Verifikation Beispiel für ein Programm" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification1/unit-de-verification1-22.png"></div>
+
+<div class="sh-page" data-page="23"><img alt="Verifikation Einfache imperative Programmiersprache" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification1/unit-de-verification1-23.png"></div>
+
+<div class="sh-page" data-page="24"><img alt="Verifikation Beispiel für ein Programm" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification1/unit-de-verification1-24.png"></div>
+
+<div class="sh-page" data-page="25"><img alt="Verifikation Semantik formaler Sprachen" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification1/unit-de-verification1-25.png"></div>
+
+<div class="sh-page" data-page="26"><img alt="Verifikation Semantik formaler Sprachen" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification1/unit-de-verification1-26.png"></div>
+
+<div class="sh-page" data-page="27"><img alt="Verifikation mit dem Hoare-Kalkül Der Hoare-Kalkül (auch Hoare-Logik) ist ein Formales System," src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification1/unit-de-verification1-27.png"></div>
+
+<div class="sh-page" data-page="28"><img alt="Verifikation mit dem Hoare-Kalkül Imperative Programmierung" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification1/unit-de-verification1-28.png"></div>
+
+<div class="sh-page" data-page="29"><img alt="Verifikation mit dem Hoare-Kalkül Annotation durch Zusicherungen" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification1/unit-de-verification1-29.png"></div>
+
+<div class="sh-page" data-page="30"><img alt="Verifikation mit dem Hoare-Kalkül Spezifikation als spezielle Zusicherungen" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification1/unit-de-verification1-30.png"></div>
+
+<div class="sh-page" data-page="31"><img alt="Verifikation mit dem Hoare-Kalkül Beispiel für eine Spezifikation" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification1/unit-de-verification1-31.png"></div>
+
+<div class="sh-page" data-page="32"><img alt="Verifikation mit dem Hoare-Kalkül Verifikation auf Basis von Zusicherungen" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification1/unit-de-verification1-32.png"></div>
+
+<div class="sh-page" data-page="33"><img alt="Verifikation mit dem Hoare-Kalkül Verifikation auf Basis von Zusicherungen" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification1/unit-de-verification1-33.png"></div>
+
+<div class="sh-page" data-page="34"><img alt="Verifikation mit dem Hoare-Kalkül Verifikation auf Basis von Zusicherungen" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification1/unit-de-verification1-34.png"></div>
+
+<div class="sh-page" data-page="35"><img alt="Verifikation mit dem Hoare-Kalkül Verifikation auf Basis von Zusicherungen" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification1/unit-de-verification1-35.png"></div>
+
+<div class="sh-page" data-page="36"><img alt="Verifikation mit dem Hoare-Kalkül Definition 16 (Hoare-Formel)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification1/unit-de-verification1-36.png"></div>
+
+<div class="sh-page" data-page="37"><img alt="Verifikation mit dem Hoare-Kalkül Verifikation auf Basis axiomatischer Semantik" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification1/unit-de-verification1-37.png"></div>
+
+<div class="sh-page" data-page="38"><img alt="Verifikation mit dem Hoare-Kalkül Verifikation auf Basis axiomatischer Semantik" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification1/unit-de-verification1-38.png"></div>
+
+<div class="sh-page" data-page="39"><img alt="Verifikation mit dem Hoare-Kalkül Beispiel für ein Programm" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification1/unit-de-verification1-39.png"></div>
+
+<div class="sh-page" data-page="40"><img alt="Verifikation mit dem Hoare-Kalkül Definition 17 (Hoare-Regel)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification1/unit-de-verification1-40.png"></div>
+
+<div class="sh-page" data-page="41"><img alt="Verifikation mit dem Hoare-Kalkül Definition 18 (Hoare-Kalkül)" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification1/unit-de-verification1-41.png"></div>
+
+<div class="sh-page" data-page="42"><img alt="Verifikation mit dem Hoare-Kalkül Kalkül für die einfache imperative Programmiersprache" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification1/unit-de-verification1-42.png"></div>
+
+<div class="sh-page" data-page="43"><img alt="Verifikation mit dem Hoare-Kalkül Verifikation" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification1/unit-de-verification1-43.png"></div>
+
+<div class="sh-page" data-page="44"><img alt="Verifikation mit dem Hoare-Kalkül Beipiel einer Verifikation: Addition zweier natürlicher Zahlen" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification1/unit-de-verification1-44.png"></div>
+
+<div class="sh-page" data-page="45"><img alt="Verifikation mit dem Hoare-Kalkül Beipiel einer Verifikation: Addition zweier natürlicher Zahlen" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification1/unit-de-verification1-45.png"></div>
+
+<div class="sh-page" data-page="46"><img alt="Verifikation mit dem Hoare-Kalkül Herleitung im Hoare-Kalkül als Baum" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification1/unit-de-verification1-46.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-de-verification2.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2.pdf" style="--sh-pages: 132"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Kapitel L:V V. Erweiterungen und Anwendungen zur Logik" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Hoare-Regeln und partielle Korrektheit Hoare-Regel für Zuweisungen" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Hoare-Regeln und partielle Korrektheit Beispiele für die Anwendung der Zuweisungsregel" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Hoare-Regeln und partielle Korrektheit Abschwächungsregeln" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Hoare-Regeln und partielle Korrektheit Beispiele für die Anwendung der Abschwächungsregeln" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Hoare-Regeln und partielle Korrektheit Anwendung der Zuweisungsregel" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Hoare-Regeln und partielle Korrektheit Beispiele zur Anwendung der Zuweisungsregel" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Hoare-Regeln und partielle Korrektheit Beispiele zur Anwendung der Zuweisungsregel" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Hoare-Regeln und partielle Korrektheit Beispiele zur Anwendung der Zuweisungsregel" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Hoare-Regeln und partielle Korrektheit Beispiele zur Anwendung der Zuweisungsregel" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Hoare-Regeln und partielle Korrektheit Beispiele zur Anwendung der Zuweisungsregel" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Hoare-Regeln und partielle Korrektheit Beispiele zur Anwendung der Zuweisungsregel" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Hoare-Regeln und partielle Korrektheit Beispiele zur Anwendung der Zuweisungsregel" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="Hoare-Regeln und partielle Korrektheit Anwendung der Zuweisungsregel" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="Hoare-Regeln und partielle Korrektheit Beispiele zur Anwendung der Zuweisungsregel" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="Hoare-Regeln und partielle Korrektheit Beispiele zur Anwendung der Zuweisungsregel" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="Hoare-Regeln und partielle Korrektheit Beispiele zur Anwendung der Zuweisungsregel" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-17.png"></div>
+
+<div class="sh-page" data-page="18"><img alt="Hoare-Regeln und partielle Korrektheit Beispiele zur Anwendung der Zuweisungsregel" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-18.png"></div>
+
+<div class="sh-page" data-page="19"><img alt="Hoare-Regeln und partielle Korrektheit Beispiele zur Anwendung der Zuweisungsregel" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-19.png"></div>
+
+<div class="sh-page" data-page="20"><img alt="Hoare-Regeln und partielle Korrektheit Beispiele zur Anwendung der Zuweisungsregel" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-20.png"></div>
+
+<div class="sh-page" data-page="21"><img alt="Hoare-Regeln und partielle Korrektheit Beispiele zur Anwendung der Zuweisungsregel" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-21.png"></div>
+
+<div class="sh-page" data-page="22"><img alt="Hoare-Regeln und partielle Korrektheit Beispiele zur Anwendung der Zuweisungsregel" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-22.png"></div>
+
+<div class="sh-page" data-page="23"><img alt="Hoare-Regeln und partielle Korrektheit Beispiele zur Anwendung der Zuweisungsregel" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-23.png"></div>
+
+<div class="sh-page" data-page="24"><img alt="Hoare-Regeln und partielle Korrektheit Beispiele zur Anwendung der Zuweisungsregel" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-24.png"></div>
+
+<div class="sh-page" data-page="25"><img alt="Hoare-Regeln und partielle Korrektheit Anwendung der Zuweisungsregel" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-25.png"></div>
+
+<div class="sh-page" data-page="26"><img alt="Hoare-Regeln und partielle Korrektheit Beispiele zur Anwendung der Zuweisungsregel" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-26.png"></div>
+
+<div class="sh-page" data-page="27"><img alt="Hoare-Regeln und partielle Korrektheit Beispiele zur Anwendung der Zuweisungsregel" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-27.png"></div>
+
+<div class="sh-page" data-page="28"><img alt="Hoare-Regeln und partielle Korrektheit Beispiele zur Anwendung der Zuweisungsregel" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-28.png"></div>
+
+<div class="sh-page" data-page="29"><img alt="Hoare-Regeln und partielle Korrektheit Beispiele zur Anwendung der Zuweisungsregel" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-29.png"></div>
+
+<div class="sh-page" data-page="30"><img alt="Hoare-Regeln und partielle Korrektheit Beispiele zur Anwendung der Zuweisungsregel" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-30.png"></div>
+
+<div class="sh-page" data-page="31"><img alt="Hoare-Regeln und partielle Korrektheit Beispiele zur Anwendung der Zuweisungsregel" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-31.png"></div>
+
+<div class="sh-page" data-page="32"><img alt="Hoare-Regeln und partielle Korrektheit Beispiele zur Anwendung der Zuweisungsregel" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-32.png"></div>
+
+<div class="sh-page" data-page="33"><img alt="Hoare-Regeln und partielle Korrektheit Beispiele zur Anwendung der Zuweisungsregel" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-33.png"></div>
+
+<div class="sh-page" data-page="34"><img alt="Hoare-Regeln und partielle Korrektheit Hoare-Regeln für Anweisungsfolgen" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-34.png"></div>
+
+<div class="sh-page" data-page="35"><img alt="Hoare-Regeln und partielle Korrektheit Vorgehen bei der Verifikation eines Programmes" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-35.png"></div>
+
+<div class="sh-page" data-page="36"><img alt="Hoare-Regeln und partielle Korrektheit Beispiel zur Verifikation eines Programmes" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-36.png"></div>
+
+<div class="sh-page" data-page="37"><img alt="Hoare-Regeln und partielle Korrektheit Beispiel zur Verifikation eines Programmes" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-37.png"></div>
+
+<div class="sh-page" data-page="38"><img alt="Hoare-Regeln und partielle Korrektheit Beispiel zur Verifikation eines Programmes" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-38.png"></div>
+
+<div class="sh-page" data-page="39"><img alt="Hoare-Regeln und partielle Korrektheit Beispiel zur Verifikation eines Programmes" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-39.png"></div>
+
+<div class="sh-page" data-page="40"><img alt="Hoare-Regeln und partielle Korrektheit Beispiel zur Verifikation eines Programmes" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-40.png"></div>
+
+<div class="sh-page" data-page="41"><img alt="Hoare-Regeln und partielle Korrektheit Beispiel zur Verifikation eines Programmes" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-41.png"></div>
+
+<div class="sh-page" data-page="42"><img alt="Hoare-Regeln und partielle Korrektheit Beispiel zur Verifikation eines Programmes" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-42.png"></div>
+
+<div class="sh-page" data-page="43"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-43.png"></div>
+
+<div class="sh-page" data-page="44"><img alt="Hoare-Regeln und partielle Korrektheit Beispiel zur Verifikation eines Programmes" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-44.png"></div>
+
+<div class="sh-page" data-page="45"><img alt="Bemerkungen zum Lesen der Tabelle:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-45.png"></div>
+
+<div class="sh-page" data-page="46"><img alt="Hoare-Regeln und partielle Korrektheit Hoare-Regeln für bedingte Anweisungen" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-46.png"></div>
+
+<div class="sh-page" data-page="47"><img alt="Hoare-Regeln und partielle Korrektheit Beispiele zur Anwendung der Regeln für bedingte Anweisungen" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-47.png"></div>
+
+<div class="sh-page" data-page="48"><img alt="Hoare-Regeln und partielle Korrektheit Beispiele zur Anwendung der Regeln für bedingte Anweisungen" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-48.png"></div>
+
+<div class="sh-page" data-page="49"><img alt="Hoare-Regeln und partielle Korrektheit Beispiele zur Anwendung der Regeln für bedingte Anweisungen" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-49.png"></div>
+
+<div class="sh-page" data-page="50"><img alt="Hoare-Regeln und partielle Korrektheit Beispiele zur Anwendung der Regeln für bedingte Anweisungen" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-50.png"></div>
+
+<div class="sh-page" data-page="51"><img alt="Hoare-Regeln und partielle Korrektheit Beispiele zur Anwendung der Regeln für bedingte Anweisungen" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-51.png"></div>
+
+<div class="sh-page" data-page="52"><img alt="Hoare-Regeln und partielle Korrektheit Anwendung der Regeln für bedingte Anweisungen" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-52.png"></div>
+
+<div class="sh-page" data-page="53"><img alt="Hoare-Regeln und partielle Korrektheit Beispiele zur Anwendung der Regeln für bedingte Anweisungen" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-53.png"></div>
+
+<div class="sh-page" data-page="54"><img alt="Hoare-Regeln und partielle Korrektheit Beispiele zur Anwendung der Regeln für bedingte Anweisungen" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-54.png"></div>
+
+<div class="sh-page" data-page="55"><img alt="Hoare-Regeln und partielle Korrektheit Beispiele zur Anwendung der Regeln für bedingte Anweisungen" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-55.png"></div>
+
+<div class="sh-page" data-page="56"><img alt="Hoare-Regeln und partielle Korrektheit Beispiele zur Anwendung der Regeln für bedingte Anweisungen" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-56.png"></div>
+
+<div class="sh-page" data-page="57"><img alt="Hoare-Regeln und partielle Korrektheit Beispiele zur Anwendung der Regeln für bedingte Anweisungen" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-57.png"></div>
+
+<div class="sh-page" data-page="58"><img alt="Hoare-Regeln und partielle Korrektheit Beispiel zur Verifikation von bedingten Anweisungen" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-58.png"></div>
+
+<div class="sh-page" data-page="59"><img alt="Hoare-Regeln und partielle Korrektheit Beispiel zur Verifikation von bedingten Anweisungen" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-59.png"></div>
+
+<div class="sh-page" data-page="60"><img alt="Hoare-Regeln und partielle Korrektheit Beispiel zur Verifikation von bedingten Anweisungen" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-60.png"></div>
+
+<div class="sh-page" data-page="61"><img alt="Hoare-Regeln und partielle Korrektheit Beispiel zur Verifikation von bedingten Anweisungen" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-61.png"></div>
+
+<div class="sh-page" data-page="62"><img alt="Hoare-Regeln und partielle Korrektheit Beispiel zur Verifikation von bedingten Anweisungen" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-62.png"></div>
+
+<div class="sh-page" data-page="63"><img alt="Hoare-Regeln und partielle Korrektheit Beispiel zur Verifikation von bedingten Anweisungen" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-63.png"></div>
+
+<div class="sh-page" data-page="64"><img alt="Hoare-Regeln und partielle Korrektheit Beispiel zur Verifikation von bedingten Anweisungen" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-64.png"></div>
+
+<div class="sh-page" data-page="65"><img alt="Hoare-Regeln und partielle Korrektheit Beispiel zur Verifikation von bedingten Anweisungen" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-65.png"></div>
+
+<div class="sh-page" data-page="66"><img alt="Hoare-Regeln und partielle Korrektheit Beispiel zur Verifikation von bedingten Anweisungen" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-66.png"></div>
+
+<div class="sh-page" data-page="67"><img alt="Hoare-Regeln und partielle Korrektheit Beispiel zur Verifikation von bedingten Anweisungen" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-67.png"></div>
+
+<div class="sh-page" data-page="68"><img alt="Hoare-Regeln und partielle Korrektheit Beispiel zur Verifikation von bedingten Anweisungen" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-68.png"></div>
+
+<div class="sh-page" data-page="69"><img alt="Hoare-Regeln und partielle Korrektheit Beispiel zur Verifikation von bedingten Anweisungen" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-69.png"></div>
+
+<div class="sh-page" data-page="70"><img alt="Hoare-Regeln und partielle Korrektheit Beispiel zur Verifikation von bedingten Anweisungen" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-70.png"></div>
+
+<div class="sh-page" data-page="71"><img alt="Hoare-Regeln und partielle Korrektheit Beispiel zur Verifikation von bedingten Anweisungen" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-71.png"></div>
+
+<div class="sh-page" data-page="72"><img alt="Hoare-Regeln und partielle Korrektheit Beispiel zur Verifikation von bedingten Anweisungen" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-72.png"></div>
+
+<div class="sh-page" data-page="73"><img alt="Hoare-Regeln und partielle Korrektheit Beispiele zur Verifikation von bedingten Anweisungen" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-73.png"></div>
+
+<div class="sh-page" data-page="74"><img alt="Hoare-Regeln und partielle Korrektheit Beispiele zur Verifikation von bedingten Anweisungen" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-74.png"></div>
+
+<div class="sh-page" data-page="75"><img alt="Hoare-Regeln und partielle Korrektheit Beispiele zur Verifikation von bedingten Anweisungen" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-75.png"></div>
+
+<div class="sh-page" data-page="76"><img alt="Hoare-Regeln und partielle Korrektheit Beispiele zur Verifikation von bedingten Anweisungen" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-76.png"></div>
+
+<div class="sh-page" data-page="77"><img alt="Hoare-Regeln und partielle Korrektheit Beispiel zur Verifikation von bedingten Anweisungen" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-77.png"></div>
+
+<div class="sh-page" data-page="78"><img alt="Hoare-Regeln und partielle Korrektheit Beispiel zur Verifikation von bedingten Anweisungen" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-78.png"></div>
+
+<div class="sh-page" data-page="79"><img alt="Hoare-Regeln und partielle Korrektheit Beispiel zur Verifikation von bedingten Anweisungen" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-79.png"></div>
+
+<div class="sh-page" data-page="80"><img alt="Hoare-Regeln und partielle Korrektheit Beispiel zur Verifikation von bedingten Anweisungen" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-80.png"></div>
+
+<div class="sh-page" data-page="81"><img alt="Hoare-Regeln und partielle Korrektheit Hoare-Regel für Schleifen" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-81.png"></div>
+
+<div class="sh-page" data-page="82"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-82.png"></div>
+
+<div class="sh-page" data-page="83"><img alt="Hoare-Regeln und partielle Korrektheit Beispiel zur Anwendung der Schleifenregel" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-83.png"></div>
+
+<div class="sh-page" data-page="84"><img alt="Hoare-Regeln und partielle Korrektheit Beispiel zur Anwendung der Schleifenregel" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-84.png"></div>
+
+<div class="sh-page" data-page="85"><img alt="Hoare-Regeln und partielle Korrektheit Beispiel zur Anwendung der Schleifenregel" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-85.png"></div>
+
+<div class="sh-page" data-page="86"><img alt="Hoare-Regeln und partielle Korrektheit Beispiel zur Anwendung der Schleifenregel" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-86.png"></div>
+
+<div class="sh-page" data-page="87"><img alt="Hoare-Regeln und partielle Korrektheit Beispiel zur Anwendung der Schleifenregel" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-87.png"></div>
+
+<div class="sh-page" data-page="88"><img alt="Hoare-Regeln und partielle Korrektheit Anwendung der Regeln für bedingte Anweisungen" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-88.png"></div>
+
+<div class="sh-page" data-page="89"><img alt="Hoare-Regeln und partielle Korrektheit Beispiel zur Anwendung der Schleifenregel: Abrollen der Schleife" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-89.png"></div>
+
+<div class="sh-page" data-page="90"><img alt="Hoare-Regeln und partielle Korrektheit Beispiel zur Anwendung der Schleifenregel: Abrollen der Schleife" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-90.png"></div>
+
+<div class="sh-page" data-page="91"><img alt="Hoare-Regeln und partielle Korrektheit Beispiel zur Anwendung der Schleifenregel: Abrollen der Schleife" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-91.png"></div>
+
+<div class="sh-page" data-page="92"><img alt="Hoare-Regeln und partielle Korrektheit Beispiel zur Anwendung der Schleifenregel: Abrollen der Schleife" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-92.png"></div>
+
+<div class="sh-page" data-page="93"><img alt="Hoare-Regeln und partielle Korrektheit Beispiel zu Schleifeninvarianten" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-93.png"></div>
+
+<div class="sh-page" data-page="94"><img alt="Hoare-Regeln und partielle Korrektheit Beispiel zu Schleifeninvarianten" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-94.png"></div>
+
+<div class="sh-page" data-page="95"><img alt="Hoare-Regeln und partielle Korrektheit Beispiel zu Schleifeninvarianten" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-95.png"></div>
+
+<div class="sh-page" data-page="96"><img alt="Hoare-Regeln und partielle Korrektheit Beispiel zu Schleifeninvarianten" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-96.png"></div>
+
+<div class="sh-page" data-page="97"><img alt="Hoare-Regeln und partielle Korrektheit Beispiel zu Schleifeninvarianten" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-97.png"></div>
+
+<div class="sh-page" data-page="98"><img alt="Hoare-Regeln und partielle Korrektheit Beispiel zu Schleifeninvarianten" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-98.png"></div>
+
+<div class="sh-page" data-page="99"><img alt="Hoare-Regeln und partielle Korrektheit Beispiel zu Schleifeninvarianten" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-99.png"></div>
+
+<div class="sh-page" data-page="100"><img alt="Hoare-Regeln und partielle Korrektheit Beispiel zu Schleifeninvarianten" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-100.png"></div>
+
+<div class="sh-page" data-page="101"><img alt="Hoare-Regeln und partielle Korrektheit Beispiel zu Schleifeninvarianten" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-101.png"></div>
+
+<div class="sh-page" data-page="102"><img alt="Hoare-Regeln und partielle Korrektheit Beispiel zu Schleifeninvarianten" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-102.png"></div>
+
+<div class="sh-page" data-page="103"><img alt="Hoare-Regeln und partielle Korrektheit Beispiel zu Schleifeninvarianten" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-103.png"></div>
+
+<div class="sh-page" data-page="104"><img alt="Hoare-Regeln und partielle Korrektheit Beispiel zu Schleifeninvarianten" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-104.png"></div>
+
+<div class="sh-page" data-page="105"><img alt="Hoare-Regeln und partielle Korrektheit Beispiel zu Schleifeninvarianten" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-105.png"></div>
+
+<div class="sh-page" data-page="106"><img alt="Hoare-Regeln und partielle Korrektheit Beispiel zu Schleifeninvarianten" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-106.png"></div>
+
+<div class="sh-page" data-page="107"><img alt="Hoare-Regeln und partielle Korrektheit Beispiel zu Schleifeninvarianten" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-107.png"></div>
+
+<div class="sh-page" data-page="108"><img alt="Hoare-Regeln und partielle Korrektheit Beispiel zu Schleifeninvarianten" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-108.png"></div>
+
+<div class="sh-page" data-page="109"><img alt="Hoare-Regeln und partielle Korrektheit Beispiel zu Schleifeninvarianten" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-109.png"></div>
+
+<div class="sh-page" data-page="110"><img alt="Hoare-Regeln und partielle Korrektheit Beispiel Einfaches Potenzieren" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-110.png"></div>
+
+<div class="sh-page" data-page="111"><img alt="Hoare-Regeln und partielle Korrektheit Beispiel Einfaches Potenzieren" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-111.png"></div>
+
+<div class="sh-page" data-page="112"><img alt="Hoare-Regeln und partielle Korrektheit Beispiel Einfaches Potenzieren" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-112.png"></div>
+
+<div class="sh-page" data-page="113"><img alt="Hoare-Regeln und partielle Korrektheit Beispiel Einfaches Potenzieren" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-113.png"></div>
+
+<div class="sh-page" data-page="114"><img alt="Hoare-Regeln und partielle Korrektheit Beispiel Einfaches Potenzieren" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-114.png"></div>
+
+<div class="sh-page" data-page="115"><img alt="Hoare-Regeln und partielle Korrektheit Beispiel Einfaches Potenzieren" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-115.png"></div>
+
+<div class="sh-page" data-page="116"><img alt="Hoare-Regeln und partielle Korrektheit Beispiel Einfaches Potenzieren" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-116.png"></div>
+
+<div class="sh-page" data-page="117"><img alt="Hoare-Regeln und partielle Korrektheit Beispiel Einfaches Potenzieren" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-117.png"></div>
+
+<div class="sh-page" data-page="118"><img alt="Hoare-Regeln und partielle Korrektheit Beispiel Einfaches Potenzieren" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-118.png"></div>
+
+<div class="sh-page" data-page="119"><img alt="Hoare-Regeln und partielle Korrektheit Beispiel Effizientes Potenzieren" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-119.png"></div>
+
+<div class="sh-page" data-page="120"><img alt="Hoare-Regeln und partielle Korrektheit Beispiel Effizientes Potenzieren" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-120.png"></div>
+
+<div class="sh-page" data-page="121"><img alt="Hoare-Regeln und partielle Korrektheit Beispiel Effizientes Potenzieren" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-121.png"></div>
+
+<div class="sh-page" data-page="122"><img alt="Hoare-Regeln und partielle Korrektheit Beispiel Effizientes Potenzieren" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-122.png"></div>
+
+<div class="sh-page" data-page="123"><img alt="Hoare-Regeln und partielle Korrektheit Beispiel Effizientes Potenzieren" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-123.png"></div>
+
+<div class="sh-page" data-page="124"><img alt="Hoare-Regeln und partielle Korrektheit Beispiel Effizientes Potenzieren" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-124.png"></div>
+
+<div class="sh-page" data-page="125"><img alt="Hoare-Regeln und partielle Korrektheit Beispiel Effizientes Potenzieren" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-125.png"></div>
+
+<div class="sh-page" data-page="126"><img alt="Hoare-Regeln und partielle Korrektheit Beispiel Effizientes Potenzieren" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-126.png"></div>
+
+<div class="sh-page" data-page="127"><img alt="Hoare-Regeln und partielle Korrektheit Beispiel Effizientes Potenzieren" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-127.png"></div>
+
+<div class="sh-page" data-page="128"><img alt="Hoare-Regeln und partielle Korrektheit Beispiel Effizientes Potenzieren" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-128.png"></div>
+
+<div class="sh-page" data-page="129"><img alt="Hoare-Regeln und partielle Korrektheit Beispiel Effizientes Potenzieren" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-129.png"></div>
+
+<div class="sh-page" data-page="130"><img alt="Hoare-Regeln und partielle Korrektheit Beispiel Effizientes Potenzieren" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-130.png"></div>
+
+<div class="sh-page" data-page="131"><img alt="Bemerkungen als Wiederholung" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-131.png"></div>
+
+<div class="sh-page" data-page="132"><img alt="Hoare-Regeln und partielle Korrektheit Möglichkeiten zum Einsparen von Schreibarbeit" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification2/unit-de-verification2-132.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-de-verification3.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/logics/unit-de-verification3.pdf" style="--sh-pages: 32"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Kapitel L:V V. Erweiterungen und Anwendungen zur Logik" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification3/unit-de-verification3-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Terminierung Der Nachweis der totalen Korrekheit eines Programms erfordert neben der bisher" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification3/unit-de-verification3-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification3/unit-de-verification3-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Terminierung Terminierung von Schleifen" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification3/unit-de-verification3-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Terminierung Beispiel für den Nachweis der Terminierung einer Schleife" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification3/unit-de-verification3-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification3/unit-de-verification3-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Terminierung Beispiel für den Nachweis der Terminierung einer Schleife" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification3/unit-de-verification3-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Terminierung Beispiel für den Nachweis der Terminierung einer Schleife" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification3/unit-de-verification3-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Terminierung Beispiel für den Nachweis der Terminierung einer Schleife" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification3/unit-de-verification3-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Terminierung Formaler Nachweis der Terminierung von Schleifen" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification3/unit-de-verification3-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Terminierung Beispiel für den Nachweis der Terminierung einer Schleife" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification3/unit-de-verification3-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Terminierung Beispiel für den Nachweis der Terminierung einer Schleife" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification3/unit-de-verification3-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Terminierung Beispiel für den Nachweis der Terminierung einer Schleife" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification3/unit-de-verification3-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="Terminierung Beispiel für den Nachweis der Terminierung einer Schleife" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification3/unit-de-verification3-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="Terminierung Beispiel für den Nachweis der Terminierung einer Schleife" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification3/unit-de-verification3-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="Terminierung Informeller Nachweis der Terminierung von Schleifen" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification3/unit-de-verification3-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification3/unit-de-verification3-17.png"></div>
+
+<div class="sh-page" data-page="18"><img alt="Terminierung Beispiel für den alternativen Nachweis der Terminierung einer Schleife" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification3/unit-de-verification3-18.png"></div>
+
+<div class="sh-page" data-page="19"><img alt="Terminierung Beispiel für den alternativen Nachweis der Terminierung einer Schleife" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification3/unit-de-verification3-19.png"></div>
+
+<div class="sh-page" data-page="20"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification3/unit-de-verification3-20.png"></div>
+
+<div class="sh-page" data-page="21"><img alt="Terminierung Terminierung: Ein Problem?" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification3/unit-de-verification3-21.png"></div>
+
+<div class="sh-page" data-page="22"><img alt="Terminierung Terminierung: Ein Problem?" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification3/unit-de-verification3-22.png"></div>
+
+<div class="sh-page" data-page="23"><img alt="Terminierung Terminierung: Ein Problem?" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification3/unit-de-verification3-23.png"></div>
+
+<div class="sh-page" data-page="24"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification3/unit-de-verification3-24.png"></div>
+
+<div class="sh-page" data-page="25"><img alt="Terminierung Nicht-Terminierung von Schleifen" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification3/unit-de-verification3-25.png"></div>
+
+<div class="sh-page" data-page="26"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification3/unit-de-verification3-26.png"></div>
+
+<div class="sh-page" data-page="27"><img alt="Terminierung Beispiel Nicht-Terminierung von Schleifen" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification3/unit-de-verification3-27.png"></div>
+
+<div class="sh-page" data-page="28"><img alt="Terminierung Beispiel Nicht-Terminierung von Schleifen" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification3/unit-de-verification3-28.png"></div>
+
+<div class="sh-page" data-page="29"><img alt="Terminierung Beispiel Nicht-Terminierung von Schleifen" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification3/unit-de-verification3-29.png"></div>
+
+<div class="sh-page" data-page="30"><img alt="Terminierung Beispiel Nicht-Terminierung von Schleifen" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification3/unit-de-verification3-30.png"></div>
+
+<div class="sh-page" data-page="31"><img alt="Terminierung Beispiel Nicht-Terminierung von Schleifen" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification3/unit-de-verification3-31.png"></div>
+
+<div class="sh-page" data-page="32"><img alt="Terminierung Beispiel Nicht-Terminierung von Schleifen" src="https://webis.de/downloads/lecturenotes/logics/unit-de-verification3/unit-de-verification3-32.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+<!-- units end -->
+</div>
+</main>
+
+<div class="sh-modal closed" data-modal-help="" aria-hidden="true" aria-labelledby="sh-help-title" role="dialog">
+  <div class="sh-modal-content" role="document">
+    <button class="sh-modal__close sh-button sh-button--close" data-close-modal="" aria-label="Close">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" aria-labelledby="sh-close-help-title"><path d="M4 0l8 8 8-8 4 4-8 8 8 8-4 4-8-8-8 8-4-4 8-8-8-8z"/></svg>
+    </button>
+    <h2 class="sh-modal__title" id="sh-help-title">Help</h2>
+    <div class="sh-shortcut-table-wrapper">
+      <table class="sh-shortcut-table">
+        <caption class="sh-visually-hidden">Document-specific controls</caption>
+        <thead>
+          <tr>
+            <th class="sh-shortcut-table__input">
+              <span class="sh-visually-hidden">Shortcut</span>
+            </th>
+            <th class="sh-shortcut-table__action">Documents</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="sh-shortcut-table__input">
+              <div class="sh-shortcut-group">
+                <kbd aria-label="Up or down arrow key">↑/↓</kbd>
+              </div>
+            </td>
+            <td class="sh-shortcut-table__action">Navigate documents</td>
+          </tr>
+          <tr>
+            <td class="sh-shortcut-table__input">
+              <div class="sh-shortcut-group">
+                <kbd>Shift</kbd> + <kbd aria-label="Up or down arrow key">↑/↓</kbd>
+              </div>
+            </td>
+            <td class="sh-shortcut-table__action">Navigate 3 documents</td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="sh-shortcut-table">
+        <caption class="sh-visually-hidden">Page-specific controls</caption>
+        <thead>
+          <tr>
+            <th class="sh-shortcut-table__input">
+              <span class="sh-visually-hidden">Shortcut</span>
+            </th>
+            <th class="sh-shortcut-table__action">Pages</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="sh-shortcut-table__input">
+              <div class="sh-shortcut-group">
+                <kbd aria-label="Left or right arrow key">←/→</kbd>
+              </div>
+            </td>
+            <td class="sh-shortcut-table__action">Navigate pages</td>
+          </tr>
+          <tr>
+            <td class="sh-shortcut-table__input">
+              <div class="sh-shortcut-group">
+                <kbd>Shift</kbd> + <kbd>MouseWheel</kbd>
+              </div>
+            </td>
+            <td class="sh-shortcut-table__action">Navigate pages</td>
+          </tr>
+          <tr>
+            <td class="sh-shortcut-table__input">
+              <div class="sh-shortcut-group">
+                <kbd>Shift</kbd> + <kbd aria-label="Left or right arrow key">←/→</kbd>
+              </div>
+            </td>
+            <td class="sh-shortcut-table__action">Navigate 3 pages</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<footer class="uk-section uk-section-default footer-section">
+    <div class="uk-container">
+        <div class="uk-align-right@m uk-margin-top">
+            Copyright &copy; 2019 Temir Group
+            <address></address>
+        </div>
+    </div>
+</footer>
+
+<script>
+    UIkit.util.ready(() => {
+        const nav = UIkit.util.$(".global-nav");
+        const navHeight = UIkit.util.height(nav);
+
+        // correct scroll offset due to fixed navigation after page load
+        let fixScrollHeight = () => {
+            if (location.hash === "" || !UIkit.util.$(location.hash)) {
+                return;
+            }
+
+            const pos = document.documentElement.scrollTop;
+            const offset = UIkit.util.offset(UIkit.util.$(location.hash));
+
+            if (pos > navHeight * .8 && offset) {
+                document.documentElement.scrollTop = offset.top - navHeight - 20;
+            }
+        };
+
+        window.addEventListener("hashchange", fixScrollHeight, false);
+        setTimeout(fixScrollHeight, 100);
+    });
+</script>
+
+</body>
+</html>

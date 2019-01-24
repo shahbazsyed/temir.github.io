@@ -1,0 +1,1775 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Webis Lecturnotes Browser Datenbanken</title>
+    <meta charset="utf-8">
+    <meta name="description" content="SlideHub is a presentation/slide/talk explorer">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="copyright" content="&copy; 2019 Temir">
+    <link rel="icon" type="image/png" href="/img/favicon.png">
+
+    <link rel="stylesheet" href="/css/style.css?1548321565">
+    <link rel="stylesheet" href="/css/browser.css?1548321565">
+    <link rel="stylesheet" href="/css/browser-compatibility.css?1548321565">
+</head>
+<body class="uk-offcanvas-content">
+<script src="/js/thirdparty/uikit/uikit.min.js"></script>
+<script src="/js/thirdparty/uikit/uikit-icons.min.js"></script>
+
+<div id="offcanvas-nav" class="uk-hidden@m" data-uk-offcanvas="overlay: true; flip: true;">
+    <div class="uk-offcanvas-bar">
+        <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+
+        <!-- Mobile navigation -->
+        <nav class="uk-margin-large-top">
+            <ul class="uk-nav uk-nav-primary uk-nav-parent-icon" data-uk-nav>
+                <li>
+                    <a href="/people.html">People</a>
+                </li>
+                <li class="uk-active" class="uk-parent">
+                    <a href="#">Lecturenotes</a>
+                    <ul class="uk-nav-sub">
+                        <li><a href="/lecturenotes/overview.html">Overview</a></li>
+                        <li><a href="/lecturenotes/slides.html">Slides</a></li>
+                        <li class="uk-parent">
+                            Browser
+                            <ul class="uk-nav-sub">
+                                <li><a href="/lecturenotes/browser/algorithms-and-datastructures.html">Algorithmen und Datenstrukturen</a></li>
+                                <li><a href="/lecturenotes/browser/information-retrieval.html">Information Retrieval</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/research.html">Research</a>
+                </li>
+                <li>
+                    <a href="/publications.html">Publications</a>
+                </li>
+                <li>
+                    <a href="/data.html">Data</a>
+                </li>
+                <li>
+                    <a href="/facilities.html">Facilities</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<div class="uk-background-secondary desktop-nav global-nav" data-uk-sticky="media: @m">
+    <!-- Desktop navigation -->
+    <nav class="uk-navbar-container uk-navbar-transparent uk-container uk-light" data-uk-navbar="mode: click">
+        <div class="uk-navbar-left">
+            <ul class="uk-navbar-nav">
+                <li>
+                    <a href="/"><img src="/img/uni_leipzig_logo_v2_white-01_opt_2.png" alt="TEMIR LOGO" class="uk-logo"> Temir</a>
+                </li>
+            </ul>
+        </div>
+        <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav">
+                <li>
+                    <a href="/people.html">People</a>
+                </li>
+                <li class="nav-group-start uk-active">
+                    <a href="#">Lecturenotes</a>
+                    <div class="uk-navbar-dropdown uk-navbar-dropdown-width-3 uk-padding-remove">
+                        <div class="uk-navbar-dropdown-grid" data-uk-grid>
+                            <div class="uk-width-1-3">
+                                <ul class="uk-nav uk-navbar-dropdown-nav uk-padding-small">
+                                    <li><a href="/lecturenotes/overview.html">Overview</a></li>
+                                    <li><a href="/lecturenotes/slides.html">Slides</a></li>
+                                    <li class="nav-left-open-category">Browser</li>
+                                </ul>
+                            </div>
+                            <div class="uk-width-2-3">
+                                <ul class="uk-nav uk-navbar-dropdown-nav nav-right-open-sub uk-padding-small">
+                                    <li><a href="/lecturenotes/browser/algorithms-and-datastructures.html">Algorithmen und Datenstrukturen</a></li>
+                                    <li><a href="/lecturenotes/browser/information-retrieval.html">Information Retrieval</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="/research.html">Research</a>
+                </li>
+                <li>
+                    <a href="/publications.html">Publications</a>
+                </li>
+                <li class="nav-group-start">
+                    <a href="/data.html">Data</a>
+                </li>
+                <li>
+                    <a href="/facilities.html">Facilities</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<div class="uk-background-secondary mobile-nav global-nav" data-uk-sticky>
+    <div class="uk-navbar-container uk-navbar-transparent uk-container uk-light mobile-nav-toggle" data-uk-navbar>
+        <div class="">
+            <ul class="uk-navbar-nav">
+                <li>
+                    <a href="/"><img src="/img/uni_leipzig_logo_v2_white-01_opt_2.png" alt="TEMIR LOGO" class="uk-logo"> Temir</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="uk-navbar-right">
+            <button class="uk-button uk-navbar-item uk-light uk-button-large" type="button" data-uk-icon="icon: menu"
+                    data-uk-toggle="target: #offcanvas-nav"></button>
+        </div>
+    </div>
+</div>
+
+<div data-uk-height-viewport="expand: true">
+<script src="/js/browser.js"></script>
+
+<main class="uk-margin-medium" data-slidehub="">
+<!-- SlideHub will hook itself as a child element into [data-slidehub] -->
+<div class="slidehub-container">
+
+<!-- units start -->
+
+
+
+<div class="sh-doc" id="unit-de-db-organization.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/databases/unit-de-db-organization.pdf" style="--sh-pages: 7"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Datenbanken Benno Stein" src="https://webis.de/downloads/lecturenotes/databases/unit-de-db-organization/unit-de-db-organization-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Inhalt I. Einführung" src="https://webis.de/downloads/lecturenotes/databases/unit-de-db-organization/unit-de-db-organization-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Ziele " src="https://webis.de/downloads/lecturenotes/databases/unit-de-db-organization/unit-de-db-organization-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Angrenzende Gebiete Ingenieur-Datenbanken" src="https://webis.de/downloads/lecturenotes/databases/unit-de-db-organization/unit-de-db-organization-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Angrenzende Gebiete 1. Syntaktische Web-Technologien" src="https://webis.de/downloads/lecturenotes/databases/unit-de-db-organization/unit-de-db-organization-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Angrenzende Gebiete 1. Syntaktische Web-Technologien" src="https://webis.de/downloads/lecturenotes/databases/unit-de-db-organization/unit-de-db-organization-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Literatur" src="https://webis.de/downloads/lecturenotes/databases/unit-de-db-organization/unit-de-db-organization-7.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-de-db-introduction.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/databases/unit-de-db-introduction.pdf" style="--sh-pages: 46"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Kapitel DB:I I. Einführung" src="https://webis.de/downloads/lecturenotes/databases/unit-de-db-introduction/unit-de-db-introduction-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Datenintensive Anwendungen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-db-introduction/unit-de-db-introduction-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Datenintensive Anwendungen Beispiel: Hotelreservierung" src="https://webis.de/downloads/lecturenotes/databases/unit-de-db-introduction/unit-de-db-introduction-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Entstehung von Datenbanksystemen Alte Bibliothek von Alexandria" src="https://webis.de/downloads/lecturenotes/databases/unit-de-db-introduction/unit-de-db-introduction-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Entstehung von Datenbanksystemen Neue Bibliothek von Alexandria" src="https://webis.de/downloads/lecturenotes/databases/unit-de-db-introduction/unit-de-db-introduction-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-db-introduction/unit-de-db-introduction-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Entstehung von Datenbanksystemen Anfang 60er Jahre: direkter Dateizugriff" src="https://webis.de/downloads/lecturenotes/databases/unit-de-db-introduction/unit-de-db-introduction-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Entstehung von Datenbanksystemen Ende 60er Jahre: Dateizugriff mit Verwaltungssystem" src="https://webis.de/downloads/lecturenotes/databases/unit-de-db-introduction/unit-de-db-introduction-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Entstehung von Datenbanksystemen Probleme der frühen Datenverarbeitung" src="https://webis.de/downloads/lecturenotes/databases/unit-de-db-introduction/unit-de-db-introduction-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Entstehung von Datenbanksystemen Probleme der frühen Datenverarbeitung" src="https://webis.de/downloads/lecturenotes/databases/unit-de-db-introduction/unit-de-db-introduction-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Entstehung von Datenbanksystemen Probleme der frühen Datenverarbeitung" src="https://webis.de/downloads/lecturenotes/databases/unit-de-db-introduction/unit-de-db-introduction-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Entstehung von Datenbanksystemen Probleme der frühen Datenverarbeitung" src="https://webis.de/downloads/lecturenotes/databases/unit-de-db-introduction/unit-de-db-introduction-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Entstehung von Datenbanksystemen Mitte 70er Jahre: explizites Daten-Management" src="https://webis.de/downloads/lecturenotes/databases/unit-de-db-introduction/unit-de-db-introduction-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="Begriffsbildung und Einordnung Definition 1 (Datenbank = Datenbasis, DB)" src="https://webis.de/downloads/lecturenotes/databases/unit-de-db-introduction/unit-de-db-introduction-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="Begriffsbildung und Einordnung Definition 1 (Datenbank = Datenbasis, DB)" src="https://webis.de/downloads/lecturenotes/databases/unit-de-db-introduction/unit-de-db-introduction-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="Begriffsbildung und Einordnung Softwareschichten eines Computer-Systems" src="https://webis.de/downloads/lecturenotes/databases/unit-de-db-introduction/unit-de-db-introduction-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-db-introduction/unit-de-db-introduction-17.png"></div>
+
+<div class="sh-page" data-page="18"><img alt="Datenbank-Management-Systeme Neun Anforderungen an ein DBMS" src="https://webis.de/downloads/lecturenotes/databases/unit-de-db-introduction/unit-de-db-introduction-18.png"></div>
+
+<div class="sh-page" data-page="19"><img alt="Datenbank-Management-Systeme Neun Anforderungen an ein DBMS" src="https://webis.de/downloads/lecturenotes/databases/unit-de-db-introduction/unit-de-db-introduction-19.png"></div>
+
+<div class="sh-page" data-page="20"><img alt="Datenbank-Management-Systeme Drei-Schichten-Schema-Architektur" src="https://webis.de/downloads/lecturenotes/databases/unit-de-db-introduction/unit-de-db-introduction-20.png"></div>
+
+<div class="sh-page" data-page="21"><img alt="Datenbank-Management-Systeme Drei-Schichten-Schema-Architektur" src="https://webis.de/downloads/lecturenotes/databases/unit-de-db-introduction/unit-de-db-introduction-21.png"></div>
+
+<div class="sh-page" data-page="22"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-db-introduction/unit-de-db-introduction-22.png"></div>
+
+<div class="sh-page" data-page="23"><img alt="Datenbank-Management-Systeme Drei-Schichten-Schema-Architektur" src="https://webis.de/downloads/lecturenotes/databases/unit-de-db-introduction/unit-de-db-introduction-23.png"></div>
+
+<div class="sh-page" data-page="24"><img alt="Datenbank-Management-Systeme Drei-Schichten-Schema-Architektur" src="https://webis.de/downloads/lecturenotes/databases/unit-de-db-introduction/unit-de-db-introduction-24.png"></div>
+
+<div class="sh-page" data-page="25"><img alt="Datenbank-Management-Systeme Was ein DBMS zu tun hat" src="https://webis.de/downloads/lecturenotes/databases/unit-de-db-introduction/unit-de-db-introduction-25.png"></div>
+
+<div class="sh-page" data-page="26"><img alt="Datenbank-Management-Systeme Was ein DBMS zu tun hat" src="https://webis.de/downloads/lecturenotes/databases/unit-de-db-introduction/unit-de-db-introduction-26.png"></div>
+
+<div class="sh-page" data-page="27"><img alt="Datenbank-Management-Systeme Systemarchitektur und Komponenten eines DBMS" src="https://webis.de/downloads/lecturenotes/databases/unit-de-db-introduction/unit-de-db-introduction-27.png"></div>
+
+<div class="sh-page" data-page="28"><img alt="Datenbank-Management-Systeme Ebene 1" src="https://webis.de/downloads/lecturenotes/databases/unit-de-db-introduction/unit-de-db-introduction-28.png"></div>
+
+<div class="sh-page" data-page="29"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-db-introduction/unit-de-db-introduction-29.png"></div>
+
+<div class="sh-page" data-page="30"><img alt="Datenbank-Management-Systeme Systemarchitektur und Komponenten eines DBMS" src="https://webis.de/downloads/lecturenotes/databases/unit-de-db-introduction/unit-de-db-introduction-30.png"></div>
+
+<div class="sh-page" data-page="31"><img alt="Datenbank-Management-Systeme Systemarchitektur und Komponenten eines DBMS" src="https://webis.de/downloads/lecturenotes/databases/unit-de-db-introduction/unit-de-db-introduction-31.png"></div>
+
+<div class="sh-page" data-page="32"><img alt="Relationale Datenbanksysteme " src="https://webis.de/downloads/lecturenotes/databases/unit-de-db-introduction/unit-de-db-introduction-32.png"></div>
+
+<div class="sh-page" data-page="33"><img alt="Relationale Datenbanksysteme Merkmale relationaler Datenbank-Management-Systeme (RDBMS)" src="https://webis.de/downloads/lecturenotes/databases/unit-de-db-introduction/unit-de-db-introduction-33.png"></div>
+
+<div class="sh-page" data-page="34"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-db-introduction/unit-de-db-introduction-34.png"></div>
+
+<div class="sh-page" data-page="35"><img alt="Relationale Datenbanksysteme Beispiel: Daten- und Datenbankdefinition" src="https://webis.de/downloads/lecturenotes/databases/unit-de-db-introduction/unit-de-db-introduction-35.png"></div>
+
+<div class="sh-page" data-page="36"><img alt="Relationale Datenbanksysteme Beispiel: Integritätsbedingungen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-db-introduction/unit-de-db-introduction-36.png"></div>
+
+<div class="sh-page" data-page="37"><img alt="Relationale Datenbanksysteme Beispiel: Anfrageoperationen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-db-introduction/unit-de-db-introduction-37.png"></div>
+
+<div class="sh-page" data-page="38"><img alt="Relationale Datenbanksysteme Beispiel: Anfrageoperationen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-db-introduction/unit-de-db-introduction-38.png"></div>
+
+<div class="sh-page" data-page="39"><img alt="Relationale Datenbanksysteme Beispiel: Anfrageoperationen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-db-introduction/unit-de-db-introduction-39.png"></div>
+
+<div class="sh-page" data-page="40"><img alt="Relationale Datenbanksysteme Anfrageoptimierung" src="https://webis.de/downloads/lecturenotes/databases/unit-de-db-introduction/unit-de-db-introduction-40.png"></div>
+
+<div class="sh-page" data-page="41"><img alt="Relationale Datenbanksysteme Anfrageoptimierung" src="https://webis.de/downloads/lecturenotes/databases/unit-de-db-introduction/unit-de-db-introduction-41.png"></div>
+
+<div class="sh-page" data-page="42"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-db-introduction/unit-de-db-introduction-42.png"></div>
+
+<div class="sh-page" data-page="43"><img alt="Relationale Datenbanksysteme Grenzen von RDBMS" src="https://webis.de/downloads/lecturenotes/databases/unit-de-db-introduction/unit-de-db-introduction-43.png"></div>
+
+<div class="sh-page" data-page="44"><img alt="Relationale Datenbanksysteme Grenzen von RDBMS" src="https://webis.de/downloads/lecturenotes/databases/unit-de-db-introduction/unit-de-db-introduction-44.png"></div>
+
+<div class="sh-page" data-page="45"><img alt="Relationale Datenbanksysteme Erstellung von RDBMS" src="https://webis.de/downloads/lecturenotes/databases/unit-de-db-introduction/unit-de-db-introduction-45.png"></div>
+
+<div class="sh-page" data-page="46"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-db-introduction/unit-de-db-introduction-46.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-de-design-and-models.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/databases/unit-de-design-and-models.pdf" style="--sh-pages: 29"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Kapitel DB:II II. Datenbankentwurf und Datenbankmodelle" src="https://webis.de/downloads/lecturenotes/databases/unit-de-design-and-models/unit-de-design-and-models-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Entwurfsprozess ANSI\u002fSPARC-Schema-Architektur" src="https://webis.de/downloads/lecturenotes/databases/unit-de-design-and-models/unit-de-design-and-models-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Bemerkungen zu [p.30 Elmasri\u002fNavathe 2010]:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-design-and-models/unit-de-design-and-models-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Entwurfsprozess ANSI\u002fSPARC-Schema-Architektur: Entwurfspraxis" src="https://webis.de/downloads/lecturenotes/databases/unit-de-design-and-models/unit-de-design-and-models-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Entwurfsprozess ANSI\u002fSPARC-Schema-Architektur: Entwurfspraxis" src="https://webis.de/downloads/lecturenotes/databases/unit-de-design-and-models/unit-de-design-and-models-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Entwurfsprozess ANSI\u002fSPARC-Schema-Architektur: Entwurfspraxis" src="https://webis.de/downloads/lecturenotes/databases/unit-de-design-and-models/unit-de-design-and-models-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Entwurfsprozess ANSI\u002fSPARC-Schema-Architektur: Entwurfspraxis" src="https://webis.de/downloads/lecturenotes/databases/unit-de-design-and-models/unit-de-design-and-models-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Entwurfsprozess Zentrale Anforderung an den Entwurfsprozess ist die Informationserhaltung:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-design-and-models/unit-de-design-and-models-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-design-and-models/unit-de-design-and-models-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Entwurfsprozess " src="https://webis.de/downloads/lecturenotes/databases/unit-de-design-and-models/unit-de-design-and-models-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Phasenmodell des Datenbankentwurfs Informationsstrukturanforderungen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-design-and-models/unit-de-design-and-models-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-design-and-models/unit-de-design-and-models-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Entwurfsprozess Phasenmodell: Anforderungsanalyse" src="https://webis.de/downloads/lecturenotes/databases/unit-de-design-and-models/unit-de-design-and-models-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-design-and-models/unit-de-design-and-models-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="Entwurfsprozess Phasenmodell: konzeptueller Entwurf" src="https://webis.de/downloads/lecturenotes/databases/unit-de-design-and-models/unit-de-design-and-models-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-design-and-models/unit-de-design-and-models-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="Entwurfsprozess Phasenmodell: Verteilungsentwurf" src="https://webis.de/downloads/lecturenotes/databases/unit-de-design-and-models/unit-de-design-and-models-17.png"></div>
+
+<div class="sh-page" data-page="18"><img alt="Entwurfsprozess Phasenmodell: logischer Entwurf" src="https://webis.de/downloads/lecturenotes/databases/unit-de-design-and-models/unit-de-design-and-models-18.png"></div>
+
+<div class="sh-page" data-page="19"><img alt="Entwurfsprozess Phasenmodell: physischer Entwurf" src="https://webis.de/downloads/lecturenotes/databases/unit-de-design-and-models/unit-de-design-and-models-19.png"></div>
+
+<div class="sh-page" data-page="20"><img alt="Bemerkungen [Schuerr 2001]:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-design-and-models/unit-de-design-and-models-20.png"></div>
+
+<div class="sh-page" data-page="21"><img alt="Datenbankmodelle Definition 1 (Datenmodell)" src="https://webis.de/downloads/lecturenotes/databases/unit-de-design-and-models/unit-de-design-and-models-21.png"></div>
+
+<div class="sh-page" data-page="22"><img alt="Datenbankmodelle Definition 1 (Datenmodell)" src="https://webis.de/downloads/lecturenotes/databases/unit-de-design-and-models/unit-de-design-and-models-22.png"></div>
+
+<div class="sh-page" data-page="23"><img alt="Datenbankmodelle Definition 2 (Datenbankmodell, Datenbankschema" src="https://webis.de/downloads/lecturenotes/databases/unit-de-design-and-models/unit-de-design-and-models-23.png"></div>
+
+<div class="sh-page" data-page="24"><img alt="Datenbankmodelle Definition 2 (Datenbankmodell, Datenbankschema" src="https://webis.de/downloads/lecturenotes/databases/unit-de-design-and-models/unit-de-design-and-models-24.png"></div>
+
+<div class="sh-page" data-page="25"><img alt="Datenbankmodelle Historie" src="https://webis.de/downloads/lecturenotes/databases/unit-de-design-and-models/unit-de-design-and-models-25.png"></div>
+
+<div class="sh-page" data-page="26"><img alt="Datenbankmodelle Datenbankschema" src="https://webis.de/downloads/lecturenotes/databases/unit-de-design-and-models/unit-de-design-and-models-26.png"></div>
+
+<div class="sh-page" data-page="27"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-design-and-models/unit-de-design-and-models-27.png"></div>
+
+<div class="sh-page" data-page="28"><img alt="Datenbankmodelle Datenbankzustand" src="https://webis.de/downloads/lecturenotes/databases/unit-de-design-and-models/unit-de-design-and-models-28.png"></div>
+
+<div class="sh-page" data-page="29"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-design-and-models/unit-de-design-and-models-29.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-de-conceptual-design1.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/databases/unit-de-conceptual-design1.pdf" style="--sh-pages: 31"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Kapitel DB:III III. Konzeptueller Datenbankentwurf" src="https://webis.de/downloads/lecturenotes/databases/unit-de-conceptual-design1/unit-de-conceptual-design1-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Einführung in das Entity-Relationship-Modell Historie:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-conceptual-design1/unit-de-conceptual-design1-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Einführung in das Entity-Relationship-Modell Elemente" src="https://webis.de/downloads/lecturenotes/databases/unit-de-conceptual-design1/unit-de-conceptual-design1-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Einführung in das Entity-Relationship-Modell Die Beschreibung der Informationsstruktur eines Anwendungsbereichs im EntityRelationship-Modell heißt Entity-Relationship-Diagramm (ER-Diagramm) oder" src="https://webis.de/downloads/lecturenotes/databases/unit-de-conceptual-design1/unit-de-conceptual-design1-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Einführung in das Entity-Relationship-Modell Die Beschreibung der Informationsstruktur eines Anwendungsbereichs im EntityRelationship-Modell heißt Entity-Relationship-Diagramm (ER-Diagramm) oder" src="https://webis.de/downloads/lecturenotes/databases/unit-de-conceptual-design1/unit-de-conceptual-design1-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Einführung in das Entity-Relationship-Modell Die Beschreibung der Informationsstruktur eines Anwendungsbereichs im EntityRelationship-Modell heißt Entity-Relationship-Diagramm (ER-Diagramm) oder" src="https://webis.de/downloads/lecturenotes/databases/unit-de-conceptual-design1/unit-de-conceptual-design1-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Einführung in das Entity-Relationship-Modell Die Beschreibung der Informationsstruktur eines Anwendungsbereichs im EntityRelationship-Modell heißt Entity-Relationship-Diagramm (ER-Diagramm) oder" src="https://webis.de/downloads/lecturenotes/databases/unit-de-conceptual-design1/unit-de-conceptual-design1-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Einführung in das Entity-Relationship-Modell Die Beschreibung der Informationsstruktur eines Anwendungsbereichs im EntityRelationship-Modell heißt Entity-Relationship-Diagramm (ER-Diagramm) oder" src="https://webis.de/downloads/lecturenotes/databases/unit-de-conceptual-design1/unit-de-conceptual-design1-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Einführung in das Entity-Relationship-Modell Die Beschreibung der Informationsstruktur eines Anwendungsbereichs im EntityRelationship-Modell heißt Entity-Relationship-Diagramm (ER-Diagramm) oder" src="https://webis.de/downloads/lecturenotes/databases/unit-de-conceptual-design1/unit-de-conceptual-design1-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Einführung in das Entity-Relationship-Modell Die Beschreibung der Informationsstruktur eines Anwendungsbereichs im EntityRelationship-Modell heißt Entity-Relationship-Diagramm (ER-Diagramm) oder" src="https://webis.de/downloads/lecturenotes/databases/unit-de-conceptual-design1/unit-de-conceptual-design1-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="ER-Konzepte und ihre Semantik Datentypen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-conceptual-design1/unit-de-conceptual-design1-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="ER-Konzepte und ihre Semantik Datentypen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-conceptual-design1/unit-de-conceptual-design1-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-conceptual-design1/unit-de-conceptual-design1-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="ER-Konzepte und ihre Semantik Entity-Typen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-conceptual-design1/unit-de-conceptual-design1-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="ER-Konzepte und ihre Semantik Entity-Typen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-conceptual-design1/unit-de-conceptual-design1-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="ER-Konzepte und ihre Semantik Beziehungstypen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-conceptual-design1/unit-de-conceptual-design1-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="ER-Konzepte und ihre Semantik Beziehungstypen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-conceptual-design1/unit-de-conceptual-design1-17.png"></div>
+
+<div class="sh-page" data-page="18"><img alt="ER-Konzepte und ihre Semantik Beziehungstypen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-conceptual-design1/unit-de-conceptual-design1-18.png"></div>
+
+<div class="sh-page" data-page="19"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-conceptual-design1/unit-de-conceptual-design1-19.png"></div>
+
+<div class="sh-page" data-page="20"><img alt="ER-Konzepte und ihre Semantik Attribute und Attributtypen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-conceptual-design1/unit-de-conceptual-design1-20.png"></div>
+
+<div class="sh-page" data-page="21"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-conceptual-design1/unit-de-conceptual-design1-21.png"></div>
+
+<div class="sh-page" data-page="22"><img alt="ER-Konzepte und ihre Semantik Attribute von Entity-Typen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-conceptual-design1/unit-de-conceptual-design1-22.png"></div>
+
+<div class="sh-page" data-page="23"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-conceptual-design1/unit-de-conceptual-design1-23.png"></div>
+
+<div class="sh-page" data-page="24"><img alt="ER-Konzepte und ihre Semantik Attribute von Beziehungstypen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-conceptual-design1/unit-de-conceptual-design1-24.png"></div>
+
+<div class="sh-page" data-page="25"><img alt="ER-Konzepte und ihre Semantik Optionale Attribute" src="https://webis.de/downloads/lecturenotes/databases/unit-de-conceptual-design1/unit-de-conceptual-design1-25.png"></div>
+
+<div class="sh-page" data-page="26"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-conceptual-design1/unit-de-conceptual-design1-26.png"></div>
+
+<div class="sh-page" data-page="27"><img alt="ER-Konzepte und ihre Semantik Schlüssel" src="https://webis.de/downloads/lecturenotes/databases/unit-de-conceptual-design1/unit-de-conceptual-design1-27.png"></div>
+
+<div class="sh-page" data-page="28"><img alt="ER-Konzepte und ihre Semantik Schlüssel" src="https://webis.de/downloads/lecturenotes/databases/unit-de-conceptual-design1/unit-de-conceptual-design1-28.png"></div>
+
+<div class="sh-page" data-page="29"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-conceptual-design1/unit-de-conceptual-design1-29.png"></div>
+
+<div class="sh-page" data-page="30"><img alt="ER-Konzepte und ihre Semantik Schlüssel" src="https://webis.de/downloads/lecturenotes/databases/unit-de-conceptual-design1/unit-de-conceptual-design1-30.png"></div>
+
+<div class="sh-page" data-page="31"><img alt="ER-Konzepte und ihre Semantik Datenbankzustand" src="https://webis.de/downloads/lecturenotes/databases/unit-de-conceptual-design1/unit-de-conceptual-design1-31.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-de-conceptual-design2.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/databases/unit-de-conceptual-design2.pdf" style="--sh-pages: 52"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Kapitel DB:III " src="https://webis.de/downloads/lecturenotes/databases/unit-de-conceptual-design2/unit-de-conceptual-design2-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Charakterisierung von Beziehungstypen Funktionalitäten bei zweistelligen Beziehungen (Formalismus I für Kardinalitäten)" src="https://webis.de/downloads/lecturenotes/databases/unit-de-conceptual-design2/unit-de-conceptual-design2-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Charakterisierung von Beziehungstypen Funktionalitäten bei zweistelligen Beziehungen (Formalismus I für Kardinalitäten)" src="https://webis.de/downloads/lecturenotes/databases/unit-de-conceptual-design2/unit-de-conceptual-design2-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-conceptual-design2/unit-de-conceptual-design2-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Charakterisierung von Beziehungstypen Funktionalitäten bei zweistelligen Beziehungen (Formalismus I für Kardinalitäten)" src="https://webis.de/downloads/lecturenotes/databases/unit-de-conceptual-design2/unit-de-conceptual-design2-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-conceptual-design2/unit-de-conceptual-design2-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Charakterisierung von Beziehungstypen Funktionalitäten bei zweistelligen Beziehungen (Formalismus I für Kardinalitäten)" src="https://webis.de/downloads/lecturenotes/databases/unit-de-conceptual-design2/unit-de-conceptual-design2-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Charakterisierung von Beziehungstypen Funktionalitäten bei zweistelligen Beziehungen (Formalismus I für Kardinalitäten)" src="https://webis.de/downloads/lecturenotes/databases/unit-de-conceptual-design2/unit-de-conceptual-design2-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Charakterisierung von Beziehungstypen Funktionalitäten bei n-stelligen Beziehungen (Formalismus I für Kardinalitäten)" src="https://webis.de/downloads/lecturenotes/databases/unit-de-conceptual-design2/unit-de-conceptual-design2-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Charakterisierung von Beziehungstypen Funktionalitäten bei n-stelligen Beziehungen (Formalismus I für Kardinalitäten)" src="https://webis.de/downloads/lecturenotes/databases/unit-de-conceptual-design2/unit-de-conceptual-design2-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-conceptual-design2/unit-de-conceptual-design2-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Charakterisierung von Beziehungstypen Funktionalitäten bei n-stelligen Beziehungen (Formalismus I für Kardinalitäten)" src="https://webis.de/downloads/lecturenotes/databases/unit-de-conceptual-design2/unit-de-conceptual-design2-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Charakterisierung von Beziehungstypen Funktionalitäten bei n-stelligen Beziehungen (Formalismus I für Kardinalitäten)" src="https://webis.de/downloads/lecturenotes/databases/unit-de-conceptual-design2/unit-de-conceptual-design2-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="Charakterisierung von Beziehungstypen Funktionalitäten bei n-stelligen Beziehungen (Formalismus I für Kardinalitäten)" src="https://webis.de/downloads/lecturenotes/databases/unit-de-conceptual-design2/unit-de-conceptual-design2-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="Charakterisierung von Beziehungstypen Funktionalitäten bei n-stelligen Beziehungen (Formalismus I für Kardinalitäten)" src="https://webis.de/downloads/lecturenotes/databases/unit-de-conceptual-design2/unit-de-conceptual-design2-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="Charakterisierung von Beziehungstypen Funktionalitäten bei n-stelligen Beziehungen (Formalismus I für Kardinalitäten)" src="https://webis.de/downloads/lecturenotes/databases/unit-de-conceptual-design2/unit-de-conceptual-design2-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="Charakterisierung von Beziehungstypen Funktionalitäten bei n-stelligen Beziehungen (Formalismus I für Kardinalitäten)" src="https://webis.de/downloads/lecturenotes/databases/unit-de-conceptual-design2/unit-de-conceptual-design2-17.png"></div>
+
+<div class="sh-page" data-page="18"><img alt="Charakterisierung von Beziehungstypen [min, max]-Notation (Formalismus II für Kardinalitäten)" src="https://webis.de/downloads/lecturenotes/databases/unit-de-conceptual-design2/unit-de-conceptual-design2-18.png"></div>
+
+<div class="sh-page" data-page="19"><img alt="Charakterisierung von Beziehungstypen [min, max]-Notation (Formalismus II für Kardinalitäten)" src="https://webis.de/downloads/lecturenotes/databases/unit-de-conceptual-design2/unit-de-conceptual-design2-19.png"></div>
+
+<div class="sh-page" data-page="20"><img alt="Charakterisierung von Beziehungstypen [min, max]-Notation (Formalismus II für Kardinalitäten)" src="https://webis.de/downloads/lecturenotes/databases/unit-de-conceptual-design2/unit-de-conceptual-design2-20.png"></div>
+
+<div class="sh-page" data-page="21"><img alt="Charakterisierung von Beziehungstypen [min, max]-Notation (Formalismus II für Kardinalitäten)" src="https://webis.de/downloads/lecturenotes/databases/unit-de-conceptual-design2/unit-de-conceptual-design2-21.png"></div>
+
+<div class="sh-page" data-page="22"><img alt="Charakterisierung von Beziehungstypen [min, max]-Notation (Formalismus II für Kardinalitäten)" src="https://webis.de/downloads/lecturenotes/databases/unit-de-conceptual-design2/unit-de-conceptual-design2-22.png"></div>
+
+<div class="sh-page" data-page="23"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-conceptual-design2/unit-de-conceptual-design2-23.png"></div>
+
+<div class="sh-page" data-page="24"><img alt="Charakterisierung von Beziehungstypen Formalismus I versus Formalismus II" src="https://webis.de/downloads/lecturenotes/databases/unit-de-conceptual-design2/unit-de-conceptual-design2-24.png"></div>
+
+<div class="sh-page" data-page="25"><img alt="Charakterisierung von Beziehungstypen Formalismus I versus Formalismus II" src="https://webis.de/downloads/lecturenotes/databases/unit-de-conceptual-design2/unit-de-conceptual-design2-25.png"></div>
+
+<div class="sh-page" data-page="26"><img alt="Charakterisierung von Beziehungstypen Umwandlung n-stelliger Beziehungen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-conceptual-design2/unit-de-conceptual-design2-26.png"></div>
+
+<div class="sh-page" data-page="27"><img alt="Charakterisierung von Beziehungstypen Umwandlung n-stelliger Beziehungen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-conceptual-design2/unit-de-conceptual-design2-27.png"></div>
+
+<div class="sh-page" data-page="28"><img alt="Charakterisierung von Beziehungstypen Umwandlung n-stelliger Beziehungen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-conceptual-design2/unit-de-conceptual-design2-28.png"></div>
+
+<div class="sh-page" data-page="29"><img alt="Charakterisierung von Beziehungstypen Umwandlung n-stelliger Beziehungen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-conceptual-design2/unit-de-conceptual-design2-29.png"></div>
+
+<div class="sh-page" data-page="30"><img alt="Charakterisierung von Beziehungstypen Umwandlung n-stelliger Beziehungen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-conceptual-design2/unit-de-conceptual-design2-30.png"></div>
+
+<div class="sh-page" data-page="31"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-conceptual-design2/unit-de-conceptual-design2-31.png"></div>
+
+<div class="sh-page" data-page="32"><img alt="Existenzabhängige Entity-Typen Bisher vorausgesetzt: Entities existieren autonom und sind innerhalb ihres Typs" src="https://webis.de/downloads/lecturenotes/databases/unit-de-conceptual-design2/unit-de-conceptual-design2-32.png"></div>
+
+<div class="sh-page" data-page="33"><img alt="Existenzabhängige Entity-Typen Bisher vorausgesetzt: Entities existieren autonom und sind innerhalb ihres Typs" src="https://webis.de/downloads/lecturenotes/databases/unit-de-conceptual-design2/unit-de-conceptual-design2-33.png"></div>
+
+<div class="sh-page" data-page="34"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-conceptual-design2/unit-de-conceptual-design2-34.png"></div>
+
+<div class="sh-page" data-page="35"><img alt="Abstraktionskonzepte Generalisierung \u002f Spezialisierung" src="https://webis.de/downloads/lecturenotes/databases/unit-de-conceptual-design2/unit-de-conceptual-design2-35.png"></div>
+
+<div class="sh-page" data-page="36"><img alt="Abstraktionskonzepte Generalisierung \u002f Spezialisierung" src="https://webis.de/downloads/lecturenotes/databases/unit-de-conceptual-design2/unit-de-conceptual-design2-36.png"></div>
+
+<div class="sh-page" data-page="37"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-conceptual-design2/unit-de-conceptual-design2-37.png"></div>
+
+<div class="sh-page" data-page="38"><img alt="Abstraktionskonzepte Generalisierung \u002f Spezialisierung" src="https://webis.de/downloads/lecturenotes/databases/unit-de-conceptual-design2/unit-de-conceptual-design2-38.png"></div>
+
+<div class="sh-page" data-page="39"><img alt="Abstraktionskonzepte Generalisierung \u002f Spezialisierung" src="https://webis.de/downloads/lecturenotes/databases/unit-de-conceptual-design2/unit-de-conceptual-design2-39.png"></div>
+
+<div class="sh-page" data-page="40"><img alt="Abstraktionskonzepte Generalisierung \u002f Spezialisierung" src="https://webis.de/downloads/lecturenotes/databases/unit-de-conceptual-design2/unit-de-conceptual-design2-40.png"></div>
+
+<div class="sh-page" data-page="41"><img alt="Konsolidierung, Sichtenintegration " src="https://webis.de/downloads/lecturenotes/databases/unit-de-conceptual-design2/unit-de-conceptual-design2-41.png"></div>
+
+<div class="sh-page" data-page="42"><img alt="Konsolidierung, Sichtenintegration " src="https://webis.de/downloads/lecturenotes/databases/unit-de-conceptual-design2/unit-de-conceptual-design2-42.png"></div>
+
+<div class="sh-page" data-page="43"><img alt="Bemerkungen: [:::::: DB:II ::::::::::::::::::" src="https://webis.de/downloads/lecturenotes/databases/unit-de-conceptual-design2/unit-de-conceptual-design2-43.png"></div>
+
+<div class="sh-page" data-page="44"><img alt="Konsolidierung, Sichtenintegration Beispiel: drei Sichten einer Universitätsdatenbank" src="https://webis.de/downloads/lecturenotes/databases/unit-de-conceptual-design2/unit-de-conceptual-design2-44.png"></div>
+
+<div class="sh-page" data-page="45"><img alt="Konsolidierung, Sichtenintegration Beispiel: drei Sichten einer Universitätsdatenbank" src="https://webis.de/downloads/lecturenotes/databases/unit-de-conceptual-design2/unit-de-conceptual-design2-45.png"></div>
+
+<div class="sh-page" data-page="46"><img alt="Konsolidierung, Sichtenintegration Beispiel: drei Sichten einer Universitätsdatenbank" src="https://webis.de/downloads/lecturenotes/databases/unit-de-conceptual-design2/unit-de-conceptual-design2-46.png"></div>
+
+<div class="sh-page" data-page="47"><img alt="Konsolidierung, Sichtenintegration Beispiel: drei Sichten einer Universitätsdatenbank" src="https://webis.de/downloads/lecturenotes/databases/unit-de-conceptual-design2/unit-de-conceptual-design2-47.png"></div>
+
+<div class="sh-page" data-page="48"><img alt="Konsolidierung, Sichtenintegration Beispiel: drei Sichten einer Universitätsdatenbank" src="https://webis.de/downloads/lecturenotes/databases/unit-de-conceptual-design2/unit-de-conceptual-design2-48.png"></div>
+
+<div class="sh-page" data-page="49"><img alt="Konsolidierung, Sichtenintegration Beispiel: drei Sichten einer Universitätsdatenbank" src="https://webis.de/downloads/lecturenotes/databases/unit-de-conceptual-design2/unit-de-conceptual-design2-49.png"></div>
+
+<div class="sh-page" data-page="50"><img alt="Konsolidierung, Sichtenintegration Beispiel: drei Sichten einer Universitätsdatenbank" src="https://webis.de/downloads/lecturenotes/databases/unit-de-conceptual-design2/unit-de-conceptual-design2-50.png"></div>
+
+<div class="sh-page" data-page="51"><img alt="Konsolidierung, Sichtenintegration Beispiel: drei Sichten einer Universitätsdatenbank" src="https://webis.de/downloads/lecturenotes/databases/unit-de-conceptual-design2/unit-de-conceptual-design2-51.png"></div>
+
+<div class="sh-page" data-page="52"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-conceptual-design2/unit-de-conceptual-design2-52.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-de-relational-design0.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design0.pdf" style="--sh-pages: 1"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Syntax im Relationenmodell Konzept" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design0/unit-de-relational-design0-1.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-de-relational-design1.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design1.pdf" style="--sh-pages: 44"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Kapitel DB:IV IV. Logischer Datenbankentwurf mit dem relationalen Modell" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design1/unit-de-relational-design1-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Das relationale Modell 1. Im relationalen Modell werden die Objekttypen der zu modellierenden" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design1/unit-de-relational-design1-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Das relationale Modell 1. Im relationalen Modell werden die Objekttypen der zu modellierenden" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design1/unit-de-relational-design1-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Das relationale Modell Interpretation einer Relation als Tabelle:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design1/unit-de-relational-design1-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design1/unit-de-relational-design1-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Das relationale Modell Definition 1 (Relationenschema, Tupel, Relation)" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design1/unit-de-relational-design1-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Das relationale Modell Definition 1 (Relationenschema, Tupel, Relation)" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design1/unit-de-relational-design1-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Das relationale Modell Definition 1 (Relationenschema, Tupel, Relation)" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design1/unit-de-relational-design1-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design1/unit-de-relational-design1-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Das relationale Modell Beispiel:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design1/unit-de-relational-design1-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Das relationale Modell Beispiel:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design1/unit-de-relational-design1-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design1/unit-de-relational-design1-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Das relationale Modell Definition 2 (Datenbankschema, Datenbankzustand, Basisrelation)" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design1/unit-de-relational-design1-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design1/unit-de-relational-design1-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="Das relationale Modell Beispiel:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design1/unit-de-relational-design1-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="Integritätsbedingungen Definition 3 (Integrität)" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design1/unit-de-relational-design1-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design1/unit-de-relational-design1-17.png"></div>
+
+<div class="sh-page" data-page="18"><img alt="Integritätsbedingungen Physische Integrität" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design1/unit-de-relational-design1-18.png"></div>
+
+<div class="sh-page" data-page="19"><img alt="Integritätsbedingungen Physische Integrität" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design1/unit-de-relational-design1-19.png"></div>
+
+<div class="sh-page" data-page="20"><img alt="Integritätsbedingungen Datenbankintegrität(sbedingungen)" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design1/unit-de-relational-design1-20.png"></div>
+
+<div class="sh-page" data-page="21"><img alt="Integritätsbedingungen Werteabhängige (= statische) Integrität" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design1/unit-de-relational-design1-21.png"></div>
+
+<div class="sh-page" data-page="22"><img alt="Integritätsbedingungen Werteabhängige (= statische) Integrität" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design1/unit-de-relational-design1-22.png"></div>
+
+<div class="sh-page" data-page="23"><img alt="Integritätsbedingungen Operationale (= dynamische) Integrität" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design1/unit-de-relational-design1-23.png"></div>
+
+<div class="sh-page" data-page="24"><img alt="Integritätsbedingungen Operationale (= dynamische) Integrität" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design1/unit-de-relational-design1-24.png"></div>
+
+<div class="sh-page" data-page="25"><img alt="Integritätsbedingungen Datenbankintegrität(sbedingungen)" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design1/unit-de-relational-design1-25.png"></div>
+
+<div class="sh-page" data-page="26"><img alt="Integritätsbedingungen Schlüssel und Schlüsselintegrität" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design1/unit-de-relational-design1-26.png"></div>
+
+<div class="sh-page" data-page="27"><img alt="Integritätsbedingungen Schlüssel und Schlüsselintegrität" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design1/unit-de-relational-design1-27.png"></div>
+
+<div class="sh-page" data-page="28"><img alt="Integritätsbedingungen Schlüssel und Schlüsselintegrität" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design1/unit-de-relational-design1-28.png"></div>
+
+<div class="sh-page" data-page="29"><img alt="Integritätsbedingungen Fremdschlüssel und referentielle Integrität" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design1/unit-de-relational-design1-29.png"></div>
+
+<div class="sh-page" data-page="30"><img alt="Integritätsbedingungen Fremdschlüssel und referentielle Integrität" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design1/unit-de-relational-design1-30.png"></div>
+
+<div class="sh-page" data-page="31"><img alt="Integritätsbedingungen Fremdschlüssel und referentielle Integrität" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design1/unit-de-relational-design1-31.png"></div>
+
+<div class="sh-page" data-page="32"><img alt="Integritätsbedingungen Fremdschlüssel und referentielle Integrität" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design1/unit-de-relational-design1-32.png"></div>
+
+<div class="sh-page" data-page="33"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design1/unit-de-relational-design1-33.png"></div>
+
+<div class="sh-page" data-page="34"><img alt="Integritätsbedingungen Fremdschlüssel und referentielle Integrität" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design1/unit-de-relational-design1-34.png"></div>
+
+<div class="sh-page" data-page="35"><img alt="Integritätsbedingungen Fremdschlüssel und referentielle Integrität" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design1/unit-de-relational-design1-35.png"></div>
+
+<div class="sh-page" data-page="36"><img alt="Integritätsbedingungen Fremdschlüssel und referentielle Integrität" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design1/unit-de-relational-design1-36.png"></div>
+
+<div class="sh-page" data-page="37"><img alt="Integritätsbedingungen Fremdschlüssel und referentielle Integrität" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design1/unit-de-relational-design1-37.png"></div>
+
+<div class="sh-page" data-page="38"><img alt="Integritätsbedingungen Fremdschlüssel und referentielle Integrität" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design1/unit-de-relational-design1-38.png"></div>
+
+<div class="sh-page" data-page="39"><img alt="Integritätsbedingungen Fremdschlüssel und referentielle Integrität" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design1/unit-de-relational-design1-39.png"></div>
+
+<div class="sh-page" data-page="40"><img alt="Integritätsbedingungen Fremdschlüssel und referentielle Integrität" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design1/unit-de-relational-design1-40.png"></div>
+
+<div class="sh-page" data-page="41"><img alt="Integritätsbedingungen Definition 6 (Lokale und globale Integritätsbedingung)" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design1/unit-de-relational-design1-41.png"></div>
+
+<div class="sh-page" data-page="42"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design1/unit-de-relational-design1-42.png"></div>
+
+<div class="sh-page" data-page="43"><img alt="Das relationale Modell Historie" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design1/unit-de-relational-design1-43.png"></div>
+
+<div class="sh-page" data-page="44"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design1/unit-de-relational-design1-44.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-de-relational-design2.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design2.pdf" style="--sh-pages: 64"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Kapitel DB:IV " src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design2/unit-de-relational-design2-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Umsetzung ER-Schema in relationales Schema Einordnung" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design2/unit-de-relational-design2-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Umsetzung ER-Schema in relationales Schema Einordnung" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design2/unit-de-relational-design2-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Umsetzung ER-Schema in relationales Schema Reguläre Entity-Typen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design2/unit-de-relational-design2-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Umsetzung ER-Schema in relationales Schema Reguläre Entity-Typen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design2/unit-de-relational-design2-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Umsetzung ER-Schema in relationales Schema Reguläre Entity-Typen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design2/unit-de-relational-design2-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Umsetzung ER-Schema in relationales Schema Reguläre Entity-Typen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design2/unit-de-relational-design2-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design2/unit-de-relational-design2-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Umsetzung ER-Schema in relationales Schema Beziehungstypen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design2/unit-de-relational-design2-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Umsetzung ER-Schema in relationales Schema Beziehungstypen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design2/unit-de-relational-design2-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Umsetzung ER-Schema in relationales Schema Beziehungstypen: Kapazitätserhaltung" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design2/unit-de-relational-design2-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Umsetzung ER-Schema in relationales Schema Beziehungstypen: Kapazitätserhaltung" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design2/unit-de-relational-design2-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Umsetzung ER-Schema in relationales Schema Beziehungstypen: Kapazitätserhaltung" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design2/unit-de-relational-design2-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="Umsetzung ER-Schema in relationales Schema Beziehungstypen: Kapazitätserhaltung" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design2/unit-de-relational-design2-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="Umsetzung ER-Schema in relationales Schema Beziehungstypen: Kapazitätserhaltung" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design2/unit-de-relational-design2-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="Umsetzung ER-Schema in relationales Schema Beziehungstypen: Kapazitätserhaltung" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design2/unit-de-relational-design2-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design2/unit-de-relational-design2-17.png"></div>
+
+<div class="sh-page" data-page="18"><img alt="Umsetzung ER-Schema in relationales Schema Kapazitätserhaltung" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design2/unit-de-relational-design2-18.png"></div>
+
+<div class="sh-page" data-page="19"><img alt="Umsetzung ER-Schema in relationales Schema Kapazitätserhaltung" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design2/unit-de-relational-design2-19.png"></div>
+
+<div class="sh-page" data-page="20"><img alt="Umsetzung ER-Schema in relationales Schema Kapazitätserhaltung" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design2/unit-de-relational-design2-20.png"></div>
+
+<div class="sh-page" data-page="21"><img alt="Umsetzung ER-Schema in relationales Schema Kapazitätserhaltung" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design2/unit-de-relational-design2-21.png"></div>
+
+<div class="sh-page" data-page="22"><img alt="Umsetzung ER-Schema in relationales Schema Kapazitätserhaltung" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design2/unit-de-relational-design2-22.png"></div>
+
+<div class="sh-page" data-page="23"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design2/unit-de-relational-design2-23.png"></div>
+
+<div class="sh-page" data-page="24"><img alt="Umsetzung ER-Schema in relationales Schema Reguläre Beziehungstypen (beliebige Entity-Anzahl)" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design2/unit-de-relational-design2-24.png"></div>
+
+<div class="sh-page" data-page="25"><img alt="Umsetzung ER-Schema in relationales Schema Reguläre Beziehungstypen (beliebige Entity-Anzahl)" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design2/unit-de-relational-design2-25.png"></div>
+
+<div class="sh-page" data-page="26"><img alt="Umsetzung ER-Schema in relationales Schema Reguläre Beziehungstypen (beliebige Entity-Anzahl)" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design2/unit-de-relational-design2-26.png"></div>
+
+<div class="sh-page" data-page="27"><img alt="Umsetzung ER-Schema in relationales Schema Reguläre Beziehungstypen (beliebige Entity-Anzahl)" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design2/unit-de-relational-design2-27.png"></div>
+
+<div class="sh-page" data-page="28"><img alt="Umsetzung ER-Schema in relationales Schema Reguläre Beziehungstypen (beliebige Entity-Anzahl)" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design2/unit-de-relational-design2-28.png"></div>
+
+<div class="sh-page" data-page="29"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design2/unit-de-relational-design2-29.png"></div>
+
+<div class="sh-page" data-page="30"><img alt="Umsetzung ER-Schema in relationales Schema n:m-Beziehungstypen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design2/unit-de-relational-design2-30.png"></div>
+
+<div class="sh-page" data-page="31"><img alt="Umsetzung ER-Schema in relationales Schema 1:n-Beziehungstypen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design2/unit-de-relational-design2-31.png"></div>
+
+<div class="sh-page" data-page="32"><img alt="Umsetzung ER-Schema in relationales Schema 1:n-Beziehungstypen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design2/unit-de-relational-design2-32.png"></div>
+
+<div class="sh-page" data-page="33"><img alt="Umsetzung ER-Schema in relationales Schema 1:n-Beziehungstypen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design2/unit-de-relational-design2-33.png"></div>
+
+<div class="sh-page" data-page="34"><img alt="Umsetzung ER-Schema in relationales Schema 1:n-Beziehungstypen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design2/unit-de-relational-design2-34.png"></div>
+
+<div class="sh-page" data-page="35"><img alt="Umsetzung ER-Schema in relationales Schema 1:n-Beziehungstypen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design2/unit-de-relational-design2-35.png"></div>
+
+<div class="sh-page" data-page="36"><img alt="Umsetzung ER-Schema in relationales Schema 1:n-Beziehungstypen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design2/unit-de-relational-design2-36.png"></div>
+
+<div class="sh-page" data-page="37"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design2/unit-de-relational-design2-37.png"></div>
+
+<div class="sh-page" data-page="38"><img alt="Umsetzung ER-Schema in relationales Schema 1:1-Beziehungstypen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design2/unit-de-relational-design2-38.png"></div>
+
+<div class="sh-page" data-page="39"><img alt="Umsetzung ER-Schema in relationales Schema 1:1-Beziehungstypen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design2/unit-de-relational-design2-39.png"></div>
+
+<div class="sh-page" data-page="40"><img alt="Umsetzung ER-Schema in relationales Schema 1:1-Beziehungstypen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design2/unit-de-relational-design2-40.png"></div>
+
+<div class="sh-page" data-page="41"><img alt="Umsetzung ER-Schema in relationales Schema 1:1-Beziehungstypen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design2/unit-de-relational-design2-41.png"></div>
+
+<div class="sh-page" data-page="42"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design2/unit-de-relational-design2-42.png"></div>
+
+<div class="sh-page" data-page="43"><img alt="Umsetzung ER-Schema in relationales Schema 1:1-Beziehungstypen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design2/unit-de-relational-design2-43.png"></div>
+
+<div class="sh-page" data-page="44"><img alt="Umsetzung ER-Schema in relationales Schema 1:1-Beziehungstypen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design2/unit-de-relational-design2-44.png"></div>
+
+<div class="sh-page" data-page="45"><img alt="Umsetzung ER-Schema in relationales Schema Beziehungstypen mit [min, max]-Beschränkung" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design2/unit-de-relational-design2-45.png"></div>
+
+<div class="sh-page" data-page="46"><img alt="Umsetzung ER-Schema in relationales Schema Beziehungstypen mit [min, max]-Beschränkung" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design2/unit-de-relational-design2-46.png"></div>
+
+<div class="sh-page" data-page="47"><img alt="Umsetzung ER-Schema in relationales Schema Beziehungstypen mit [min, max]-Beschränkung" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design2/unit-de-relational-design2-47.png"></div>
+
+<div class="sh-page" data-page="48"><img alt="Umsetzung ER-Schema in relationales Schema Beziehungstypen mit [min, max]-Beschränkung" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design2/unit-de-relational-design2-48.png"></div>
+
+<div class="sh-page" data-page="49"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design2/unit-de-relational-design2-49.png"></div>
+
+<div class="sh-page" data-page="50"><img alt="Umsetzung ER-Schema in relationales Schema Existenzabhängige Entity-Typen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design2/unit-de-relational-design2-50.png"></div>
+
+<div class="sh-page" data-page="51"><img alt="Umsetzung ER-Schema in relationales Schema Existenzabhängige Entity-Typen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design2/unit-de-relational-design2-51.png"></div>
+
+<div class="sh-page" data-page="52"><img alt="Umsetzung ER-Schema in relationales Schema Existenzabhängige Entity-Typen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design2/unit-de-relational-design2-52.png"></div>
+
+<div class="sh-page" data-page="53"><img alt="Umsetzung ER-Schema in relationales Schema Existenzabhängige Entity-Typen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design2/unit-de-relational-design2-53.png"></div>
+
+<div class="sh-page" data-page="54"><img alt="Umsetzung ER-Schema in relationales Schema Existenzabhängige Entity-Typen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design2/unit-de-relational-design2-54.png"></div>
+
+<div class="sh-page" data-page="55"><img alt="Umsetzung ER-Schema in relationales Schema IST-Beziehungstypen [Sonderfall 5]" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design2/unit-de-relational-design2-55.png"></div>
+
+<div class="sh-page" data-page="56"><img alt="Umsetzung ER-Schema in relationales Schema IST-Beziehungstypen [Sonderfall 5]" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design2/unit-de-relational-design2-56.png"></div>
+
+<div class="sh-page" data-page="57"><img alt="Umsetzung ER-Schema in relationales Schema IST-Beziehungstypen [Sonderfall 5]" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design2/unit-de-relational-design2-57.png"></div>
+
+<div class="sh-page" data-page="58"><img alt="Umsetzung ER-Schema in relationales Schema IST-Beziehungstypen [Sonderfall 5]" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design2/unit-de-relational-design2-58.png"></div>
+
+<div class="sh-page" data-page="59"><img alt="Umsetzung ER-Schema in relationales Schema IST-Beziehungstypen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design2/unit-de-relational-design2-59.png"></div>
+
+<div class="sh-page" data-page="60"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design2/unit-de-relational-design2-60.png"></div>
+
+<div class="sh-page" data-page="61"><img alt="Umsetzung ER-Schema in relationales Schema Reihenfolge der Regelanwendung" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design2/unit-de-relational-design2-61.png"></div>
+
+<div class="sh-page" data-page="62"><img alt="Umsetzung ER-Schema in relationales Schema Zusammenfassung wichtiger Regeln" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design2/unit-de-relational-design2-62.png"></div>
+
+<div class="sh-page" data-page="63"><img alt="Umsetzung ER-Schema in relationales Schema Zusammenfassung wichtiger Regeln" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design2/unit-de-relational-design2-63.png"></div>
+
+<div class="sh-page" data-page="64"><img alt="Umsetzung ER-Schema in relationales Schema Zusammenfassung wichtiger Regeln" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-design2/unit-de-relational-design2-64.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-de-relational-algebra.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-algebra.pdf" style="--sh-pages: 69"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Kapitel DB:V V. Grundlagen relationaler Anfragesprachen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-algebra/unit-de-relational-algebra-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Anfragen und Änderungen Ausgangspunkt: Basisrelationen, die in der Datenbank gespeichert sind." src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-algebra/unit-de-relational-algebra-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Anfragen und Änderungen Ausgangspunkt: Basisrelationen, die in der Datenbank gespeichert sind." src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-algebra/unit-de-relational-algebra-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-algebra/unit-de-relational-algebra-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Anfragen und Änderungen Eigenschaften relationaler Anfragesprachen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-algebra/unit-de-relational-algebra-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Anfragen und Änderungen Eigenschaften relationaler Anfragesprachen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-algebra/unit-de-relational-algebra-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Anfragen und Änderungen Eigenschaften relationaler Anfragesprachen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-algebra/unit-de-relational-algebra-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Anfragen und Änderungen Eigenschaften relationaler Anfragesprachen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-algebra/unit-de-relational-algebra-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-algebra/unit-de-relational-algebra-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Relationale Algebra Eine Algebra A = hM, Ωi besteht aus" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-algebra/unit-de-relational-algebra-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Relationale Algebra Eine Algebra A = hM, Ωi besteht aus" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-algebra/unit-de-relational-algebra-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Relationale Algebra Einstellige Operationen: Selektion" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-algebra/unit-de-relational-algebra-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Relationale Algebra Einstellige Operationen: Selektion" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-algebra/unit-de-relational-algebra-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="Relationale Algebra Einstellige Operationen: Selektion" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-algebra/unit-de-relational-algebra-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-algebra/unit-de-relational-algebra-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="Relationale Algebra Einstellige Operationen: Projektion" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-algebra/unit-de-relational-algebra-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="Relationale Algebra Einstellige Operationen: Projektion" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-algebra/unit-de-relational-algebra-17.png"></div>
+
+<div class="sh-page" data-page="18"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-algebra/unit-de-relational-algebra-18.png"></div>
+
+<div class="sh-page" data-page="19"><img alt="Relationale Algebra Einstellige Operationen: Umbenennung" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-algebra/unit-de-relational-algebra-19.png"></div>
+
+<div class="sh-page" data-page="20"><img alt="Relationale Algebra Einstellige Operationen: Umbenennung" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-algebra/unit-de-relational-algebra-20.png"></div>
+
+<div class="sh-page" data-page="21"><img alt="Relationale Algebra Einstellige Operationen: Umbenennung" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-algebra/unit-de-relational-algebra-21.png"></div>
+
+<div class="sh-page" data-page="22"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-algebra/unit-de-relational-algebra-22.png"></div>
+
+<div class="sh-page" data-page="23"><img alt="Relationale Algebra Mengenoperationen: Vereinigung, Durchschnitt, Differenz" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-algebra/unit-de-relational-algebra-23.png"></div>
+
+<div class="sh-page" data-page="24"><img alt="Relationale Algebra Mengenoperationen: Vereinigung, Durchschnitt, Differenz" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-algebra/unit-de-relational-algebra-24.png"></div>
+
+<div class="sh-page" data-page="25"><img alt="Relationale Algebra Mengenoperationen: Vereinigung, Durchschnitt, Differenz" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-algebra/unit-de-relational-algebra-25.png"></div>
+
+<div class="sh-page" data-page="26"><img alt="Relationale Algebra Mengenoperationen: Vereinigung, Durchschnitt, Differenz" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-algebra/unit-de-relational-algebra-26.png"></div>
+
+<div class="sh-page" data-page="27"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-algebra/unit-de-relational-algebra-27.png"></div>
+
+<div class="sh-page" data-page="28"><img alt="Relationale Algebra Kartesisches Produkt" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-algebra/unit-de-relational-algebra-28.png"></div>
+
+<div class="sh-page" data-page="29"><img alt="Relationale Algebra Kartesisches Produkt" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-algebra/unit-de-relational-algebra-29.png"></div>
+
+<div class="sh-page" data-page="30"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-algebra/unit-de-relational-algebra-30.png"></div>
+
+<div class="sh-page" data-page="31"><img alt="Relationale Algebra Konstruktion von Ausdrücken" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-algebra/unit-de-relational-algebra-31.png"></div>
+
+<div class="sh-page" data-page="32"><img alt="Relationale Algebra Konstruktion von Ausdrücken" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-algebra/unit-de-relational-algebra-32.png"></div>
+
+<div class="sh-page" data-page="33"><img alt="Relationale Algebra Konstruktion von Ausdrücken" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-algebra/unit-de-relational-algebra-33.png"></div>
+
+<div class="sh-page" data-page="34"><img alt="Relationale Algebra Konstruktion von Ausdrücken" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-algebra/unit-de-relational-algebra-34.png"></div>
+
+<div class="sh-page" data-page="35"><img alt="Relationale Algebra Konstruktion von Ausdrücken" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-algebra/unit-de-relational-algebra-35.png"></div>
+
+<div class="sh-page" data-page="36"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-algebra/unit-de-relational-algebra-36.png"></div>
+
+<div class="sh-page" data-page="37"><img alt="Relationale Algebra Konstruktion von Ausdrücken" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-algebra/unit-de-relational-algebra-37.png"></div>
+
+<div class="sh-page" data-page="38"><img alt="Relationale Algebra Konstruktion von Ausdrücken" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-algebra/unit-de-relational-algebra-38.png"></div>
+
+<div class="sh-page" data-page="39"><img alt="Relationale Algebra Konstruktion von Ausdrücken" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-algebra/unit-de-relational-algebra-39.png"></div>
+
+<div class="sh-page" data-page="40"><img alt="Relationale Algebra Konstruktion von Ausdrücken" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-algebra/unit-de-relational-algebra-40.png"></div>
+
+<div class="sh-page" data-page="41"><img alt="Relationale Algebra Konstruktion von Ausdrücken" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-algebra/unit-de-relational-algebra-41.png"></div>
+
+<div class="sh-page" data-page="42"><img alt="Relationale Algebra Konstruktion von Ausdrücken" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-algebra/unit-de-relational-algebra-42.png"></div>
+
+<div class="sh-page" data-page="43"><img alt="Relationale Algebra Konstruktion von Ausdrücken" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-algebra/unit-de-relational-algebra-43.png"></div>
+
+<div class="sh-page" data-page="44"><img alt="Relationale Algebra Konstruktion von Ausdrücken" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-algebra/unit-de-relational-algebra-44.png"></div>
+
+<div class="sh-page" data-page="45"><img alt="Relationale Algebra Konstruktion von Ausdrücken" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-algebra/unit-de-relational-algebra-45.png"></div>
+
+<div class="sh-page" data-page="46"><img alt="Relationale Algebra Weitere Operationen: natürlicher Verbund (Natural-Join)" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-algebra/unit-de-relational-algebra-46.png"></div>
+
+<div class="sh-page" data-page="47"><img alt="Relationale Algebra Weitere Operationen: natürlicher Verbund (Natural-Join)" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-algebra/unit-de-relational-algebra-47.png"></div>
+
+<div class="sh-page" data-page="48"><img alt="Relationale Algebra Weitere Operationen: natürlicher Verbund (Natural-Join)" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-algebra/unit-de-relational-algebra-48.png"></div>
+
+<div class="sh-page" data-page="49"><img alt="Relationale Algebra Weitere Operationen: natürlicher Verbund (Natural-Join)" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-algebra/unit-de-relational-algebra-49.png"></div>
+
+<div class="sh-page" data-page="50"><img alt="Relationale Algebra Weitere Operationen: natürlicher Verbund" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-algebra/unit-de-relational-algebra-50.png"></div>
+
+<div class="sh-page" data-page="51"><img alt="Relationale Algebra Weitere Operationen: natürlicher Verbund" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-algebra/unit-de-relational-algebra-51.png"></div>
+
+<div class="sh-page" data-page="52"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-algebra/unit-de-relational-algebra-52.png"></div>
+
+<div class="sh-page" data-page="53"><img alt="Relationale Algebra Weitere Operationen: allgemeiner Verbund (Theta-Join)" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-algebra/unit-de-relational-algebra-53.png"></div>
+
+<div class="sh-page" data-page="54"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-algebra/unit-de-relational-algebra-54.png"></div>
+
+<div class="sh-page" data-page="55"><img alt="Relationale Algebra Weitere Operationen: äußerer Verbund (Outer-Join)" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-algebra/unit-de-relational-algebra-55.png"></div>
+
+<div class="sh-page" data-page="56"><img alt="Relationale Algebra Weitere Operationen: äußerer Verbund (Outer-Join)" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-algebra/unit-de-relational-algebra-56.png"></div>
+
+<div class="sh-page" data-page="57"><img alt="Relationale Algebra Weitere Operationen: äußerer Verbund (Outer-Join)" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-algebra/unit-de-relational-algebra-57.png"></div>
+
+<div class="sh-page" data-page="58"><img alt="Relationale Algebra Weitere Operationen: Semi-Verbund (Semi-Join)" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-algebra/unit-de-relational-algebra-58.png"></div>
+
+<div class="sh-page" data-page="59"><img alt="Relationale Algebra Weitere Operationen: Semi-Verbund (Semi-Join)" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-algebra/unit-de-relational-algebra-59.png"></div>
+
+<div class="sh-page" data-page="60"><img alt="Relationale Algebra Weitere Operationen: relationale Division" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-algebra/unit-de-relational-algebra-60.png"></div>
+
+<div class="sh-page" data-page="61"><img alt="Relationale Algebra Weitere Operationen: relationale Division" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-algebra/unit-de-relational-algebra-61.png"></div>
+
+<div class="sh-page" data-page="62"><img alt="Relationale Algebra Weitere Operationen: relationale Division" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-algebra/unit-de-relational-algebra-62.png"></div>
+
+<div class="sh-page" data-page="63"><img alt="Relationale Algebra Rekursiver Abschluss" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-algebra/unit-de-relational-algebra-63.png"></div>
+
+<div class="sh-page" data-page="64"><img alt="Relationale Algebra Rekursiver Abschluss" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-algebra/unit-de-relational-algebra-64.png"></div>
+
+<div class="sh-page" data-page="65"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-algebra/unit-de-relational-algebra-65.png"></div>
+
+<div class="sh-page" data-page="66"><img alt="Relationale Algebra Übersicht über Operationen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-algebra/unit-de-relational-algebra-66.png"></div>
+
+<div class="sh-page" data-page="67"><img alt="Relationale Algebra Übersicht über Operationen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-algebra/unit-de-relational-algebra-67.png"></div>
+
+<div class="sh-page" data-page="68"><img alt="Relationale Algebra Übersicht über Operationen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-algebra/unit-de-relational-algebra-68.png"></div>
+
+<div class="sh-page" data-page="69"><img alt="Relationale Algebra Übersicht über Operationen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-algebra/unit-de-relational-algebra-69.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-de-relational-calculus.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-calculus.pdf" style="--sh-pages: 85"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Kapitel DB:V " src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-calculus/unit-de-relational-calculus-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Anfragekalküle Einleitung" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-calculus/unit-de-relational-calculus-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Anfragekalküle Einleitung" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-calculus/unit-de-relational-calculus-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Anfragekalküle Einleitung" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-calculus/unit-de-relational-calculus-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Anfragekalküle Einleitung" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-calculus/unit-de-relational-calculus-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Anfragekalküle Einleitung" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-calculus/unit-de-relational-calculus-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Anfragekalküle Einleitung" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-calculus/unit-de-relational-calculus-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Anfragekalküle Einleitung" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-calculus/unit-de-relational-calculus-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Anfragekalküle Aufbau einer Formel \u002f Grammatik der Sprache: Syntax I" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-calculus/unit-de-relational-calculus-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Anfragekalküle Aufbau einer Formel \u002f Grammatik der Sprache: Syntax I" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-calculus/unit-de-relational-calculus-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Anfragekalküle Aufbau einer Formel \u002f Grammatik der Sprache: Syntax I" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-calculus/unit-de-relational-calculus-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Anfragekalküle Aufbau einer Formel \u002f Grammatik der Sprache: Syntax I" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-calculus/unit-de-relational-calculus-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Anfragekalküle Aufbau einer Formel \u002f Grammatik der Sprache: Syntax I" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-calculus/unit-de-relational-calculus-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="Anfragekalküle Bewertung einer Formel \u002f Interpretation der Sprache: Semantik I" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-calculus/unit-de-relational-calculus-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="Anfragekalküle Bewertung einer Formel \u002f Interpretation der Sprache: Semantik I" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-calculus/unit-de-relational-calculus-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-calculus/unit-de-relational-calculus-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="Anfragekalküle Freie und gebundene Variablen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-calculus/unit-de-relational-calculus-17.png"></div>
+
+<div class="sh-page" data-page="18"><img alt="Anfragekalküle Freie und gebundene Variablen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-calculus/unit-de-relational-calculus-18.png"></div>
+
+<div class="sh-page" data-page="19"><img alt="Anfragekalküle Freie und gebundene Variablen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-calculus/unit-de-relational-calculus-19.png"></div>
+
+<div class="sh-page" data-page="20"><img alt="Anfragekalküle Freie und gebundene Variablen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-calculus/unit-de-relational-calculus-20.png"></div>
+
+<div class="sh-page" data-page="21"><img alt="Anfragekalküle Freie und gebundene Variablen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-calculus/unit-de-relational-calculus-21.png"></div>
+
+<div class="sh-page" data-page="22"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-calculus/unit-de-relational-calculus-22.png"></div>
+
+<div class="sh-page" data-page="23"><img alt="Anfragekalküle Auswertung einer Anfrage" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-calculus/unit-de-relational-calculus-23.png"></div>
+
+<div class="sh-page" data-page="24"><img alt="Anfragekalküle Auswertung einer Anfrage" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-calculus/unit-de-relational-calculus-24.png"></div>
+
+<div class="sh-page" data-page="25"><img alt="Anfragekalküle Auswertung einer Anfrage" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-calculus/unit-de-relational-calculus-25.png"></div>
+
+<div class="sh-page" data-page="26"><img alt="Anfragekalküle Auswertung einer Anfrage" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-calculus/unit-de-relational-calculus-26.png"></div>
+
+<div class="sh-page" data-page="27"><img alt="Anfragekalküle Auswertung einer Anfrage" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-calculus/unit-de-relational-calculus-27.png"></div>
+
+<div class="sh-page" data-page="28"><img alt="Anfragekalküle Auswertung einer Anfrage" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-calculus/unit-de-relational-calculus-28.png"></div>
+
+<div class="sh-page" data-page="29"><img alt="Anfragekalküle Auswertung einer Anfrage" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-calculus/unit-de-relational-calculus-29.png"></div>
+
+<div class="sh-page" data-page="30"><img alt="Anfragekalküle Auswertung einer Anfrage" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-calculus/unit-de-relational-calculus-30.png"></div>
+
+<div class="sh-page" data-page="31"><img alt="Anfragekalküle Auswertung einer Anfrage" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-calculus/unit-de-relational-calculus-31.png"></div>
+
+<div class="sh-page" data-page="32"><img alt="Relationaler Tupelkalkül Konzepte" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-calculus/unit-de-relational-calculus-32.png"></div>
+
+<div class="sh-page" data-page="33"><img alt="Relationaler Tupelkalkül Anfragen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-calculus/unit-de-relational-calculus-33.png"></div>
+
+<div class="sh-page" data-page="34"><img alt="Relationaler Tupelkalkül Anfragen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-calculus/unit-de-relational-calculus-34.png"></div>
+
+<div class="sh-page" data-page="35"><img alt="Relationaler Tupelkalkül Anfragen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-calculus/unit-de-relational-calculus-35.png"></div>
+
+<div class="sh-page" data-page="36"><img alt="Relationaler Tupelkalkül Beispiel 1" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-calculus/unit-de-relational-calculus-36.png"></div>
+
+<div class="sh-page" data-page="37"><img alt="Relationaler Tupelkalkül Beispiel 1" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-calculus/unit-de-relational-calculus-37.png"></div>
+
+<div class="sh-page" data-page="38"><img alt="Relationaler Tupelkalkül Beispiel 1" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-calculus/unit-de-relational-calculus-38.png"></div>
+
+<div class="sh-page" data-page="39"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-calculus/unit-de-relational-calculus-39.png"></div>
+
+<div class="sh-page" data-page="40"><img alt="Relationaler Tupelkalkül Beispiel 2" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-calculus/unit-de-relational-calculus-40.png"></div>
+
+<div class="sh-page" data-page="41"><img alt="Relationaler Tupelkalkül Beispiel 2" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-calculus/unit-de-relational-calculus-41.png"></div>
+
+<div class="sh-page" data-page="42"><img alt="Relationaler Tupelkalkül Beispiel 2" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-calculus/unit-de-relational-calculus-42.png"></div>
+
+<div class="sh-page" data-page="43"><img alt="Relationaler Tupelkalkül Beispiel 3" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-calculus/unit-de-relational-calculus-43.png"></div>
+
+<div class="sh-page" data-page="44"><img alt="Relationaler Tupelkalkül Beispiel 3" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-calculus/unit-de-relational-calculus-44.png"></div>
+
+<div class="sh-page" data-page="45"><img alt="Relationaler Tupelkalkül Beispiel 3" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-calculus/unit-de-relational-calculus-45.png"></div>
+
+<div class="sh-page" data-page="46"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-calculus/unit-de-relational-calculus-46.png"></div>
+
+<div class="sh-page" data-page="47"><img alt="Relationaler Tupelkalkül Beispiel 4" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-calculus/unit-de-relational-calculus-47.png"></div>
+
+<div class="sh-page" data-page="48"><img alt="Relationaler Tupelkalkül Beispiel 4" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-calculus/unit-de-relational-calculus-48.png"></div>
+
+<div class="sh-page" data-page="49"><img alt="Relationaler Tupelkalkül Beispiel 4" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-calculus/unit-de-relational-calculus-49.png"></div>
+
+<div class="sh-page" data-page="50"><img alt="Relationaler Tupelkalkül Beispiel 4" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-calculus/unit-de-relational-calculus-50.png"></div>
+
+<div class="sh-page" data-page="51"><img alt="Relationaler Tupelkalkül Beispiel 4" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-calculus/unit-de-relational-calculus-51.png"></div>
+
+<div class="sh-page" data-page="52"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-calculus/unit-de-relational-calculus-52.png"></div>
+
+<div class="sh-page" data-page="53"><img alt="Relationaler Tupelkalkül Sichere Anfragen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-calculus/unit-de-relational-calculus-53.png"></div>
+
+<div class="sh-page" data-page="54"><img alt="Relationaler Tupelkalkül Sichere Anfragen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-calculus/unit-de-relational-calculus-54.png"></div>
+
+<div class="sh-page" data-page="55"><img alt="Relationaler Tupelkalkül Sichere Anfragen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-calculus/unit-de-relational-calculus-55.png"></div>
+
+<div class="sh-page" data-page="56"><img alt="Relationaler Tupelkalkül Sichere Anfragen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-calculus/unit-de-relational-calculus-56.png"></div>
+
+<div class="sh-page" data-page="57"><img alt="Relationaler Tupelkalkül Sichere Anfragen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-calculus/unit-de-relational-calculus-57.png"></div>
+
+<div class="sh-page" data-page="58"><img alt="Relationaler Tupelkalkül Sichere Anfragen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-calculus/unit-de-relational-calculus-58.png"></div>
+
+<div class="sh-page" data-page="59"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-calculus/unit-de-relational-calculus-59.png"></div>
+
+<div class="sh-page" data-page="60"><img alt="Relationaler Domänenkalkül Konzepte" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-calculus/unit-de-relational-calculus-60.png"></div>
+
+<div class="sh-page" data-page="61"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-calculus/unit-de-relational-calculus-61.png"></div>
+
+<div class="sh-page" data-page="62"><img alt="Relationaler Domänenkalkül Anfragen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-calculus/unit-de-relational-calculus-62.png"></div>
+
+<div class="sh-page" data-page="63"><img alt="Relationaler Domänenkalkül Anfragen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-calculus/unit-de-relational-calculus-63.png"></div>
+
+<div class="sh-page" data-page="64"><img alt="Relationaler Domänenkalkül Anfragen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-calculus/unit-de-relational-calculus-64.png"></div>
+
+<div class="sh-page" data-page="65"><img alt="Relationaler Domänenkalkül Beispiel 1" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-calculus/unit-de-relational-calculus-65.png"></div>
+
+<div class="sh-page" data-page="66"><img alt="Relationaler Domänenkalkül Beispiel 1" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-calculus/unit-de-relational-calculus-66.png"></div>
+
+<div class="sh-page" data-page="67"><img alt="Relationaler Domänenkalkül Beispiel 1" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-calculus/unit-de-relational-calculus-67.png"></div>
+
+<div class="sh-page" data-page="68"><img alt="Relationaler Domänenkalkül Beispiel 1" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-calculus/unit-de-relational-calculus-68.png"></div>
+
+<div class="sh-page" data-page="69"><img alt="Relationaler Domänenkalkül Beispiel 1" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-calculus/unit-de-relational-calculus-69.png"></div>
+
+<div class="sh-page" data-page="70"><img alt="Relationaler Domänenkalkül Beispiel 1" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-calculus/unit-de-relational-calculus-70.png"></div>
+
+<div class="sh-page" data-page="71"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-calculus/unit-de-relational-calculus-71.png"></div>
+
+<div class="sh-page" data-page="72"><img alt="Relationaler Domänenkalkül Beispiel 2" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-calculus/unit-de-relational-calculus-72.png"></div>
+
+<div class="sh-page" data-page="73"><img alt="Relationaler Domänenkalkül Beispiel 2" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-calculus/unit-de-relational-calculus-73.png"></div>
+
+<div class="sh-page" data-page="74"><img alt="Relationaler Domänenkalkül Beispiel 2" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-calculus/unit-de-relational-calculus-74.png"></div>
+
+<div class="sh-page" data-page="75"><img alt="Relationaler Domänenkalkül Beispiel 3" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-calculus/unit-de-relational-calculus-75.png"></div>
+
+<div class="sh-page" data-page="76"><img alt="Relationaler Domänenkalkül Beispiel 3" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-calculus/unit-de-relational-calculus-76.png"></div>
+
+<div class="sh-page" data-page="77"><img alt="Relationaler Domänenkalkül Beispiel 3" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-calculus/unit-de-relational-calculus-77.png"></div>
+
+<div class="sh-page" data-page="78"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-calculus/unit-de-relational-calculus-78.png"></div>
+
+<div class="sh-page" data-page="79"><img alt="Relationaler Domänenkalkül Beispiel 4" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-calculus/unit-de-relational-calculus-79.png"></div>
+
+<div class="sh-page" data-page="80"><img alt="Relationaler Domänenkalkül Beispiel 4" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-calculus/unit-de-relational-calculus-80.png"></div>
+
+<div class="sh-page" data-page="81"><img alt="Relationaler Domänenkalkül Beispiel 4" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-calculus/unit-de-relational-calculus-81.png"></div>
+
+<div class="sh-page" data-page="82"><img alt="Relationaler Domänenkalkül Sichere Anfragen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-calculus/unit-de-relational-calculus-82.png"></div>
+
+<div class="sh-page" data-page="83"><img alt="Relationaler Domänenkalkül Sichere Anfragen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-calculus/unit-de-relational-calculus-83.png"></div>
+
+<div class="sh-page" data-page="84"><img alt="Anfragekalküle Ausdrucksstärke der Kalküle" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-calculus/unit-de-relational-calculus-84.png"></div>
+
+<div class="sh-page" data-page="85"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-calculus/unit-de-relational-calculus-85.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-de-sql1.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1.pdf" style="--sh-pages: 97"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Kapitel DB:VI VI. Die relationale Datenbanksprache SQL" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Einführung Historie" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Einführung Vergleich zu theoretischen Anfragesprachen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Einführung Komponenten von SQL" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Einführung Komponenten von SQL" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="SQL als Datenanfragesprache Kern von SQL-Anfragen ist der Select-From-Where-Block (SFW-Block) :" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="SQL als Datenanfragesprache Kern von SQL-Anfragen ist der Select-From-Where-Block (SFW-Block) :" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="SQL als Datenanfragesprache Illustration der Grundideen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="SQL als Datenanfragesprache Illustration der Grundideen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="SQL als Datenanfragesprache Illustration der Grundideen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="SQL als Datenanfragesprache Illustration der Grundideen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="SQL als Datenanfragesprache Illustration der Grundideen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="SQL als Datenanfragesprache Syntax des SFW-Blocks" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="SQL als Datenanfragesprache From-Klausel" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="SQL als Datenanfragesprache From-Klausel" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-17.png"></div>
+
+<div class="sh-page" data-page="18"><img alt="SQL als Datenanfragesprache Select-Klausel" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-18.png"></div>
+
+<div class="sh-page" data-page="19"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-19.png"></div>
+
+<div class="sh-page" data-page="20"><img alt="SQL als Datenanfragesprache Select-Klausel" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-20.png"></div>
+
+<div class="sh-page" data-page="21"><img alt="SQL als Datenanfragesprache Select-Klausel" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-21.png"></div>
+
+<div class="sh-page" data-page="22"><img alt="SQL als Datenanfragesprache Where-Klausel" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-22.png"></div>
+
+<div class="sh-page" data-page="23"><img alt="SQL als Datenanfragesprache Where-Klausel" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-23.png"></div>
+
+<div class="sh-page" data-page="24"><img alt="SQL als Datenanfragesprache Where-Klausel" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-24.png"></div>
+
+<div class="sh-page" data-page="25"><img alt="SQL als Datenanfragesprache Where-Klausel" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-25.png"></div>
+
+<div class="sh-page" data-page="26"><img alt="SQL als Datenanfragesprache Where-Klausel" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-26.png"></div>
+
+<div class="sh-page" data-page="27"><img alt="SQL als Datenanfragesprache Where-Klausel" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-27.png"></div>
+
+<div class="sh-page" data-page="28"><img alt="SQL als Datenanfragesprache Where-Klausel" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-28.png"></div>
+
+<div class="sh-page" data-page="29"><img alt="SQL als Datenanfragesprache Where-Klausel: Self-Join" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-29.png"></div>
+
+<div class="sh-page" data-page="30"><img alt="SQL als Datenanfragesprache Where-Klausel: Self-Join" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-30.png"></div>
+
+<div class="sh-page" data-page="31"><img alt="SQL als Datenanfragesprache Where-Klausel: Self-Join" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-31.png"></div>
+
+<div class="sh-page" data-page="32"><img alt="SQL als Datenanfragesprache Where-Klausel: Self-Join" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-32.png"></div>
+
+<div class="sh-page" data-page="33"><img alt="SQL als Datenanfragesprache Bezug zur Relationenalgebra" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-33.png"></div>
+
+<div class="sh-page" data-page="34"><img alt="SQL als Datenanfragesprache Bezug zur Relationenalgebra" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-34.png"></div>
+
+<div class="sh-page" data-page="35"><img alt="SQL als Datenanfragesprache Bezug zur Relationenalgebra" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-35.png"></div>
+
+<div class="sh-page" data-page="36"><img alt="SQL als Datenanfragesprache Bezug zur Relationenalgebra" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-36.png"></div>
+
+<div class="sh-page" data-page="37"><img alt="SQL als Datenanfragesprache Bezug zur Relationenalgebra" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-37.png"></div>
+
+<div class="sh-page" data-page="38"><img alt="SQL als Datenanfragesprache Bezug zum Tupelkalkül" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-38.png"></div>
+
+<div class="sh-page" data-page="39"><img alt="SQL als Datenanfragesprache Bezug zum Tupelkalkül" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-39.png"></div>
+
+<div class="sh-page" data-page="40"><img alt="SQL als Datenanfragesprache Bezug zum Tupelkalkül" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-40.png"></div>
+
+<div class="sh-page" data-page="41"><img alt="SQL als Datenanfragesprache Bezug zum Tupelkalkül" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-41.png"></div>
+
+<div class="sh-page" data-page="42"><img alt="SQL als Datenanfragesprache Geschachtelte Anfragen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-42.png"></div>
+
+<div class="sh-page" data-page="43"><img alt="SQL als Datenanfragesprache Geschachtelte Anfragen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-43.png"></div>
+
+<div class="sh-page" data-page="44"><img alt="SQL als Datenanfragesprache Geschachtelte Anfragen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-44.png"></div>
+
+<div class="sh-page" data-page="45"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-45.png"></div>
+
+<div class="sh-page" data-page="46"><img alt="Bemerkungen (Fortsetzung) :" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-46.png"></div>
+
+<div class="sh-page" data-page="47"><img alt="SQL als Datenanfragesprache Geschachtelte Anfragen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-47.png"></div>
+
+<div class="sh-page" data-page="48"><img alt="SQL als Datenanfragesprache Geschachtelte Anfragen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-48.png"></div>
+
+<div class="sh-page" data-page="49"><img alt="SQL als Datenanfragesprache Geschachtelte Anfragen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-49.png"></div>
+
+<div class="sh-page" data-page="50"><img alt="SQL als Datenanfragesprache Geschachtelte Anfragen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-50.png"></div>
+
+<div class="sh-page" data-page="51"><img alt="SQL als Datenanfragesprache Geschachtelte Anfragen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-51.png"></div>
+
+<div class="sh-page" data-page="52"><img alt="SQL als Datenanfragesprache Geschachtelte Anfragen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-52.png"></div>
+
+<div class="sh-page" data-page="53"><img alt="SQL als Datenanfragesprache Allquantifizierung" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-53.png"></div>
+
+<div class="sh-page" data-page="54"><img alt="SQL als Datenanfragesprache Allquantifizierung" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-54.png"></div>
+
+<div class="sh-page" data-page="55"><img alt="SQL als Datenanfragesprache Allquantifizierung" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-55.png"></div>
+
+<div class="sh-page" data-page="56"><img alt="SQL als Datenanfragesprache Allquantifizierung" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-56.png"></div>
+
+<div class="sh-page" data-page="57"><img alt="SQL als Datenanfragesprache Allquantifizierung" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-57.png"></div>
+
+<div class="sh-page" data-page="58"><img alt="SQL als Datenanfragesprache Allquantifizierung" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-58.png"></div>
+
+<div class="sh-page" data-page="59"><img alt="SQL als Datenanfragesprache Allquantifizierung" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-59.png"></div>
+
+<div class="sh-page" data-page="60"><img alt="SQL als Datenanfragesprache Allquantifizierung" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-60.png"></div>
+
+<div class="sh-page" data-page="61"><img alt="SQL als Datenanfragesprache Allquantifizierung" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-61.png"></div>
+
+<div class="sh-page" data-page="62"><img alt="SQL als Datenanfragesprache Allquantifizierung" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-62.png"></div>
+
+<div class="sh-page" data-page="63"><img alt="SQL als Datenanfragesprache Allquantifizierung" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-63.png"></div>
+
+<div class="sh-page" data-page="64"><img alt="SQL als Datenanfragesprache Allquantifizierung" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-64.png"></div>
+
+<div class="sh-page" data-page="65"><img alt="SQL als Datenanfragesprache Allquantifizierung" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-65.png"></div>
+
+<div class="sh-page" data-page="66"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-66.png"></div>
+
+<div class="sh-page" data-page="67"><img alt="SQL als Datenanfragesprache Mengenoperationen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-67.png"></div>
+
+<div class="sh-page" data-page="68"><img alt="SQL als Datenanfragesprache Mengenoperationen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-68.png"></div>
+
+<div class="sh-page" data-page="69"><img alt="SQL als Datenanfragesprache Mengenoperationen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-69.png"></div>
+
+<div class="sh-page" data-page="70"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-70.png"></div>
+
+<div class="sh-page" data-page="71"><img alt="SQL als Datenanfragesprache Aggregat- und Gruppierungsfunktionen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-71.png"></div>
+
+<div class="sh-page" data-page="72"><img alt="SQL als Datenanfragesprache Aggregat- und Gruppierungsfunktionen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-72.png"></div>
+
+<div class="sh-page" data-page="73"><img alt="SQL als Datenanfragesprache Aggregat- und Gruppierungsfunktionen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-73.png"></div>
+
+<div class="sh-page" data-page="74"><img alt="SQL als Datenanfragesprache Aggregat- und Gruppierungsfunktionen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-74.png"></div>
+
+<div class="sh-page" data-page="75"><img alt="SQL als Datenanfragesprache Aggregat- und Gruppierungsfunktionen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-75.png"></div>
+
+<div class="sh-page" data-page="76"><img alt="SQL als Datenanfragesprache Aggregat- und Gruppierungsfunktionen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-76.png"></div>
+
+<div class="sh-page" data-page="77"><img alt="SQL als Datenanfragesprache Aggregat- und Gruppierungsfunktionen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-77.png"></div>
+
+<div class="sh-page" data-page="78"><img alt="SQL als Datenanfragesprache Aggregat- und Gruppierungsfunktionen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-78.png"></div>
+
+<div class="sh-page" data-page="79"><img alt="SQL als Datenanfragesprache Aggregat- und Gruppierungsfunktionen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-79.png"></div>
+
+<div class="sh-page" data-page="80"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-80.png"></div>
+
+<div class="sh-page" data-page="81"><img alt="SQL als Datenanfragesprache Aggregat- und Gruppierungsfunktionen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-81.png"></div>
+
+<div class="sh-page" data-page="82"><img alt="SQL als Datenanfragesprache Aggregat- und Gruppierungsfunktionen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-82.png"></div>
+
+<div class="sh-page" data-page="83"><img alt="SQL als Datenanfragesprache Aggregat- und Gruppierungsfunktionen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-83.png"></div>
+
+<div class="sh-page" data-page="84"><img alt="SQL als Datenanfragesprache Nullwerte" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-84.png"></div>
+
+<div class="sh-page" data-page="85"><img alt="SQL als Datenanfragesprache Nullwerte" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-85.png"></div>
+
+<div class="sh-page" data-page="86"><img alt="SQL als Datenanfragesprache Nullwerte" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-86.png"></div>
+
+<div class="sh-page" data-page="87"><img alt="SQL als Datenanfragesprache Nullwerte" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-87.png"></div>
+
+<div class="sh-page" data-page="88"><img alt="SQL als Datenanfragesprache Nullwerte" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-88.png"></div>
+
+<div class="sh-page" data-page="89"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-89.png"></div>
+
+<div class="sh-page" data-page="90"><img alt="SQL als Datenanfragesprache Zusammengesetzte Terme" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-90.png"></div>
+
+<div class="sh-page" data-page="91"><img alt="SQL als Datenanfragesprache SQL-89 versus SQL-92: Joins" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-91.png"></div>
+
+<div class="sh-page" data-page="92"><img alt="SQL als Datenanfragesprache SQL-89 versus SQL-92: Joins" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-92.png"></div>
+
+<div class="sh-page" data-page="93"><img alt="SQL als Datenanfragesprache SQL-89 versus SQL-92: Joins" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-93.png"></div>
+
+<div class="sh-page" data-page="94"><img alt="SQL als Datenanfragesprache SQL-89 versus SQL-92: Joins" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-94.png"></div>
+
+<div class="sh-page" data-page="95"><img alt="SQL als Datenanfragesprache SQL-89 versus SQL-92: Joins" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-95.png"></div>
+
+<div class="sh-page" data-page="96"><img alt="SQL als Datenanfragesprache SQL-89 versus SQL-92: Joins" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-96.png"></div>
+
+<div class="sh-page" data-page="97"><img alt="SQL als Datenanfragesprache SQL-89 versus SQL-92" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql1/unit-de-sql1-97.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-de-sql2.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/databases/unit-de-sql2.pdf" style="--sh-pages: 38"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Kapitel DB:VI " src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql2/unit-de-sql2-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="SQL als Datendefinitionssprache Datentypen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql2/unit-de-sql2-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="SQL als Datendefinitionssprache Datentypen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql2/unit-de-sql2-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="SQL als Datendefinitionssprache Domains (SQL-92)" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql2/unit-de-sql2-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="SQL als Datendefinitionssprache Domains (SQL-92)" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql2/unit-de-sql2-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="SQL als Datendefinitionssprache Check-Klausel" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql2/unit-de-sql2-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="SQL als Datendefinitionssprache Check-Klausel" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql2/unit-de-sql2-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="SQL als Datendefinitionssprache Datenbanken" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql2/unit-de-sql2-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="SQL als Datendefinitionssprache Relationen definieren" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql2/unit-de-sql2-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="SQL als Datendefinitionssprache Relationen definieren" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql2/unit-de-sql2-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="SQL als Datendefinitionssprache Relationen definieren" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql2/unit-de-sql2-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="SQL als Datendefinitionssprache Relationen definieren" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql2/unit-de-sql2-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql2/unit-de-sql2-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="SQL als Datendefinitionssprache Relationen definieren: Beispiele" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql2/unit-de-sql2-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="SQL als Datendefinitionssprache Relationen definieren: Beispiele" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql2/unit-de-sql2-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="SQL als Datendefinitionssprache Relationen definieren: Beispiele" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql2/unit-de-sql2-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="SQL als Datendefinitionssprache Relationen definieren: On-Klausel" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql2/unit-de-sql2-17.png"></div>
+
+<div class="sh-page" data-page="18"><img alt="SQL als Datendefinitionssprache Relationen definieren: On-Klausel" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql2/unit-de-sql2-18.png"></div>
+
+<div class="sh-page" data-page="19"><img alt="SQL als Datendefinitionssprache Relationen definieren: On-Klausel" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql2/unit-de-sql2-19.png"></div>
+
+<div class="sh-page" data-page="20"><img alt="SQL als Datendefinitionssprache Relationen definieren: On-Klausel" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql2/unit-de-sql2-20.png"></div>
+
+<div class="sh-page" data-page="21"><img alt="SQL als Datendefinitionssprache Relationen ändern" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql2/unit-de-sql2-21.png"></div>
+
+<div class="sh-page" data-page="22"><img alt="SQL als Datendefinitionssprache Relationen ändern" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql2/unit-de-sql2-22.png"></div>
+
+<div class="sh-page" data-page="23"><img alt="SQL als Datendefinitionssprache Relationen löschen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql2/unit-de-sql2-23.png"></div>
+
+<div class="sh-page" data-page="24"><img alt="SQL als Datendefinitionssprache Datendefinitionsbefehle im Überblick" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql2/unit-de-sql2-24.png"></div>
+
+<div class="sh-page" data-page="25"><img alt="SQL als Datenmanipulationsssprache Einfügen von Tupeln" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql2/unit-de-sql2-25.png"></div>
+
+<div class="sh-page" data-page="26"><img alt="SQL als Datenmanipulationsssprache Einfügen von Tupeln" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql2/unit-de-sql2-26.png"></div>
+
+<div class="sh-page" data-page="27"><img alt="SQL als Datenmanipulationsssprache Einfügen von Tupeln: Beispiele" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql2/unit-de-sql2-27.png"></div>
+
+<div class="sh-page" data-page="28"><img alt="SQL als Datenmanipulationsssprache Einfügen von Tupeln: Beispiele" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql2/unit-de-sql2-28.png"></div>
+
+<div class="sh-page" data-page="29"><img alt="SQL als Datenmanipulationsssprache Einfügen von Tupeln: Beispiele" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql2/unit-de-sql2-29.png"></div>
+
+<div class="sh-page" data-page="30"><img alt="SQL als Datenmanipulationsssprache Löschen von Tupeln" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql2/unit-de-sql2-30.png"></div>
+
+<div class="sh-page" data-page="31"><img alt="SQL als Datenmanipulationsssprache Löschen von Tupeln: Beispiele" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql2/unit-de-sql2-31.png"></div>
+
+<div class="sh-page" data-page="32"><img alt="SQL als Datenmanipulationsssprache Löschen von Tupeln: Beispiele" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql2/unit-de-sql2-32.png"></div>
+
+<div class="sh-page" data-page="33"><img alt="SQL als Datenmanipulationsssprache Ändern von Tupeln" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql2/unit-de-sql2-33.png"></div>
+
+<div class="sh-page" data-page="34"><img alt="SQL als Datenmanipulationsssprache Ändern von Tupeln: Beispiele" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql2/unit-de-sql2-34.png"></div>
+
+<div class="sh-page" data-page="35"><img alt="SQL als Datenmanipulationsssprache Ändern von Tupeln: Beispiele" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql2/unit-de-sql2-35.png"></div>
+
+<div class="sh-page" data-page="36"><img alt="SQL als Datenmanipulationsssprache Ändern von Tupeln: Beispiele" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql2/unit-de-sql2-36.png"></div>
+
+<div class="sh-page" data-page="37"><img alt="SQL als Datenmanipulationsssprache Ändern von Tupeln: Beispiele" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql2/unit-de-sql2-37.png"></div>
+
+<div class="sh-page" data-page="38"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql2/unit-de-sql2-38.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-de-sql3.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/databases/unit-de-sql3.pdf" style="--sh-pages: 16"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Kapitel DB:VI " src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql3/unit-de-sql3-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="SQL vom Programm aus Anwendungsszenarien" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql3/unit-de-sql3-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="SQL vom Programm aus Anwendungsszenarien" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql3/unit-de-sql3-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="SQL vom Programm aus Prinzipien zur DBMS-Anbindung" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql3/unit-de-sql3-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="SQL vom Programm aus Prinzipien zur DBMS-Anbindung" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql3/unit-de-sql3-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql3/unit-de-sql3-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="SQL vom Programm aus JDBC-API: Treibertypen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql3/unit-de-sql3-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="SQL vom Programm aus JDBC-API: Vergleich mit ODBC" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql3/unit-de-sql3-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql3/unit-de-sql3-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="SQL vom Programm aus JDBC-API: Treibertypen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql3/unit-de-sql3-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="SQL vom Programm aus JDBC-API: Treibertypen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql3/unit-de-sql3-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="SQL vom Programm aus JDBC-API: Treibertypen" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql3/unit-de-sql3-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="SQL vom Programm aus JDBC-API: Beispiel Typ-4-Treiber" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql3/unit-de-sql3-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="SQL vom Programm aus JDBC-API: Beispiel Typ-4-Treiber" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql3/unit-de-sql3-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="SQL vom Programm aus JDBC-API: Beispiel Typ-4-Treiber" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql3/unit-de-sql3-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="SQL vom Programm aus MySQL Version 5.x" src="https://webis.de/downloads/lecturenotes/databases/unit-de-sql3/unit-de-sql3-16.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-de-relational-theory1.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory1.pdf" style="--sh-pages: 71"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Kapitel DB:VII VII. Entwurfstheorie relationaler Datenbanken" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory1/unit-de-relational-theory1-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Informelle Entwurfskriterien für Relationenschemata Ziel I: Semantik von Relationenschemata klar halten" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory1/unit-de-relational-theory1-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Informelle Entwurfskriterien für Relationenschemata Ziel I: Semantik von Relationenschemata klar halten" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory1/unit-de-relational-theory1-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Informelle Entwurfskriterien für Relationenschemata Ziel II: Vermeidung von (Update-)Anomalien" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory1/unit-de-relational-theory1-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Informelle Entwurfskriterien für Relationenschemata Ziel II: Vermeidung von (Update-)Anomalien" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory1/unit-de-relational-theory1-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Informelle Entwurfskriterien für Relationenschemata Ziel II: Vermeidung von (Update-)Anomalien" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory1/unit-de-relational-theory1-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Informelle Entwurfskriterien für Relationenschemata Ziel II: Vermeidung von (Update-)Anomalien" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory1/unit-de-relational-theory1-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory1/unit-de-relational-theory1-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Informelle Entwurfskriterien für Relationenschemata Ziel III: Möglichst wenig Nullwerte" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory1/unit-de-relational-theory1-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Informelle Entwurfskriterien für Relationenschemata Ziel IV: Verhinderung der Erzeugung falscher Tupel" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory1/unit-de-relational-theory1-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Informelle Entwurfskriterien für Relationenschemata Ziel IV: Verhinderung der Erzeugung falscher Tupel" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory1/unit-de-relational-theory1-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory1/unit-de-relational-theory1-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Funktionale Abhängigkeiten Definition 1 (funktionale Abhängigkeit, FD)" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory1/unit-de-relational-theory1-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="Funktionale Abhängigkeiten Definition 1 (funktionale Abhängigkeit, FD)" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory1/unit-de-relational-theory1-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory1/unit-de-relational-theory1-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="Funktionale Abhängigkeiten Beispiel:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory1/unit-de-relational-theory1-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="Funktionale Abhängigkeiten Beispiel:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory1/unit-de-relational-theory1-17.png"></div>
+
+<div class="sh-page" data-page="18"><img alt="Funktionale Abhängigkeiten Beispiel:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory1/unit-de-relational-theory1-18.png"></div>
+
+<div class="sh-page" data-page="19"><img alt="Funktionale Abhängigkeiten Beispiel:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory1/unit-de-relational-theory1-19.png"></div>
+
+<div class="sh-page" data-page="20"><img alt="Funktionale Abhängigkeiten Definition 2 (triviale funktionale Abhängigkeiten)" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory1/unit-de-relational-theory1-20.png"></div>
+
+<div class="sh-page" data-page="21"><img alt="Funktionale Abhängigkeiten Definition 2 (triviale funktionale Abhängigkeiten)" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory1/unit-de-relational-theory1-21.png"></div>
+
+<div class="sh-page" data-page="22"><img alt="Funktionale Abhängigkeiten Definition 2 (triviale funktionale Abhängigkeiten)" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory1/unit-de-relational-theory1-22.png"></div>
+
+<div class="sh-page" data-page="23"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory1/unit-de-relational-theory1-23.png"></div>
+
+<div class="sh-page" data-page="24"><img alt="Funktionale Abhängigkeiten Ableitung funktionaler Abhängigkeiten" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory1/unit-de-relational-theory1-24.png"></div>
+
+<div class="sh-page" data-page="25"><img alt="Funktionale Abhängigkeiten Ableitung funktionaler Abhängigkeiten" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory1/unit-de-relational-theory1-25.png"></div>
+
+<div class="sh-page" data-page="26"><img alt="Funktionale Abhängigkeiten Ableitung funktionaler Abhängigkeiten" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory1/unit-de-relational-theory1-26.png"></div>
+
+<div class="sh-page" data-page="27"><img alt="Funktionale Abhängigkeiten Ableitung funktionaler Abhängigkeiten" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory1/unit-de-relational-theory1-27.png"></div>
+
+<div class="sh-page" data-page="28"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory1/unit-de-relational-theory1-28.png"></div>
+
+<div class="sh-page" data-page="29"><img alt="Funktionale Abhängigkeiten Ableitung funktionaler Abhängigkeiten" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory1/unit-de-relational-theory1-29.png"></div>
+
+<div class="sh-page" data-page="30"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory1/unit-de-relational-theory1-30.png"></div>
+
+<div class="sh-page" data-page="31"><img alt="Funktionale Abhängigkeiten Äquivalenz von Mengen funktionaler Abhängigkeiten" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory1/unit-de-relational-theory1-31.png"></div>
+
+<div class="sh-page" data-page="32"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory1/unit-de-relational-theory1-32.png"></div>
+
+<div class="sh-page" data-page="33"><img alt="Funktionale Abhängigkeiten Minimale und kanonische Überdeckungen von FDs" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory1/unit-de-relational-theory1-33.png"></div>
+
+<div class="sh-page" data-page="34"><img alt="Funktionale Abhängigkeiten Minimale und kanonische Überdeckungen von FDs" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory1/unit-de-relational-theory1-34.png"></div>
+
+<div class="sh-page" data-page="35"><img alt="Funktionale Abhängigkeiten Minimale und kanonische Überdeckungen von FDs" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory1/unit-de-relational-theory1-35.png"></div>
+
+<div class="sh-page" data-page="36"><img alt="Funktionale Abhängigkeiten Minimale und kanonische Überdeckungen von FDs" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory1/unit-de-relational-theory1-36.png"></div>
+
+<div class="sh-page" data-page="37"><img alt="Funktionale Abhängigkeiten Minimale und kanonische Überdeckungen von FDs" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory1/unit-de-relational-theory1-37.png"></div>
+
+<div class="sh-page" data-page="38"><img alt="Funktionale Abhängigkeiten Minimale und kanonische Überdeckungen von FDs" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory1/unit-de-relational-theory1-38.png"></div>
+
+<div class="sh-page" data-page="39"><img alt="Funktionale Abhängigkeiten Minimale und kanonische Überdeckungen von FDs" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory1/unit-de-relational-theory1-39.png"></div>
+
+<div class="sh-page" data-page="40"><img alt="Funktionale Abhängigkeiten Minimale und kanonische Überdeckungen von FDs" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory1/unit-de-relational-theory1-40.png"></div>
+
+<div class="sh-page" data-page="41"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory1/unit-de-relational-theory1-41.png"></div>
+
+<div class="sh-page" data-page="42"><img alt="Normalformen Die Normalisierung ist ein formales Werkzeug zur Analyse von Relationenschemata" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory1/unit-de-relational-theory1-42.png"></div>
+
+<div class="sh-page" data-page="43"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory1/unit-de-relational-theory1-43.png"></div>
+
+<div class="sh-page" data-page="44"><img alt="Normalformen Erste Normalform" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory1/unit-de-relational-theory1-44.png"></div>
+
+<div class="sh-page" data-page="45"><img alt="Normalformen Erste Normalform" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory1/unit-de-relational-theory1-45.png"></div>
+
+<div class="sh-page" data-page="46"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory1/unit-de-relational-theory1-46.png"></div>
+
+<div class="sh-page" data-page="47"><img alt="Normalformen Erste Normalform" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory1/unit-de-relational-theory1-47.png"></div>
+
+<div class="sh-page" data-page="48"><img alt="Normalformen Erste Normalform" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory1/unit-de-relational-theory1-48.png"></div>
+
+<div class="sh-page" data-page="49"><img alt="Normalformen Zweite Normalform" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory1/unit-de-relational-theory1-49.png"></div>
+
+<div class="sh-page" data-page="50"><img alt="Normalformen Zweite Normalform" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory1/unit-de-relational-theory1-50.png"></div>
+
+<div class="sh-page" data-page="51"><img alt="Normalformen Zweite Normalform" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory1/unit-de-relational-theory1-51.png"></div>
+
+<div class="sh-page" data-page="52"><img alt="Normalformen Zweite Normalform" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory1/unit-de-relational-theory1-52.png"></div>
+
+<div class="sh-page" data-page="53"><img alt="Normalformen Zweite Normalform" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory1/unit-de-relational-theory1-53.png"></div>
+
+<div class="sh-page" data-page="54"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory1/unit-de-relational-theory1-54.png"></div>
+
+<div class="sh-page" data-page="55"><img alt="Normalformen Zweite Normalform" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory1/unit-de-relational-theory1-55.png"></div>
+
+<div class="sh-page" data-page="56"><img alt="Normalformen Zweite Normalform" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory1/unit-de-relational-theory1-56.png"></div>
+
+<div class="sh-page" data-page="57"><img alt="Normalformen Zweite Normalform" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory1/unit-de-relational-theory1-57.png"></div>
+
+<div class="sh-page" data-page="58"><img alt="Normalformen Dritte Normalform" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory1/unit-de-relational-theory1-58.png"></div>
+
+<div class="sh-page" data-page="59"><img alt="Normalformen Dritte Normalform" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory1/unit-de-relational-theory1-59.png"></div>
+
+<div class="sh-page" data-page="60"><img alt="Normalformen Dritte Normalform" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory1/unit-de-relational-theory1-60.png"></div>
+
+<div class="sh-page" data-page="61"><img alt="Normalformen Dritte Normalform" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory1/unit-de-relational-theory1-61.png"></div>
+
+<div class="sh-page" data-page="62"><img alt="Normalformen Dritte Normalform" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory1/unit-de-relational-theory1-62.png"></div>
+
+<div class="sh-page" data-page="63"><img alt="Normalformen Dritte Normalform" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory1/unit-de-relational-theory1-63.png"></div>
+
+<div class="sh-page" data-page="64"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory1/unit-de-relational-theory1-64.png"></div>
+
+<div class="sh-page" data-page="65"><img alt="Normalformen Boyce-Codd-Normalform" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory1/unit-de-relational-theory1-65.png"></div>
+
+<div class="sh-page" data-page="66"><img alt="Normalformen Boyce-Codd-Normalform" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory1/unit-de-relational-theory1-66.png"></div>
+
+<div class="sh-page" data-page="67"><img alt="Normalformen Boyce-Codd-Normalform" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory1/unit-de-relational-theory1-67.png"></div>
+
+<div class="sh-page" data-page="68"><img alt="Normalformen Boyce-Codd-Normalform" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory1/unit-de-relational-theory1-68.png"></div>
+
+<div class="sh-page" data-page="69"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory1/unit-de-relational-theory1-69.png"></div>
+
+<div class="sh-page" data-page="70"><img alt="Normalformen Minimalität" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory1/unit-de-relational-theory1-70.png"></div>
+
+<div class="sh-page" data-page="71"><img alt="Normalformen Minimalität" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory1/unit-de-relational-theory1-71.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-de-relational-theory2.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory2.pdf" style="--sh-pages: 50"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Kapitel DB:VII " src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory2/unit-de-relational-theory2-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Dekompositionseigenschaften von Relationen Herangehensweisen zum Datenbankentwurf" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory2/unit-de-relational-theory2-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory2/unit-de-relational-theory2-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Dekompositionseigenschaften von Relationen Unterscheidung des formalen Instrumentariums" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory2/unit-de-relational-theory2-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory2/unit-de-relational-theory2-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Dekompositionseigenschaften von Relationen Universalrelation und Dekomposition" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory2/unit-de-relational-theory2-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Dekompositionseigenschaften von Relationen (a) Abhängigkeitserhaltung" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory2/unit-de-relational-theory2-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Dekompositionseigenschaften von Relationen (a) Abhängigkeitserhaltung" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory2/unit-de-relational-theory2-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Dekompositionseigenschaften von Relationen (a) Abhängigkeitserhaltung" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory2/unit-de-relational-theory2-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory2/unit-de-relational-theory2-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Dekompositionseigenschaften von Relationen (a) Abhängigkeitserhaltung: Beispiel" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory2/unit-de-relational-theory2-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Dekompositionseigenschaften von Relationen (a) Abhängigkeitserhaltung: Beispiel" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory2/unit-de-relational-theory2-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Dekompositionseigenschaften von Relationen (a) Abhängigkeitserhaltung: Beispiel" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory2/unit-de-relational-theory2-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory2/unit-de-relational-theory2-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="Dekompositionseigenschaften von Relationen (b) Verlustlose Zerlegung bzw. Verbundtreue" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory2/unit-de-relational-theory2-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory2/unit-de-relational-theory2-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="Dekompositionseigenschaften von Relationen (b) Verlustlose Zerlegung: Beispiel" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory2/unit-de-relational-theory2-17.png"></div>
+
+<div class="sh-page" data-page="18"><img alt="Dekompositionseigenschaften von Relationen (b) Verlustlose Zerlegung: Beispiel" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory2/unit-de-relational-theory2-18.png"></div>
+
+<div class="sh-page" data-page="19"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory2/unit-de-relational-theory2-19.png"></div>
+
+<div class="sh-page" data-page="20"><img alt="Dekompositionseigenschaften von Relationen (b) Verlustlose Zerlegung" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory2/unit-de-relational-theory2-20.png"></div>
+
+<div class="sh-page" data-page="21"><img alt="Dekompositionseigenschaften von Relationen (b) Verlustlose Zerlegung" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory2/unit-de-relational-theory2-21.png"></div>
+
+<div class="sh-page" data-page="22"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory2/unit-de-relational-theory2-22.png"></div>
+
+<div class="sh-page" data-page="23"><img alt="Relationale Dekomposition Algorithm:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory2/unit-de-relational-theory2-23.png"></div>
+
+<div class="sh-page" data-page="24"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory2/unit-de-relational-theory2-24.png"></div>
+
+<div class="sh-page" data-page="25"><img alt="Relationale Dekomposition Illustration der Zerlegung eines Relationenschemas R0 in die Schemata R01 und R02" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory2/unit-de-relational-theory2-25.png"></div>
+
+<div class="sh-page" data-page="26"><img alt="Relationale Dekomposition Beispiel:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory2/unit-de-relational-theory2-26.png"></div>
+
+<div class="sh-page" data-page="27"><img alt="Relationale Synthese Algorithm:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory2/unit-de-relational-theory2-27.png"></div>
+
+<div class="sh-page" data-page="28"><img alt="Relationale Synthese Algorithm:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory2/unit-de-relational-theory2-28.png"></div>
+
+<div class="sh-page" data-page="29"><img alt="Relationale Synthese Algorithm:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory2/unit-de-relational-theory2-29.png"></div>
+
+<div class="sh-page" data-page="30"><img alt="Relationale Synthese Algorithm:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory2/unit-de-relational-theory2-30.png"></div>
+
+<div class="sh-page" data-page="31"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory2/unit-de-relational-theory2-31.png"></div>
+
+<div class="sh-page" data-page="32"><img alt="Bemerkungen: (Fortsetzung)" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory2/unit-de-relational-theory2-32.png"></div>
+
+<div class="sh-page" data-page="33"><img alt="Relationale Synthese Beispiel:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory2/unit-de-relational-theory2-33.png"></div>
+
+<div class="sh-page" data-page="34"><img alt="Mehrwertige Abhängigkeiten Definition 13 (mehrwertig abhängig)" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory2/unit-de-relational-theory2-34.png"></div>
+
+<div class="sh-page" data-page="35"><img alt="Mehrwertige Abhängigkeiten Definition 13 (mehrwertig abhängig)" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory2/unit-de-relational-theory2-35.png"></div>
+
+<div class="sh-page" data-page="36"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory2/unit-de-relational-theory2-36.png"></div>
+
+<div class="sh-page" data-page="37"><img alt="Mehrwertige Abhängigkeiten Beispiel:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory2/unit-de-relational-theory2-37.png"></div>
+
+<div class="sh-page" data-page="38"><img alt="Mehrwertige Abhängigkeiten Sei R ein relationales Schema und gelte α, β, γ ⊆ R mit α ∪ β ∪ γ = R und sei r" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory2/unit-de-relational-theory2-38.png"></div>
+
+<div class="sh-page" data-page="39"><img alt="Mehrwertige Abhängigkeiten Sei R ein relationales Schema und gelte α, β, γ ⊆ R mit α ∪ β ∪ γ = R und sei r" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory2/unit-de-relational-theory2-39.png"></div>
+
+<div class="sh-page" data-page="40"><img alt="Mehrwertige Abhängigkeiten Sei R ein relationales Schema und gelte α, β, γ ⊆ R mit α ∪ β ∪ γ = R und sei r" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory2/unit-de-relational-theory2-40.png"></div>
+
+<div class="sh-page" data-page="41"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory2/unit-de-relational-theory2-41.png"></div>
+
+<div class="sh-page" data-page="42"><img alt="Mehrwertige Abhängigkeiten Vierte Normalform" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory2/unit-de-relational-theory2-42.png"></div>
+
+<div class="sh-page" data-page="43"><img alt="Mehrwertige Abhängigkeiten Vierte Normalform" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory2/unit-de-relational-theory2-43.png"></div>
+
+<div class="sh-page" data-page="44"><img alt="Mehrwertige Abhängigkeiten Vierte Normalform" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory2/unit-de-relational-theory2-44.png"></div>
+
+<div class="sh-page" data-page="45"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory2/unit-de-relational-theory2-45.png"></div>
+
+<div class="sh-page" data-page="46"><img alt="Mehrwertige Abhängigkeiten Verlustlose Zerlegung" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory2/unit-de-relational-theory2-46.png"></div>
+
+<div class="sh-page" data-page="47"><img alt="Mehrwertige Abhängigkeiten Verlustlose Zerlegung" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory2/unit-de-relational-theory2-47.png"></div>
+
+<div class="sh-page" data-page="48"><img alt="Mehrwertige Abhängigkeiten Relationale Dekomposition" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory2/unit-de-relational-theory2-48.png"></div>
+
+<div class="sh-page" data-page="49"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory2/unit-de-relational-theory2-49.png"></div>
+
+<div class="sh-page" data-page="50"><img alt="Beziehungen der Normalformen abhängigkeitserhaltende" src="https://webis.de/downloads/lecturenotes/databases/unit-de-relational-theory2/unit-de-relational-theory2-50.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+<!-- units end -->
+</div>
+</main>
+
+<div class="sh-modal closed" data-modal-help="" aria-hidden="true" aria-labelledby="sh-help-title" role="dialog">
+  <div class="sh-modal-content" role="document">
+    <button class="sh-modal__close sh-button sh-button--close" data-close-modal="" aria-label="Close">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" aria-labelledby="sh-close-help-title"><path d="M4 0l8 8 8-8 4 4-8 8 8 8-4 4-8-8-8 8-4-4 8-8-8-8z"/></svg>
+    </button>
+    <h2 class="sh-modal__title" id="sh-help-title">Help</h2>
+    <div class="sh-shortcut-table-wrapper">
+      <table class="sh-shortcut-table">
+        <caption class="sh-visually-hidden">Document-specific controls</caption>
+        <thead>
+          <tr>
+            <th class="sh-shortcut-table__input">
+              <span class="sh-visually-hidden">Shortcut</span>
+            </th>
+            <th class="sh-shortcut-table__action">Documents</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="sh-shortcut-table__input">
+              <div class="sh-shortcut-group">
+                <kbd aria-label="Up or down arrow key">↑/↓</kbd>
+              </div>
+            </td>
+            <td class="sh-shortcut-table__action">Navigate documents</td>
+          </tr>
+          <tr>
+            <td class="sh-shortcut-table__input">
+              <div class="sh-shortcut-group">
+                <kbd>Shift</kbd> + <kbd aria-label="Up or down arrow key">↑/↓</kbd>
+              </div>
+            </td>
+            <td class="sh-shortcut-table__action">Navigate 3 documents</td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="sh-shortcut-table">
+        <caption class="sh-visually-hidden">Page-specific controls</caption>
+        <thead>
+          <tr>
+            <th class="sh-shortcut-table__input">
+              <span class="sh-visually-hidden">Shortcut</span>
+            </th>
+            <th class="sh-shortcut-table__action">Pages</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="sh-shortcut-table__input">
+              <div class="sh-shortcut-group">
+                <kbd aria-label="Left or right arrow key">←/→</kbd>
+              </div>
+            </td>
+            <td class="sh-shortcut-table__action">Navigate pages</td>
+          </tr>
+          <tr>
+            <td class="sh-shortcut-table__input">
+              <div class="sh-shortcut-group">
+                <kbd>Shift</kbd> + <kbd>MouseWheel</kbd>
+              </div>
+            </td>
+            <td class="sh-shortcut-table__action">Navigate pages</td>
+          </tr>
+          <tr>
+            <td class="sh-shortcut-table__input">
+              <div class="sh-shortcut-group">
+                <kbd>Shift</kbd> + <kbd aria-label="Left or right arrow key">←/→</kbd>
+              </div>
+            </td>
+            <td class="sh-shortcut-table__action">Navigate 3 pages</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<footer class="uk-section uk-section-default footer-section">
+    <div class="uk-container">
+        <div class="uk-align-right@m uk-margin-top">
+            Copyright &copy; 2019 Temir Group
+            <address></address>
+        </div>
+    </div>
+</footer>
+
+<script>
+    UIkit.util.ready(() => {
+        const nav = UIkit.util.$(".global-nav");
+        const navHeight = UIkit.util.height(nav);
+
+        // correct scroll offset due to fixed navigation after page load
+        let fixScrollHeight = () => {
+            if (location.hash === "" || !UIkit.util.$(location.hash)) {
+                return;
+            }
+
+            const pos = document.documentElement.scrollTop;
+            const offset = UIkit.util.offset(UIkit.util.$(location.hash));
+
+            if (pos > navHeight * .8 && offset) {
+                document.documentElement.scrollTop = offset.top - navHeight - 20;
+            }
+        };
+
+        window.addEventListener("hashchange", fixScrollHeight, false);
+        setTimeout(fixScrollHeight, 100);
+    });
+</script>
+
+</body>
+</html>

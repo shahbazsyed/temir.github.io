@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Webis Data Webis-QSeC-10</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Overview of corpora that are used by the Webis research group">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="copyright" content="&copy; 2019 Temir">
+    <link rel="icon" type="image/png" href="/img/favicon.png">
+
+    <link rel="stylesheet" href="/css/style.css?1548321565">
+</head>
+<body class="uk-offcanvas-content">
+<script src="/js/thirdparty/uikit/uikit.min.js"></script>
+<script src="/js/thirdparty/uikit/uikit-icons.min.js"></script>
+
+<div id="offcanvas-nav" class="uk-hidden@m" data-uk-offcanvas="overlay: true; flip: true;">
+    <div class="uk-offcanvas-bar">
+        <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+
+        <!-- Mobile navigation -->
+        <nav class="uk-margin-large-top">
+            <ul class="uk-nav uk-nav-primary uk-nav-parent-icon" data-uk-nav>
+                <li>
+                    <a href="/people.html">People</a>
+                </li>
+                <li class="uk-parent">
+                    <a href="#">Lecturenotes</a>
+                    <ul class="uk-nav-sub">
+                        <li><a href="/lecturenotes/overview.html">Overview</a></li>
+                        <li><a href="/lecturenotes/slides.html">Slides</a></li>
+                        <li class="uk-parent">
+                            Browser
+                            <ul class="uk-nav-sub">
+                                <li><a href="/lecturenotes/browser/algorithms-and-datastructures.html">Algorithmen und Datenstrukturen</a></li>
+                                <li><a href="/lecturenotes/browser/information-retrieval.html">Information Retrieval</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/research.html">Research</a>
+                </li>
+                <li>
+                    <a href="/publications.html">Publications</a>
+                </li>
+                <li class="uk-active">
+                    <a href="/data.html">Data</a>
+                </li>
+                <li>
+                    <a href="/facilities.html">Facilities</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<div class="uk-background-secondary desktop-nav global-nav" data-uk-sticky="media: @m">
+    <!-- Desktop navigation -->
+    <nav class="uk-navbar-container uk-navbar-transparent uk-container uk-light" data-uk-navbar="mode: click">
+        <div class="uk-navbar-left">
+            <ul class="uk-navbar-nav">
+                <li>
+                    <a href="/"><img src="/img/uni_leipzig_logo_v2_white-01_opt_2.png" alt="TEMIR LOGO" class="uk-logo"> Temir</a>
+                </li>
+            </ul>
+        </div>
+        <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav">
+                <li>
+                    <a href="/people.html">People</a>
+                </li>
+                <li class="nav-group-start">
+                    <a href="#">Lecturenotes</a>
+                    <div class="uk-navbar-dropdown uk-navbar-dropdown-width-3 uk-padding-remove">
+                        <div class="uk-navbar-dropdown-grid" data-uk-grid>
+                            <div class="uk-width-1-3">
+                                <ul class="uk-nav uk-navbar-dropdown-nav uk-padding-small">
+                                    <li><a href="/lecturenotes/overview.html">Overview</a></li>
+                                    <li><a href="/lecturenotes/slides.html">Slides</a></li>
+                                    <li class="nav-left-open-category">Browser</li>
+                                </ul>
+                            </div>
+                            <div class="uk-width-2-3">
+                                <ul class="uk-nav uk-navbar-dropdown-nav nav-right-open-sub uk-padding-small">
+                                    <li><a href="/lecturenotes/browser/algorithms-and-datastructures.html">Algorithmen und Datenstrukturen</a></li>
+                                    <li><a href="/lecturenotes/browser/information-retrieval.html">Information Retrieval</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="/research.html">Research</a>
+                </li>
+                <li>
+                    <a href="/publications.html">Publications</a>
+                </li>
+                <li class="nav-group-start uk-active">
+                    <a href="/data.html">Data</a>
+                </li>
+                <li>
+                    <a href="/facilities.html">Facilities</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<div class="uk-background-secondary mobile-nav global-nav" data-uk-sticky>
+    <div class="uk-navbar-container uk-navbar-transparent uk-container uk-light mobile-nav-toggle" data-uk-navbar>
+        <div class="">
+            <ul class="uk-navbar-nav">
+                <li>
+                    <a href="/"><img src="/img/uni_leipzig_logo_v2_white-01_opt_2.png" alt="TEMIR LOGO" class="uk-logo"> Temir</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="uk-navbar-right">
+            <button class="uk-button uk-navbar-item uk-light uk-button-large" type="button" data-uk-icon="icon: menu"
+                    data-uk-toggle="target: #offcanvas-nav"></button>
+        </div>
+    </div>
+</div>
+
+<div data-uk-height-viewport="expand: true">
+<script type="application/ld+json">
+{
+    "@context":"http://schema.org/",
+    "@type":"Dataset",
+    "name":"Webis-QSeC-10",
+    "description":"The Webis Query Segmentation Corpus 2010 (Webis-QSeC-10) contains segmentations for 53,437 web queries obtained from Mechanical Turk crowdsourcing. For each query, 10 MTurk workers were asked to segment the query. The corpus represents the distribution of their decisions.",
+    "text":"The original queries were extracted from the AOL query log, and range from 3 to 10 keywords in length. For each query 10 MTurk workers were asked to segment the query and their decisions are accumulated in the corpus. The examples below demonstrate two different cases. Sample queries with internal ID (as in 'Webis-QSeC-10-training-set-queries.txt'): 2315313155 harvard community credit union; 1858084875 women's cycling tops. Sample segmentations (as in 'Webis-QSeC-10-training-set-queries.txt'): 2315313155 [(6, 'harvard community credit union'), (2, 'harvard community|credit union'), (1, 'harvard|community|credit union'), (1, 'harvard|community credit union')]; 1858084875 [(5, 'women's|cycling tops'), (2, 'women's|cycling|tops'), (2, 'women's cycling|tops'), (1, 'women's cycling tops')]. Each query has a unique internal ID (e.g., 2315313155 in the first example) and the segmentations file contains the 10 different decisions the MTurk workers made for that query. In the first example 6 workers have all 4 keywords in one segment, 2 workers decided to break after the second word (denoted by a |) etc. Note that in the second example (query ID 1858084875) in the segmentations the apostrophe in the query is escaped by double quotes around the segmentation strings.",
+    "url":"https://webis.de/data/webis-qsec-10.html",
+    "keywords":[
+        "web queries", 
+        "query", 
+        "AOL"
+    ], 
+    "datePublished":"2010",
+    "creator":[
+        {
+            "@type":"Organization",
+            "url":"https://webis.de/",
+            "name":"The Web Technology & Information Systems Network",
+            "alternateName":"Webis"
+        },
+        {
+            "@type":"Person", 
+            "url":"http://www.uni-weimar.de/medien/webis/people/#hagen",
+            "affiliation":"Bauhaus-Universit\u00e4t Weimar", 
+            "name":"Hagen, Matthias"
+        },
+        {
+            "@type":"Person", 
+            "url":"http://www.uni-weimar.de/medien/webis/people/#potthast",
+            "affiliation":"Bauhaus-Universit\u00e4t Weimar", 
+            "name":"Potthast, Martin"
+        },
+        {
+            "@type":"Person", 
+            "url":"http://www.uni-weimar.de/medien/webis/people/#stein",
+            "affiliation":"Bauhaus-Universit\u00e4t Weimar", 
+            "name":"Stein, Benno"
+        }
+    ],
+    "includedInDataCatalog":{
+        "@type":"DataCatalog",
+        "name":"Webis Data Catalog",
+        "url":"https://webis.de/data/"
+    },
+    "distribution":[
+        {
+            "@type":"DataDownload",
+            "encodingFormat":"TXT",
+            "contentUrl":"http://www.uni-weimar.de/medien/webis/corpora/corpus-webis-qsec-10/corpus-webis-qsec-10-training-set.zip"
+        }
+    ]
+}
+</script>
+
+<main class="uk-section uk-section-default">
+    <div class="uk-container">
+        <h1>Webis-QSeC-10</h1>
+
+        <ul class="uk-list">
+            <!-- Comment out sections you do not provide -->
+            <li><span data-uk-icon="chevron-down"></span> <a href="#synopsis">Synopsis</a></li>
+            <li><span data-uk-icon="chevron-down"></span> <a href="#download">Download</a></li>
+            <li><span data-uk-icon="chevron-down"></span> <a href="#research">Research</a></li>
+            <li><span data-uk-icon="chevron-down"></span> <a href="#people">People</a></li>
+            <li><span data-uk-icon="chevron-down"></span> <a href="#publications">Publications</a></li>
+        </ul>
+    </div>
+
+    <div class="uk-container uk-margin-medium">
+        <!--
+        SECTION Synopsis
+        -->
+        <h2 id="synopsis">Synopsis</h2>
+
+        <p>The Webis Query Segmentation Corpus 2010 (Webis-QSeC-10) contains segmentations for 53,437 web queries obtained from Mechanical Turk crowdsourcing. For each query, 10 MTurk workers were asked to segment the query. The corpus represents the distribution of their decisions.</p>
+
+        <p>As we currently figure out whether a segmentation competition based on our corpus could be interesting, we publish a sample of 4,850 queries (such that it is about 10% of the then remaining 48,587 queries that should be used as the test set during the competition).</p>
+
+
+        <!--
+        SECTION Download
+        -->
+        <p>We provide the training set as a single folder in a Zip archive which contains several files. The file "webis-qsec-10-training-set-queries.txt" contains the query strings and a unique ID for each query. The file "webis-qsec-10-training-set-segmentations.txt" contains the crowdsourced segmentations with their number of votes per query ID (see below for an example). The folder "data" contains all the data (n-gram frequencies, PMI values, POS tags, etc.) needed to replicate the evaluation results of our proposed segmentation algorithms. For convenience reasons, the folder "segmentations-of-algorithms" contains the segmentations that our proposed algorithms compute on the training set.</p>
+
+        <p>To download the corpus, please use the following link:</p>
+
+        <ul>
+            <li><a href="http://www.uni-weimar.de/medien/webis/corpora/corpus-webis-qsec-10/corpus-webis-qsec-10-training-set.zip">corpus-webis-qsec-10-training-set.zip</a>
+            <br />(1.9 MB, MD5 sum: cd9a306261a6d884eb109098d75c7e6c)</li>
+        </ul>
+
+        <p>If you use the dataset in your research, please send us a copy of your publication. We kindly ask you to refer to the corpus via [<a href="https://webis.de/publications.html#filter:bibid:stein_2011e">bib</a>].</p>
+
+        <!--
+        SECTION Research
+        -->
+        <h2 id="research">Research</h2>
+
+        <p>The original queries were extracted from the AOL query log, and range from 3 to 10 keywords in length. For each query 10 MTurk workers were asked to segment the query and their decisions are accumulated in the corpus. The examples below demonstrate two different cases.</p>
+
+        <p>Sample queries with internal ID (as in "Webis-QSeC-10-training-set-queries.txt"):</p>
+
+        <ul>
+            <li>2315313155 harvard community credit union</li>
+            <li>1858084875 women's cycling tops</li>
+        </ul>
+
+        <p>Sample segmentations (as in "Webis-QSeC-10-training-set-queries.txt"):</p>
+
+        <ul>
+            <li>2315313155 [(6, 'harvard community credit union'), (2, 'harvard community|credit union'), (1, 'harvard|community|credit union'), (1, 'harvard|community credit union')]</li>
+            <li>1858084875 [(5, "women's|cycling tops"), (2, "women's|cycling|tops"), (2, "women's cycling|tops"), (1, "women's cycling tops")]</li>
+        </ul>
+
+        <p>Each query has a unique internal ID (e.g., 2315313155 in the first example) and the segmentations file contains the 10 different decisions the MTurk workers made for that query. In the first example 6 workers have all 4 keywords in one segment, 2 workers decided to break after the second word (denoted by a |) etc. Note that in the second example (query ID 1858084875) in the segmentations the apostrophe in the query is escaped by double quotes around the segmentation strings.</p>
+
+        <p>For more information on the construction of the dataset see the respective publication.</p>
+
+
+        <!--
+        SECTION People
+        -->
+        <h2 id="people">People</h2>
+        <ul>
+            <li><a href="http://www.uni-weimar.de/medien/webis/people/#hagen" title="Matthias Hagen">Matthias Hagen</a></li>
+            <li><a href="http://www.uni-weimar.de/medien/webis/people/#potthast" title="Martin Potthast">Martin Potthast</a></li>
+            <li><a href="http://www.uni-weimar.de/medien/webis/people/#stein" title="Benno Stein">Benno Stein</a></li>
+        </ul>
+
+        <p>Students: Christof Bräutigam, Anna Beyer</p>
+
+	<!--
+	SECTION Publications
+	-->
+	<h2 id="publications">Publications</h2>
+        <div id="publications-list">
+        </div>
+
+        </div>
+</main>
+
+<script src="https://webis.de/js/bibentry.js"></script>
+<script>
+includeBibentries(document.getElementById("publications-list"), "data:corpus-webis-qsec-10");
+</script>
+
+</div>
+
+<footer class="uk-section uk-section-default footer-section">
+    <div class="uk-container">
+        <div class="uk-align-right@m uk-margin-top">
+            Copyright &copy; 2019 Temir Group
+            <address></address>
+        </div>
+    </div>
+</footer>
+
+<script>
+    UIkit.util.ready(() => {
+        const nav = UIkit.util.$(".global-nav");
+        const navHeight = UIkit.util.height(nav);
+
+        // correct scroll offset due to fixed navigation after page load
+        let fixScrollHeight = () => {
+            if (location.hash === "" || !UIkit.util.$(location.hash)) {
+                return;
+            }
+
+            const pos = document.documentElement.scrollTop;
+            const offset = UIkit.util.offset(UIkit.util.$(location.hash));
+
+            if (pos > navHeight * .8 && offset) {
+                document.documentElement.scrollTop = offset.top - navHeight - 20;
+            }
+        };
+
+        window.addEventListener("hashchange", fixScrollHeight, false);
+        setTimeout(fixScrollHeight, 100);
+    });
+</script>
+
+</body>
+</html>

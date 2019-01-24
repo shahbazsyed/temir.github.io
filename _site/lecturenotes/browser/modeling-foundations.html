@@ -1,0 +1,1797 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Webis Lecturnotes Browser Modellierung wissensintensiver Probleme</title>
+    <meta charset="utf-8">
+    <meta name="description" content="SlideHub is a presentation/slide/talk explorer">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="copyright" content="&copy; 2019 Temir">
+    <link rel="icon" type="image/png" href="/img/favicon.png">
+
+    <link rel="stylesheet" href="/css/style.css?1548321565">
+    <link rel="stylesheet" href="/css/browser.css?1548321565">
+    <link rel="stylesheet" href="/css/browser-compatibility.css?1548321565">
+</head>
+<body class="uk-offcanvas-content">
+<script src="/js/thirdparty/uikit/uikit.min.js"></script>
+<script src="/js/thirdparty/uikit/uikit-icons.min.js"></script>
+
+<div id="offcanvas-nav" class="uk-hidden@m" data-uk-offcanvas="overlay: true; flip: true;">
+    <div class="uk-offcanvas-bar">
+        <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+
+        <!-- Mobile navigation -->
+        <nav class="uk-margin-large-top">
+            <ul class="uk-nav uk-nav-primary uk-nav-parent-icon" data-uk-nav>
+                <li>
+                    <a href="/people.html">People</a>
+                </li>
+                <li class="uk-active" class="uk-parent">
+                    <a href="#">Lecturenotes</a>
+                    <ul class="uk-nav-sub">
+                        <li><a href="/lecturenotes/overview.html">Overview</a></li>
+                        <li><a href="/lecturenotes/slides.html">Slides</a></li>
+                        <li class="uk-parent">
+                            Browser
+                            <ul class="uk-nav-sub">
+                                <li><a href="/lecturenotes/browser/algorithms-and-datastructures.html">Algorithmen und Datenstrukturen</a></li>
+                                <li><a href="/lecturenotes/browser/information-retrieval.html">Information Retrieval</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/research.html">Research</a>
+                </li>
+                <li>
+                    <a href="/publications.html">Publications</a>
+                </li>
+                <li>
+                    <a href="/data.html">Data</a>
+                </li>
+                <li>
+                    <a href="/facilities.html">Facilities</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<div class="uk-background-secondary desktop-nav global-nav" data-uk-sticky="media: @m">
+    <!-- Desktop navigation -->
+    <nav class="uk-navbar-container uk-navbar-transparent uk-container uk-light" data-uk-navbar="mode: click">
+        <div class="uk-navbar-left">
+            <ul class="uk-navbar-nav">
+                <li>
+                    <a href="/"><img src="/img/uni_leipzig_logo_v2_white-01_opt_2.png" alt="TEMIR LOGO" class="uk-logo"> Temir</a>
+                </li>
+            </ul>
+        </div>
+        <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav">
+                <li>
+                    <a href="/people.html">People</a>
+                </li>
+                <li class="nav-group-start uk-active">
+                    <a href="#">Lecturenotes</a>
+                    <div class="uk-navbar-dropdown uk-navbar-dropdown-width-3 uk-padding-remove">
+                        <div class="uk-navbar-dropdown-grid" data-uk-grid>
+                            <div class="uk-width-1-3">
+                                <ul class="uk-nav uk-navbar-dropdown-nav uk-padding-small">
+                                    <li><a href="/lecturenotes/overview.html">Overview</a></li>
+                                    <li><a href="/lecturenotes/slides.html">Slides</a></li>
+                                    <li class="nav-left-open-category">Browser</li>
+                                </ul>
+                            </div>
+                            <div class="uk-width-2-3">
+                                <ul class="uk-nav uk-navbar-dropdown-nav nav-right-open-sub uk-padding-small">
+                                    <li><a href="/lecturenotes/browser/algorithms-and-datastructures.html">Algorithmen und Datenstrukturen</a></li>
+                                    <li><a href="/lecturenotes/browser/information-retrieval.html">Information Retrieval</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="/research.html">Research</a>
+                </li>
+                <li>
+                    <a href="/publications.html">Publications</a>
+                </li>
+                <li class="nav-group-start">
+                    <a href="/data.html">Data</a>
+                </li>
+                <li>
+                    <a href="/facilities.html">Facilities</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<div class="uk-background-secondary mobile-nav global-nav" data-uk-sticky>
+    <div class="uk-navbar-container uk-navbar-transparent uk-container uk-light mobile-nav-toggle" data-uk-navbar>
+        <div class="">
+            <ul class="uk-navbar-nav">
+                <li>
+                    <a href="/"><img src="/img/uni_leipzig_logo_v2_white-01_opt_2.png" alt="TEMIR LOGO" class="uk-logo"> Temir</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="uk-navbar-right">
+            <button class="uk-button uk-navbar-item uk-light uk-button-large" type="button" data-uk-icon="icon: menu"
+                    data-uk-toggle="target: #offcanvas-nav"></button>
+        </div>
+    </div>
+</div>
+
+<div data-uk-height-viewport="expand: true">
+<script src="/js/browser.js"></script>
+
+<main class="uk-margin-medium" data-slidehub="">
+<!-- SlideHub will hook itself as a child element into [data-slidehub] -->
+<div class="slidehub-container">
+
+<!-- units start -->
+
+
+
+<div class="sh-doc" id="unit-de-kbs-organization.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-kbs-organization.pdf" style="--sh-pages: 7"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Modellierung wissensintensiver Probleme Benno Stein" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-kbs-organization/unit-de-kbs-organization-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Inhalt I. Einführung" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-kbs-organization/unit-de-kbs-organization-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Ziele Wie entwickelt man Softwaresysteme zur Lösung von wissensintensiven Aufgaben" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-kbs-organization/unit-de-kbs-organization-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-kbs-organization/unit-de-kbs-organization-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Literatur Künstliche Intelligenz" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-kbs-organization/unit-de-kbs-organization-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Literatur " src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-kbs-organization/unit-de-kbs-organization-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Literatur " src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-kbs-organization/unit-de-kbs-organization-7.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-de-kbs-introduction.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-kbs-introduction.pdf" style="--sh-pages: 28"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Kapitel MK:I I. Einführung" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-kbs-introduction/unit-de-kbs-introduction-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Künstliche Intelligenz Was ist Intelligenz?" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-kbs-introduction/unit-de-kbs-introduction-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Künstliche Intelligenz Was ist Intelligenz?" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-kbs-introduction/unit-de-kbs-introduction-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Künstliche Intelligenz Was ist Intelligenz?" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-kbs-introduction/unit-de-kbs-introduction-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Künstliche Intelligenz Was ist Intelligenz?" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-kbs-introduction/unit-de-kbs-introduction-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Künstliche Intelligenz Intelligenzbegriff" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-kbs-introduction/unit-de-kbs-introduction-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Künstliche Intelligenz Was ist Künstliche Intelligenz?" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-kbs-introduction/unit-de-kbs-introduction-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Künstliche Intelligenz Was ist Künstliche Intelligenz?" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-kbs-introduction/unit-de-kbs-introduction-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Künstliche Intelligenz Was ist Künstliche Intelligenz?" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-kbs-introduction/unit-de-kbs-introduction-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-kbs-introduction/unit-de-kbs-introduction-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Starke KI versus Schwache KI KI ist der Versuch, auf Computern intelligentes Verhalten nachzubilden." src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-kbs-introduction/unit-de-kbs-introduction-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Starke KI versus Schwache KI Turing’s Szenario: Turing Test" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-kbs-introduction/unit-de-kbs-introduction-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Starke KI versus Schwache KI Weizenbaum’s Szenario: Eliza" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-kbs-introduction/unit-de-kbs-introduction-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="Starke KI versus Schwache KI Schank’s Szenario: Restaurant-Geschichten" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-kbs-introduction/unit-de-kbs-introduction-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="Starke KI versus Schwache KI Schank’s Szenario" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-kbs-introduction/unit-de-kbs-introduction-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="Starke KI versus Schwache KI Searle’s Szenario: chinesisches Zimmer" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-kbs-introduction/unit-de-kbs-introduction-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-kbs-introduction/unit-de-kbs-introduction-17.png"></div>
+
+<div class="sh-page" data-page="18"><img alt="Starke KI versus Schwache KI Searle’s Szenario" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-kbs-introduction/unit-de-kbs-introduction-18.png"></div>
+
+<div class="sh-page" data-page="19"><img alt="Starke KI versus Schwache KI Behauptung der Vertreter der Starken KI:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-kbs-introduction/unit-de-kbs-introduction-19.png"></div>
+
+<div class="sh-page" data-page="20"><img alt="Starke KI versus Schwache KI Behauptung der Vertreter der Starken KI:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-kbs-introduction/unit-de-kbs-introduction-20.png"></div>
+
+<div class="sh-page" data-page="21"><img alt="Starke KI versus Schwache KI Behauptung der Vertreter der Starken KI:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-kbs-introduction/unit-de-kbs-introduction-21.png"></div>
+
+<div class="sh-page" data-page="22"><img alt="Starke KI versus Schwache KI Hat „echtes“ Verstehen mit Bewusstsein zu tun?" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-kbs-introduction/unit-de-kbs-introduction-22.png"></div>
+
+<div class="sh-page" data-page="23"><img alt="Geschichte der Künstlichen Intelligenz 1956 Geburtsstunde. Sommerseminar in Dartmouth." src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-kbs-introduction/unit-de-kbs-introduction-23.png"></div>
+
+<div class="sh-page" data-page="24"><img alt="Einschub: Blocks World Anordnung:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-kbs-introduction/unit-de-kbs-introduction-24.png"></div>
+
+<div class="sh-page" data-page="25"><img alt="Geschichte der Künstlichen Intelligenz 1965 – 1975 Romantische Periode." src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-kbs-introduction/unit-de-kbs-introduction-25.png"></div>
+
+<div class="sh-page" data-page="26"><img alt="Geschichte der Künstlichen Intelligenz >1975 Moderne Periode." src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-kbs-introduction/unit-de-kbs-introduction-26.png"></div>
+
+<div class="sh-page" data-page="27"><img alt="Geschichte der Künstlichen Intelligenz >1985 Neue Trends." src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-kbs-introduction/unit-de-kbs-introduction-27.png"></div>
+
+<div class="sh-page" data-page="28"><img alt="Geschichte der Künstlichen Intelligenz >1990 Trends danach." src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-kbs-introduction/unit-de-kbs-introduction-28.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-de-kbs-applications.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-kbs-applications.pdf" style="--sh-pages: 31"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Kapitel MK:I I. Einführung" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-kbs-applications/unit-de-kbs-applications-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Gebiete der KI Ursprung der Methoden der KI\u002fWissensverarbeitung" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-kbs-applications/unit-de-kbs-applications-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Gebiete der KI Aus einer anwendungsorientierten Sicht spielen in der Künstlichen Intelligenz" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-kbs-applications/unit-de-kbs-applications-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-kbs-applications/unit-de-kbs-applications-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Gebiete der KI Maschinelles Lernen. Beispiel Klassifikation" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-kbs-applications/unit-de-kbs-applications-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Gebiete der KI Maschinelles Lernen. Beispiel Klassifikation" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-kbs-applications/unit-de-kbs-applications-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Gebiete der KI Maschinelles Lernen. Beispiel Klassifikation" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-kbs-applications/unit-de-kbs-applications-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Gebiete der KI Intelligent Computer Aided Instruction, ICAI" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-kbs-applications/unit-de-kbs-applications-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Gebiete der KI Natürlichsprachliche Systeme" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-kbs-applications/unit-de-kbs-applications-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Gebiete der KI Natürlichsprachliche Systeme. Beispiel Dialogsystem" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-kbs-applications/unit-de-kbs-applications-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Gebiete der KI Bildverarbeitende Systeme" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-kbs-applications/unit-de-kbs-applications-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Gebiete der KI Bildverarbeitende Systeme" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-kbs-applications/unit-de-kbs-applications-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Gebiete der KI Bildverarbeitende Systeme. Beispiel Szenenanalyse" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-kbs-applications/unit-de-kbs-applications-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="Gebiete der KI Bildverarbeitende Systeme. Beispiel Szenenanalyse" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-kbs-applications/unit-de-kbs-applications-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="Gebiete der KI Bildverarbeitende Systeme. Beispiel Szenenanalyse" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-kbs-applications/unit-de-kbs-applications-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="Gebiete der KI Bildverarbeitende Systeme. Beispiel Szenenanalyse" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-kbs-applications/unit-de-kbs-applications-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="Gebiete der KI Bildverarbeitende Systeme. Beispiel Szenenanalyse" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-kbs-applications/unit-de-kbs-applications-17.png"></div>
+
+<div class="sh-page" data-page="18"><img alt="Gebiete der KI Bildverarbeitende Systeme. Beispiel Szenenanalyse" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-kbs-applications/unit-de-kbs-applications-18.png"></div>
+
+<div class="sh-page" data-page="19"><img alt="Gebiete der KI Robotertechnologie" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-kbs-applications/unit-de-kbs-applications-19.png"></div>
+
+<div class="sh-page" data-page="20"><img alt="Gebiete der KI Robotertechnologie" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-kbs-applications/unit-de-kbs-applications-20.png"></div>
+
+<div class="sh-page" data-page="21"><img alt="Gebiete der KI Deduktionssysteme" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-kbs-applications/unit-de-kbs-applications-21.png"></div>
+
+<div class="sh-page" data-page="22"><img alt="Gebiete der KI Deduktionssysteme. Beispiel Schlussfolgern" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-kbs-applications/unit-de-kbs-applications-22.png"></div>
+
+<div class="sh-page" data-page="23"><img alt="Gebiete der KI Deduktionssysteme. Beispiel Schlussfolgern" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-kbs-applications/unit-de-kbs-applications-23.png"></div>
+
+<div class="sh-page" data-page="24"><img alt="Gebiete der KI Deduktionssysteme. Beispiel Textanalyse" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-kbs-applications/unit-de-kbs-applications-24.png"></div>
+
+<div class="sh-page" data-page="25"><img alt="Gebiete der KI Deduktionssysteme. Beispiel Textanalyse" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-kbs-applications/unit-de-kbs-applications-25.png"></div>
+
+<div class="sh-page" data-page="26"><img alt="Gebiete der KI Deduktionssysteme. Beispiel Textanalyse" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-kbs-applications/unit-de-kbs-applications-26.png"></div>
+
+<div class="sh-page" data-page="27"><img alt="Gebiete der KI Deduktionssysteme. Beispiel Textanalyse" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-kbs-applications/unit-de-kbs-applications-27.png"></div>
+
+<div class="sh-page" data-page="28"><img alt="Gebiete der KI Deduktionssysteme. Beispiel Textanalyse" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-kbs-applications/unit-de-kbs-applications-28.png"></div>
+
+<div class="sh-page" data-page="29"><img alt="Gebiete der KI Deduktionssysteme. Beispiel Textanalyse" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-kbs-applications/unit-de-kbs-applications-29.png"></div>
+
+<div class="sh-page" data-page="30"><img alt="Gebiete der KI Deduktionssysteme. Beispiel Textanalyse" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-kbs-applications/unit-de-kbs-applications-30.png"></div>
+
+<div class="sh-page" data-page="31"><img alt="Gebiete der KI SWT" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-kbs-applications/unit-de-kbs-applications-31.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-de-symbol.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-symbol.pdf" style="--sh-pages: 32"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Kapitel MK:II II. Wissensrepräsentation" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-symbol/unit-de-symbol-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Wissensrepräsentation in der Klassifikation " src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-symbol/unit-de-symbol-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Wissensrepräsentation in der Klassifikation " src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-symbol/unit-de-symbol-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Wissensrepräsentation in der Klassifikation (a) Kodierung des Klassifikationswissens durch Regeln" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-symbol/unit-de-symbol-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Wissensrepräsentation in der Klassifikation (b) Erlernung des Klassifikationswissens" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-symbol/unit-de-symbol-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Wissensrepräsentation in der Klassifikation Berechnung im Perzeptron" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-symbol/unit-de-symbol-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Wissensrepräsentation in der Klassifikation Berechnung im standardisierten Perzeptron" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-symbol/unit-de-symbol-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Wissensrepräsentation in der Klassifikation Präsentation von Beispielen dem Perzeptron:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-symbol/unit-de-symbol-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Wissensrepräsentation in der Klassifikation Perzeptron-Lernalgorithmus" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-symbol/unit-de-symbol-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Wissensrepräsentation in der Klassifikation Darstellung der Objekte im Merkmalsraum" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-symbol/unit-de-symbol-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Wissensrepräsentation in der Klassifikation Anpassung des Gewichtsvektors" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-symbol/unit-de-symbol-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Wissensrepräsentation in der Klassifikation Illustration des Perzeptron-Lernalgorithmus" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-symbol/unit-de-symbol-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Wissensrepräsentation in der Klassifikation Illustration des Perzeptron-Lernalgorithmus" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-symbol/unit-de-symbol-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="Wissensrepräsentation in der Klassifikation Illustration des Perzeptron-Lernalgorithmus" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-symbol/unit-de-symbol-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="Wissensrepräsentation in der Klassifikation Illustration des Perzeptron-Lernalgorithmus" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-symbol/unit-de-symbol-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="Wissensrepräsentation in der Klassifikation Illustration des Perzeptron-Lernalgorithmus" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-symbol/unit-de-symbol-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="Wissensrepräsentation in der Klassifikation Illustration des Perzeptron-Lernalgorithmus" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-symbol/unit-de-symbol-17.png"></div>
+
+<div class="sh-page" data-page="18"><img alt="Wissensrepräsentation in der Klassifikation Illustration des Perzeptron-Lernalgorithmus" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-symbol/unit-de-symbol-18.png"></div>
+
+<div class="sh-page" data-page="19"><img alt="Wissensrepräsentation in der Klassifikation Illustration des Perzeptron-Lernalgorithmus" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-symbol/unit-de-symbol-19.png"></div>
+
+<div class="sh-page" data-page="20"><img alt="Wissensrepräsentation in der Klassifikation Illustration des Perzeptron-Lernalgorithmus" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-symbol/unit-de-symbol-20.png"></div>
+
+<div class="sh-page" data-page="21"><img alt="Wissensrepräsentation in der Klassifikation Illustration des Perzeptron-Lernalgorithmus" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-symbol/unit-de-symbol-21.png"></div>
+
+<div class="sh-page" data-page="22"><img alt="Symbolisch versus subsymbolisch Zwei grundlegenden Ansätze der Wissensrepräsentation" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-symbol/unit-de-symbol-22.png"></div>
+
+<div class="sh-page" data-page="23"><img alt="Symbolisch versus subsymbolisch Definition 1 (Symbol)" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-symbol/unit-de-symbol-23.png"></div>
+
+<div class="sh-page" data-page="24"><img alt="Symbolisch versus subsymbolisch Akustische Repräsentation eines gesprochenen Symbols:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-symbol/unit-de-symbol-24.png"></div>
+
+<div class="sh-page" data-page="25"><img alt="Symbolisch versus subsymbolisch Beispiel: J. S. Bach, „Die Kunst der Fuge“" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-symbol/unit-de-symbol-25.png"></div>
+
+<div class="sh-page" data-page="26"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-symbol/unit-de-symbol-26.png"></div>
+
+<div class="sh-page" data-page="27"><img alt="Symbolisch versus subsymbolisch Vorteile symbolischer Repräsentation:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-symbol/unit-de-symbol-27.png"></div>
+
+<div class="sh-page" data-page="28"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-symbol/unit-de-symbol-28.png"></div>
+
+<div class="sh-page" data-page="29"><img alt="Symbolisch versus subsymbolisch Erwerb neuen Wissens" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-symbol/unit-de-symbol-29.png"></div>
+
+<div class="sh-page" data-page="30"><img alt="Symbolisch versus subsymbolisch Hybride Systeme: Kombination der Paradigmen" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-symbol/unit-de-symbol-30.png"></div>
+
+<div class="sh-page" data-page="31"><img alt="Symbolisch versus subsymbolisch Hybride Systeme: Kombination der Paradigmen" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-symbol/unit-de-symbol-31.png"></div>
+
+<div class="sh-page" data-page="32"><img alt="Marvin Minsky " src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-symbol/unit-de-symbol-32.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-de-psk.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-psk.pdf" style="--sh-pages: 12"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Kapitel MK:II II. Wissensrepräsentation" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-psk/unit-de-psk-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Problemlösungswissen" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-psk/unit-de-psk-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Problemlösungswissen Beispiel 1: Diagnose einer hydraulischen Schaltung." src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-psk/unit-de-psk-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Problemlösungswissen Beispiel 1: Diagnose einer hydraulischen Schaltung." src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-psk/unit-de-psk-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Problemlösungswissen Beispiel 1: Diagnose einer hydraulischen Schaltung." src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-psk/unit-de-psk-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Problemlösungswissen Beispiel 2: Entwurf einer hydraulischen Schaltung." src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-psk/unit-de-psk-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Problemlösungswissen Beispiel 2: Entwurf einer hydraulischen Schaltung." src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-psk/unit-de-psk-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Problemlösungswissen Beispiel 2: Entwurf einer hydraulischen Schaltung." src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-psk/unit-de-psk-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Kennzeichen von Problemlösungswissen Das Problemlösungswissen wie" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-psk/unit-de-psk-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Kennzeichen von Problemlösungswissen Wissensformen innerhalb von Problemlösungsverfahren:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-psk/unit-de-psk-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Kennzeichen von Problemlösungswissen Problemlösungswissen unterscheidet sich nicht durch seine Kompliziertheit von" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-psk/unit-de-psk-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Kennzeichen von Problemlösungswissen Die Beherrschung von Methoden und Techniken (Softwaretechnik, Algorithmen," src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-psk/unit-de-psk-12.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-de-xps.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-xps.pdf" style="--sh-pages: 26"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Kapitel MK:II II. Wissensrepräsentation" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-xps/unit-de-xps-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Prinzipien wissensbasierter Systeme Wunsch: Operationalisierung von Problemlösungswissen" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-xps/unit-de-xps-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Prinzipien wissensbasierter Systeme Definition 2 (wissensbasiertes System, WBS)" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-xps/unit-de-xps-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Prinzipien wissensbasierter Systeme Fragen zu konventionellen Softwaresystemen:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-xps/unit-de-xps-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Prinzipien wissensbasierter Systeme Fragen zu konventionellen Softwaresystemen:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-xps/unit-de-xps-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Prinzipien wissensbasierter Systeme Fragen zu konventionellen Softwaresystemen:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-xps/unit-de-xps-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Expertensysteme, XPS „. . . ein intelligentes Computerprogramm, das Wissen und" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-xps/unit-de-xps-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Expertensysteme Expertensysteme versuchen, die Eigenschaften eines Experten hinsichtlich einer" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-xps/unit-de-xps-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Expertensysteme Der ideale menschliche Experte" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-xps/unit-de-xps-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Expertensysteme Expertensystem versus Experte" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-xps/unit-de-xps-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Expertensysteme Expertensystem versus Standardprogramm" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-xps/unit-de-xps-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Expertensysteme Expertensystem versus Standardprogramm" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-xps/unit-de-xps-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Problemklassen für Expertensysteme Analyse" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-xps/unit-de-xps-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="Problemklassen für Expertensysteme Analyse" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-xps/unit-de-xps-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="Problemklassen für Expertensysteme Synthese" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-xps/unit-de-xps-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="Problemklassen für Expertensysteme Synthese" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-xps/unit-de-xps-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-xps/unit-de-xps-17.png"></div>
+
+<div class="sh-page" data-page="18"><img alt="Erstellung wissensbasierter Systeme Die Erstellung von Programmen, die eine Lösung schlecht strukturierbarer bzw." src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-xps/unit-de-xps-18.png"></div>
+
+<div class="sh-page" data-page="19"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-xps/unit-de-xps-19.png"></div>
+
+<div class="sh-page" data-page="20"><img alt="Erstellung wissensbasierter Systeme Lösung des Akquisitionsproblems" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-xps/unit-de-xps-20.png"></div>
+
+<div class="sh-page" data-page="21"><img alt="Erstellung wissensbasierter Systeme Werkzeuge" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-xps/unit-de-xps-21.png"></div>
+
+<div class="sh-page" data-page="22"><img alt="Bemerkungen: (a) Shells (EMycin, Nexpert Object, Twaice):" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-xps/unit-de-xps-22.png"></div>
+
+<div class="sh-page" data-page="23"><img alt="Erstellung wissensbasierter Systeme Aus meiner Erfahrung" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-xps/unit-de-xps-23.png"></div>
+
+<div class="sh-page" data-page="24"><img alt="Erstellung wissensbasierter Systeme LOOPS" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-xps/unit-de-xps-24.png"></div>
+
+<div class="sh-page" data-page="25"><img alt="Erstellung wissensbasierter Systeme Colab" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-xps/unit-de-xps-25.png"></div>
+
+<div class="sh-page" data-page="26"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-xps/unit-de-xps-26.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-de-model-system.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-model-system.pdf" style="--sh-pages: 18"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Kapitel MK:III III. Begriffe der Modellierung" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-model-system/unit-de-model-system-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="System und Modell Beispiel 1: Der unbequeme Philosoph" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-model-system/unit-de-model-system-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="System und Modell Beispiel 1: Der unbequeme Philosoph" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-model-system/unit-de-model-system-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="System und Modell Beispiel 2: Fail-Safe-Überprüfung einer Presse" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-model-system/unit-de-model-system-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="System und Modell Beispiel 2: Fail-Safe-Überprüfung einer Presse" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-model-system/unit-de-model-system-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="System und Modell Definition 1 (System)" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-model-system/unit-de-model-system-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="System und Modell Ein Analyseproblem zu lösen, bedeutet, Fragen bezüglich eines Systems zu" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-model-system/unit-de-model-system-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="System und Modell Ein Analyseproblem zu lösen, bedeutet, Fragen bezüglich eines Systems zu" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-model-system/unit-de-model-system-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="System und Modell Ausführung eines Experiments am System? – dagegen spricht:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-model-system/unit-de-model-system-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="System und Modell Definition 3 (Model, Modell" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-model-system/unit-de-model-system-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="System und Modell Definition 3 (Model, Modell" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-model-system/unit-de-model-system-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Modellieren zum Schlussfolgern Beispiel 1: Der unbequeme Philosoph" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-model-system/unit-de-model-system-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Modellieren zum Schlussfolgern Beispiel 2: Fail-Safe-Überprüfung einer Presse" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-model-system/unit-de-model-system-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="Modellieren zum Schlussfolgern Nahezu alle Situationen, in denen wir einen Sachverhalt analysieren, basieren auf" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-model-system/unit-de-model-system-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="Modellieren zum Schlussfolgern Nahezu alle Situationen, in denen wir einen Sachverhalt analysieren, basieren auf" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-model-system/unit-de-model-system-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="Modellieren zum Schlussfolgern Die Beschreibung des Wissens über ein System (Realität) geschieht" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-model-system/unit-de-model-system-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="Modellieren zum Schlussfolgern Die Beschreibung des Wissens über ein System (Realität) geschieht" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-model-system/unit-de-model-system-17.png"></div>
+
+<div class="sh-page" data-page="18"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-model-system/unit-de-model-system-18.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-de-model-formation.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-model-formation.pdf" style="--sh-pages: 16"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Kapitel MK:III III. Begriffe der Modellierung" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-model-formation/unit-de-model-formation-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Modellbildung Klassifikation von Modellen hinsichtlich ihrer Repräsentation:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-model-formation/unit-de-model-formation-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Modellbildung Klassifikation von Modellen hinsichtlich ihrer Repräsentation:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-model-formation/unit-de-model-formation-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Modellbildung Ablauf der Top-Down-Modellbildung: Abstrakte Modelle werden auf weniger" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-model-formation/unit-de-model-formation-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Systemraum und Modellraum Ein Syntheseproblem zu lösen, bedeutet, Fragen bezüglich einer Menge von" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-model-formation/unit-de-model-formation-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Systemraum und Modellraum Ein Syntheseproblem zu lösen, bedeutet, Fragen bezüglich einer Menge von" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-model-formation/unit-de-model-formation-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Systemraum und Modellraum Ausweg: Synthese von Modellen für die interessierenden Systeme (Modellraum)" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-model-formation/unit-de-model-formation-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Systemraum und Modellraum Klassifikation von Modellräumen hinsichtlich ihrer Repräsentation:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-model-formation/unit-de-model-formation-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Systemraum und Modellraum Klassifikation von Modellräumen hinsichtlich ihrer Repräsentation:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-model-formation/unit-de-model-formation-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Adäquate Modellierung" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-model-formation/unit-de-model-formation-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Adäquate Modellierung" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-model-formation/unit-de-model-formation-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="StrukturLogik- " src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-model-formation/unit-de-model-formation-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Adäquate Modellierung" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-model-formation/unit-de-model-formation-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="Problemlösungsmethoden für Analyseaufgaben" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-model-formation/unit-de-model-formation-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="Adäquate Modellierung Wieviel ist bekannt über das System?" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-model-formation/unit-de-model-formation-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="Adäquate Modellierung Wieviel ist bekannt über das System?" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-model-formation/unit-de-model-formation-16.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-de-constraints-introduction.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-introduction.pdf" style="--sh-pages: 34"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Kapitel MK:IV IV. Modellieren mit Constraints" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-introduction/unit-de-constraints-introduction-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Einführung und frühe Systeme Constraints sind eine Softwaretechnik zur deklarativen Beschreibung und zum" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-introduction/unit-de-constraints-introduction-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Einführung und frühe Systeme Beispiel" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-introduction/unit-de-constraints-introduction-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-introduction/unit-de-constraints-introduction-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Einführung und frühe Systeme Algebraische Constraints in EL" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-introduction/unit-de-constraints-introduction-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Einführung und frühe Systeme Algebraische Constraints in EL" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-introduction/unit-de-constraints-introduction-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Einführung und frühe Systeme Nicht-algebraische Constraints in Waltz" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-introduction/unit-de-constraints-introduction-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Einführung und frühe Systeme Nicht-algebraische Constraints in Waltz" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-introduction/unit-de-constraints-introduction-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Einführung und frühe Systeme Nicht-algebraische Constraints in Waltz" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-introduction/unit-de-constraints-introduction-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-introduction/unit-de-constraints-introduction-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Einführung und frühe Systeme Nicht-algebraische Constraints in Waltz" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-introduction/unit-de-constraints-introduction-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Einführung und frühe Systeme Nicht-algebraische Constraints in Waltz" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-introduction/unit-de-constraints-introduction-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-introduction/unit-de-constraints-introduction-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="Einführung und frühe Systeme Gegenüberstellung von EL und Waltz" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-introduction/unit-de-constraints-introduction-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-introduction/unit-de-constraints-introduction-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="Einführung und frühe Systeme Constraint-Repräsentationsformen" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-introduction/unit-de-constraints-introduction-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="Einführung und frühe Systeme Constraint-Repräsentationsformen" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-introduction/unit-de-constraints-introduction-17.png"></div>
+
+<div class="sh-page" data-page="18"><img alt="Einführung und frühe Systeme Einsatz von Constraints" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-introduction/unit-de-constraints-introduction-18.png"></div>
+
+<div class="sh-page" data-page="19"><img alt="Einführung und frühe Systeme Einsatz von Constraints" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-introduction/unit-de-constraints-introduction-19.png"></div>
+
+<div class="sh-page" data-page="20"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-introduction/unit-de-constraints-introduction-20.png"></div>
+
+<div class="sh-page" data-page="21"><img alt="Konsistenz I Definition 1 (Constraint, erfüllt, Constraint-Netz)" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-introduction/unit-de-constraints-introduction-21.png"></div>
+
+<div class="sh-page" data-page="22"><img alt="Konsistenz I Definition 1 (Constraint, erfüllt, Constraint-Netz)" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-introduction/unit-de-constraints-introduction-22.png"></div>
+
+<div class="sh-page" data-page="23"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-introduction/unit-de-constraints-introduction-23.png"></div>
+
+<div class="sh-page" data-page="24"><img alt="Konsistenz I Beispiel für ein algebraisches Constraint-Netz:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-introduction/unit-de-constraints-introduction-24.png"></div>
+
+<div class="sh-page" data-page="25"><img alt="Konsistenz I Definition 2 (lokale Konsistenz)" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-introduction/unit-de-constraints-introduction-25.png"></div>
+
+<div class="sh-page" data-page="26"><img alt="Konsistenz I Beispiel:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-introduction/unit-de-constraints-introduction-26.png"></div>
+
+<div class="sh-page" data-page="27"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-introduction/unit-de-constraints-introduction-27.png"></div>
+
+<div class="sh-page" data-page="28"><img alt="Konsistenz I Definition 3 (globale Konsistenz)" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-introduction/unit-de-constraints-introduction-28.png"></div>
+
+<div class="sh-page" data-page="29"><img alt="Konsistenz I Beispiel:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-introduction/unit-de-constraints-introduction-29.png"></div>
+
+<div class="sh-page" data-page="30"><img alt="Konsistenz I Definition 4 (Constraint-Graph)" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-introduction/unit-de-constraints-introduction-30.png"></div>
+
+<div class="sh-page" data-page="31"><img alt="Konsistenz I Definition 4 (Constraint-Graph" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-introduction/unit-de-constraints-introduction-31.png"></div>
+
+<div class="sh-page" data-page="32"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-introduction/unit-de-constraints-introduction-32.png"></div>
+
+<div class="sh-page" data-page="33"><img alt="Konsistenz I Beispiel-Constraint-Graph:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-introduction/unit-de-constraints-introduction-33.png"></div>
+
+<div class="sh-page" data-page="34"><img alt="Konsistenz I Satz 5 (hinreichende Konsistenzbedingungen" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-introduction/unit-de-constraints-introduction-34.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-de-constraints-fd1.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd1.pdf" style="--sh-pages: 45"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Kapitel MK:IV IV. Modellieren mit Constraints" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd1/unit-de-constraints-fd1-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Binarization Definition 6 (CSP-FD" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd1/unit-de-constraints-fd1-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Binarization Definition 7 (Binarization)" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd1/unit-de-constraints-fd1-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd1/unit-de-constraints-fd1-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Binarization Beispiel (als Kanten-Constraint-Graph):" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd1/unit-de-constraints-fd1-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Binarization Beispiel (als Kanten-Constraint-Graph):" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd1/unit-de-constraints-fd1-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Binarization Beispiel (als Knoten-Constraint-Graph):" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd1/unit-de-constraints-fd1-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Binarization Beispiel (als Knoten-Constraint-Graph):" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd1/unit-de-constraints-fd1-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Generate-and-Test (GT) Lösungsverfahren für ein CSP auf endlichen Wertebereichen" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd1/unit-de-constraints-fd1-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd1/unit-de-constraints-fd1-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Generate-and-Test Schema eines GT-Algorithmus:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd1/unit-de-constraints-fd1-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd1/unit-de-constraints-fd1-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Generate-and-Test Propose-and-Improve" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd1/unit-de-constraints-fd1-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="Generate-and-Test Propose-and-Improve" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd1/unit-de-constraints-fd1-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="Generate-and-Test Propose-and-Improve" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd1/unit-de-constraints-fd1-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="Backtracking (BT) -basierte Verfahren Lösungsverfahren für ein CSP auf endlichen Wertebereichen" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd1/unit-de-constraints-fd1-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="Backtracking-basierte Verfahren Schema eines BT-Algorithmus:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd1/unit-de-constraints-fd1-17.png"></div>
+
+<div class="sh-page" data-page="18"><img alt="Backtracking-basierte Verfahren Algorithm:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd1/unit-de-constraints-fd1-18.png"></div>
+
+<div class="sh-page" data-page="19"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd1/unit-de-constraints-fd1-19.png"></div>
+
+<div class="sh-page" data-page="20"><img alt="Backtracking-basierte Verfahren Durch die sukzessive Hinzunahme von Variablen wird das Constraint-Netz bei der" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd1/unit-de-constraints-fd1-20.png"></div>
+
+<div class="sh-page" data-page="21"><img alt="Startknoten " src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd1/unit-de-constraints-fd1-21.png"></div>
+
+<div class="sh-page" data-page="22"><img alt="Backtracking-basierte Verfahren Probleme bei Backtracking" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd1/unit-de-constraints-fd1-22.png"></div>
+
+<div class="sh-page" data-page="23"><img alt="Backtracking-basierte Verfahren Probleme bei Backtracking" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd1/unit-de-constraints-fd1-23.png"></div>
+
+<div class="sh-page" data-page="24"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd1/unit-de-constraints-fd1-24.png"></div>
+
+<div class="sh-page" data-page="25"><img alt="Backtracking-basierte Verfahren Probleme bei Backtracking" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd1/unit-de-constraints-fd1-25.png"></div>
+
+<div class="sh-page" data-page="26"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd1/unit-de-constraints-fd1-26.png"></div>
+
+<div class="sh-page" data-page="27"><img alt="Backtracking-basierte Verfahren Backtracking mit Konfliktanalyse: Backjumping (BJ)" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd1/unit-de-constraints-fd1-27.png"></div>
+
+<div class="sh-page" data-page="28"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd1/unit-de-constraints-fd1-28.png"></div>
+
+<div class="sh-page" data-page="29"><img alt="Backtracking-basierte Verfahren Backtracking mit Konfliktanalyse: Backjumping (BJ)" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd1/unit-de-constraints-fd1-29.png"></div>
+
+<div class="sh-page" data-page="30"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd1/unit-de-constraints-fd1-30.png"></div>
+
+<div class="sh-page" data-page="31"><img alt="Backtracking-basierte Verfahren Backtracking mit Konfliktanalyse: Backjumping (BJ)" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd1/unit-de-constraints-fd1-31.png"></div>
+
+<div class="sh-page" data-page="32"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd1/unit-de-constraints-fd1-32.png"></div>
+
+<div class="sh-page" data-page="33"><img alt="Backtracking-basierte Verfahren Backtracking mit Konfliktanalyse: Backjumping (BJ)" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd1/unit-de-constraints-fd1-33.png"></div>
+
+<div class="sh-page" data-page="34"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd1/unit-de-constraints-fd1-34.png"></div>
+
+<div class="sh-page" data-page="35"><img alt="Backtracking-basierte Verfahren Backtracking mit Konfliktanalyse: Backjumping (BJ)" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd1/unit-de-constraints-fd1-35.png"></div>
+
+<div class="sh-page" data-page="36"><img alt="Backtracking-basierte Verfahren Backtracking mit Konfliktanalyse: Backjumping (BJ)" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd1/unit-de-constraints-fd1-36.png"></div>
+
+<div class="sh-page" data-page="37"><img alt="Backtracking-basierte Verfahren Algorithm:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd1/unit-de-constraints-fd1-37.png"></div>
+
+<div class="sh-page" data-page="38"><img alt="3. RETURN(returnDepth); " src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd1/unit-de-constraints-fd1-38.png"></div>
+
+<div class="sh-page" data-page="39"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd1/unit-de-constraints-fd1-39.png"></div>
+
+<div class="sh-page" data-page="40"><img alt="Backtracking-basierte Verfahren Verbessertes Backjumping: Conflict-Directed Backjumping (CBJ)" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd1/unit-de-constraints-fd1-40.png"></div>
+
+<div class="sh-page" data-page="41"><img alt="Backtracking-basierte Verfahren Verbessertes Backjumping: Conflict-Directed Backjumping (CBJ)" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd1/unit-de-constraints-fd1-41.png"></div>
+
+<div class="sh-page" data-page="42"><img alt="Backtracking-basierte Verfahren Algorithm:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd1/unit-de-constraints-fd1-42.png"></div>
+
+<div class="sh-page" data-page="43"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd1/unit-de-constraints-fd1-43.png"></div>
+
+<div class="sh-page" data-page="44"><img alt="Backtracking-basierte Verfahren Weitere Ansätze zur Effizienzsteigerung bei der Suchraumexploration" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd1/unit-de-constraints-fd1-44.png"></div>
+
+<div class="sh-page" data-page="45"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd1/unit-de-constraints-fd1-45.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-de-constraints-fd2.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd2.pdf" style="--sh-pages: 50"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Kapitel MK:IV IV. Modellieren mit Constraints" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd2/unit-de-constraints-fd2-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Konsistenz II Ziel der Konsistenzanalyse ist die Entfernung inkonsistenter Werte in den" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd2/unit-de-constraints-fd2-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Konsistenz II Definition 8 (Knotenkonsistenz)" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd2/unit-de-constraints-fd2-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Konsistenz II Definition 9 (Kantenkonsistenz)" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd2/unit-de-constraints-fd2-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd2/unit-de-constraints-fd2-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Konsistenz II Lemma 10" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd2/unit-de-constraints-fd2-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Konsistenz II Lemma 10" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd2/unit-de-constraints-fd2-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Konsistenzanalyse Lösungsverfahren für ein CSP auf endlichen Wertebereichen" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd2/unit-de-constraints-fd2-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Konsistenzanalyse Kantenkonsistenz in CSP-FD" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd2/unit-de-constraints-fd2-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Konsistenzanalyse Kantenkonsistenz in CSP-FD" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd2/unit-de-constraints-fd2-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd2/unit-de-constraints-fd2-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Konsistenzanalyse Kantenkonsistenz in CSP-FD" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd2/unit-de-constraints-fd2-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd2/unit-de-constraints-fd2-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="Konsistenzanalyse Kantenkonsistenz in CSP-FD" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd2/unit-de-constraints-fd2-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd2/unit-de-constraints-fd2-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="Konsistenzanalyse Pfadkonsistenz in CSP-FD" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd2/unit-de-constraints-fd2-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd2/unit-de-constraints-fd2-17.png"></div>
+
+<div class="sh-page" data-page="18"><img alt="Konsistenzanalyse Pfadkonsistenz in CSP-FD" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd2/unit-de-constraints-fd2-18.png"></div>
+
+<div class="sh-page" data-page="19"><img alt="Konsistenzanalyse Pfadkonsistenz in CSP-FD" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd2/unit-de-constraints-fd2-19.png"></div>
+
+<div class="sh-page" data-page="20"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd2/unit-de-constraints-fd2-20.png"></div>
+
+<div class="sh-page" data-page="21"><img alt="Konsistenzanalyse Definition 14 (k-Konsistenz, strenge k-Konsistenz)" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd2/unit-de-constraints-fd2-21.png"></div>
+
+<div class="sh-page" data-page="22"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd2/unit-de-constraints-fd2-22.png"></div>
+
+<div class="sh-page" data-page="23"><img alt="Konsistenzanalyse k-Konsistenz und Backtracking-freie Suche" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd2/unit-de-constraints-fd2-23.png"></div>
+
+<div class="sh-page" data-page="24"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd2/unit-de-constraints-fd2-24.png"></div>
+
+<div class="sh-page" data-page="25"><img alt="Konsistenzanalyse k-Konsistenz und Backtracking-freie Suche" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd2/unit-de-constraints-fd2-25.png"></div>
+
+<div class="sh-page" data-page="26"><img alt="Konsistenzanalyse k-Konsistenz und Backtracking-freie Suche" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd2/unit-de-constraints-fd2-26.png"></div>
+
+<div class="sh-page" data-page="27"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd2/unit-de-constraints-fd2-27.png"></div>
+
+<div class="sh-page" data-page="28"><img alt="Konsistenzanalyse k-Konsistenz und Backtracking-freie Suche" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd2/unit-de-constraints-fd2-28.png"></div>
+
+<div class="sh-page" data-page="29"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd2/unit-de-constraints-fd2-29.png"></div>
+
+<div class="sh-page" data-page="30"><img alt="Konsistenzanalyse k-Konsistenz und Backtracking-freie Suche" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd2/unit-de-constraints-fd2-30.png"></div>
+
+<div class="sh-page" data-page="31"><img alt="Konsistenzanalyse Viele Suchverfahren instanziieren die Variablen in einer festen Reihenfolge (Stichwort: Tree-Search)." src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd2/unit-de-constraints-fd2-31.png"></div>
+
+<div class="sh-page" data-page="32"><img alt="Konsistenzanalyse Gerichtete Verfahren" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd2/unit-de-constraints-fd2-32.png"></div>
+
+<div class="sh-page" data-page="33"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd2/unit-de-constraints-fd2-33.png"></div>
+
+<div class="sh-page" data-page="34"><img alt="Konsistenzanalyse Gerichtete Verfahren" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd2/unit-de-constraints-fd2-34.png"></div>
+
+<div class="sh-page" data-page="35"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd2/unit-de-constraints-fd2-35.png"></div>
+
+<div class="sh-page" data-page="36"><img alt="Konsistenzanalyse Praktikabilität der Verfahren" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd2/unit-de-constraints-fd2-36.png"></div>
+
+<div class="sh-page" data-page="37"><img alt="Konsistenzanalyse Lösungsverfahren für ein CSP auf endlichen Wertebereichen" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd2/unit-de-constraints-fd2-37.png"></div>
+
+<div class="sh-page" data-page="38"><img alt="Konsistenzanalyse Kombination mit Backtracking" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd2/unit-de-constraints-fd2-38.png"></div>
+
+<div class="sh-page" data-page="39"><img alt="Konsistenzanalyse Kombination mit Backtracking" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd2/unit-de-constraints-fd2-39.png"></div>
+
+<div class="sh-page" data-page="40"><img alt="Konsistenzanalyse Kombination mit Backtracking" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd2/unit-de-constraints-fd2-40.png"></div>
+
+<div class="sh-page" data-page="41"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd2/unit-de-constraints-fd2-41.png"></div>
+
+<div class="sh-page" data-page="42"><img alt="Konsistenzanalyse Kombination mit Backtracking" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd2/unit-de-constraints-fd2-42.png"></div>
+
+<div class="sh-page" data-page="43"><img alt="Konsistenzanalyse Kombination mit Backtracking" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd2/unit-de-constraints-fd2-43.png"></div>
+
+<div class="sh-page" data-page="44"><img alt="Weitere Analyseverfahren Lösungsverfahren für ein CSP auf endlichen Wertebereichen" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd2/unit-de-constraints-fd2-44.png"></div>
+
+<div class="sh-page" data-page="45"><img alt="Weitere Analyseverfahren Variablensortierung" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd2/unit-de-constraints-fd2-45.png"></div>
+
+<div class="sh-page" data-page="46"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd2/unit-de-constraints-fd2-46.png"></div>
+
+<div class="sh-page" data-page="47"><img alt="Weitere Analyseverfahren Constraint-Netz-Reformulierung" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd2/unit-de-constraints-fd2-47.png"></div>
+
+<div class="sh-page" data-page="48"><img alt="Weitere Analyseverfahren Constraint-Netz-Reformulierung: Cycle-Cut-Set-Analyse" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd2/unit-de-constraints-fd2-48.png"></div>
+
+<div class="sh-page" data-page="49"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd2/unit-de-constraints-fd2-49.png"></div>
+
+<div class="sh-page" data-page="50"><img alt="Weitere Analyseverfahren Constraint-Netz-Reformulierung: Cycle-Cut-Set-Analyse" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-fd2/unit-de-constraints-fd2-50.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-de-constraints-ifd.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-ifd.pdf" style="--sh-pages: 18"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Kapitel MK:IV IV. Modellieren mit Constraints" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-ifd/unit-de-constraints-ifd-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Algebraische Constraints Beispiel Addierer A + B = C:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-ifd/unit-de-constraints-ifd-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Algebraische Constraints Beispiel Addierer A + B = C:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-ifd/unit-de-constraints-ifd-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Algebraische Constraints Definition 18 (lokal bestimmt (locally determined))" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-ifd/unit-de-constraints-ifd-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Algebraische Constraints Definition 19 (Einschrittableitung)" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-ifd/unit-de-constraints-ifd-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-ifd/unit-de-constraints-ifd-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Algebraische Constraints Grenzen lokaler Wertepropagierung I" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-ifd/unit-de-constraints-ifd-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Algebraische Constraints Grenzen lokaler Wertepropagierung II" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-ifd/unit-de-constraints-ifd-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Algebraische Constraints Constraint-Löser „gaussElimination“" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-ifd/unit-de-constraints-ifd-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Algebraische Constraints Intervallpropagierung" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-ifd/unit-de-constraints-ifd-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Algebraische Constraints Intervallpropagierung" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-ifd/unit-de-constraints-ifd-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Intervall Constraints Intervall Constraint Satisfaction Problem (I-CSP)" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-ifd/unit-de-constraints-ifd-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Intervall Constraints Intervall Constraint Satisfaction Problem (I-CSP)" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-ifd/unit-de-constraints-ifd-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="Intervall Constraints Intervall Constraint Satisfaction Problem (I-CSP)" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-ifd/unit-de-constraints-ifd-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-ifd/unit-de-constraints-ifd-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="Intervall Constraints Lokale Toleranzpropagierung für I-CSP" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-ifd/unit-de-constraints-ifd-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-ifd/unit-de-constraints-ifd-17.png"></div>
+
+<div class="sh-page" data-page="18"><img alt="Intervall Constraints Lokale Toleranzpropagierung für I-CSP" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-constraints-ifd/unit-de-constraints-ifd-18.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-de-diagnosis-bayes.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-bayes.pdf" style="--sh-pages: 28"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Kapitel MK:V V. Diagnoseansätze" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-bayes/unit-de-diagnosis-bayes-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Diagnoseproblemstellung Begriffe" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-bayes/unit-de-diagnosis-bayes-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-bayes/unit-de-diagnosis-bayes-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Diagnoseproblemstellung Modellierung" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-bayes/unit-de-diagnosis-bayes-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Diagnoseproblemstellung Modellierung" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-bayes/unit-de-diagnosis-bayes-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Diagnoseproblemstellung Statistische Diagnose" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-bayes/unit-de-diagnosis-bayes-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Diagnoseproblemstellung Statistische Diagnose" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-bayes/unit-de-diagnosis-bayes-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Diagnoseproblemstellung Prinzip der statistischen Diagnose" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-bayes/unit-de-diagnosis-bayes-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Diagnose mit Bayes Satz von Bayes" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-bayes/unit-de-diagnosis-bayes-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Diagnose mit Bayes Satz von Bayes" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-bayes/unit-de-diagnosis-bayes-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Diagnose mit Bayes Satz von Bayes (Verallgemeinerung)" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-bayes/unit-de-diagnosis-bayes-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Diagnose mit Bayes Satz von Bayes (Verallgemeinerung)" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-bayes/unit-de-diagnosis-bayes-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-bayes/unit-de-diagnosis-bayes-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="Diagnose mit Bayes Beispiel" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-bayes/unit-de-diagnosis-bayes-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="Diagnose mit Bayes Beispiel" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-bayes/unit-de-diagnosis-bayes-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="Diagnose mit Bayes Beispiel" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-bayes/unit-de-diagnosis-bayes-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="Diagnose mit Bayes Diskussion" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-bayes/unit-de-diagnosis-bayes-17.png"></div>
+
+<div class="sh-page" data-page="18"><img alt="Diagnose mit Bayes Diskussion" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-bayes/unit-de-diagnosis-bayes-18.png"></div>
+
+<div class="sh-page" data-page="19"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-bayes/unit-de-diagnosis-bayes-19.png"></div>
+
+<div class="sh-page" data-page="20"><img alt="Diagnose mit Bayes Interpretation des Konzeptes „Wahrscheinlichkeit“" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-bayes/unit-de-diagnosis-bayes-20.png"></div>
+
+<div class="sh-page" data-page="21"><img alt="Diagnose mit Bayes Interpretation des Konzeptes „Wahrscheinlichkeit“" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-bayes/unit-de-diagnosis-bayes-21.png"></div>
+
+<div class="sh-page" data-page="22"><img alt="Diagnose mit Bayes Interpretation des Konzeptes „Wahrscheinlichkeit“" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-bayes/unit-de-diagnosis-bayes-22.png"></div>
+
+<div class="sh-page" data-page="23"><img alt="Diagnose mit Bayes Subjektivistische Verwendung von Bayes" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-bayes/unit-de-diagnosis-bayes-23.png"></div>
+
+<div class="sh-page" data-page="24"><img alt="Diagnose mit Bayes Subjektivistische Verwendung von Bayes" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-bayes/unit-de-diagnosis-bayes-24.png"></div>
+
+<div class="sh-page" data-page="25"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-bayes/unit-de-diagnosis-bayes-25.png"></div>
+
+<div class="sh-page" data-page="26"><img alt="Diagnose mit Bayes Subjektivistische Verwendung von Bayes" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-bayes/unit-de-diagnosis-bayes-26.png"></div>
+
+<div class="sh-page" data-page="27"><img alt="Diagnose mit Bayes Subjektivistische Verwendung von Bayes" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-bayes/unit-de-diagnosis-bayes-27.png"></div>
+
+<div class="sh-page" data-page="28"><img alt="Diagnose mit Bayes Subjektivistische Verwendung von Bayes" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-bayes/unit-de-diagnosis-bayes-28.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-de-diagnosis-dempster.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-dempster.pdf" style="--sh-pages: 34"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Kapitel MK:V V. Diagnoseansätze" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-dempster/unit-de-diagnosis-dempster-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Evidenztheorie von Dempster\u002fShafer Forderungen der klassischen Wahrscheinlichkeitstheorie" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-dempster/unit-de-diagnosis-dempster-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Evidenztheorie von Dempster\u002fShafer Evidenzen statt Wahrscheinlichkeiten" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-dempster/unit-de-diagnosis-dempster-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Evidenztheorie von Dempster\u002fShafer Evidenzen statt Wahrscheinlichkeiten" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-dempster/unit-de-diagnosis-dempster-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Evidenztheorie von Dempster\u002fShafer Evidenzen statt Wahrscheinlichkeiten" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-dempster/unit-de-diagnosis-dempster-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Evidenztheorie von Dempster\u002fShafer Definition 1 (Wahrnehmungsrahmen (Frame of Discernment))" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-dempster/unit-de-diagnosis-dempster-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Evidenztheorie von Dempster\u002fShafer Definition 2 (Basismaß (Evidenz), fokales Element)" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-dempster/unit-de-diagnosis-dempster-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-dempster/unit-de-diagnosis-dempster-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Evidenztheorie von Dempster\u002fShafer Beispiel" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-dempster/unit-de-diagnosis-dempster-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Evidenztheorie von Dempster\u002fShafer Definition 3 (Believe-Funktion)" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-dempster/unit-de-diagnosis-dempster-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-dempster/unit-de-diagnosis-dempster-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Evidenztheorie von Dempster\u002fShafer Beispiel" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-dempster/unit-de-diagnosis-dempster-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Evidenztheorie von Dempster\u002fShafer Definition 5 (Doubt-Funktion)" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-dempster/unit-de-diagnosis-dempster-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-dempster/unit-de-diagnosis-dempster-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="Evidenztheorie von Dempster\u002fShafer Definition 7 (Unwissenheit, Unsicherheitsintervall)" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-dempster/unit-de-diagnosis-dempster-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="Evidenztheorie von Dempster\u002fShafer Beispiel" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-dempster/unit-de-diagnosis-dempster-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-dempster/unit-de-diagnosis-dempster-17.png"></div>
+
+<div class="sh-page" data-page="18"><img alt="Evidenztheorie von Dempster\u002fShafer Satz 8 (Belief-Funktion und Wahrscheinlichkeiten)" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-dempster/unit-de-diagnosis-dempster-18.png"></div>
+
+<div class="sh-page" data-page="19"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-dempster/unit-de-diagnosis-dempster-19.png"></div>
+
+<div class="sh-page" data-page="20"><img alt="Evidenztheorie von Dempster\u002fShafer Frage: Wie verheiratet man zwei Expertenmeinungen („best of both“)?" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-dempster/unit-de-diagnosis-dempster-20.png"></div>
+
+<div class="sh-page" data-page="21"><img alt="Evidenztheorie von Dempster\u002fShafer Frage: Wie verheiratet man zwei Expertenmeinungen („best of both“)?" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-dempster/unit-de-diagnosis-dempster-21.png"></div>
+
+<div class="sh-page" data-page="22"><img alt="Evidenztheorie von Dempster\u002fShafer Satz 11 (akkumulierte Evidenz)" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-dempster/unit-de-diagnosis-dempster-22.png"></div>
+
+<div class="sh-page" data-page="23"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-dempster/unit-de-diagnosis-dempster-23.png"></div>
+
+<div class="sh-page" data-page="24"><img alt="Diagnose mit Dempster\u002fShafer Beispiel" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-dempster/unit-de-diagnosis-dempster-24.png"></div>
+
+<div class="sh-page" data-page="25"><img alt="Diagnose mit Dempster\u002fShafer Beispiel" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-dempster/unit-de-diagnosis-dempster-25.png"></div>
+
+<div class="sh-page" data-page="26"><img alt="Diagnose mit Dempster\u002fShafer Beispiel" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-dempster/unit-de-diagnosis-dempster-26.png"></div>
+
+<div class="sh-page" data-page="27"><img alt="Diagnose mit Dempster\u002fShafer Beispiel" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-dempster/unit-de-diagnosis-dempster-27.png"></div>
+
+<div class="sh-page" data-page="28"><img alt="Diagnose mit Dempster\u002fShafer Beispiel" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-dempster/unit-de-diagnosis-dempster-28.png"></div>
+
+<div class="sh-page" data-page="29"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-dempster/unit-de-diagnosis-dempster-29.png"></div>
+
+<div class="sh-page" data-page="30"><img alt="Diagnose mit Dempster\u002fShafer Diskussion" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-dempster/unit-de-diagnosis-dempster-30.png"></div>
+
+<div class="sh-page" data-page="31"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-dempster/unit-de-diagnosis-dempster-31.png"></div>
+
+<div class="sh-page" data-page="32"><img alt="Diagnose mit Dempster\u002fShafer Diskussion" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-dempster/unit-de-diagnosis-dempster-32.png"></div>
+
+<div class="sh-page" data-page="33"><img alt="Statistische Diagnoseverfahren Zusammenfassung" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-dempster/unit-de-diagnosis-dempster-33.png"></div>
+
+<div class="sh-page" data-page="34"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-dempster/unit-de-diagnosis-dempster-34.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-en-diagnosis-tms.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-tms.pdf" style="--sh-pages: 38"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Chapter MK:V V. Diagnoseansätze" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-tms/unit-en-diagnosis-tms-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Truth Maintenance Non-Monotonicity" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-tms/unit-en-diagnosis-tms-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-tms/unit-en-diagnosis-tms-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Truth Maintenance Operationalization" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-tms/unit-en-diagnosis-tms-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Truth Maintenance Definition 12 (Datum, Node)" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-tms/unit-en-diagnosis-tms-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Truth Maintenance Communication between the TMS and the inference engine is in terms of nodes:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-tms/unit-en-diagnosis-tms-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-tms/unit-en-diagnosis-tms-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Truth Maintenance The inference engine communicates the important (a subset of all) deductions to" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-tms/unit-en-diagnosis-tms-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-tms/unit-en-diagnosis-tms-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Truth Maintenance Definition 14 (TMS Node Types)" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-tms/unit-en-diagnosis-tms-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-tms/unit-en-diagnosis-tms-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Truth Maintenance Graphical notation, adopted from" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-tms/unit-en-diagnosis-tms-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Truth Maintenance How Justifications Help" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-tms/unit-en-diagnosis-tms-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="Truth Maintenance How Justifications Help" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-tms/unit-en-diagnosis-tms-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="Truth Maintenance Formalization" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-tms/unit-en-diagnosis-tms-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="Truth Maintenance Label" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-tms/unit-en-diagnosis-tms-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-tms/unit-en-diagnosis-tms-17.png"></div>
+
+<div class="sh-page" data-page="18"><img alt="Truth Maintenance Label" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-tms/unit-en-diagnosis-tms-18.png"></div>
+
+<div class="sh-page" data-page="19"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-tms/unit-en-diagnosis-tms-19.png"></div>
+
+<div class="sh-page" data-page="20"><img alt="Truth Maintenance JTMS versus ATMS" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-tms/unit-en-diagnosis-tms-20.png"></div>
+
+<div class="sh-page" data-page="21"><img alt="Assumption-Based TMS (ATMS) Example" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-tms/unit-en-diagnosis-tms-21.png"></div>
+
+<div class="sh-page" data-page="22"><img alt="Assumption-Based TMS Example" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-tms/unit-en-diagnosis-tms-22.png"></div>
+
+<div class="sh-page" data-page="23"><img alt="Assumption-Based TMS Terminology" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-tms/unit-en-diagnosis-tms-23.png"></div>
+
+<div class="sh-page" data-page="24"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-tms/unit-en-diagnosis-tms-24.png"></div>
+
+<div class="sh-page" data-page="25"><img alt="Assumption-Based TMS ATMS Labels" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-tms/unit-en-diagnosis-tms-25.png"></div>
+
+<div class="sh-page" data-page="26"><img alt="Assumption-Based TMS ATMS Labels" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-tms/unit-en-diagnosis-tms-26.png"></div>
+
+<div class="sh-page" data-page="27"><img alt="Assumption-Based TMS ATMS Labels" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-tms/unit-en-diagnosis-tms-27.png"></div>
+
+<div class="sh-page" data-page="28"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-tms/unit-en-diagnosis-tms-28.png"></div>
+
+<div class="sh-page" data-page="29"><img alt="Assumption-Based TMS Summary of ATMS concepts in propositional logics:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-tms/unit-en-diagnosis-tms-29.png"></div>
+
+<div class="sh-page" data-page="30"><img alt="Assumption-Based TMS Definition 15 (Hold, Nogood Set, Miminality)" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-tms/unit-en-diagnosis-tms-30.png"></div>
+
+<div class="sh-page" data-page="31"><img alt="Assumption-Based TMS Definition 15 (Hold, Nogood Set, Miminality)" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-tms/unit-en-diagnosis-tms-31.png"></div>
+
+<div class="sh-page" data-page="32"><img alt="Assumption-Based TMS Definition 16 (ATMS Label Properties)" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-tms/unit-en-diagnosis-tms-32.png"></div>
+
+<div class="sh-page" data-page="33"><img alt="Assumption-Based TMS Label Update" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-tms/unit-en-diagnosis-tms-33.png"></div>
+
+<div class="sh-page" data-page="34"><img alt="Assumption-Based TMS Label Update" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-tms/unit-en-diagnosis-tms-34.png"></div>
+
+<div class="sh-page" data-page="35"><img alt="Assumption-Based TMS Label Update" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-tms/unit-en-diagnosis-tms-35.png"></div>
+
+<div class="sh-page" data-page="36"><img alt="Assumption-Based TMS Label Update" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-tms/unit-en-diagnosis-tms-36.png"></div>
+
+<div class="sh-page" data-page="37"><img alt="Assumption-Based TMS Label Update" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-tms/unit-en-diagnosis-tms-37.png"></div>
+
+<div class="sh-page" data-page="38"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-tms/unit-en-diagnosis-tms-38.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-en-diagnosis-gde.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-gde.pdf" style="--sh-pages: 56"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Chapter MK:V V. Diagnoseansätze" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-gde/unit-en-diagnosis-gde-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Diagnosis Setting Technical Terms (recapitulation)" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-gde/unit-en-diagnosis-gde-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Diagnosis Setting Modeling" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-gde/unit-en-diagnosis-gde-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Diagnosis Setting Model-based Diagnosis Example" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-gde/unit-en-diagnosis-gde-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Diagnosis Setting Model-based Diagnosis Example" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-gde/unit-en-diagnosis-gde-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Diagnosis with the GDE The most well-known model-based diagnosis approach is the quantitative," src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-gde/unit-en-diagnosis-gde-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Diagnosis with the GDE Reasoning in the Polybox Example" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-gde/unit-en-diagnosis-gde-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-gde/unit-en-diagnosis-gde-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Diagnosis with the GDE Conflicts in Model-based Diagnosis" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-gde/unit-en-diagnosis-gde-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Diagnosis with the GDE Reasoning in the Polybox Example" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-gde/unit-en-diagnosis-gde-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Diagnosis with the GDE Reasoning in the Polybox Example" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-gde/unit-en-diagnosis-gde-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Diagnosis with the GDE Reasoning in the Polybox Example" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-gde/unit-en-diagnosis-gde-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-gde/unit-en-diagnosis-gde-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="Diagnosis with the GDE Reasoning in the Polybox Example" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-gde/unit-en-diagnosis-gde-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="Diagnosis with the GDE Reasoning in the Polybox Example" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-gde/unit-en-diagnosis-gde-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="Diagnosis with the GDE Polybox Example + ATMS" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-gde/unit-en-diagnosis-gde-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-gde/unit-en-diagnosis-gde-17.png"></div>
+
+<div class="sh-page" data-page="18"><img alt="Diagnosis with the GDE Polybox Example + ATMS" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-gde/unit-en-diagnosis-gde-18.png"></div>
+
+<div class="sh-page" data-page="19"><img alt="Diagnosis with the GDE Polybox Example + ATMS" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-gde/unit-en-diagnosis-gde-19.png"></div>
+
+<div class="sh-page" data-page="20"><img alt="Diagnosis with the GDE Polybox Example + ATMS" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-gde/unit-en-diagnosis-gde-20.png"></div>
+
+<div class="sh-page" data-page="21"><img alt="Diagnosis with the GDE Polybox Example + ATMS" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-gde/unit-en-diagnosis-gde-21.png"></div>
+
+<div class="sh-page" data-page="22"><img alt="Diagnosis with the GDE Polybox Example + ATMS" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-gde/unit-en-diagnosis-gde-22.png"></div>
+
+<div class="sh-page" data-page="23"><img alt="Diagnosis with the GDE Polybox Example + ATMS" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-gde/unit-en-diagnosis-gde-23.png"></div>
+
+<div class="sh-page" data-page="24"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-gde/unit-en-diagnosis-gde-24.png"></div>
+
+<div class="sh-page" data-page="25"><img alt="Diagnosis with the GDE Polybox Example + ATMS" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-gde/unit-en-diagnosis-gde-25.png"></div>
+
+<div class="sh-page" data-page="26"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-gde/unit-en-diagnosis-gde-26.png"></div>
+
+<div class="sh-page" data-page="27"><img alt="Diagnosis with the GDE Polybox Example + ATMS" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-gde/unit-en-diagnosis-gde-27.png"></div>
+
+<div class="sh-page" data-page="28"><img alt="Diagnosis with the GDE Polybox Example + ATMS" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-gde/unit-en-diagnosis-gde-28.png"></div>
+
+<div class="sh-page" data-page="29"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-gde/unit-en-diagnosis-gde-29.png"></div>
+
+<div class="sh-page" data-page="30"><img alt="Diagnosis with the GDE Polybox Example + ATMS" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-gde/unit-en-diagnosis-gde-30.png"></div>
+
+<div class="sh-page" data-page="31"><img alt="Diagnosis with the GDE Polybox Example + ATMS" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-gde/unit-en-diagnosis-gde-31.png"></div>
+
+<div class="sh-page" data-page="32"><img alt="Diagnosis with the GDE Polybox Example + ATMS" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-gde/unit-en-diagnosis-gde-32.png"></div>
+
+<div class="sh-page" data-page="33"><img alt="Diagnosis with the GDE Polybox Example + ATMS" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-gde/unit-en-diagnosis-gde-33.png"></div>
+
+<div class="sh-page" data-page="34"><img alt="Diagnosis with the GDE Minimal Diagnoses" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-gde/unit-en-diagnosis-gde-34.png"></div>
+
+<div class="sh-page" data-page="35"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-gde/unit-en-diagnosis-gde-35.png"></div>
+
+<div class="sh-page" data-page="36"><img alt="Diagnosis with the GDE Minimal Diagnoses" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-gde/unit-en-diagnosis-gde-36.png"></div>
+
+<div class="sh-page" data-page="37"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-gde/unit-en-diagnosis-gde-37.png"></div>
+
+<div class="sh-page" data-page="38"><img alt="Diagnosis with the GDE Minimal Diagnoses" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-gde/unit-en-diagnosis-gde-38.png"></div>
+
+<div class="sh-page" data-page="39"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-gde/unit-en-diagnosis-gde-39.png"></div>
+
+<div class="sh-page" data-page="40"><img alt="Diagnosis with the GDE Measurement Selection" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-gde/unit-en-diagnosis-gde-40.png"></div>
+
+<div class="sh-page" data-page="41"><img alt="Diagnosis with the GDE Measurement Selection" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-gde/unit-en-diagnosis-gde-41.png"></div>
+
+<div class="sh-page" data-page="42"><img alt="Diagnosis with the GDE Measurement Selection" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-gde/unit-en-diagnosis-gde-42.png"></div>
+
+<div class="sh-page" data-page="43"><img alt="Diagnosis with the GDE Measurement Selection" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-gde/unit-en-diagnosis-gde-43.png"></div>
+
+<div class="sh-page" data-page="44"><img alt="Diagnosis with the GDE Measurement Selection" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-gde/unit-en-diagnosis-gde-44.png"></div>
+
+<div class="sh-page" data-page="45"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-gde/unit-en-diagnosis-gde-45.png"></div>
+
+<div class="sh-page" data-page="46"><img alt="Diagnosis with Reiter Diagnosis from First Principles" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-gde/unit-en-diagnosis-gde-46.png"></div>
+
+<div class="sh-page" data-page="47"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-gde/unit-en-diagnosis-gde-47.png"></div>
+
+<div class="sh-page" data-page="48"><img alt="Diagnosis with Reiter Diagnosis from First Principles" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-gde/unit-en-diagnosis-gde-48.png"></div>
+
+<div class="sh-page" data-page="49"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-gde/unit-en-diagnosis-gde-49.png"></div>
+
+<div class="sh-page" data-page="50"><img alt="Diagnosis with Reiter Example" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-gde/unit-en-diagnosis-gde-50.png"></div>
+
+<div class="sh-page" data-page="51"><img alt="Diagnosis with Reiter Example" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-gde/unit-en-diagnosis-gde-51.png"></div>
+
+<div class="sh-page" data-page="52"><img alt="Diagnosis with Reiter Diagnosis from First Principles" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-gde/unit-en-diagnosis-gde-52.png"></div>
+
+<div class="sh-page" data-page="53"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-gde/unit-en-diagnosis-gde-53.png"></div>
+
+<div class="sh-page" data-page="54"><img alt="Diagnosis with Reiter Diagnosis from First Principles" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-gde/unit-en-diagnosis-gde-54.png"></div>
+
+<div class="sh-page" data-page="55"><img alt="Diagnosis with Reiter Diagnosis from First Principles" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-gde/unit-en-diagnosis-gde-55.png"></div>
+
+<div class="sh-page" data-page="56"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-diagnosis-gde/unit-en-diagnosis-gde-56.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-de-diagnosis-cbr.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-cbr.pdf" style="--sh-pages: 35"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Kapitel MK:V V. Diagnoseansätze" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-cbr/unit-de-diagnosis-cbr-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Grundlagen fallbasierten Schließens Einleitung" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-cbr/unit-de-diagnosis-cbr-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Grundlagen fallbasierten Schließens Einleitung" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-cbr/unit-de-diagnosis-cbr-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Grundlagen fallbasierten Schließens Einleitung" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-cbr/unit-de-diagnosis-cbr-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Grundlagen fallbasierten Schließens Einleitung" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-cbr/unit-de-diagnosis-cbr-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Grundlagen fallbasierten Schließens Historie" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-cbr/unit-de-diagnosis-cbr-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-cbr/unit-de-diagnosis-cbr-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Grundlagen fallbasierten Schließens Definition 21 (Fall, Fallbasis)" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-cbr/unit-de-diagnosis-cbr-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Grundlagen fallbasierten Schließens Repräsentation eines Falles hP, Si ∈ C:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-cbr/unit-de-diagnosis-cbr-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Grundlagen fallbasierten Schließens Problemmenge" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-cbr/unit-de-diagnosis-cbr-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Grundlagen fallbasierten Schließens Zyklus des fallbasierten Schließens" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-cbr/unit-de-diagnosis-cbr-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Grundlagen fallbasierten Schließens Zyklus des fallbasierten Schließens" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-cbr/unit-de-diagnosis-cbr-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Grundlagen fallbasierten Schließens Klassen fallbasierter Ansätze" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-cbr/unit-de-diagnosis-cbr-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="Grundlagen fallbasierten Schließens " src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-cbr/unit-de-diagnosis-cbr-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="Grundlagen fallbasierten Schließens " src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-cbr/unit-de-diagnosis-cbr-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-cbr/unit-de-diagnosis-cbr-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="Grundlagen fallbasierten Schließens Retrieve" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-cbr/unit-de-diagnosis-cbr-17.png"></div>
+
+<div class="sh-page" data-page="18"><img alt="Grundlagen fallbasierten Schließens Retrieve" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-cbr/unit-de-diagnosis-cbr-18.png"></div>
+
+<div class="sh-page" data-page="19"><img alt="Grundlagen fallbasierten Schließens Retrieve" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-cbr/unit-de-diagnosis-cbr-19.png"></div>
+
+<div class="sh-page" data-page="20"><img alt="Grundlagen fallbasierten Schließens Retrieve" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-cbr/unit-de-diagnosis-cbr-20.png"></div>
+
+<div class="sh-page" data-page="21"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-cbr/unit-de-diagnosis-cbr-21.png"></div>
+
+<div class="sh-page" data-page="22"><img alt="Grundlagen fallbasierten Schließens Retrieve" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-cbr/unit-de-diagnosis-cbr-22.png"></div>
+
+<div class="sh-page" data-page="23"><img alt="Grundlagen fallbasierten Schließens Retrieve" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-cbr/unit-de-diagnosis-cbr-23.png"></div>
+
+<div class="sh-page" data-page="24"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-cbr/unit-de-diagnosis-cbr-24.png"></div>
+
+<div class="sh-page" data-page="25"><img alt="Grundlagen fallbasierten Schließens Reuse" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-cbr/unit-de-diagnosis-cbr-25.png"></div>
+
+<div class="sh-page" data-page="26"><img alt="Grundlagen fallbasierten Schließens Reuse" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-cbr/unit-de-diagnosis-cbr-26.png"></div>
+
+<div class="sh-page" data-page="27"><img alt="Grundlagen fallbasierten Schließens Revise und Retain" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-cbr/unit-de-diagnosis-cbr-27.png"></div>
+
+<div class="sh-page" data-page="28"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-cbr/unit-de-diagnosis-cbr-28.png"></div>
+
+<div class="sh-page" data-page="29"><img alt="Fallbasierte Diagnose Beispiel" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-cbr/unit-de-diagnosis-cbr-29.png"></div>
+
+<div class="sh-page" data-page="30"><img alt="Fallbasierte Diagnose Beispiel" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-cbr/unit-de-diagnosis-cbr-30.png"></div>
+
+<div class="sh-page" data-page="31"><img alt="Fallbasierte Diagnose Beispiel" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-cbr/unit-de-diagnosis-cbr-31.png"></div>
+
+<div class="sh-page" data-page="32"><img alt="Fallbasierte Diagnose Beispiel" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-cbr/unit-de-diagnosis-cbr-32.png"></div>
+
+<div class="sh-page" data-page="33"><img alt="Fallbasierte Diagnose Beispiel" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-cbr/unit-de-diagnosis-cbr-33.png"></div>
+
+<div class="sh-page" data-page="34"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-cbr/unit-de-diagnosis-cbr-34.png"></div>
+
+<div class="sh-page" data-page="35"><img alt="Fallbasierte Diagnose Diskussion" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-diagnosis-cbr/unit-de-diagnosis-cbr-35.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-en-planning-basics.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-basics.pdf" style="--sh-pages: 59"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Chapter MK:VI VI. Planning and Configuration" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-basics/unit-en-planning-basics-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-basics/unit-en-planning-basics-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Agent Systems Example: Monkey-and-Banana-Problem" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-basics/unit-en-planning-basics-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Deductive Reasoning Agents Example: Monkey-and-Banana-Problem" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-basics/unit-en-planning-basics-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Agent Systems Intelligent Agents" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-basics/unit-en-planning-basics-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Deductive Reasoning Agents Intelligent Agents" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-basics/unit-en-planning-basics-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Agent Systems Modeling in Agent Design: Classical View" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-basics/unit-en-planning-basics-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Agent Systems Modeling in Agent Design: Model Levels" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-basics/unit-en-planning-basics-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Agent Systems Modeling in Agent Design: Model Levels" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-basics/unit-en-planning-basics-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Agent Systems Modeling in Agent Design: Model Levels" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-basics/unit-en-planning-basics-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Agent Systems Agents as Part of the System Model: Observer’s View" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-basics/unit-en-planning-basics-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-basics/unit-en-planning-basics-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Remarks: (continued)" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-basics/unit-en-planning-basics-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="Agent Systems Agent Capabilities: Designer’s View" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-basics/unit-en-planning-basics-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="Agent Systems Agent Capabilities: Designer’s View" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-basics/unit-en-planning-basics-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="Agent Systems Example: Loading Dock" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-basics/unit-en-planning-basics-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="Agent Systems Example: Loading Dock" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-basics/unit-en-planning-basics-17.png"></div>
+
+<div class="sh-page" data-page="18"><img alt="Agent Systems Example: Loading Dock" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-basics/unit-en-planning-basics-18.png"></div>
+
+<div class="sh-page" data-page="19"><img alt="Agent Systems Agents as Part of the System Model: Observer’s View" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-basics/unit-en-planning-basics-19.png"></div>
+
+<div class="sh-page" data-page="20"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-basics/unit-en-planning-basics-20.png"></div>
+
+<div class="sh-page" data-page="21"><img alt="Agent Systems Example: Loading Dock" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-basics/unit-en-planning-basics-21.png"></div>
+
+<div class="sh-page" data-page="22"><img alt="Agent Systems Example: Loading Dock" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-basics/unit-en-planning-basics-22.png"></div>
+
+<div class="sh-page" data-page="23"><img alt="Agent Systems Possible Restrictions of Planning Problems" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-basics/unit-en-planning-basics-23.png"></div>
+
+<div class="sh-page" data-page="24"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-basics/unit-en-planning-basics-24.png"></div>
+
+<div class="sh-page" data-page="25"><img alt="Agent Systems Possible Restrictions of Planning Problems" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-basics/unit-en-planning-basics-25.png"></div>
+
+<div class="sh-page" data-page="26"><img alt="Deductive Reasoning Agents Tasks in Planning" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-basics/unit-en-planning-basics-26.png"></div>
+
+<div class="sh-page" data-page="27"><img alt="Deductive Reasoning Agents Agent Capabilities: Designers View" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-basics/unit-en-planning-basics-27.png"></div>
+
+<div class="sh-page" data-page="28"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-basics/unit-en-planning-basics-28.png"></div>
+
+<div class="sh-page" data-page="29"><img alt="Deductive Reasoning Agents Example: Loading Dock" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-basics/unit-en-planning-basics-29.png"></div>
+
+<div class="sh-page" data-page="30"><img alt="Deductive Reasoning Agents Describing States" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-basics/unit-en-planning-basics-30.png"></div>
+
+<div class="sh-page" data-page="31"><img alt="Deductive Reasoning Agents Describing States" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-basics/unit-en-planning-basics-31.png"></div>
+
+<div class="sh-page" data-page="32"><img alt="Deductive Reasoning Agents Describing States" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-basics/unit-en-planning-basics-32.png"></div>
+
+<div class="sh-page" data-page="33"><img alt="Deductive Reasoning Agents Describing State Spaces" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-basics/unit-en-planning-basics-33.png"></div>
+
+<div class="sh-page" data-page="34"><img alt="Deductive Reasoning Agents Example: Monkey-and-Banana-Problem" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-basics/unit-en-planning-basics-34.png"></div>
+
+<div class="sh-page" data-page="35"><img alt="Deductive Reasoning Agents Example: Monkey-and-Banana-Problem" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-basics/unit-en-planning-basics-35.png"></div>
+
+<div class="sh-page" data-page="36"><img alt="Deductive Reasoning Agents Example: Monkey-and-Banana-Problem" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-basics/unit-en-planning-basics-36.png"></div>
+
+<div class="sh-page" data-page="37"><img alt="Deductive Reasoning Agents Modeling Knowledge in Logic" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-basics/unit-en-planning-basics-37.png"></div>
+
+<div class="sh-page" data-page="38"><img alt="Deductive Reasoning Agents Example: Monkey-and-Banana-Problem" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-basics/unit-en-planning-basics-38.png"></div>
+
+<div class="sh-page" data-page="39"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-basics/unit-en-planning-basics-39.png"></div>
+
+<div class="sh-page" data-page="40"><img alt="Deductive Reasoning Agents Example: Theorem Proving" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-basics/unit-en-planning-basics-40.png"></div>
+
+<div class="sh-page" data-page="41"><img alt="Planning Language STRIPS Planning Language" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-basics/unit-en-planning-basics-41.png"></div>
+
+<div class="sh-page" data-page="42"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-basics/unit-en-planning-basics-42.png"></div>
+
+<div class="sh-page" data-page="43"><img alt="Planning Language STRIPS Language (restricted version)" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-basics/unit-en-planning-basics-43.png"></div>
+
+<div class="sh-page" data-page="44"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-basics/unit-en-planning-basics-44.png"></div>
+
+<div class="sh-page" data-page="45"><img alt="Planning Language Example: Loading Dock" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-basics/unit-en-planning-basics-45.png"></div>
+
+<div class="sh-page" data-page="46"><img alt="Planning Language STRIPS Language (restricted version)" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-basics/unit-en-planning-basics-46.png"></div>
+
+<div class="sh-page" data-page="47"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-basics/unit-en-planning-basics-47.png"></div>
+
+<div class="sh-page" data-page="48"><img alt="Planning Language Example: Loading Dock" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-basics/unit-en-planning-basics-48.png"></div>
+
+<div class="sh-page" data-page="49"><img alt="Planning Language STRIPS Language (restricted version)" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-basics/unit-en-planning-basics-49.png"></div>
+
+<div class="sh-page" data-page="50"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-basics/unit-en-planning-basics-50.png"></div>
+
+<div class="sh-page" data-page="51"><img alt="Planning Language Example: Loading Dock" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-basics/unit-en-planning-basics-51.png"></div>
+
+<div class="sh-page" data-page="52"><img alt="Planning Language STRIPS Language (restricted version)" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-basics/unit-en-planning-basics-52.png"></div>
+
+<div class="sh-page" data-page="53"><img alt="Planning Language Example: Loading Dock" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-basics/unit-en-planning-basics-53.png"></div>
+
+<div class="sh-page" data-page="54"><img alt="Planning Language Example: Blocks World" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-basics/unit-en-planning-basics-54.png"></div>
+
+<div class="sh-page" data-page="55"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-basics/unit-en-planning-basics-55.png"></div>
+
+<div class="sh-page" data-page="56"><img alt="Planning Language Example: Blocks World" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-basics/unit-en-planning-basics-56.png"></div>
+
+<div class="sh-page" data-page="57"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-basics/unit-en-planning-basics-57.png"></div>
+
+<div class="sh-page" data-page="58"><img alt="Planning Language Classical Planning in STRIPS" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-basics/unit-en-planning-basics-58.png"></div>
+
+<div class="sh-page" data-page="59"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-basics/unit-en-planning-basics-59.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-en-planning-algorithms.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms.pdf" style="--sh-pages: 90"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Chapter MK:VI III. Planning and Configuration" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Planning Algorithms Properties" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Planning Algorithms Approaches and Restrictions" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Planning Algorithms Approaches and Restrictions" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Planning Algorithms Planning as State Space Search" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Planning Algorithms Planning as Plan Space Search" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Planning Algorithms HTN Planning" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="State-Space Planning Forward Search in State Spaces (Progression Planning)" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="State-Space Planning Forward Search in State Spaces (Progression Planning)" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="State-Space Planning Example: Forward Search in Blocks World" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="State-Space Planning Heuristics by Simplified Models" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="State-Space Planning Example: Model Simplification for the 8-Puzzle Problem" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="State-Space Planning Example: Model Simplification for the 8-Puzzle Problem" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="State-Space Planning Example: Model Simplification for the 8-Puzzle Problem" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="State-Space Planning Example: Model Simplification for the 8-Puzzle Problem" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-17.png"></div>
+
+<div class="sh-page" data-page="18"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-18.png"></div>
+
+<div class="sh-page" data-page="19"><img alt="State-Space Planning Example: Model Simplification for the 8-Puzzle Problem" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-19.png"></div>
+
+<div class="sh-page" data-page="20"><img alt="State-Space Planning Generation of Heuristics by Simplified Models" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-20.png"></div>
+
+<div class="sh-page" data-page="21"><img alt="State-Space Planning Example: Model Simplification for the 8-Puzzle Problem" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-21.png"></div>
+
+<div class="sh-page" data-page="22"><img alt="State-Space Planning Backward Search in State Spaces (Regression Planning)" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-22.png"></div>
+
+<div class="sh-page" data-page="23"><img alt="State-Space Planning Backward Search in State Spaces (Regression Planning)" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-23.png"></div>
+
+<div class="sh-page" data-page="24"><img alt="State-Space Planning Backward Search in State Spaces (Regression Planning)" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-24.png"></div>
+
+<div class="sh-page" data-page="25"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-25.png"></div>
+
+<div class="sh-page" data-page="26"><img alt="State-Space Planning Regression Planning" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-26.png"></div>
+
+<div class="sh-page" data-page="27"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-27.png"></div>
+
+<div class="sh-page" data-page="28"><img alt="State-Space Planning Example: Regression Planning in in Blocks World" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-28.png"></div>
+
+<div class="sh-page" data-page="29"><img alt="State-Space Planning Determining Weakest Preconditions" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-29.png"></div>
+
+<div class="sh-page" data-page="30"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-30.png"></div>
+
+<div class="sh-page" data-page="31"><img alt="State-Space Planning Example: Regression Planning in in Blocks World" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-31.png"></div>
+
+<div class="sh-page" data-page="32"><img alt="State-Space Planning Example: Regression Planning in in Blocks World" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-32.png"></div>
+
+<div class="sh-page" data-page="33"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-33.png"></div>
+
+<div class="sh-page" data-page="34"><img alt="State-Space Planning Regression Planning" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-34.png"></div>
+
+<div class="sh-page" data-page="35"><img alt="State-Space Planning Example: Regression Planning in in Blocks World" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-35.png"></div>
+
+<div class="sh-page" data-page="36"><img alt="State-Space Planning Lifted Regression Planning in State Spaces" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-36.png"></div>
+
+<div class="sh-page" data-page="37"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-37.png"></div>
+
+<div class="sh-page" data-page="38"><img alt="State-Space Planning Lifted Regression Planning in State Spaces" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-38.png"></div>
+
+<div class="sh-page" data-page="39"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-39.png"></div>
+
+<div class="sh-page" data-page="40"><img alt="State-Space Planning Determining Lifted Weakest Preconditions" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-40.png"></div>
+
+<div class="sh-page" data-page="41"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-41.png"></div>
+
+<div class="sh-page" data-page="42"><img alt="State-Space Planning Determining Lifted Weakest Preconditions" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-42.png"></div>
+
+<div class="sh-page" data-page="43"><img alt="State-Space Planning Example 1: Lifted Weakest Preconditions in Blocks World" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-43.png"></div>
+
+<div class="sh-page" data-page="44"><img alt="State-Space Planning Example 1: Lifted Weakest Preconditions in Blocks World" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-44.png"></div>
+
+<div class="sh-page" data-page="45"><img alt="State-Space Planning Example 2: Lifted Weakest Preconditions in Blocks World" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-45.png"></div>
+
+<div class="sh-page" data-page="46"><img alt="State-Space Planning Example 2: Lifted Weakest Preconditions in Blocks World" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-46.png"></div>
+
+<div class="sh-page" data-page="47"><img alt="State-Space Planning Example 2: Lifted Weakest Preconditions in Blocks World" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-47.png"></div>
+
+<div class="sh-page" data-page="48"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-48.png"></div>
+
+<div class="sh-page" data-page="49"><img alt="State-Space Planning Recursive STRIPS-Planning" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-49.png"></div>
+
+<div class="sh-page" data-page="50"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-50.png"></div>
+
+<div class="sh-page" data-page="51"><img alt="State-Space Planning Example: Sussman Anomaly in in Blocks World" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-51.png"></div>
+
+<div class="sh-page" data-page="52"><img alt="State-Space Planning Example: Sussman Anomaly in in Blocks World" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-52.png"></div>
+
+<div class="sh-page" data-page="53"><img alt="State-Space Planning Example: Sussman Anomaly in in Blocks World" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-53.png"></div>
+
+<div class="sh-page" data-page="54"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-54.png"></div>
+
+<div class="sh-page" data-page="55"><img alt="State-Space Planning Example: Register Swapping Problem" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-55.png"></div>
+
+<div class="sh-page" data-page="56"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-56.png"></div>
+
+<div class="sh-page" data-page="57"><img alt="Plan-Space Planning Differences to State-Space Planning" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-57.png"></div>
+
+<div class="sh-page" data-page="58"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-58.png"></div>
+
+<div class="sh-page" data-page="59"><img alt="Plan-Space Planning Prerequisites for Partial-Order Planning" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-59.png"></div>
+
+<div class="sh-page" data-page="60"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-60.png"></div>
+
+<div class="sh-page" data-page="61"><img alt="Plan-Space Planning Prerequisites for Partial-Order Planning" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-61.png"></div>
+
+<div class="sh-page" data-page="62"><img alt="Plan-Space Planning Prerequisites for Partial-Order Planning" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-62.png"></div>
+
+<div class="sh-page" data-page="63"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-63.png"></div>
+
+<div class="sh-page" data-page="64"><img alt="Plan-Space Planning Prerequisites for Partial-Order Planning" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-64.png"></div>
+
+<div class="sh-page" data-page="65"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-65.png"></div>
+
+<div class="sh-page" data-page="66"><img alt="Plan-Space Planning Partial-Order Planning" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-66.png"></div>
+
+<div class="sh-page" data-page="67"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-67.png"></div>
+
+<div class="sh-page" data-page="68"><img alt="Plan-Space Planning Partial-Order Planning" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-68.png"></div>
+
+<div class="sh-page" data-page="69"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-69.png"></div>
+
+<div class="sh-page" data-page="70"><img alt="Plan-Space Planning Example: Partial-Order Planning for the Sussman Anomaly" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-70.png"></div>
+
+<div class="sh-page" data-page="71"><img alt="Plan-Space Planning Example: Partial-Order Planning for the Sussman Anomaly" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-71.png"></div>
+
+<div class="sh-page" data-page="72"><img alt="Plan-Space Planning Example: Partial-Order Planning for the Sussman Anomaly" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-72.png"></div>
+
+<div class="sh-page" data-page="73"><img alt="Plan-Space Planning Example: Partial-Order Planning for the Sussman Anomaly" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-73.png"></div>
+
+<div class="sh-page" data-page="74"><img alt="Plan-Space Planning Example: Partial-Order Planning for the Sussman Anomaly" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-74.png"></div>
+
+<div class="sh-page" data-page="75"><img alt="Plan-Space Planning Example: Partial-Order Planning for the Sussman Anomaly" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-75.png"></div>
+
+<div class="sh-page" data-page="76"><img alt="HTN Planning Prerequisites" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-76.png"></div>
+
+<div class="sh-page" data-page="77"><img alt="HTN Planning Prerequisites" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-77.png"></div>
+
+<div class="sh-page" data-page="78"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-78.png"></div>
+
+<div class="sh-page" data-page="79"><img alt="HTN Planning Prerequisites" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-79.png"></div>
+
+<div class="sh-page" data-page="80"><img alt="HTN Planning Prerequisites" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-80.png"></div>
+
+<div class="sh-page" data-page="81"><img alt="HTN Planning Prerequisites" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-81.png"></div>
+
+<div class="sh-page" data-page="82"><img alt="HTN Planning Prerequisites" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-82.png"></div>
+
+<div class="sh-page" data-page="83"><img alt="HTN Planning Abstract HTN Planning" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-83.png"></div>
+
+<div class="sh-page" data-page="84"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-84.png"></div>
+
+<div class="sh-page" data-page="85"><img alt="HTN Planning Simplification of HTN Planning" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-85.png"></div>
+
+<div class="sh-page" data-page="86"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-86.png"></div>
+
+<div class="sh-page" data-page="87"><img alt="HTN Planning Total-order Forward Decomposition HTN Planning" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-87.png"></div>
+
+<div class="sh-page" data-page="88"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-88.png"></div>
+
+<div class="sh-page" data-page="89"><img alt="HTN Planning Total-order Forward Decomposition vs. Abstract HTN Planning" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-89.png"></div>
+
+<div class="sh-page" data-page="90"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-en-planning-algorithms/unit-en-planning-algorithms-90.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-de-configuration-basics.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-configuration-basics.pdf" style="--sh-pages: 34"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Kapitel MK:VI VI. Konfigurierungsansätze" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-configuration-basics/unit-de-configuration-basics-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Konfigurierungsproblemstellung Definition 1 (Konfigurieren)" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-configuration-basics/unit-de-configuration-basics-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Konfigurierungsproblemstellung Merkmale von Konfigurierungsaufgaben" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-configuration-basics/unit-de-configuration-basics-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Konfigurierungsproblemstellung mögliche Kompositionen" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-configuration-basics/unit-de-configuration-basics-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-configuration-basics/unit-de-configuration-basics-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Konfigurierungsproblemstellung 1. Erstellen einer neuen Konfiguration." src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-configuration-basics/unit-de-configuration-basics-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Konfigurierungsproblemstellung " src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-configuration-basics/unit-de-configuration-basics-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Konfigurierungsproblemstellung Automatisierung" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-configuration-basics/unit-de-configuration-basics-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-configuration-basics/unit-de-configuration-basics-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Konfigurierungsproblemstellung Automatisierung" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-configuration-basics/unit-de-configuration-basics-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Konfigurierungsproblemstellung Automatisierung" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-configuration-basics/unit-de-configuration-basics-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Konfigurierungsproblemstellung Automatisierung" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-configuration-basics/unit-de-configuration-basics-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Konfigurierungsansätze Paradigmen zum Lösen von Konfigurierungs- und Entwurfsaufgaben verknüpfen" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-configuration-basics/unit-de-configuration-basics-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="Konfigurierungsansätze Modellierung" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-configuration-basics/unit-de-configuration-basics-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="Konfigurierungsansätze Paradigma 1: Skelett-Konfigurieren" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-configuration-basics/unit-de-configuration-basics-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-configuration-basics/unit-de-configuration-basics-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="Konfigurierungsansätze Paradigma 1: Skelett-Konfigurieren" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-configuration-basics/unit-de-configuration-basics-17.png"></div>
+
+<div class="sh-page" data-page="18"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-configuration-basics/unit-de-configuration-basics-18.png"></div>
+
+<div class="sh-page" data-page="19"><img alt="Konfigurierungsansätze Paradigma 1: Skelett-Konfigurieren" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-configuration-basics/unit-de-configuration-basics-19.png"></div>
+
+<div class="sh-page" data-page="20"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-configuration-basics/unit-de-configuration-basics-20.png"></div>
+
+<div class="sh-page" data-page="21"><img alt="Konfigurierungsansätze Paradigma 1: Skelett-Konfigurieren" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-configuration-basics/unit-de-configuration-basics-21.png"></div>
+
+<div class="sh-page" data-page="22"><img alt="Konfigurierungsansätze Paradigma 1: Skelett-Konfigurieren" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-configuration-basics/unit-de-configuration-basics-22.png"></div>
+
+<div class="sh-page" data-page="23"><img alt="Konfigurierungsansätze Paradigma 1: Skelett-Konfigurieren" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-configuration-basics/unit-de-configuration-basics-23.png"></div>
+
+<div class="sh-page" data-page="24"><img alt="Konfigurierungsansätze Paradigma 2: Ressourcen-basiertes Konfigurieren" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-configuration-basics/unit-de-configuration-basics-24.png"></div>
+
+<div class="sh-page" data-page="25"><img alt="Konfigurierungsansätze Paradigma 2: Ressourcen-basiertes Konfigurieren" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-configuration-basics/unit-de-configuration-basics-25.png"></div>
+
+<div class="sh-page" data-page="26"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-configuration-basics/unit-de-configuration-basics-26.png"></div>
+
+<div class="sh-page" data-page="27"><img alt="Konfigurierungsansätze Paradigma 2: Ressourcen-basiertes Konfigurieren" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-configuration-basics/unit-de-configuration-basics-27.png"></div>
+
+<div class="sh-page" data-page="28"><img alt="Konfigurierungsansätze Paradigma 2: Ressourcen-basiertes Konfigurieren" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-configuration-basics/unit-de-configuration-basics-28.png"></div>
+
+<div class="sh-page" data-page="29"><img alt="Konfigurierungsansätze Paradigma 2: Ressourcen-basiertes Konfigurieren" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-configuration-basics/unit-de-configuration-basics-29.png"></div>
+
+<div class="sh-page" data-page="30"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-configuration-basics/unit-de-configuration-basics-30.png"></div>
+
+<div class="sh-page" data-page="31"><img alt="Konfigurierungsansätze Paradigma 2: Ressourcen-basiertes Konfigurieren" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-configuration-basics/unit-de-configuration-basics-31.png"></div>
+
+<div class="sh-page" data-page="32"><img alt="Konfigurierungsansätze Paradigma 3: Fallbasiertes Konfigurieren" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-configuration-basics/unit-de-configuration-basics-32.png"></div>
+
+<div class="sh-page" data-page="33"><img alt="Konfigurierungsansätze Paradigma 4: Funktionale Abstraktion" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-configuration-basics/unit-de-configuration-basics-33.png"></div>
+
+<div class="sh-page" data-page="34"><img alt="Konfigurierungsansätze Realisierungsaspekte" src="https://webis.de/downloads/lecturenotes/modeling-foundations/unit-de-configuration-basics/unit-de-configuration-basics-34.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+<!-- units end -->
+</div>
+</main>
+
+<div class="sh-modal closed" data-modal-help="" aria-hidden="true" aria-labelledby="sh-help-title" role="dialog">
+  <div class="sh-modal-content" role="document">
+    <button class="sh-modal__close sh-button sh-button--close" data-close-modal="" aria-label="Close">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" aria-labelledby="sh-close-help-title"><path d="M4 0l8 8 8-8 4 4-8 8 8 8-4 4-8-8-8 8-4-4 8-8-8-8z"/></svg>
+    </button>
+    <h2 class="sh-modal__title" id="sh-help-title">Help</h2>
+    <div class="sh-shortcut-table-wrapper">
+      <table class="sh-shortcut-table">
+        <caption class="sh-visually-hidden">Document-specific controls</caption>
+        <thead>
+          <tr>
+            <th class="sh-shortcut-table__input">
+              <span class="sh-visually-hidden">Shortcut</span>
+            </th>
+            <th class="sh-shortcut-table__action">Documents</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="sh-shortcut-table__input">
+              <div class="sh-shortcut-group">
+                <kbd aria-label="Up or down arrow key">↑/↓</kbd>
+              </div>
+            </td>
+            <td class="sh-shortcut-table__action">Navigate documents</td>
+          </tr>
+          <tr>
+            <td class="sh-shortcut-table__input">
+              <div class="sh-shortcut-group">
+                <kbd>Shift</kbd> + <kbd aria-label="Up or down arrow key">↑/↓</kbd>
+              </div>
+            </td>
+            <td class="sh-shortcut-table__action">Navigate 3 documents</td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="sh-shortcut-table">
+        <caption class="sh-visually-hidden">Page-specific controls</caption>
+        <thead>
+          <tr>
+            <th class="sh-shortcut-table__input">
+              <span class="sh-visually-hidden">Shortcut</span>
+            </th>
+            <th class="sh-shortcut-table__action">Pages</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="sh-shortcut-table__input">
+              <div class="sh-shortcut-group">
+                <kbd aria-label="Left or right arrow key">←/→</kbd>
+              </div>
+            </td>
+            <td class="sh-shortcut-table__action">Navigate pages</td>
+          </tr>
+          <tr>
+            <td class="sh-shortcut-table__input">
+              <div class="sh-shortcut-group">
+                <kbd>Shift</kbd> + <kbd>MouseWheel</kbd>
+              </div>
+            </td>
+            <td class="sh-shortcut-table__action">Navigate pages</td>
+          </tr>
+          <tr>
+            <td class="sh-shortcut-table__input">
+              <div class="sh-shortcut-group">
+                <kbd>Shift</kbd> + <kbd aria-label="Left or right arrow key">←/→</kbd>
+              </div>
+            </td>
+            <td class="sh-shortcut-table__action">Navigate 3 pages</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<footer class="uk-section uk-section-default footer-section">
+    <div class="uk-container">
+        <div class="uk-align-right@m uk-margin-top">
+            Copyright &copy; 2019 Temir Group
+            <address></address>
+        </div>
+    </div>
+</footer>
+
+<script>
+    UIkit.util.ready(() => {
+        const nav = UIkit.util.$(".global-nav");
+        const navHeight = UIkit.util.height(nav);
+
+        // correct scroll offset due to fixed navigation after page load
+        let fixScrollHeight = () => {
+            if (location.hash === "" || !UIkit.util.$(location.hash)) {
+                return;
+            }
+
+            const pos = document.documentElement.scrollTop;
+            const offset = UIkit.util.offset(UIkit.util.$(location.hash));
+
+            if (pos > navHeight * .8 && offset) {
+                document.documentElement.scrollTop = offset.top - navHeight - 20;
+            }
+        };
+
+        window.addEventListener("hashchange", fixScrollHeight, false);
+        setTimeout(fixScrollHeight, 100);
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,1393 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Webis Lecturnotes Browser Algorithmen und Datenstrukturen</title>
+    <meta charset="utf-8">
+    <meta name="description" content="SlideHub is a presentation/slide/talk explorer">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="copyright" content="&copy; 2019 Temir">
+    <link rel="icon" type="image/png" href="/img/favicon.png">
+
+    <link rel="stylesheet" href="/css/style.css?1548321565">
+    <link rel="stylesheet" href="/css/browser.css?1548321565">
+    <link rel="stylesheet" href="/css/browser-compatibility.css?1548321565">
+</head>
+<body class="uk-offcanvas-content">
+<script src="/js/thirdparty/uikit/uikit.min.js"></script>
+<script src="/js/thirdparty/uikit/uikit-icons.min.js"></script>
+
+<div id="offcanvas-nav" class="uk-hidden@m" data-uk-offcanvas="overlay: true; flip: true;">
+    <div class="uk-offcanvas-bar">
+        <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+
+        <!-- Mobile navigation -->
+        <nav class="uk-margin-large-top">
+            <ul class="uk-nav uk-nav-primary uk-nav-parent-icon" data-uk-nav>
+                <li>
+                    <a href="/people.html">People</a>
+                </li>
+                <li class="uk-active" class="uk-parent">
+                    <a href="#">Lecturenotes</a>
+                    <ul class="uk-nav-sub">
+                        <li><a href="/lecturenotes/overview.html">Overview</a></li>
+                        <li><a href="/lecturenotes/slides.html">Slides</a></li>
+                        <li class="uk-parent">
+                            Browser
+                            <ul class="uk-nav-sub">
+                                <li><a href="/lecturenotes/browser/algorithms-and-datastructures.html">Algorithmen und Datenstrukturen</a></li>
+                                <li><a href="/lecturenotes/browser/information-retrieval.html">Information Retrieval</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/research.html">Research</a>
+                </li>
+                <li>
+                    <a href="/publications.html">Publications</a>
+                </li>
+                <li>
+                    <a href="/data.html">Data</a>
+                </li>
+                <li>
+                    <a href="/facilities.html">Facilities</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<div class="uk-background-secondary desktop-nav global-nav" data-uk-sticky="media: @m">
+    <!-- Desktop navigation -->
+    <nav class="uk-navbar-container uk-navbar-transparent uk-container uk-light" data-uk-navbar="mode: click">
+        <div class="uk-navbar-left">
+            <ul class="uk-navbar-nav">
+                <li>
+                    <a href="/"><img src="/img/uni_leipzig_logo_v2_white-01_opt_2.png" alt="TEMIR LOGO" class="uk-logo"> Temir</a>
+                </li>
+            </ul>
+        </div>
+        <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav">
+                <li>
+                    <a href="/people.html">People</a>
+                </li>
+                <li class="nav-group-start uk-active">
+                    <a href="#">Lecturenotes</a>
+                    <div class="uk-navbar-dropdown uk-navbar-dropdown-width-3 uk-padding-remove">
+                        <div class="uk-navbar-dropdown-grid" data-uk-grid>
+                            <div class="uk-width-1-3">
+                                <ul class="uk-nav uk-navbar-dropdown-nav uk-padding-small">
+                                    <li><a href="/lecturenotes/overview.html">Overview</a></li>
+                                    <li><a href="/lecturenotes/slides.html">Slides</a></li>
+                                    <li class="nav-left-open-category">Browser</li>
+                                </ul>
+                            </div>
+                            <div class="uk-width-2-3">
+                                <ul class="uk-nav uk-navbar-dropdown-nav nav-right-open-sub uk-padding-small">
+                                    <li><a href="/lecturenotes/browser/algorithms-and-datastructures.html">Algorithmen und Datenstrukturen</a></li>
+                                    <li><a href="/lecturenotes/browser/information-retrieval.html">Information Retrieval</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="/research.html">Research</a>
+                </li>
+                <li>
+                    <a href="/publications.html">Publications</a>
+                </li>
+                <li class="nav-group-start">
+                    <a href="/data.html">Data</a>
+                </li>
+                <li>
+                    <a href="/facilities.html">Facilities</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<div class="uk-background-secondary mobile-nav global-nav" data-uk-sticky>
+    <div class="uk-navbar-container uk-navbar-transparent uk-container uk-light mobile-nav-toggle" data-uk-navbar>
+        <div class="">
+            <ul class="uk-navbar-nav">
+                <li>
+                    <a href="/"><img src="/img/uni_leipzig_logo_v2_white-01_opt_2.png" alt="TEMIR LOGO" class="uk-logo"> Temir</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="uk-navbar-right">
+            <button class="uk-button uk-navbar-item uk-light uk-button-large" type="button" data-uk-icon="icon: menu"
+                    data-uk-toggle="target: #offcanvas-nav"></button>
+        </div>
+    </div>
+</div>
+
+<div data-uk-height-viewport="expand: true">
+<script src="/js/browser.js"></script>
+
+<main class="uk-margin-medium" data-slidehub="">
+<!-- SlideHub will hook itself as a child element into [data-slidehub] -->
+<div class="slidehub-container">
+
+<!-- units start -->
+
+
+
+<div class="sh-doc" id="unit-de-ads-organization.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-ads-organization.pdf" style="--sh-pages: 5"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Algorithmen und Datenstrukturen Martin Potthast" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-ads-organization/unit-de-ads-organization-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Inhalt I. Einführung" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-ads-organization/unit-de-ads-organization-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Ziele" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-ads-organization/unit-de-ads-organization-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Angrenzende Gebiete 1. Mathematik, Diskrete Strukturen" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-ads-organization/unit-de-ads-organization-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Literatur Algorithmen und Datenstrukturen:" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-ads-organization/unit-de-ads-organization-5.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-de-ads-introduction.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-ads-introduction.pdf" style="--sh-pages: 63"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Kapitel ADS:I I. Einführung" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-ads-introduction/unit-de-ads-introduction-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Begriffserklärung Definition 1 (Problem, Probleminstanz)" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-ads-introduction/unit-de-ads-introduction-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Begriffserklärung Definition 1 (Problem, Probleminstanz)" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-ads-introduction/unit-de-ads-introduction-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Begriffserklärung Definition 1 (Problem, Probleminstanz)" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-ads-introduction/unit-de-ads-introduction-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-ads-introduction/unit-de-ads-introduction-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Begriffserklärung Definition 2 (Algorithmus)" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-ads-introduction/unit-de-ads-introduction-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Begriffserklärung Definition 2 (Algorithmus)" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-ads-introduction/unit-de-ads-introduction-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Begriffserklärung Definition 2 (Algorithmus)" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-ads-introduction/unit-de-ads-introduction-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Begriffserklärung Definition 2 (Algorithmus)" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-ads-introduction/unit-de-ads-introduction-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-ads-introduction/unit-de-ads-introduction-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Begriffserklärung Definition 3 (Datenstruktur)" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-ads-introduction/unit-de-ads-introduction-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Beispiele für Probleme und algorithmische Lösungen Sortierproblem" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-ads-introduction/unit-de-ads-introduction-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Beispiele für Probleme und algorithmische Lösungen Sortierproblem" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-ads-introduction/unit-de-ads-introduction-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="Beispiele für Probleme und algorithmische Lösungen Sortierproblem" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-ads-introduction/unit-de-ads-introduction-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="Beispiele für Probleme und algorithmische Lösungen Sortierproblem" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-ads-introduction/unit-de-ads-introduction-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="Beispiele für Probleme und algorithmische Lösungen Sortierproblem" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-ads-introduction/unit-de-ads-introduction-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="Beispiele für Probleme und algorithmische Lösungen Sortierproblem" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-ads-introduction/unit-de-ads-introduction-17.png"></div>
+
+<div class="sh-page" data-page="18"><img alt="Beispiele für Probleme und algorithmische Lösungen Sortierproblem" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-ads-introduction/unit-de-ads-introduction-18.png"></div>
+
+<div class="sh-page" data-page="19"><img alt="Beispiele für Probleme und algorithmische Lösungen Sortierproblem" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-ads-introduction/unit-de-ads-introduction-19.png"></div>
+
+<div class="sh-page" data-page="20"><img alt="Beispiele für Probleme und algorithmische Lösungen Sortierproblem" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-ads-introduction/unit-de-ads-introduction-20.png"></div>
+
+<div class="sh-page" data-page="21"><img alt="Beispiele für Probleme und algorithmische Lösungen Suchproblem" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-ads-introduction/unit-de-ads-introduction-21.png"></div>
+
+<div class="sh-page" data-page="22"><img alt="Beispiele für Probleme und algorithmische Lösungen Suchproblem" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-ads-introduction/unit-de-ads-introduction-22.png"></div>
+
+<div class="sh-page" data-page="23"><img alt="Beispiele für Probleme und algorithmische Lösungen Suchproblem" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-ads-introduction/unit-de-ads-introduction-23.png"></div>
+
+<div class="sh-page" data-page="24"><img alt="Beispiele für Probleme und algorithmische Lösungen Suchproblem" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-ads-introduction/unit-de-ads-introduction-24.png"></div>
+
+<div class="sh-page" data-page="25"><img alt="Beispiele für Probleme und algorithmische Lösungen Suchproblem" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-ads-introduction/unit-de-ads-introduction-25.png"></div>
+
+<div class="sh-page" data-page="26"><img alt="Beispiele für Probleme und algorithmische Lösungen Suchproblem" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-ads-introduction/unit-de-ads-introduction-26.png"></div>
+
+<div class="sh-page" data-page="27"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-ads-introduction/unit-de-ads-introduction-27.png"></div>
+
+<div class="sh-page" data-page="28"><img alt="Beispiele für Probleme und algorithmische Lösungen Suchproblem" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-ads-introduction/unit-de-ads-introduction-28.png"></div>
+
+<div class="sh-page" data-page="29"><img alt="Beispiele für Probleme und algorithmische Lösungen Suchproblem" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-ads-introduction/unit-de-ads-introduction-29.png"></div>
+
+<div class="sh-page" data-page="30"><img alt="Beispiele für Probleme und algorithmische Lösungen Suchproblem" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-ads-introduction/unit-de-ads-introduction-30.png"></div>
+
+<div class="sh-page" data-page="31"><img alt="Beispiele für Probleme und algorithmische Lösungen Suchproblem" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-ads-introduction/unit-de-ads-introduction-31.png"></div>
+
+<div class="sh-page" data-page="32"><img alt="Beispiele für Probleme und algorithmische Lösungen Suchproblem" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-ads-introduction/unit-de-ads-introduction-32.png"></div>
+
+<div class="sh-page" data-page="33"><img alt="Beispiele für Probleme und algorithmische Lösungen Suchproblem" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-ads-introduction/unit-de-ads-introduction-33.png"></div>
+
+<div class="sh-page" data-page="34"><img alt="Beispiele für Probleme und algorithmische Lösungen Suchproblem" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-ads-introduction/unit-de-ads-introduction-34.png"></div>
+
+<div class="sh-page" data-page="35"><img alt="Beispiele für Probleme und algorithmische Lösungen Suchproblem" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-ads-introduction/unit-de-ads-introduction-35.png"></div>
+
+<div class="sh-page" data-page="36"><img alt="Beispiele für Probleme und algorithmische Lösungen Suchproblem" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-ads-introduction/unit-de-ads-introduction-36.png"></div>
+
+<div class="sh-page" data-page="37"><img alt="Beispiele für Probleme und algorithmische Lösungen Suchproblem" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-ads-introduction/unit-de-ads-introduction-37.png"></div>
+
+<div class="sh-page" data-page="38"><img alt="Beispiele für Probleme und algorithmische Lösungen Labyrinthproblem" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-ads-introduction/unit-de-ads-introduction-38.png"></div>
+
+<div class="sh-page" data-page="39"><img alt="Beispiele für Probleme und algorithmische Lösungen Labyrinthproblem" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-ads-introduction/unit-de-ads-introduction-39.png"></div>
+
+<div class="sh-page" data-page="40"><img alt="Beispiele für Probleme und algorithmische Lösungen Labyrinthproblem" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-ads-introduction/unit-de-ads-introduction-40.png"></div>
+
+<div class="sh-page" data-page="41"><img alt="Beispiele für Probleme und algorithmische Lösungen Labyrinthproblem" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-ads-introduction/unit-de-ads-introduction-41.png"></div>
+
+<div class="sh-page" data-page="42"><img alt="Beispiele für Probleme und algorithmische Lösungen Labyrinthproblem" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-ads-introduction/unit-de-ads-introduction-42.png"></div>
+
+<div class="sh-page" data-page="43"><img alt="Beispiele für Probleme und algorithmische Lösungen Labyrinthproblem" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-ads-introduction/unit-de-ads-introduction-43.png"></div>
+
+<div class="sh-page" data-page="44"><img alt="Beispiele für Probleme und algorithmische Lösungen Labyrinthproblem" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-ads-introduction/unit-de-ads-introduction-44.png"></div>
+
+<div class="sh-page" data-page="45"><img alt="Beispiele für Probleme und algorithmische Lösungen Labyrinthproblem" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-ads-introduction/unit-de-ads-introduction-45.png"></div>
+
+<div class="sh-page" data-page="46"><img alt="Beispiele für Probleme und algorithmische Lösungen Labyrinthproblem" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-ads-introduction/unit-de-ads-introduction-46.png"></div>
+
+<div class="sh-page" data-page="47"><img alt="Beispiele für Probleme und algorithmische Lösungen Labyrinthproblem" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-ads-introduction/unit-de-ads-introduction-47.png"></div>
+
+<div class="sh-page" data-page="48"><img alt="Beispiele für Probleme und algorithmische Lösungen Labyrinthproblem" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-ads-introduction/unit-de-ads-introduction-48.png"></div>
+
+<div class="sh-page" data-page="49"><img alt="Beispiele für Probleme und algorithmische Lösungen Labyrinthproblem" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-ads-introduction/unit-de-ads-introduction-49.png"></div>
+
+<div class="sh-page" data-page="50"><img alt="Beispiele für Probleme und algorithmische Lösungen Labyrinthproblem" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-ads-introduction/unit-de-ads-introduction-50.png"></div>
+
+<div class="sh-page" data-page="51"><img alt="Beispiele für Probleme und algorithmische Lösungen Labyrinthproblem" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-ads-introduction/unit-de-ads-introduction-51.png"></div>
+
+<div class="sh-page" data-page="52"><img alt="Beispiele für Probleme und algorithmische Lösungen Labyrinthproblem" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-ads-introduction/unit-de-ads-introduction-52.png"></div>
+
+<div class="sh-page" data-page="53"><img alt="Beispiele für Probleme und algorithmische Lösungen Algorithmus:" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-ads-introduction/unit-de-ads-introduction-53.png"></div>
+
+<div class="sh-page" data-page="54"><img alt="Beispiele für Probleme und algorithmische Lösungen Algorithmus:" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-ads-introduction/unit-de-ads-introduction-54.png"></div>
+
+<div class="sh-page" data-page="55"><img alt="Beispiele für Probleme und algorithmische Lösungen Algorithmus:" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-ads-introduction/unit-de-ads-introduction-55.png"></div>
+
+<div class="sh-page" data-page="56"><img alt="Beispiele für Probleme und algorithmische Lösungen Algorithmus:" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-ads-introduction/unit-de-ads-introduction-56.png"></div>
+
+<div class="sh-page" data-page="57"><img alt="Beispiele für Probleme und algorithmische Lösungen Algorithmus:" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-ads-introduction/unit-de-ads-introduction-57.png"></div>
+
+<div class="sh-page" data-page="58"><img alt="Beispiele für Probleme und algorithmische Lösungen Algorithmus:" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-ads-introduction/unit-de-ads-introduction-58.png"></div>
+
+<div class="sh-page" data-page="59"><img alt="Beispiele für Probleme und algorithmische Lösungen PledgeAlgorithm(G, s, ?)" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-ads-introduction/unit-de-ads-introduction-59.png"></div>
+
+<div class="sh-page" data-page="60"><img alt="Beispiele für Probleme und algorithmische Lösungen PledgeAlgorithm(G, s, ?)" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-ads-introduction/unit-de-ads-introduction-60.png"></div>
+
+<div class="sh-page" data-page="61"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-ads-introduction/unit-de-ads-introduction-61.png"></div>
+
+<div class="sh-page" data-page="62"><img alt="Algorithm Engineering Fragen" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-ads-introduction/unit-de-ads-introduction-62.png"></div>
+
+<div class="sh-page" data-page="63"><img alt="Algorithm Engineering Fragen" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-ads-introduction/unit-de-ads-introduction-63.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-de-problem-solving.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-problem-solving.pdf" style="--sh-pages: 22"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Kapitel ADS:II II. Algorithm Engineering" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-problem-solving/unit-de-problem-solving-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Problemlösen " src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-problem-solving/unit-de-problem-solving-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Problemlösen Problemklassen" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-problem-solving/unit-de-problem-solving-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Problemlösen Problemklassen" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-problem-solving/unit-de-problem-solving-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Problemlösen Problemklassen" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-problem-solving/unit-de-problem-solving-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-problem-solving/unit-de-problem-solving-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Bemerkungen: (Fortsetzung)" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-problem-solving/unit-de-problem-solving-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Problemlösen Problemlösungsstrategien" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-problem-solving/unit-de-problem-solving-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Problemlösen Problemlösungsstrategien" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-problem-solving/unit-de-problem-solving-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Problemlösen Problemlösungsstrategien" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-problem-solving/unit-de-problem-solving-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Problemlösen Problemlösungsstrategien" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-problem-solving/unit-de-problem-solving-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Problemlösen Problemlösungsstrategien" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-problem-solving/unit-de-problem-solving-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Problemlösen Problemlösungsstrategien" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-problem-solving/unit-de-problem-solving-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="Problemlösen Problemlösungsstrategien" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-problem-solving/unit-de-problem-solving-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="Problemlösen Problemlösungsstrategien" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-problem-solving/unit-de-problem-solving-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-problem-solving/unit-de-problem-solving-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="Problemlösen Problemlösungsstrategien" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-problem-solving/unit-de-problem-solving-17.png"></div>
+
+<div class="sh-page" data-page="18"><img alt="Problemlösen Problemlösungsstrategien" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-problem-solving/unit-de-problem-solving-18.png"></div>
+
+<div class="sh-page" data-page="19"><img alt="Problemlösen Problemlösungsstrategien" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-problem-solving/unit-de-problem-solving-19.png"></div>
+
+<div class="sh-page" data-page="20"><img alt="Problemlösen Maschinelles Lernen" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-problem-solving/unit-de-problem-solving-20.png"></div>
+
+<div class="sh-page" data-page="21"><img alt="Problemlösen Maschinelles Lernen" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-problem-solving/unit-de-problem-solving-21.png"></div>
+
+<div class="sh-page" data-page="22"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-problem-solving/unit-de-problem-solving-22.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-de-algorithm-design.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design.pdf" style="--sh-pages: 118"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Kapitel ADS:II II. Algorithm Engineering" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Phasen des Algorithm Engineering " src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Phasen des Algorithm Engineering " src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Phasen des Algorithm Engineering " src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Phasen des Algorithm Engineering " src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Phasen des Algorithm Engineering " src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Bemerkungen: (frei nach [Sanders 2009])" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Exkurs: Programmiersprachen 1950" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Exkurs: Programmiersprachen " src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Exkurs: Programmiersprachen " src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Exkurs: Programmiersprachen " src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Exkurs: Programmiersprachen " src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="Exkurs: Programmiersprachen " src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="Exkurs: Programmiersprachen " src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="Exkurs: Programmiersprachen " src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="Exkurs: Programmiersprachen " src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-17.png"></div>
+
+<div class="sh-page" data-page="18"><img alt="Exkurs: Programmiersprachen " src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-18.png"></div>
+
+<div class="sh-page" data-page="19"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-19.png"></div>
+
+<div class="sh-page" data-page="20"><img alt="Exkurs: Programmiersprachen " src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-20.png"></div>
+
+<div class="sh-page" data-page="21"><img alt="Exkurs: Programmiersprachen " src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-21.png"></div>
+
+<div class="sh-page" data-page="22"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-22.png"></div>
+
+<div class="sh-page" data-page="23"><img alt="Pseudocode Einführung" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-23.png"></div>
+
+<div class="sh-page" data-page="24"><img alt="Pseudocode Einführung" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-24.png"></div>
+
+<div class="sh-page" data-page="25"><img alt="Pseudocode Einführung" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-25.png"></div>
+
+<div class="sh-page" data-page="26"><img alt="Pseudocode Einführung" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-26.png"></div>
+
+<div class="sh-page" data-page="27"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-27.png"></div>
+
+<div class="sh-page" data-page="28"><img alt="Pseudocode Spezifikation und Signatur" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-28.png"></div>
+
+<div class="sh-page" data-page="29"><img alt="Pseudocode Spezifikation und Signatur" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-29.png"></div>
+
+<div class="sh-page" data-page="30"><img alt="Pseudocode Grundlagen der Syntax" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-30.png"></div>
+
+<div class="sh-page" data-page="31"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-31.png"></div>
+
+<div class="sh-page" data-page="32"><img alt="Pseudocode Variablen" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-32.png"></div>
+
+<div class="sh-page" data-page="33"><img alt="Pseudocode Variablen" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-33.png"></div>
+
+<div class="sh-page" data-page="34"><img alt="Pseudocode " src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-34.png"></div>
+
+<div class="sh-page" data-page="35"><img alt="Pseudocode " src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-35.png"></div>
+
+<div class="sh-page" data-page="36"><img alt="Pseudocode " src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-36.png"></div>
+
+<div class="sh-page" data-page="37"><img alt="Pseudocode Operatoren: Übersicht" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-37.png"></div>
+
+<div class="sh-page" data-page="38"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-38.png"></div>
+
+<div class="sh-page" data-page="39"><img alt="Pseudocode Datentypen: Primitive" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-39.png"></div>
+
+<div class="sh-page" data-page="40"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-40.png"></div>
+
+<div class="sh-page" data-page="41"><img alt="Pseudocode Datentypen: Objekte" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-41.png"></div>
+
+<div class="sh-page" data-page="42"><img alt="Pseudocode Datentypen: Arrays" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-42.png"></div>
+
+<div class="sh-page" data-page="43"><img alt="Pseudocode Datentypen: Arrays" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-43.png"></div>
+
+<div class="sh-page" data-page="44"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-44.png"></div>
+
+<div class="sh-page" data-page="45"><img alt="Pseudocode Datentypen: Arrays" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-45.png"></div>
+
+<div class="sh-page" data-page="46"><img alt="Pseudocode Datentypen: Arrays" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-46.png"></div>
+
+<div class="sh-page" data-page="47"><img alt="Pseudocode Datentypen: Arrays" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-47.png"></div>
+
+<div class="sh-page" data-page="48"><img alt="Pseudocode Datentypen: Arrays" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-48.png"></div>
+
+<div class="sh-page" data-page="49"><img alt="Pseudocode Datentypen: Arrays" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-49.png"></div>
+
+<div class="sh-page" data-page="50"><img alt="Pseudocode Datentypen: Arrays" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-50.png"></div>
+
+<div class="sh-page" data-page="51"><img alt="Pseudocode Datentypen: Arrays" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-51.png"></div>
+
+<div class="sh-page" data-page="52"><img alt="Pseudocode Kontrollstrukturen" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-52.png"></div>
+
+<div class="sh-page" data-page="53"><img alt="Pseudocode Kontrollstrukturen" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-53.png"></div>
+
+<div class="sh-page" data-page="54"><img alt="Pseudocode Kontrollstrukturen" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-54.png"></div>
+
+<div class="sh-page" data-page="55"><img alt="Pseudocode Kontrollstrukturen" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-55.png"></div>
+
+<div class="sh-page" data-page="56"><img alt="Pseudocode Parameterübergabe beim Funktionsaufruf" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-56.png"></div>
+
+<div class="sh-page" data-page="57"><img alt="Pseudocode Parameterübergabe beim Funktionsaufruf" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-57.png"></div>
+
+<div class="sh-page" data-page="58"><img alt="Pseudocode Parameterübergabe beim Funktionsaufruf" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-58.png"></div>
+
+<div class="sh-page" data-page="59"><img alt="Rekursion Definition 4 (Rekursion, Iteration)" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-59.png"></div>
+
+<div class="sh-page" data-page="60"><img alt="Rekursion Definition 4 (Rekursion, Iteration)" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-60.png"></div>
+
+<div class="sh-page" data-page="61"><img alt="Rekursion Definition 4 (Rekursion, Iteration)" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-61.png"></div>
+
+<div class="sh-page" data-page="62"><img alt="Rekursion Definition 4 (Rekursion, Iteration)" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-62.png"></div>
+
+<div class="sh-page" data-page="63"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-63.png"></div>
+
+<div class="sh-page" data-page="64"><img alt="Rekursion Einführung" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-64.png"></div>
+
+<div class="sh-page" data-page="65"><img alt="Rekursion Einführung" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-65.png"></div>
+
+<div class="sh-page" data-page="66"><img alt="Rekursion Einführung" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-66.png"></div>
+
+<div class="sh-page" data-page="67"><img alt="Rekursion Rekursives Definieren" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-67.png"></div>
+
+<div class="sh-page" data-page="68"><img alt="Rekursion Rekursives Definieren" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-68.png"></div>
+
+<div class="sh-page" data-page="69"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-69.png"></div>
+
+<div class="sh-page" data-page="70"><img alt="Rekursion Fakultätsfunktion" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-70.png"></div>
+
+<div class="sh-page" data-page="71"><img alt="Rekursion Fakultätsfunktion" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-71.png"></div>
+
+<div class="sh-page" data-page="72"><img alt="Rekursion Fakultätsfunktion" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-72.png"></div>
+
+<div class="sh-page" data-page="73"><img alt="Rekursion Fakultätsfunktion" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-73.png"></div>
+
+<div class="sh-page" data-page="74"><img alt="Rekursion Fakultätsfunktion" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-74.png"></div>
+
+<div class="sh-page" data-page="75"><img alt="Rekursion Fakultätsfunktion" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-75.png"></div>
+
+<div class="sh-page" data-page="76"><img alt="Rekursion Fakultätsfunktion" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-76.png"></div>
+
+<div class="sh-page" data-page="77"><img alt="Rekursion Fakultätsfunktion" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-77.png"></div>
+
+<div class="sh-page" data-page="78"><img alt="Rekursion Fakultätsfunktion" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-78.png"></div>
+
+<div class="sh-page" data-page="79"><img alt="Rekursion Fakultätsfunktion" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-79.png"></div>
+
+<div class="sh-page" data-page="80"><img alt="Rekursion Fakultätsfunktion" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-80.png"></div>
+
+<div class="sh-page" data-page="81"><img alt="Rekursion Fakultätsfunktion" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-81.png"></div>
+
+<div class="sh-page" data-page="82"><img alt="Rekursion Fakultätsfunktion" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-82.png"></div>
+
+<div class="sh-page" data-page="83"><img alt="Rekursion Fakultätsfunktion" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-83.png"></div>
+
+<div class="sh-page" data-page="84"><img alt="Rekursion Fakultätsfunktion" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-84.png"></div>
+
+<div class="sh-page" data-page="85"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-85.png"></div>
+
+<div class="sh-page" data-page="86"><img alt="Rekursion Fibonacci-Folge" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-86.png"></div>
+
+<div class="sh-page" data-page="87"><img alt="Rekursion Fibonacci-Folge" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-87.png"></div>
+
+<div class="sh-page" data-page="88"><img alt="Rekursion Fibonacci-Folge" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-88.png"></div>
+
+<div class="sh-page" data-page="89"><img alt="Rekursion Fibonacci-Folge" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-89.png"></div>
+
+<div class="sh-page" data-page="90"><img alt="Rekursion Fibonacci-Folge" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-90.png"></div>
+
+<div class="sh-page" data-page="91"><img alt="Rekursion Fibonacci-Folge" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-91.png"></div>
+
+<div class="sh-page" data-page="92"><img alt="Rekursion Fibonacci-Folge" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-92.png"></div>
+
+<div class="sh-page" data-page="93"><img alt="Rekursion Fibonacci-Folge" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-93.png"></div>
+
+<div class="sh-page" data-page="94"><img alt="Rekursion Fibonacci-Folge" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-94.png"></div>
+
+<div class="sh-page" data-page="95"><img alt="Rekursion Fibonacci-Folge" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-95.png"></div>
+
+<div class="sh-page" data-page="96"><img alt="Rekursion Fibonacci-Folge" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-96.png"></div>
+
+<div class="sh-page" data-page="97"><img alt="Rekursion Fibonacci-Folge" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-97.png"></div>
+
+<div class="sh-page" data-page="98"><img alt="Rekursion Fibonacci-Folge" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-98.png"></div>
+
+<div class="sh-page" data-page="99"><img alt="Rekursion Fibonacci-Folge" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-99.png"></div>
+
+<div class="sh-page" data-page="100"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-100.png"></div>
+
+<div class="sh-page" data-page="101"><img alt="Rekursion Merge Sort" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-101.png"></div>
+
+<div class="sh-page" data-page="102"><img alt="Rekursion Merge Sort" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-102.png"></div>
+
+<div class="sh-page" data-page="103"><img alt="Rekursion Merge Sort" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-103.png"></div>
+
+<div class="sh-page" data-page="104"><img alt="Rekursion Merge Sort" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-104.png"></div>
+
+<div class="sh-page" data-page="105"><img alt="Rekursion Merge Sort" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-105.png"></div>
+
+<div class="sh-page" data-page="106"><img alt="Rekursion Merge Sort" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-106.png"></div>
+
+<div class="sh-page" data-page="107"><img alt="Rekursion Merge Sort" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-107.png"></div>
+
+<div class="sh-page" data-page="108"><img alt="Rekursion Merge Sort" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-108.png"></div>
+
+<div class="sh-page" data-page="109"><img alt="Rekursion Merge Sort" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-109.png"></div>
+
+<div class="sh-page" data-page="110"><img alt="Rekursion Merge Sort" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-110.png"></div>
+
+<div class="sh-page" data-page="111"><img alt="Rekursion Merge Sort" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-111.png"></div>
+
+<div class="sh-page" data-page="112"><img alt="Rekursion Merge Sort" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-112.png"></div>
+
+<div class="sh-page" data-page="113"><img alt="Rekursion Merge Sort" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-113.png"></div>
+
+<div class="sh-page" data-page="114"><img alt="Rekursion Merge Sort" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-114.png"></div>
+
+<div class="sh-page" data-page="115"><img alt="Rekursion Merge Sort" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-115.png"></div>
+
+<div class="sh-page" data-page="116"><img alt="Rekursion Merge Sort" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-116.png"></div>
+
+<div class="sh-page" data-page="117"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-117.png"></div>
+
+<div class="sh-page" data-page="118"><img alt="Rekursion Rekursionsarten" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-design/unit-de-algorithm-design-118.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-de-algorithm-analysis.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis.pdf" style="--sh-pages: 134"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Kapitel ADS:II II. Algorithm Engineering" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Maschinenmodell Übersicht über Berechenbarkeitsmodelle" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Maschinenmodell Random Access Machine (RAM) Modell" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Maschinenmodell Random Access Machine (RAM) Modell" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Laufzeitanalyse Laufzeit" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Laufzeitanalyse Abhängige Variablen: Größe der Probleminstanz" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Laufzeitanalyse Abhängige Variablen: Struktur der Probleminstanz" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Laufzeitanalyse Beispiel" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Laufzeitanalyse Beispiel" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Laufzeitanalyse Beispiel" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Laufzeitanalyse Beispiel" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="Laufzeitanalyse Beispiel" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="Laufzeitanalyse Beispiel" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="Laufzeitanalyse Beispiel" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="Laufzeitanalyse Beispiel" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-17.png"></div>
+
+<div class="sh-page" data-page="18"><img alt="Laufzeitanalyse Beispiel" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-18.png"></div>
+
+<div class="sh-page" data-page="19"><img alt="Laufzeitanalyse Beispiel" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-19.png"></div>
+
+<div class="sh-page" data-page="20"><img alt="Laufzeitanalyse Beispiel" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-20.png"></div>
+
+<div class="sh-page" data-page="21"><img alt="Laufzeitanalyse Beispiel" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-21.png"></div>
+
+<div class="sh-page" data-page="22"><img alt="Laufzeitanalyse Beispiel" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-22.png"></div>
+
+<div class="sh-page" data-page="23"><img alt="Laufzeitanalyse Beispiel" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-23.png"></div>
+
+<div class="sh-page" data-page="24"><img alt="Laufzeitanalyse Beispiel" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-24.png"></div>
+
+<div class="sh-page" data-page="25"><img alt="Laufzeitanalyse Beispiel" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-25.png"></div>
+
+<div class="sh-page" data-page="26"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-26.png"></div>
+
+<div class="sh-page" data-page="27"><img alt="Asymptotische Analyse Wachstumsrate" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-27.png"></div>
+
+<div class="sh-page" data-page="28"><img alt="Asymptotische Analyse Bachmann-Landau-Symbole" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-28.png"></div>
+
+<div class="sh-page" data-page="29"><img alt="Asymptotische Analyse Bachmann-Landau-Symbole" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-29.png"></div>
+
+<div class="sh-page" data-page="30"><img alt="Asymptotische Analyse Bachmann-Landau-Symbole" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-30.png"></div>
+
+<div class="sh-page" data-page="31"><img alt="Asymptotische Analyse Bachmann-Landau-Symbole" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-31.png"></div>
+
+<div class="sh-page" data-page="32"><img alt="Asymptotische Analyse Bachmann-Landau-Symbole" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-32.png"></div>
+
+<div class="sh-page" data-page="33"><img alt="Asymptotische Analyse Bachmann-Landau-Symbole" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-33.png"></div>
+
+<div class="sh-page" data-page="34"><img alt="Asymptotische Analyse Bachmann-Landau-Symbole" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-34.png"></div>
+
+<div class="sh-page" data-page="35"><img alt="Asymptotische Analyse Bachmann-Landau-Symbole" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-35.png"></div>
+
+<div class="sh-page" data-page="36"><img alt="Asymptotische Analyse Bachmann-Landau-Symbole" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-36.png"></div>
+
+<div class="sh-page" data-page="37"><img alt="Asymptotische Analyse Bachmann-Landau-Symbole" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-37.png"></div>
+
+<div class="sh-page" data-page="38"><img alt="Asymptotische Analyse Bachmann-Landau-Symbole" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-38.png"></div>
+
+<div class="sh-page" data-page="39"><img alt="Asymptotische Analyse Bachmann-Landau-Symbole" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-39.png"></div>
+
+<div class="sh-page" data-page="40"><img alt="Asymptotische Analyse Bachmann-Landau-Symbole" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-40.png"></div>
+
+<div class="sh-page" data-page="41"><img alt="Asymptotische Analyse Bachmann-Landau-Symbole" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-41.png"></div>
+
+<div class="sh-page" data-page="42"><img alt="Asymptotische Analyse Bachmann-Landau-Symbole" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-42.png"></div>
+
+<div class="sh-page" data-page="43"><img alt="Asymptotische Analyse Bachmann-Landau-Symbole" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-43.png"></div>
+
+<div class="sh-page" data-page="44"><img alt="Asymptotische Analyse Bachmann-Landau-Symbole" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-44.png"></div>
+
+<div class="sh-page" data-page="45"><img alt="Asymptotische Analyse Bachmann-Landau-Symbole" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-45.png"></div>
+
+<div class="sh-page" data-page="46"><img alt="Asymptotische Analyse Bachmann-Landau-Symbole" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-46.png"></div>
+
+<div class="sh-page" data-page="47"><img alt="Asymptotische Analyse Bachmann-Landau-Symbole" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-47.png"></div>
+
+<div class="sh-page" data-page="48"><img alt="Asymptotische Analyse Bachmann-Landau-Symbole" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-48.png"></div>
+
+<div class="sh-page" data-page="49"><img alt="Asymptotische Analyse Bachmann-Landau-Symbole: Typische Wachstumsraten" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-49.png"></div>
+
+<div class="sh-page" data-page="50"><img alt="Asymptotische Analyse Bachmann-Landau-Symbole: Typische Wachstumsraten" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-50.png"></div>
+
+<div class="sh-page" data-page="51"><img alt="Asymptotische Analyse Bachmann-Landau-Symbole: Notation" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-51.png"></div>
+
+<div class="sh-page" data-page="52"><img alt="Asymptotische Analyse Bachmann-Landau-Symbole: Eigenschaften" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-52.png"></div>
+
+<div class="sh-page" data-page="53"><img alt="Asymptotische Analyse Bachmann-Landau-Symbole: Rechenregeln" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-53.png"></div>
+
+<div class="sh-page" data-page="54"><img alt="Asymptotische Analyse Bachmann-Landau-Symbole: Überblick" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-54.png"></div>
+
+<div class="sh-page" data-page="55"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-55.png"></div>
+
+<div class="sh-page" data-page="56"><img alt="Bemerkungen: (Fortsetzung)" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-56.png"></div>
+
+<div class="sh-page" data-page="57"><img alt="Asymptotische Analyse Bachmann-Landau-Symbole: Beispiele" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-57.png"></div>
+
+<div class="sh-page" data-page="58"><img alt="Asymptotische Analyse Bachmann-Landau-Symbole: Beispiele" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-58.png"></div>
+
+<div class="sh-page" data-page="59"><img alt="Asymptotische Analyse Bachmann-Landau-Symbole: Beispiele" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-59.png"></div>
+
+<div class="sh-page" data-page="60"><img alt="Asymptotische Analyse Bachmann-Landau-Symbole: Beispiele" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-60.png"></div>
+
+<div class="sh-page" data-page="61"><img alt="Asymptotische Analyse Bachmann-Landau-Symbole: Beispiele" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-61.png"></div>
+
+<div class="sh-page" data-page="62"><img alt="Asymptotische Analyse Bachmann-Landau-Symbole: Beispiele" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-62.png"></div>
+
+<div class="sh-page" data-page="63"><img alt="Asymptotische Analyse Bachmann-Landau-Symbole: Beispiele" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-63.png"></div>
+
+<div class="sh-page" data-page="64"><img alt="Asymptotische Analyse Bachmann-Landau-Symbole: Beispiele" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-64.png"></div>
+
+<div class="sh-page" data-page="65"><img alt="Asymptotische Analyse Bachmann-Landau-Symbole: Beispiele" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-65.png"></div>
+
+<div class="sh-page" data-page="66"><img alt="Asymptotische Analyse Bachmann-Landau-Symbole: Beispiele" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-66.png"></div>
+
+<div class="sh-page" data-page="67"><img alt="Asymptotische Analyse Bachmann-Landau-Symbole: Beispiele" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-67.png"></div>
+
+<div class="sh-page" data-page="68"><img alt="Asymptotische Analyse Bachmann-Landau-Symbole: Beispiele" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-68.png"></div>
+
+<div class="sh-page" data-page="69"><img alt="Asymptotische Analyse Bachmann-Landau-Symbole: Beispiele" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-69.png"></div>
+
+<div class="sh-page" data-page="70"><img alt="Asymptotische Analyse Bachmann-Landau-Symbole: Beispiele" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-70.png"></div>
+
+<div class="sh-page" data-page="71"><img alt="Asymptotische Analyse Bachmann-Landau-Symbole: Beispiele" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-71.png"></div>
+
+<div class="sh-page" data-page="72"><img alt="Asymptotische Analyse Bachmann-Landau-Symbole: Beispiele" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-72.png"></div>
+
+<div class="sh-page" data-page="73"><img alt="Asymptotische Analyse Bachmann-Landau-Symbole: Beispiele" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-73.png"></div>
+
+<div class="sh-page" data-page="74"><img alt="Asymptotische Analyse Bachmann-Landau-Symbole: Beispiele" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-74.png"></div>
+
+<div class="sh-page" data-page="75"><img alt="Asymptotische Analyse Bachmann-Landau-Symbole: Beispiele" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-75.png"></div>
+
+<div class="sh-page" data-page="76"><img alt="Asymptotische Analyse Bachmann-Landau-Symbole: Beispiele" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-76.png"></div>
+
+<div class="sh-page" data-page="77"><img alt="Asymptotische Analyse Bachmann-Landau-Symbole: Beispiele" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-77.png"></div>
+
+<div class="sh-page" data-page="78"><img alt="Asymptotische Analyse Bachmann-Landau-Symbole: Beispiele" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-78.png"></div>
+
+<div class="sh-page" data-page="79"><img alt="Asymptotische Analyse Bachmann-Landau-Symbole: Beispiele" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-79.png"></div>
+
+<div class="sh-page" data-page="80"><img alt="Asymptotische Analyse Bachmann-Landau-Symbole: Beispiele" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-80.png"></div>
+
+<div class="sh-page" data-page="81"><img alt="Asymptotische Analyse Bachmann-Landau-Symbole: Beispiele" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-81.png"></div>
+
+<div class="sh-page" data-page="82"><img alt="Asymptotische Analyse Bachmann-Landau-Symbole: Beispiele" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-82.png"></div>
+
+<div class="sh-page" data-page="83"><img alt="Asymptotische Analyse Wachstumsrate rekursiver Funktionen" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-83.png"></div>
+
+<div class="sh-page" data-page="84"><img alt="Asymptotische Analyse Wachstumsrate rekursiver Funktionen" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-84.png"></div>
+
+<div class="sh-page" data-page="85"><img alt="Asymptotische Analyse Wachstumsrate rekursiver Funktionen" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-85.png"></div>
+
+<div class="sh-page" data-page="86"><img alt="Asymptotische Analyse Rekursionsbaummethode: Beispiel" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-86.png"></div>
+
+<div class="sh-page" data-page="87"><img alt="Asymptotische Analyse Rekursionsbaummethode: Beispiel" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-87.png"></div>
+
+<div class="sh-page" data-page="88"><img alt="Asymptotische Analyse Rekursionsbaummethode: Beispiel" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-88.png"></div>
+
+<div class="sh-page" data-page="89"><img alt="Asymptotische Analyse Rekursionsbaummethode: Beispiel" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-89.png"></div>
+
+<div class="sh-page" data-page="90"><img alt="Asymptotische Analyse Rekursionsbaummethode: Beispiel" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-90.png"></div>
+
+<div class="sh-page" data-page="91"><img alt="Asymptotische Analyse Rekursionsbaummethode: Beispiel" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-91.png"></div>
+
+<div class="sh-page" data-page="92"><img alt="Asymptotische Analyse Rekursionsbaummethode: Beispiel" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-92.png"></div>
+
+<div class="sh-page" data-page="93"><img alt="Asymptotische Analyse Rekursionsbaummethode: Beispiel" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-93.png"></div>
+
+<div class="sh-page" data-page="94"><img alt="Asymptotische Analyse Rekursionsbaummethode: Beispiel" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-94.png"></div>
+
+<div class="sh-page" data-page="95"><img alt="Asymptotische Analyse Rekursionsbaummethode: Beispiel" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-95.png"></div>
+
+<div class="sh-page" data-page="96"><img alt="Asymptotische Analyse Rekursionsbaummethode: Beispiel" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-96.png"></div>
+
+<div class="sh-page" data-page="97"><img alt="Asymptotische Analyse Rekursionsbaummethode: Beispiel" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-97.png"></div>
+
+<div class="sh-page" data-page="98"><img alt="Asymptotische Analyse Rekursionsbaummethode: Beispiel" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-98.png"></div>
+
+<div class="sh-page" data-page="99"><img alt="Asymptotische Analyse Rekursionsbaummethode: Beispiel" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-99.png"></div>
+
+<div class="sh-page" data-page="100"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-100.png"></div>
+
+<div class="sh-page" data-page="101"><img alt="Asymptotische Analyse Substitutionsmethode: Beispiele" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-101.png"></div>
+
+<div class="sh-page" data-page="102"><img alt="Asymptotische Analyse Substitutionsmethode: Beispiele" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-102.png"></div>
+
+<div class="sh-page" data-page="103"><img alt="Asymptotische Analyse Substitutionsmethode: Beispiele" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-103.png"></div>
+
+<div class="sh-page" data-page="104"><img alt="Asymptotische Analyse Substitutionsmethode: Beispiele" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-104.png"></div>
+
+<div class="sh-page" data-page="105"><img alt="Asymptotische Analyse Substitutionsmethode: Beispiele" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-105.png"></div>
+
+<div class="sh-page" data-page="106"><img alt="Asymptotische Analyse Substitutionsmethode: Beispiele" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-106.png"></div>
+
+<div class="sh-page" data-page="107"><img alt="Asymptotische Analyse Substitutionsmethode: Beispiele" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-107.png"></div>
+
+<div class="sh-page" data-page="108"><img alt="Asymptotische Analyse Substitutionsmethode: Beispiele" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-108.png"></div>
+
+<div class="sh-page" data-page="109"><img alt="Asymptotische Analyse Substitutionsmethode: Beispiele" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-109.png"></div>
+
+<div class="sh-page" data-page="110"><img alt="Asymptotische Analyse Substitutionsmethode: Beispiele" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-110.png"></div>
+
+<div class="sh-page" data-page="111"><img alt="Asymptotische Analyse Substitutionsmethode: Beispiele" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-111.png"></div>
+
+<div class="sh-page" data-page="112"><img alt="Asymptotische Analyse Substitutionsmethode: Beispiele" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-112.png"></div>
+
+<div class="sh-page" data-page="113"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-113.png"></div>
+
+<div class="sh-page" data-page="114"><img alt="Asymptotische Analyse Substitutionsmethode: Beispiele" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-114.png"></div>
+
+<div class="sh-page" data-page="115"><img alt="Asymptotische Analyse Substitutionsmethode: Beispiele" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-115.png"></div>
+
+<div class="sh-page" data-page="116"><img alt="Asymptotische Analyse Substitutionsmethode: Beispiele" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-116.png"></div>
+
+<div class="sh-page" data-page="117"><img alt="Asymptotische Analyse Substitutionsmethode: Beispiele" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-117.png"></div>
+
+<div class="sh-page" data-page="118"><img alt="Asymptotische Analyse Substitutionsmethode: Beispiele" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-118.png"></div>
+
+<div class="sh-page" data-page="119"><img alt="Asymptotische Analyse Substitutionsmethode: Beispiele" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-119.png"></div>
+
+<div class="sh-page" data-page="120"><img alt="Asymptotische Analyse Substitutionsmethode: Beispiele" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-120.png"></div>
+
+<div class="sh-page" data-page="121"><img alt="Asymptotische Analyse Substitutionsmethode: Beispiele" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-121.png"></div>
+
+<div class="sh-page" data-page="122"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-122.png"></div>
+
+<div class="sh-page" data-page="123"><img alt="Asymptotische Analyse Satz 1 (Master-Theorem)" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-123.png"></div>
+
+<div class="sh-page" data-page="124"><img alt="Asymptotische Analyse Satz 1 (Master-Theorem)" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-124.png"></div>
+
+<div class="sh-page" data-page="125"><img alt="Asymptotische Analyse Master-Theorem: Fall 1" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-125.png"></div>
+
+<div class="sh-page" data-page="126"><img alt="Asymptotische Analyse Master-Theorem: Fall 2" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-126.png"></div>
+
+<div class="sh-page" data-page="127"><img alt="Asymptotische Analyse Master-Theorem: Fall 2" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-127.png"></div>
+
+<div class="sh-page" data-page="128"><img alt="Asymptotische Analyse Master-Theorem: Fall 3" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-128.png"></div>
+
+<div class="sh-page" data-page="129"><img alt="Asymptotische Analyse Master-Theorem: Fall 3" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-129.png"></div>
+
+<div class="sh-page" data-page="130"><img alt="Asymptotische Analyse Master-Theorem: Definitionslücken" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-130.png"></div>
+
+<div class="sh-page" data-page="131"><img alt="Asymptotische Analyse Master-Theorem: Definitionslücken" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-131.png"></div>
+
+<div class="sh-page" data-page="132"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-132.png"></div>
+
+<div class="sh-page" data-page="133"><img alt="Formelsammlung Monotonie" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-133.png"></div>
+
+<div class="sh-page" data-page="134"><img alt="Formelsammlung " src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-algorithm-analysis/unit-de-algorithm-analysis-134.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-de-sorting-algorithms.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-sorting-algorithms.pdf" style="--sh-pages: 5"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Kapitel ADS:III III. Sortieren" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-sorting-algorithms/unit-de-sorting-algorithms-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Sortieralgorithmen Sortierproblem" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-sorting-algorithms/unit-de-sorting-algorithms-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Sortieralgorithmen Sortierparadigmen" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-sorting-algorithms/unit-de-sorting-algorithms-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Sortieralgorithmen Sortierparadigmen" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-sorting-algorithms/unit-de-sorting-algorithms-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Sortieralgorithmen Überblick" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-sorting-algorithms/unit-de-sorting-algorithms-5.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-de-internal-comparison-sorting1.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting1.pdf" style="--sh-pages: 60"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Kapitel ADS:III III. Sortieren" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting1/unit-de-internal-comparison-sorting1-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Insertion Sort Algorithmus" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting1/unit-de-internal-comparison-sorting1-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Insertion Sort Algorithmus" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting1/unit-de-internal-comparison-sorting1-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Insertion Sort Algorithmus" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting1/unit-de-internal-comparison-sorting1-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Insertion Sort Algorithmus" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting1/unit-de-internal-comparison-sorting1-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Insertion Sort Algorithmus" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting1/unit-de-internal-comparison-sorting1-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Insertion Sort Algorithmus" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting1/unit-de-internal-comparison-sorting1-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Insertion Sort Algorithmus" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting1/unit-de-internal-comparison-sorting1-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Insertion Sort Algorithmus" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting1/unit-de-internal-comparison-sorting1-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Insertion Sort Algorithmus" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting1/unit-de-internal-comparison-sorting1-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Insertion Sort Algorithmus" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting1/unit-de-internal-comparison-sorting1-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Insertion Sort Algorithmus" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting1/unit-de-internal-comparison-sorting1-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Insertion Sort Algorithmus" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting1/unit-de-internal-comparison-sorting1-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting1/unit-de-internal-comparison-sorting1-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="Bemerkungen: (Fortsetzung)" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting1/unit-de-internal-comparison-sorting1-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="Heapsort Algorithmus" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting1/unit-de-internal-comparison-sorting1-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="Heapsort Algorithmus" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting1/unit-de-internal-comparison-sorting1-17.png"></div>
+
+<div class="sh-page" data-page="18"><img alt="Heapsort Algorithmus" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting1/unit-de-internal-comparison-sorting1-18.png"></div>
+
+<div class="sh-page" data-page="19"><img alt="Einschub: Binary Heap Definition" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting1/unit-de-internal-comparison-sorting1-19.png"></div>
+
+<div class="sh-page" data-page="20"><img alt="Einschub: Binary Heap Implementierung" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting1/unit-de-internal-comparison-sorting1-20.png"></div>
+
+<div class="sh-page" data-page="21"><img alt="Einschub: Binary Heap Implementierung" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting1/unit-de-internal-comparison-sorting1-21.png"></div>
+
+<div class="sh-page" data-page="22"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting1/unit-de-internal-comparison-sorting1-22.png"></div>
+
+<div class="sh-page" data-page="23"><img alt="Einschub: Binary Heap Konstruktion" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting1/unit-de-internal-comparison-sorting1-23.png"></div>
+
+<div class="sh-page" data-page="24"><img alt="Einschub: Binary Heap Konstruktion" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting1/unit-de-internal-comparison-sorting1-24.png"></div>
+
+<div class="sh-page" data-page="25"><img alt="Einschub: Binary Heap Konstruktion" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting1/unit-de-internal-comparison-sorting1-25.png"></div>
+
+<div class="sh-page" data-page="26"><img alt="Einschub: Binary Heap Konstruktion" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting1/unit-de-internal-comparison-sorting1-26.png"></div>
+
+<div class="sh-page" data-page="27"><img alt="Einschub: Binary Heap Konstruktion" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting1/unit-de-internal-comparison-sorting1-27.png"></div>
+
+<div class="sh-page" data-page="28"><img alt="Einschub: Binary Heap Konstruktion" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting1/unit-de-internal-comparison-sorting1-28.png"></div>
+
+<div class="sh-page" data-page="29"><img alt="Einschub: Binary Heap Konstruktion" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting1/unit-de-internal-comparison-sorting1-29.png"></div>
+
+<div class="sh-page" data-page="30"><img alt="Einschub: Binary Heap Konstruktion" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting1/unit-de-internal-comparison-sorting1-30.png"></div>
+
+<div class="sh-page" data-page="31"><img alt="Einschub: Binary Heap Konstruktion" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting1/unit-de-internal-comparison-sorting1-31.png"></div>
+
+<div class="sh-page" data-page="32"><img alt="Einschub: Binary Heap Konstruktion" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting1/unit-de-internal-comparison-sorting1-32.png"></div>
+
+<div class="sh-page" data-page="33"><img alt="Einschub: Binary Heap Konstruktion" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting1/unit-de-internal-comparison-sorting1-33.png"></div>
+
+<div class="sh-page" data-page="34"><img alt="Einschub: Binary Heap Konstruktion" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting1/unit-de-internal-comparison-sorting1-34.png"></div>
+
+<div class="sh-page" data-page="35"><img alt="Einschub: Binary Heap Konstruktion" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting1/unit-de-internal-comparison-sorting1-35.png"></div>
+
+<div class="sh-page" data-page="36"><img alt="Einschub: Binary Heap Konstruktion" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting1/unit-de-internal-comparison-sorting1-36.png"></div>
+
+<div class="sh-page" data-page="37"><img alt="Einschub: Binary Heap Konstruktion" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting1/unit-de-internal-comparison-sorting1-37.png"></div>
+
+<div class="sh-page" data-page="38"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting1/unit-de-internal-comparison-sorting1-38.png"></div>
+
+<div class="sh-page" data-page="39"><img alt="Einschub: Binary Heap Manipulation" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting1/unit-de-internal-comparison-sorting1-39.png"></div>
+
+<div class="sh-page" data-page="40"><img alt="Einschub: Binary Heap Manipulation" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting1/unit-de-internal-comparison-sorting1-40.png"></div>
+
+<div class="sh-page" data-page="41"><img alt="Einschub: Binary Heap Manipulation" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting1/unit-de-internal-comparison-sorting1-41.png"></div>
+
+<div class="sh-page" data-page="42"><img alt="Einschub: Binary Heap Manipulation" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting1/unit-de-internal-comparison-sorting1-42.png"></div>
+
+<div class="sh-page" data-page="43"><img alt="Einschub: Binary Heap Manipulation" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting1/unit-de-internal-comparison-sorting1-43.png"></div>
+
+<div class="sh-page" data-page="44"><img alt="Einschub: Binary Heap Manipulation" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting1/unit-de-internal-comparison-sorting1-44.png"></div>
+
+<div class="sh-page" data-page="45"><img alt="Einschub: Binary Heap Manipulation" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting1/unit-de-internal-comparison-sorting1-45.png"></div>
+
+<div class="sh-page" data-page="46"><img alt="Einschub: Binary Heap Manipulation" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting1/unit-de-internal-comparison-sorting1-46.png"></div>
+
+<div class="sh-page" data-page="47"><img alt="Einschub: Binary Heap Manipulation" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting1/unit-de-internal-comparison-sorting1-47.png"></div>
+
+<div class="sh-page" data-page="48"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting1/unit-de-internal-comparison-sorting1-48.png"></div>
+
+<div class="sh-page" data-page="49"><img alt="Heapsort Algorithmus" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting1/unit-de-internal-comparison-sorting1-49.png"></div>
+
+<div class="sh-page" data-page="50"><img alt="Heapsort Algorithmus" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting1/unit-de-internal-comparison-sorting1-50.png"></div>
+
+<div class="sh-page" data-page="51"><img alt="Heapsort Algorithmus" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting1/unit-de-internal-comparison-sorting1-51.png"></div>
+
+<div class="sh-page" data-page="52"><img alt="Heapsort Algorithmus" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting1/unit-de-internal-comparison-sorting1-52.png"></div>
+
+<div class="sh-page" data-page="53"><img alt="Heapsort Algorithmus" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting1/unit-de-internal-comparison-sorting1-53.png"></div>
+
+<div class="sh-page" data-page="54"><img alt="Heapsort Algorithmus" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting1/unit-de-internal-comparison-sorting1-54.png"></div>
+
+<div class="sh-page" data-page="55"><img alt="Heapsort Algorithmus" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting1/unit-de-internal-comparison-sorting1-55.png"></div>
+
+<div class="sh-page" data-page="56"><img alt="Heapsort Algorithmus" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting1/unit-de-internal-comparison-sorting1-56.png"></div>
+
+<div class="sh-page" data-page="57"><img alt="Heapsort Algorithmus" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting1/unit-de-internal-comparison-sorting1-57.png"></div>
+
+<div class="sh-page" data-page="58"><img alt="Heapsort Algorithmus" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting1/unit-de-internal-comparison-sorting1-58.png"></div>
+
+<div class="sh-page" data-page="59"><img alt="Heapsort Algorithmus" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting1/unit-de-internal-comparison-sorting1-59.png"></div>
+
+<div class="sh-page" data-page="60"><img alt="Heapsort Algorithmus" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting1/unit-de-internal-comparison-sorting1-60.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-de-internal-comparison-sorting2.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting2.pdf" style="--sh-pages: 62"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Kapitel ADS:III III. Sortieren" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting2/unit-de-internal-comparison-sorting2-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Merge Sort Algorithmus" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting2/unit-de-internal-comparison-sorting2-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Merge Sort Algorithmus" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting2/unit-de-internal-comparison-sorting2-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Merge Sort Algorithmus" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting2/unit-de-internal-comparison-sorting2-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Merge Sort Algorithmus" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting2/unit-de-internal-comparison-sorting2-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Merge Sort Algorithmus" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting2/unit-de-internal-comparison-sorting2-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Merge Sort Algorithmus" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting2/unit-de-internal-comparison-sorting2-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Merge Sort Algorithmus" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting2/unit-de-internal-comparison-sorting2-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Merge Sort Algorithmus" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting2/unit-de-internal-comparison-sorting2-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Merge Sort Algorithmus" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting2/unit-de-internal-comparison-sorting2-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Merge Sort Algorithmus" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting2/unit-de-internal-comparison-sorting2-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Merge Sort Algorithmus" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting2/unit-de-internal-comparison-sorting2-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Merge Sort Algorithmus" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting2/unit-de-internal-comparison-sorting2-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="Merge Sort Algorithmus" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting2/unit-de-internal-comparison-sorting2-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="Merge Sort Algorithmus" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting2/unit-de-internal-comparison-sorting2-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="Merge Sort Algorithmus" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting2/unit-de-internal-comparison-sorting2-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="Merge Sort Algorithmus" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting2/unit-de-internal-comparison-sorting2-17.png"></div>
+
+<div class="sh-page" data-page="18"><img alt="Merge Sort Algorithmus" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting2/unit-de-internal-comparison-sorting2-18.png"></div>
+
+<div class="sh-page" data-page="19"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting2/unit-de-internal-comparison-sorting2-19.png"></div>
+
+<div class="sh-page" data-page="20"><img alt="Merge Sort Merge" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting2/unit-de-internal-comparison-sorting2-20.png"></div>
+
+<div class="sh-page" data-page="21"><img alt="Merge Sort Merge" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting2/unit-de-internal-comparison-sorting2-21.png"></div>
+
+<div class="sh-page" data-page="22"><img alt="Merge Sort Merge" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting2/unit-de-internal-comparison-sorting2-22.png"></div>
+
+<div class="sh-page" data-page="23"><img alt="Merge Sort Merge" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting2/unit-de-internal-comparison-sorting2-23.png"></div>
+
+<div class="sh-page" data-page="24"><img alt="Merge Sort Merge" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting2/unit-de-internal-comparison-sorting2-24.png"></div>
+
+<div class="sh-page" data-page="25"><img alt="Merge Sort Merge" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting2/unit-de-internal-comparison-sorting2-25.png"></div>
+
+<div class="sh-page" data-page="26"><img alt="Merge Sort Merge" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting2/unit-de-internal-comparison-sorting2-26.png"></div>
+
+<div class="sh-page" data-page="27"><img alt="Merge Sort Merge" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting2/unit-de-internal-comparison-sorting2-27.png"></div>
+
+<div class="sh-page" data-page="28"><img alt="Merge Sort Merge" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting2/unit-de-internal-comparison-sorting2-28.png"></div>
+
+<div class="sh-page" data-page="29"><img alt="Merge Sort Merge" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting2/unit-de-internal-comparison-sorting2-29.png"></div>
+
+<div class="sh-page" data-page="30"><img alt="Merge Sort Merge" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting2/unit-de-internal-comparison-sorting2-30.png"></div>
+
+<div class="sh-page" data-page="31"><img alt="Merge Sort Merge" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting2/unit-de-internal-comparison-sorting2-31.png"></div>
+
+<div class="sh-page" data-page="32"><img alt="Merge Sort Merge" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting2/unit-de-internal-comparison-sorting2-32.png"></div>
+
+<div class="sh-page" data-page="33"><img alt="Merge Sort Merge" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting2/unit-de-internal-comparison-sorting2-33.png"></div>
+
+<div class="sh-page" data-page="34"><img alt="Merge Sort Merge" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting2/unit-de-internal-comparison-sorting2-34.png"></div>
+
+<div class="sh-page" data-page="35"><img alt="Merge Sort Merge" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting2/unit-de-internal-comparison-sorting2-35.png"></div>
+
+<div class="sh-page" data-page="36"><img alt="Quicksort Algorithmus" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting2/unit-de-internal-comparison-sorting2-36.png"></div>
+
+<div class="sh-page" data-page="37"><img alt="Quicksort Algorithmus" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting2/unit-de-internal-comparison-sorting2-37.png"></div>
+
+<div class="sh-page" data-page="38"><img alt="Quicksort Algorithmus" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting2/unit-de-internal-comparison-sorting2-38.png"></div>
+
+<div class="sh-page" data-page="39"><img alt="Quicksort Algorithmus" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting2/unit-de-internal-comparison-sorting2-39.png"></div>
+
+<div class="sh-page" data-page="40"><img alt="Quicksort Partitionierung" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting2/unit-de-internal-comparison-sorting2-40.png"></div>
+
+<div class="sh-page" data-page="41"><img alt="Quicksort Partitionierung" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting2/unit-de-internal-comparison-sorting2-41.png"></div>
+
+<div class="sh-page" data-page="42"><img alt="Quicksort Partitionierung" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting2/unit-de-internal-comparison-sorting2-42.png"></div>
+
+<div class="sh-page" data-page="43"><img alt="Quicksort Partitionierung" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting2/unit-de-internal-comparison-sorting2-43.png"></div>
+
+<div class="sh-page" data-page="44"><img alt="Quicksort Partitionierung" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting2/unit-de-internal-comparison-sorting2-44.png"></div>
+
+<div class="sh-page" data-page="45"><img alt="Quicksort Partitionierung" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting2/unit-de-internal-comparison-sorting2-45.png"></div>
+
+<div class="sh-page" data-page="46"><img alt="Quicksort Partitionierung" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting2/unit-de-internal-comparison-sorting2-46.png"></div>
+
+<div class="sh-page" data-page="47"><img alt="Quicksort Partitionierung" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting2/unit-de-internal-comparison-sorting2-47.png"></div>
+
+<div class="sh-page" data-page="48"><img alt="Quicksort Partitionierung" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting2/unit-de-internal-comparison-sorting2-48.png"></div>
+
+<div class="sh-page" data-page="49"><img alt="Quicksort Partitionierung" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting2/unit-de-internal-comparison-sorting2-49.png"></div>
+
+<div class="sh-page" data-page="50"><img alt="Quicksort Partitionierung" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting2/unit-de-internal-comparison-sorting2-50.png"></div>
+
+<div class="sh-page" data-page="51"><img alt="Quicksort Partitionierung" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting2/unit-de-internal-comparison-sorting2-51.png"></div>
+
+<div class="sh-page" data-page="52"><img alt="Quicksort Partitionierung" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting2/unit-de-internal-comparison-sorting2-52.png"></div>
+
+<div class="sh-page" data-page="53"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting2/unit-de-internal-comparison-sorting2-53.png"></div>
+
+<div class="sh-page" data-page="54"><img alt="Quicksort Laufzeit (informell)" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting2/unit-de-internal-comparison-sorting2-54.png"></div>
+
+<div class="sh-page" data-page="55"><img alt="Quicksort Laufzeit (informell)" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting2/unit-de-internal-comparison-sorting2-55.png"></div>
+
+<div class="sh-page" data-page="56"><img alt="Quicksort Laufzeit (informell)" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting2/unit-de-internal-comparison-sorting2-56.png"></div>
+
+<div class="sh-page" data-page="57"><img alt="Quicksort Laufzeit (informell)" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting2/unit-de-internal-comparison-sorting2-57.png"></div>
+
+<div class="sh-page" data-page="58"><img alt="Quicksort Laufzeit (informell)" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting2/unit-de-internal-comparison-sorting2-58.png"></div>
+
+<div class="sh-page" data-page="59"><img alt="Quicksort Laufzeit (informell)" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting2/unit-de-internal-comparison-sorting2-59.png"></div>
+
+<div class="sh-page" data-page="60"><img alt="Quicksort Laufzeit (informell)" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting2/unit-de-internal-comparison-sorting2-60.png"></div>
+
+<div class="sh-page" data-page="61"><img alt="Quicksort Laufzeit (informell)" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting2/unit-de-internal-comparison-sorting2-61.png"></div>
+
+<div class="sh-page" data-page="62"><img alt="Quicksort Pivot-Selektion" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-comparison-sorting2/unit-de-internal-comparison-sorting2-62.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-de-internal-distribution-sorting.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-distribution-sorting.pdf" style="--sh-pages: 47"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Kapitel ADS:III III. Sortieren" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-distribution-sorting/unit-de-internal-distribution-sorting-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Counting Sort Algorithmus" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-distribution-sorting/unit-de-internal-distribution-sorting-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Counting Sort Algorithmus" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-distribution-sorting/unit-de-internal-distribution-sorting-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Counting Sort Algorithmus" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-distribution-sorting/unit-de-internal-distribution-sorting-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Counting Sort Algorithmus" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-distribution-sorting/unit-de-internal-distribution-sorting-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Counting Sort Algorithmus" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-distribution-sorting/unit-de-internal-distribution-sorting-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Counting Sort Algorithmus" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-distribution-sorting/unit-de-internal-distribution-sorting-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Counting Sort Algorithmus" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-distribution-sorting/unit-de-internal-distribution-sorting-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Counting Sort Algorithmus" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-distribution-sorting/unit-de-internal-distribution-sorting-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Counting Sort Algorithmus" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-distribution-sorting/unit-de-internal-distribution-sorting-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Counting Sort Algorithmus" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-distribution-sorting/unit-de-internal-distribution-sorting-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Counting Sort Algorithmus" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-distribution-sorting/unit-de-internal-distribution-sorting-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Counting Sort Algorithmus" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-distribution-sorting/unit-de-internal-distribution-sorting-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="Counting Sort Algorithmus" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-distribution-sorting/unit-de-internal-distribution-sorting-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="Counting Sort Algorithmus" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-distribution-sorting/unit-de-internal-distribution-sorting-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="Counting Sort Algorithmus" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-distribution-sorting/unit-de-internal-distribution-sorting-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="Counting Sort Algorithmus" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-distribution-sorting/unit-de-internal-distribution-sorting-17.png"></div>
+
+<div class="sh-page" data-page="18"><img alt="Radix Sort Algorithmus" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-distribution-sorting/unit-de-internal-distribution-sorting-18.png"></div>
+
+<div class="sh-page" data-page="19"><img alt="Radix Sort Algorithmus" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-distribution-sorting/unit-de-internal-distribution-sorting-19.png"></div>
+
+<div class="sh-page" data-page="20"><img alt="Radix Sort Beispiel" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-distribution-sorting/unit-de-internal-distribution-sorting-20.png"></div>
+
+<div class="sh-page" data-page="21"><img alt="Radix Sort Beispiel" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-distribution-sorting/unit-de-internal-distribution-sorting-21.png"></div>
+
+<div class="sh-page" data-page="22"><img alt="Radix Sort Beispiel" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-distribution-sorting/unit-de-internal-distribution-sorting-22.png"></div>
+
+<div class="sh-page" data-page="23"><img alt="Radix Sort Beispiel" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-distribution-sorting/unit-de-internal-distribution-sorting-23.png"></div>
+
+<div class="sh-page" data-page="24"><img alt="Radix Sort Stelligkeit" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-distribution-sorting/unit-de-internal-distribution-sorting-24.png"></div>
+
+<div class="sh-page" data-page="25"><img alt="Radix Sort Stelligkeit" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-distribution-sorting/unit-de-internal-distribution-sorting-25.png"></div>
+
+<div class="sh-page" data-page="26"><img alt="Radix Sort Stelligkeit" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-distribution-sorting/unit-de-internal-distribution-sorting-26.png"></div>
+
+<div class="sh-page" data-page="27"><img alt="Radix Sort Stelligkeit" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-distribution-sorting/unit-de-internal-distribution-sorting-27.png"></div>
+
+<div class="sh-page" data-page="28"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-distribution-sorting/unit-de-internal-distribution-sorting-28.png"></div>
+
+<div class="sh-page" data-page="29"><img alt="Bucket Sort Algorithmus" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-distribution-sorting/unit-de-internal-distribution-sorting-29.png"></div>
+
+<div class="sh-page" data-page="30"><img alt="Bucket Sort Algorithmus" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-distribution-sorting/unit-de-internal-distribution-sorting-30.png"></div>
+
+<div class="sh-page" data-page="31"><img alt="Bucket Sort Algorithmus" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-distribution-sorting/unit-de-internal-distribution-sorting-31.png"></div>
+
+<div class="sh-page" data-page="32"><img alt="Bucket Sort Algorithmus" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-distribution-sorting/unit-de-internal-distribution-sorting-32.png"></div>
+
+<div class="sh-page" data-page="33"><img alt="Bucket Sort Algorithmus" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-distribution-sorting/unit-de-internal-distribution-sorting-33.png"></div>
+
+<div class="sh-page" data-page="34"><img alt="Bucket Sort Algorithmus" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-distribution-sorting/unit-de-internal-distribution-sorting-34.png"></div>
+
+<div class="sh-page" data-page="35"><img alt="Bucket Sort Algorithmus" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-distribution-sorting/unit-de-internal-distribution-sorting-35.png"></div>
+
+<div class="sh-page" data-page="36"><img alt="Bucket Sort Algorithmus" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-distribution-sorting/unit-de-internal-distribution-sorting-36.png"></div>
+
+<div class="sh-page" data-page="37"><img alt="Bucket Sort Algorithmus" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-distribution-sorting/unit-de-internal-distribution-sorting-37.png"></div>
+
+<div class="sh-page" data-page="38"><img alt="Bucket Sort Algorithmus" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-distribution-sorting/unit-de-internal-distribution-sorting-38.png"></div>
+
+<div class="sh-page" data-page="39"><img alt="Bucket Sort Algorithmus" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-distribution-sorting/unit-de-internal-distribution-sorting-39.png"></div>
+
+<div class="sh-page" data-page="40"><img alt="Bucket Sort Algorithmus" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-distribution-sorting/unit-de-internal-distribution-sorting-40.png"></div>
+
+<div class="sh-page" data-page="41"><img alt="Bucket Sort Algorithmus" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-distribution-sorting/unit-de-internal-distribution-sorting-41.png"></div>
+
+<div class="sh-page" data-page="42"><img alt="Bucket Sort Algorithmus" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-distribution-sorting/unit-de-internal-distribution-sorting-42.png"></div>
+
+<div class="sh-page" data-page="43"><img alt="Bucket Sort Algorithmus" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-distribution-sorting/unit-de-internal-distribution-sorting-43.png"></div>
+
+<div class="sh-page" data-page="44"><img alt="Bucket Sort Algorithmus" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-distribution-sorting/unit-de-internal-distribution-sorting-44.png"></div>
+
+<div class="sh-page" data-page="45"><img alt="Bucket Sort Algorithmus" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-distribution-sorting/unit-de-internal-distribution-sorting-45.png"></div>
+
+<div class="sh-page" data-page="46"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-distribution-sorting/unit-de-internal-distribution-sorting-46.png"></div>
+
+<div class="sh-page" data-page="47"><img alt="Bemerkungen: (Fortsetzung)" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-internal-distribution-sorting/unit-de-internal-distribution-sorting-47.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-de-sorting-theory.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-sorting-theory.pdf" style="--sh-pages: 13"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Kapitel ADS:III III. Sortieren" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-sorting-theory/unit-de-sorting-theory-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Minimales vergleichsbasiertes Sortieren Entscheidungsbaummodell" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-sorting-theory/unit-de-sorting-theory-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Minimales vergleichsbasiertes Sortieren Entscheidungsbaummodell" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-sorting-theory/unit-de-sorting-theory-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Minimales vergleichsbasiertes Sortieren Entscheidungsbaummodell" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-sorting-theory/unit-de-sorting-theory-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Minimales vergleichsbasiertes Sortieren Entscheidungsbaummodell" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-sorting-theory/unit-de-sorting-theory-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Minimales vergleichsbasiertes Sortieren Entscheidungsbaummodell" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-sorting-theory/unit-de-sorting-theory-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Minimales vergleichsbasiertes Sortieren Entscheidungsbaummodell" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-sorting-theory/unit-de-sorting-theory-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Minimales vergleichsbasiertes Sortieren Satz 1 (Untere Schranke für den Worst Case für vergleichsbasiertes Sortieren)" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-sorting-theory/unit-de-sorting-theory-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Minimales vergleichsbasiertes Sortieren Satz 1 (Untere Schranke für den Worst Case für vergleichsbasiertes Sortieren)" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-sorting-theory/unit-de-sorting-theory-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Minimales vergleichsbasiertes Sortieren Satz 1 (Untere Schranke für den Worst Case für vergleichsbasiertes Sortieren)" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-sorting-theory/unit-de-sorting-theory-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Minimales vergleichsbasiertes Sortieren Satz 1 (Untere Schranke für den Worst Case für vergleichsbasiertes Sortieren)" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-sorting-theory/unit-de-sorting-theory-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Minimales vergleichsbasiertes Sortieren Satz 1 (Untere Schranke für den Worst Case für vergleichsbasiertes Sortieren)" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-sorting-theory/unit-de-sorting-theory-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Bemerkungen:" src="https://webis.de/downloads/lecturenotes/algorithms-and-datastructures/unit-de-sorting-theory/unit-de-sorting-theory-13.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+<!-- units end -->
+</div>
+</main>
+
+<div class="sh-modal closed" data-modal-help="" aria-hidden="true" aria-labelledby="sh-help-title" role="dialog">
+  <div class="sh-modal-content" role="document">
+    <button class="sh-modal__close sh-button sh-button--close" data-close-modal="" aria-label="Close">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" aria-labelledby="sh-close-help-title"><path d="M4 0l8 8 8-8 4 4-8 8 8 8-4 4-8-8-8 8-4-4 8-8-8-8z"/></svg>
+    </button>
+    <h2 class="sh-modal__title" id="sh-help-title">Help</h2>
+    <div class="sh-shortcut-table-wrapper">
+      <table class="sh-shortcut-table">
+        <caption class="sh-visually-hidden">Document-specific controls</caption>
+        <thead>
+          <tr>
+            <th class="sh-shortcut-table__input">
+              <span class="sh-visually-hidden">Shortcut</span>
+            </th>
+            <th class="sh-shortcut-table__action">Documents</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="sh-shortcut-table__input">
+              <div class="sh-shortcut-group">
+                <kbd aria-label="Up or down arrow key">↑/↓</kbd>
+              </div>
+            </td>
+            <td class="sh-shortcut-table__action">Navigate documents</td>
+          </tr>
+          <tr>
+            <td class="sh-shortcut-table__input">
+              <div class="sh-shortcut-group">
+                <kbd>Shift</kbd> + <kbd aria-label="Up or down arrow key">↑/↓</kbd>
+              </div>
+            </td>
+            <td class="sh-shortcut-table__action">Navigate 3 documents</td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="sh-shortcut-table">
+        <caption class="sh-visually-hidden">Page-specific controls</caption>
+        <thead>
+          <tr>
+            <th class="sh-shortcut-table__input">
+              <span class="sh-visually-hidden">Shortcut</span>
+            </th>
+            <th class="sh-shortcut-table__action">Pages</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="sh-shortcut-table__input">
+              <div class="sh-shortcut-group">
+                <kbd aria-label="Left or right arrow key">←/→</kbd>
+              </div>
+            </td>
+            <td class="sh-shortcut-table__action">Navigate pages</td>
+          </tr>
+          <tr>
+            <td class="sh-shortcut-table__input">
+              <div class="sh-shortcut-group">
+                <kbd>Shift</kbd> + <kbd>MouseWheel</kbd>
+              </div>
+            </td>
+            <td class="sh-shortcut-table__action">Navigate pages</td>
+          </tr>
+          <tr>
+            <td class="sh-shortcut-table__input">
+              <div class="sh-shortcut-group">
+                <kbd>Shift</kbd> + <kbd aria-label="Left or right arrow key">←/→</kbd>
+              </div>
+            </td>
+            <td class="sh-shortcut-table__action">Navigate 3 pages</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<footer class="uk-section uk-section-default footer-section">
+    <div class="uk-container">
+        <div class="uk-align-right@m uk-margin-top">
+            Copyright &copy; 2019 Temir Group
+            <address></address>
+        </div>
+    </div>
+</footer>
+
+<script>
+    UIkit.util.ready(() => {
+        const nav = UIkit.util.$(".global-nav");
+        const navHeight = UIkit.util.height(nav);
+
+        // correct scroll offset due to fixed navigation after page load
+        let fixScrollHeight = () => {
+            if (location.hash === "" || !UIkit.util.$(location.hash)) {
+                return;
+            }
+
+            const pos = document.documentElement.scrollTop;
+            const offset = UIkit.util.offset(UIkit.util.$(location.hash));
+
+            if (pos > navHeight * .8 && offset) {
+                document.documentElement.scrollTop = offset.top - navHeight - 20;
+            }
+        };
+
+        window.addEventListener("hashchange", fixScrollHeight, false);
+        setTimeout(fixScrollHeight, 100);
+    });
+</script>
+
+</body>
+</html>

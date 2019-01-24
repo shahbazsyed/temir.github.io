@@ -1,0 +1,1249 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Webis Lecturnotes Browser Machine Learning</title>
+    <meta charset="utf-8">
+    <meta name="description" content="SlideHub is a presentation/slide/talk explorer">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="copyright" content="&copy; 2019 Temir">
+    <link rel="icon" type="image/png" href="/img/favicon.png">
+
+    <link rel="stylesheet" href="/css/style.css?1548321565">
+    <link rel="stylesheet" href="/css/browser.css?1548321565">
+    <link rel="stylesheet" href="/css/browser-compatibility.css?1548321565">
+</head>
+<body class="uk-offcanvas-content">
+<script src="/js/thirdparty/uikit/uikit.min.js"></script>
+<script src="/js/thirdparty/uikit/uikit-icons.min.js"></script>
+
+<div id="offcanvas-nav" class="uk-hidden@m" data-uk-offcanvas="overlay: true; flip: true;">
+    <div class="uk-offcanvas-bar">
+        <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+
+        <!-- Mobile navigation -->
+        <nav class="uk-margin-large-top">
+            <ul class="uk-nav uk-nav-primary uk-nav-parent-icon" data-uk-nav>
+                <li>
+                    <a href="/people.html">People</a>
+                </li>
+                <li class="uk-active" class="uk-parent">
+                    <a href="#">Lecturenotes</a>
+                    <ul class="uk-nav-sub">
+                        <li><a href="/lecturenotes/overview.html">Overview</a></li>
+                        <li><a href="/lecturenotes/slides.html">Slides</a></li>
+                        <li class="uk-parent">
+                            Browser
+                            <ul class="uk-nav-sub">
+                                <li><a href="/lecturenotes/browser/algorithms-and-datastructures.html">Algorithmen und Datenstrukturen</a></li>
+                                <li><a href="/lecturenotes/browser/information-retrieval.html">Information Retrieval</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/research.html">Research</a>
+                </li>
+                <li>
+                    <a href="/publications.html">Publications</a>
+                </li>
+                <li>
+                    <a href="/data.html">Data</a>
+                </li>
+                <li>
+                    <a href="/facilities.html">Facilities</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<div class="uk-background-secondary desktop-nav global-nav" data-uk-sticky="media: @m">
+    <!-- Desktop navigation -->
+    <nav class="uk-navbar-container uk-navbar-transparent uk-container uk-light" data-uk-navbar="mode: click">
+        <div class="uk-navbar-left">
+            <ul class="uk-navbar-nav">
+                <li>
+                    <a href="/"><img src="/img/uni_leipzig_logo_v2_white-01_opt_2.png" alt="TEMIR LOGO" class="uk-logo"> Temir</a>
+                </li>
+            </ul>
+        </div>
+        <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav">
+                <li>
+                    <a href="/people.html">People</a>
+                </li>
+                <li class="nav-group-start uk-active">
+                    <a href="#">Lecturenotes</a>
+                    <div class="uk-navbar-dropdown uk-navbar-dropdown-width-3 uk-padding-remove">
+                        <div class="uk-navbar-dropdown-grid" data-uk-grid>
+                            <div class="uk-width-1-3">
+                                <ul class="uk-nav uk-navbar-dropdown-nav uk-padding-small">
+                                    <li><a href="/lecturenotes/overview.html">Overview</a></li>
+                                    <li><a href="/lecturenotes/slides.html">Slides</a></li>
+                                    <li class="nav-left-open-category">Browser</li>
+                                </ul>
+                            </div>
+                            <div class="uk-width-2-3">
+                                <ul class="uk-nav uk-navbar-dropdown-nav nav-right-open-sub uk-padding-small">
+                                    <li><a href="/lecturenotes/browser/algorithms-and-datastructures.html">Algorithmen und Datenstrukturen</a></li>
+                                    <li><a href="/lecturenotes/browser/information-retrieval.html">Information Retrieval</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="/research.html">Research</a>
+                </li>
+                <li>
+                    <a href="/publications.html">Publications</a>
+                </li>
+                <li class="nav-group-start">
+                    <a href="/data.html">Data</a>
+                </li>
+                <li>
+                    <a href="/facilities.html">Facilities</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<div class="uk-background-secondary mobile-nav global-nav" data-uk-sticky>
+    <div class="uk-navbar-container uk-navbar-transparent uk-container uk-light mobile-nav-toggle" data-uk-navbar>
+        <div class="">
+            <ul class="uk-navbar-nav">
+                <li>
+                    <a href="/"><img src="/img/uni_leipzig_logo_v2_white-01_opt_2.png" alt="TEMIR LOGO" class="uk-logo"> Temir</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="uk-navbar-right">
+            <button class="uk-button uk-navbar-item uk-light uk-button-large" type="button" data-uk-icon="icon: menu"
+                    data-uk-toggle="target: #offcanvas-nav"></button>
+        </div>
+    </div>
+</div>
+
+<div data-uk-height-viewport="expand: true">
+<script src="/js/browser.js"></script>
+
+<main class="uk-margin-medium" data-slidehub="">
+<!-- SlideHub will hook itself as a child element into [data-slidehub] -->
+<div class="slidehub-container">
+
+<!-- units start -->
+
+
+
+<div class="sh-doc" id="unit-en-ml-organization.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-ml-organization.pdf" style="--sh-pages: 7"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Machine Learning Benno Stein" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-ml-organization/unit-en-ml-organization-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Contents I. Introduction" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-ml-organization/unit-en-ml-organization-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Objectives " src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-ml-organization/unit-en-ml-organization-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Related Fields 1. Statistics" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-ml-organization/unit-en-ml-organization-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Literature Machine Learning:" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-ml-organization/unit-en-ml-organization-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Software Programming:" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-ml-organization/unit-en-ml-organization-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Software Statistics:" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-ml-organization/unit-en-ml-organization-7.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-en-ml-introduction.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-ml-introduction.pdf" style="--sh-pages: 35"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Chapter ML:I I. Introduction" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-ml-introduction/unit-en-ml-introduction-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Examples of Learning Tasks Car Shopping Guide" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-ml-introduction/unit-en-ml-introduction-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Examples of Learning Tasks Risk Analysis for Credit Approval" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-ml-introduction/unit-en-ml-introduction-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Examples of Learning Tasks Risk Analysis for Credit Approval" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-ml-introduction/unit-en-ml-introduction-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Examples of Learning Tasks Image Analysis" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-ml-introduction/unit-en-ml-introduction-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Examples of Learning Tasks Image Analysis" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-ml-introduction/unit-en-ml-introduction-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Specification of Learning Problems Definition 1 (Machine Learning" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-ml-introduction/unit-en-ml-introduction-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-ml-introduction/unit-en-ml-introduction-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Specification of Learning Problems Learning Paradigms" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-ml-introduction/unit-en-ml-introduction-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Specification of Learning Problems Learning Paradigms" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-ml-introduction/unit-en-ml-introduction-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Specification of Learning Problems Example Chess: Kinds of Experience" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-ml-introduction/unit-en-ml-introduction-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Specification of Learning Problems Example Chess: Kinds of Experience" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-ml-introduction/unit-en-ml-introduction-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Specification of Learning Problems Example Chess: Kinds of Experience" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-ml-introduction/unit-en-ml-introduction-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="Specification of Learning Problems Example Chess: Ideal Target Function γ" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-ml-introduction/unit-en-ml-introduction-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="Specification of Learning Problems Example Chess: Ideal Target Function γ" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-ml-introduction/unit-en-ml-introduction-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="Specification of Learning Problems Example Chess: From the Real World γ to a Model World y" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-ml-introduction/unit-en-ml-introduction-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="Specification of Learning Problems Example Chess: From the Real World γ to a Model World y" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-ml-introduction/unit-en-ml-introduction-17.png"></div>
+
+<div class="sh-page" data-page="18"><img alt="Specification of Learning Problems Example Chess: From the Real World γ to a Model World y" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-ml-introduction/unit-en-ml-introduction-18.png"></div>
+
+<div class="sh-page" data-page="19"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-ml-introduction/unit-en-ml-introduction-19.png"></div>
+
+<div class="sh-page" data-page="20"><img alt="Remarks (continued) :" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-ml-introduction/unit-en-ml-introduction-20.png"></div>
+
+<div class="sh-page" data-page="21"><img alt="Specification of Learning Problems " src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-ml-introduction/unit-en-ml-introduction-21.png"></div>
+
+<div class="sh-page" data-page="22"><img alt="Specification of Learning Problems " src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-ml-introduction/unit-en-ml-introduction-22.png"></div>
+
+<div class="sh-page" data-page="23"><img alt="Specification of Learning Problems How to Build a Classifier y" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-ml-introduction/unit-en-ml-introduction-23.png"></div>
+
+<div class="sh-page" data-page="24"><img alt="Specification of Learning Problems How to Build a Classifier y" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-ml-introduction/unit-en-ml-introduction-24.png"></div>
+
+<div class="sh-page" data-page="25"><img alt="Specification of Learning Problems How to Build a Classifier y" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-ml-introduction/unit-en-ml-introduction-25.png"></div>
+
+<div class="sh-page" data-page="26"><img alt="Specification of Learning Problems How to Build a Classifier y" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-ml-introduction/unit-en-ml-introduction-26.png"></div>
+
+<div class="sh-page" data-page="27"><img alt="Specification of Learning Problems How to Build a Classifier y" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-ml-introduction/unit-en-ml-introduction-27.png"></div>
+
+<div class="sh-page" data-page="28"><img alt="Specification of Learning Problems How to Build a Classifier y" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-ml-introduction/unit-en-ml-introduction-28.png"></div>
+
+<div class="sh-page" data-page="29"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-ml-introduction/unit-en-ml-introduction-29.png"></div>
+
+<div class="sh-page" data-page="30"><img alt="Specification of Learning Problems LMS Algorithm for Fitting y" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-ml-introduction/unit-en-ml-introduction-30.png"></div>
+
+<div class="sh-page" data-page="31"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-ml-introduction/unit-en-ml-introduction-31.png"></div>
+
+<div class="sh-page" data-page="32"><img alt="Specification of Learning Problems Design of Learning Systems" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-ml-introduction/unit-en-ml-introduction-32.png"></div>
+
+<div class="sh-page" data-page="33"><img alt="Specification of Learning Problems Design of Learning Systems" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-ml-introduction/unit-en-ml-introduction-33.png"></div>
+
+<div class="sh-page" data-page="34"><img alt="Specification of Learning Problems Related Questions" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-ml-introduction/unit-en-ml-introduction-34.png"></div>
+
+<div class="sh-page" data-page="35"><img alt="Specification of Learning Problems Related Questions" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-ml-introduction/unit-en-ml-introduction-35.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-en-regression.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-regression.pdf" style="--sh-pages: 44"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Chapter ML:II II. Machine Learning Basics" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-regression/unit-en-regression-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Regression Classification versus Regression" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-regression/unit-en-regression-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Regression Classification versus Regression" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-regression/unit-en-regression-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Regression The Linear Regression Model" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-regression/unit-en-regression-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Regression The Linear Regression Model" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-regression/unit-en-regression-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-regression/unit-en-regression-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Remarks (continued) :" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-regression/unit-en-regression-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Regression One-Dimensional Feature Space" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-regression/unit-en-regression-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Regression One-Dimensional Feature Space" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-regression/unit-en-regression-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Regression One-Dimensional Feature Space" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-regression/unit-en-regression-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Regression One-Dimensional Feature Space" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-regression/unit-en-regression-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Regression One-Dimensional Feature Space" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-regression/unit-en-regression-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Regression One-Dimensional Feature Space" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-regression/unit-en-regression-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="Regression One-Dimensional Feature Space" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-regression/unit-en-regression-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="Regression Higher-Dimensional Feature Space" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-regression/unit-en-regression-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="Regression Higher-Dimensional Feature Space" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-regression/unit-en-regression-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="Regression Higher-Dimensional Feature Space" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-regression/unit-en-regression-17.png"></div>
+
+<div class="sh-page" data-page="18"><img alt="Regression Higher-Dimensional Feature Space" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-regression/unit-en-regression-18.png"></div>
+
+<div class="sh-page" data-page="19"><img alt="Regression Higher-Dimensional Feature Space" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-regression/unit-en-regression-19.png"></div>
+
+<div class="sh-page" data-page="20"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-regression/unit-en-regression-20.png"></div>
+
+<div class="sh-page" data-page="21"><img alt="Regression Linear Regression for Classification" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-regression/unit-en-regression-21.png"></div>
+
+<div class="sh-page" data-page="22"><img alt="Regression Linear Regression for Classification" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-regression/unit-en-regression-22.png"></div>
+
+<div class="sh-page" data-page="23"><img alt="Regression Linear Regression for Classification" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-regression/unit-en-regression-23.png"></div>
+
+<div class="sh-page" data-page="24"><img alt="Regression Linear Regression for Classification" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-regression/unit-en-regression-24.png"></div>
+
+<div class="sh-page" data-page="25"><img alt="Regression Linear Regression for Classification" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-regression/unit-en-regression-25.png"></div>
+
+<div class="sh-page" data-page="26"><img alt="Regression Linear Regression for Classification" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-regression/unit-en-regression-26.png"></div>
+
+<div class="sh-page" data-page="27"><img alt="Regression Linear Regression for Classification" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-regression/unit-en-regression-27.png"></div>
+
+<div class="sh-page" data-page="28"><img alt="Regression Linear Regression for Classification" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-regression/unit-en-regression-28.png"></div>
+
+<div class="sh-page" data-page="29"><img alt="Regression Linear Regression for Classification" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-regression/unit-en-regression-29.png"></div>
+
+<div class="sh-page" data-page="30"><img alt="Regression Linear Regression for Classification" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-regression/unit-en-regression-30.png"></div>
+
+<div class="sh-page" data-page="31"><img alt="Regression Linear Regression for Classification" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-regression/unit-en-regression-31.png"></div>
+
+<div class="sh-page" data-page="32"><img alt="Regression Linear Regression for Classification" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-regression/unit-en-regression-32.png"></div>
+
+<div class="sh-page" data-page="33"><img alt="Regression Linear Regression for Classification" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-regression/unit-en-regression-33.png"></div>
+
+<div class="sh-page" data-page="34"><img alt="Regression Linear Regression for Classification" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-regression/unit-en-regression-34.png"></div>
+
+<div class="sh-page" data-page="35"><img alt="Regression The Linear Model Function: Variants" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-regression/unit-en-regression-35.png"></div>
+
+<div class="sh-page" data-page="36"><img alt="Regression The Linear Model Function: Variants" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-regression/unit-en-regression-36.png"></div>
+
+<div class="sh-page" data-page="37"><img alt="Regression The Linear Model Function: Variants" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-regression/unit-en-regression-37.png"></div>
+
+<div class="sh-page" data-page="38"><img alt="Regression The Linear Model Function: Variants" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-regression/unit-en-regression-38.png"></div>
+
+<div class="sh-page" data-page="39"><img alt="Regression The Linear Model Function: Properties of the Solution" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-regression/unit-en-regression-39.png"></div>
+
+<div class="sh-page" data-page="40"><img alt="Regression The Linear Model Function: Properties of the Solution" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-regression/unit-en-regression-40.png"></div>
+
+<div class="sh-page" data-page="41"><img alt="Regression " src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-regression/unit-en-regression-41.png"></div>
+
+<div class="sh-page" data-page="42"><img alt="Regression n" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-regression/unit-en-regression-42.png"></div>
+
+<div class="sh-page" data-page="43"><img alt="Regression n" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-regression/unit-en-regression-43.png"></div>
+
+<div class="sh-page" data-page="44"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-regression/unit-en-regression-44.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-en-concept-learning.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-concept-learning.pdf" style="--sh-pages: 51"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Chapter ML:II " src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-concept-learning/unit-en-concept-learning-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Concept Learning: Search in Hypothesis Space A Learning Task" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-concept-learning/unit-en-concept-learning-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-concept-learning/unit-en-concept-learning-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Concept Learning: Search in Hypothesis Space Objects" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-concept-learning/unit-en-concept-learning-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Concept Learning: Search in Hypothesis Space Objects" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-concept-learning/unit-en-concept-learning-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Concept Learning: Search in Hypothesis Space Usually, an example set D, D = {(x1, c(x1)), . . . , (xn, c(xn))}, contains positive" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-concept-learning/unit-en-concept-learning-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-concept-learning/unit-en-concept-learning-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Concept Learning: Search in Hypothesis Space A Learning Task" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-concept-learning/unit-en-concept-learning-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Concept Learning: Search in Hypothesis Space A Learning Task" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-concept-learning/unit-en-concept-learning-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Concept Learning: Search in Hypothesis Space Order of Hypotheses" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-concept-learning/unit-en-concept-learning-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Concept Learning: Search in Hypothesis Space Order of Hypotheses" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-concept-learning/unit-en-concept-learning-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Concept Learning: Search in Hypothesis Space Order of Hypotheses" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-concept-learning/unit-en-concept-learning-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-concept-learning/unit-en-concept-learning-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="Remarks: (continued)" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-concept-learning/unit-en-concept-learning-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="Remarks: (continued)" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-concept-learning/unit-en-concept-learning-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="Concept Learning: Search in Hypothesis Space Inductive Learning Hypothesis" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-concept-learning/unit-en-concept-learning-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="Concept Learning: Search in Hypothesis Space Find-S Algorithm" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-concept-learning/unit-en-concept-learning-17.png"></div>
+
+<div class="sh-page" data-page="18"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-concept-learning/unit-en-concept-learning-18.png"></div>
+
+<div class="sh-page" data-page="19"><img alt="Concept Learning: Search in Hypothesis Space Find-S Algorithm" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-concept-learning/unit-en-concept-learning-19.png"></div>
+
+<div class="sh-page" data-page="20"><img alt="Concept Learning: Search in Hypothesis Space Find-S Algorithm" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-concept-learning/unit-en-concept-learning-20.png"></div>
+
+<div class="sh-page" data-page="21"><img alt="Concept Learning: Search in Hypothesis Space Find-S Algorithm" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-concept-learning/unit-en-concept-learning-21.png"></div>
+
+<div class="sh-page" data-page="22"><img alt="Concept Learning: Search in Hypothesis Space Find-S Algorithm" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-concept-learning/unit-en-concept-learning-22.png"></div>
+
+<div class="sh-page" data-page="23"><img alt="Concept Learning: Search in Hypothesis Space Discussion of the Find-S Algorithm" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-concept-learning/unit-en-concept-learning-23.png"></div>
+
+<div class="sh-page" data-page="24"><img alt="Concept Learning: Search in Version Space Definition 5 (Version Space)" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-concept-learning/unit-en-concept-learning-24.png"></div>
+
+<div class="sh-page" data-page="25"><img alt="Concept Learning: Search in Version Space Definition 5 (Version Space)" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-concept-learning/unit-en-concept-learning-25.png"></div>
+
+<div class="sh-page" data-page="26"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-concept-learning/unit-en-concept-learning-26.png"></div>
+
+<div class="sh-page" data-page="27"><img alt="Concept Learning: Search in Version Space Definition 6 (Boundary Sets of a Version Space)" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-concept-learning/unit-en-concept-learning-27.png"></div>
+
+<div class="sh-page" data-page="28"><img alt="Concept Learning: Search in Version Space Definition 6 (Boundary Sets of a Version Space)" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-concept-learning/unit-en-concept-learning-28.png"></div>
+
+<div class="sh-page" data-page="29"><img alt="Concept Learning: Search in Version Space Candidate Elimination Algorithm" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-concept-learning/unit-en-concept-learning-29.png"></div>
+
+<div class="sh-page" data-page="30"><img alt="Concept Learning: Search in Version Space Candidate Elimination Algorithm" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-concept-learning/unit-en-concept-learning-30.png"></div>
+
+<div class="sh-page" data-page="31"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-concept-learning/unit-en-concept-learning-31.png"></div>
+
+<div class="sh-page" data-page="32"><img alt="Concept Learning: Search in Version Space Candidate Elimination Algorithm (pseudo code)" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-concept-learning/unit-en-concept-learning-32.png"></div>
+
+<div class="sh-page" data-page="33"><img alt="Concept Learning: Search in Version Space Candidate Elimination Algorithm (pseudo code)" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-concept-learning/unit-en-concept-learning-33.png"></div>
+
+<div class="sh-page" data-page="34"><img alt="Concept Learning: Search in Version Space Candidate Elimination Algorithm (illustration)" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-concept-learning/unit-en-concept-learning-34.png"></div>
+
+<div class="sh-page" data-page="35"><img alt="Concept Learning: Search in Version Space Candidate Elimination Algorithm (illustration)" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-concept-learning/unit-en-concept-learning-35.png"></div>
+
+<div class="sh-page" data-page="36"><img alt="Concept Learning: Search in Version Space Candidate Elimination Algorithm (illustration)" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-concept-learning/unit-en-concept-learning-36.png"></div>
+
+<div class="sh-page" data-page="37"><img alt="Concept Learning: Search in Version Space Candidate Elimination Algorithm (illustration)" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-concept-learning/unit-en-concept-learning-37.png"></div>
+
+<div class="sh-page" data-page="38"><img alt="Concept Learning: Search in Version Space Candidate Elimination Algorithm (illustration)" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-concept-learning/unit-en-concept-learning-38.png"></div>
+
+<div class="sh-page" data-page="39"><img alt="Concept Learning: Search in Version Space Discussion of the Candidate Elimination Algorithm" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-concept-learning/unit-en-concept-learning-39.png"></div>
+
+<div class="sh-page" data-page="40"><img alt="Concept Learning: Search in Version Space Question 1: Selecting Examples from D" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-concept-learning/unit-en-concept-learning-40.png"></div>
+
+<div class="sh-page" data-page="41"><img alt="Concept Learning: Search in Version Space Question 1: Selecting Examples from D" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-concept-learning/unit-en-concept-learning-41.png"></div>
+
+<div class="sh-page" data-page="42"><img alt="Concept Learning: Search in Version Space Question 2: Partially Learned Concepts" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-concept-learning/unit-en-concept-learning-42.png"></div>
+
+<div class="sh-page" data-page="43"><img alt="Concept Learning: Search in Version Space Question 2: Partially Learned Concepts" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-concept-learning/unit-en-concept-learning-43.png"></div>
+
+<div class="sh-page" data-page="44"><img alt="Concept Learning: Search in Version Space Question 2: Partially Learned Concepts" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-concept-learning/unit-en-concept-learning-44.png"></div>
+
+<div class="sh-page" data-page="45"><img alt="Concept Learning: Search in Version Space Question 2: Partially Learned Concepts" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-concept-learning/unit-en-concept-learning-45.png"></div>
+
+<div class="sh-page" data-page="46"><img alt="Concept Learning: Search in Version Space Question 2: Partially Learned Concepts" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-concept-learning/unit-en-concept-learning-46.png"></div>
+
+<div class="sh-page" data-page="47"><img alt="Concept Learning: Search in Version Space Question 3: Inductive Bias" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-concept-learning/unit-en-concept-learning-47.png"></div>
+
+<div class="sh-page" data-page="48"><img alt="Concept Learning: Search in Version Space Question 3: Inductive Bias" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-concept-learning/unit-en-concept-learning-48.png"></div>
+
+<div class="sh-page" data-page="49"><img alt="Concept Learning: Search in Version Space Question 3: Inductive Bias" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-concept-learning/unit-en-concept-learning-49.png"></div>
+
+<div class="sh-page" data-page="50"><img alt="Concept Learning: Search in Version Space Question 3: Inductive Bias" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-concept-learning/unit-en-concept-learning-50.png"></div>
+
+<div class="sh-page" data-page="51"><img alt="Concept Learning: Search in Version Space Question 3: Inductive Bias" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-concept-learning/unit-en-concept-learning-51.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-en-ml-performance-measures.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-ml-performance-measures.pdf" style="--sh-pages: 25"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Chapter ML:II " src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-ml-performance-measures/unit-en-ml-performance-measures-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Measuring Performance True Misclassification Rate" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-ml-performance-measures/unit-en-ml-performance-measures-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Measuring Performance True Misclassification Rate" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-ml-performance-measures/unit-en-ml-performance-measures-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-ml-performance-measures/unit-en-ml-performance-measures-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Measuring Performance True Misclassification Rate: Probabilistic Foundation" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-ml-performance-measures/unit-en-ml-performance-measures-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Measuring Performance True Misclassification Rate: Probabilistic Foundation" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-ml-performance-measures/unit-en-ml-performance-measures-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Measuring Performance True Misclassification Rate: Probabilistic Foundation" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-ml-performance-measures/unit-en-ml-performance-measures-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Measuring Performance True Misclassification Rate: Probabilistic Foundation" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-ml-performance-measures/unit-en-ml-performance-measures-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Measuring Performance True Misclassification Rate: Probabilistic Foundation" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-ml-performance-measures/unit-en-ml-performance-measures-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Measuring Performance True Misclassification Rate: Probabilistic Foundation" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-ml-performance-measures/unit-en-ml-performance-measures-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Measuring Performance True Misclassification Rate: Probabilistic Foundation" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-ml-performance-measures/unit-en-ml-performance-measures-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-ml-performance-measures/unit-en-ml-performance-measures-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Measuring Performance Training Error" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-ml-performance-measures/unit-en-ml-performance-measures-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="Measuring Performance Training Error" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-ml-performance-measures/unit-en-ml-performance-measures-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="Measuring Performance 2-Fold Cross-Validation (Holdout Estimation)" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-ml-performance-measures/unit-en-ml-performance-measures-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="Measuring Performance 2-Fold Cross-Validation (Holdout Estimation)" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-ml-performance-measures/unit-en-ml-performance-measures-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-ml-performance-measures/unit-en-ml-performance-measures-17.png"></div>
+
+<div class="sh-page" data-page="18"><img alt="Measuring Performance k-Fold Cross-Validation" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-ml-performance-measures/unit-en-ml-performance-measures-18.png"></div>
+
+<div class="sh-page" data-page="19"><img alt="Measuring Performance n-Fold Cross-Validation (Leave One Out)" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-ml-performance-measures/unit-en-ml-performance-measures-19.png"></div>
+
+<div class="sh-page" data-page="20"><img alt="Measuring Performance n-Fold Cross-Validation (Leave One Out)" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-ml-performance-measures/unit-en-ml-performance-measures-20.png"></div>
+
+<div class="sh-page" data-page="21"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-ml-performance-measures/unit-en-ml-performance-measures-21.png"></div>
+
+<div class="sh-page" data-page="22"><img alt="Measuring Performance Bootstrapping" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-ml-performance-measures/unit-en-ml-performance-measures-22.png"></div>
+
+<div class="sh-page" data-page="23"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-ml-performance-measures/unit-en-ml-performance-measures-23.png"></div>
+
+<div class="sh-page" data-page="24"><img alt="Measuring Performance Misclassification Costs" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-ml-performance-measures/unit-en-ml-performance-measures-24.png"></div>
+
+<div class="sh-page" data-page="25"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-ml-performance-measures/unit-en-ml-performance-measures-25.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-en-decision-trees-basics.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-basics.pdf" style="--sh-pages: 35"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Chapter ML:III III. Decision Trees" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-basics/unit-en-decision-trees-basics-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Decision Trees Basics Specification of Classification Problems" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-basics/unit-en-decision-trees-basics-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Decision Trees Basics Decision Tree for the Concept “EnjoySport”" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-basics/unit-en-decision-trees-basics-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Decision Trees Basics Decision Tree for the Concept “EnjoySport”" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-basics/unit-en-decision-trees-basics-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Decision Trees Basics Definition 1 (Splitting)" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-basics/unit-en-decision-trees-basics-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Decision Trees Basics Definition 1 (Splitting)" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-basics/unit-en-decision-trees-basics-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Decision Trees Basics Definition 1 (Splitting)" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-basics/unit-en-decision-trees-basics-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Decision Trees Basics Definition 1 (Splitting)" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-basics/unit-en-decision-trees-basics-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-basics/unit-en-decision-trees-basics-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Decision Trees Basics Definition 2 (Decision Tree)" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-basics/unit-en-decision-trees-basics-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Decision Trees Basics Definition 2 (Decision Tree)" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-basics/unit-en-decision-trees-basics-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-basics/unit-en-decision-trees-basics-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Decision Trees Basics Notation" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-basics/unit-en-decision-trees-basics-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-basics/unit-en-decision-trees-basics-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="Decision Trees Basics Algorithm Template: Construction" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-basics/unit-en-decision-trees-basics-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="Decision Trees Basics Algorithm Template: Classification" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-basics/unit-en-decision-trees-basics-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-basics/unit-en-decision-trees-basics-17.png"></div>
+
+<div class="sh-page" data-page="18"><img alt="Decision Trees Basics When to Use Decision Trees" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-basics/unit-en-decision-trees-basics-18.png"></div>
+
+<div class="sh-page" data-page="19"><img alt="Decision Trees Basics On the Construction of Decision Trees" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-basics/unit-en-decision-trees-basics-19.png"></div>
+
+<div class="sh-page" data-page="20"><img alt="Decision Trees Basics Performance of Decision Trees" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-basics/unit-en-decision-trees-basics-20.png"></div>
+
+<div class="sh-page" data-page="21"><img alt="Decision Trees Basics Performance of Decision Trees" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-basics/unit-en-decision-trees-basics-21.png"></div>
+
+<div class="sh-page" data-page="22"><img alt="Decision Trees Basics Performance of Decision Trees: Size" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-basics/unit-en-decision-trees-basics-22.png"></div>
+
+<div class="sh-page" data-page="23"><img alt="Decision Trees Basics Performance of Decision Trees: Size" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-basics/unit-en-decision-trees-basics-23.png"></div>
+
+<div class="sh-page" data-page="24"><img alt="Decision Trees Basics Performance of Decision Trees: Size" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-basics/unit-en-decision-trees-basics-24.png"></div>
+
+<div class="sh-page" data-page="25"><img alt="Decision Trees Basics Performance of Decision Trees: Size" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-basics/unit-en-decision-trees-basics-25.png"></div>
+
+<div class="sh-page" data-page="26"><img alt="Decision Trees Basics Performance of Decision Trees: Size" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-basics/unit-en-decision-trees-basics-26.png"></div>
+
+<div class="sh-page" data-page="27"><img alt="Decision Trees Basics Performance of Decision Trees: Size" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-basics/unit-en-decision-trees-basics-27.png"></div>
+
+<div class="sh-page" data-page="28"><img alt="Decision Trees Basics Performance of Decision Trees: Classification Error" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-basics/unit-en-decision-trees-basics-28.png"></div>
+
+<div class="sh-page" data-page="29"><img alt="Decision Trees Basics Performance of Decision Trees: Classification Error" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-basics/unit-en-decision-trees-basics-29.png"></div>
+
+<div class="sh-page" data-page="30"><img alt="Decision Trees Basics Performance of Decision Trees: Classification Error" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-basics/unit-en-decision-trees-basics-30.png"></div>
+
+<div class="sh-page" data-page="31"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-basics/unit-en-decision-trees-basics-31.png"></div>
+
+<div class="sh-page" data-page="32"><img alt="Decision Trees Basics Performance of Decision Trees: Misclassification Costs" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-basics/unit-en-decision-trees-basics-32.png"></div>
+
+<div class="sh-page" data-page="33"><img alt="Decision Trees Basics Performance of Decision Trees: Misclassification Costs" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-basics/unit-en-decision-trees-basics-33.png"></div>
+
+<div class="sh-page" data-page="34"><img alt="Decision Trees Basics Performance of Decision Trees: Misclassification Costs" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-basics/unit-en-decision-trees-basics-34.png"></div>
+
+<div class="sh-page" data-page="35"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-basics/unit-en-decision-trees-basics-35.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-en-decision-trees-impurity.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-impurity.pdf" style="--sh-pages: 36"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Chapter ML:III III. Decision Trees" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-impurity/unit-en-decision-trees-impurity-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Impurity Functions Splitting" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-impurity/unit-en-decision-trees-impurity-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Impurity Functions Splitting" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-impurity/unit-en-decision-trees-impurity-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Impurity Functions Splitting" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-impurity/unit-en-decision-trees-impurity-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Impurity Functions Splitting" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-impurity/unit-en-decision-trees-impurity-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Impurity Functions Definition 4 (Impurity Function ι)" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-impurity/unit-en-decision-trees-impurity-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Impurity Functions Definition 5 (Impurity of an Example Set ι(D))" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-impurity/unit-en-decision-trees-impurity-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Impurity Functions Definition 5 (Impurity of an Example Set ι(D))" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-impurity/unit-en-decision-trees-impurity-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-impurity/unit-en-decision-trees-impurity-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Impurity Functions Impurity Functions Based on the Misclassification Rate" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-impurity/unit-en-decision-trees-impurity-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Impurity Functions Impurity Functions Based on the Misclassification Rate" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-impurity/unit-en-decision-trees-impurity-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Impurity Functions Impurity Functions Based on the Misclassification Rate" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-impurity/unit-en-decision-trees-impurity-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Impurity Functions Impurity Functions Based on the Misclassification Rate" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-impurity/unit-en-decision-trees-impurity-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="Impurity Functions Impurity Functions Based on the Misclassification Rate" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-impurity/unit-en-decision-trees-impurity-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="Impurity Functions Impurity Functions Based on the Misclassification Rate" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-impurity/unit-en-decision-trees-impurity-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="Impurity Functions Definition 7 (Strict Impurity Function)" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-impurity/unit-en-decision-trees-impurity-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="Impurity Functions Definition 7 (Strict Impurity Function)" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-impurity/unit-en-decision-trees-impurity-17.png"></div>
+
+<div class="sh-page" data-page="18"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-impurity/unit-en-decision-trees-impurity-18.png"></div>
+
+<div class="sh-page" data-page="19"><img alt="Impurity Functions Impurity Functions Based on Entropy" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-impurity/unit-en-decision-trees-impurity-19.png"></div>
+
+<div class="sh-page" data-page="20"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-impurity/unit-en-decision-trees-impurity-20.png"></div>
+
+<div class="sh-page" data-page="21"><img alt="Impurity Functions Impurity Functions Based on Entropy" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-impurity/unit-en-decision-trees-impurity-21.png"></div>
+
+<div class="sh-page" data-page="22"><img alt="Impurity Functions Impurity Functions Based on Entropy" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-impurity/unit-en-decision-trees-impurity-22.png"></div>
+
+<div class="sh-page" data-page="23"><img alt="Impurity Functions Impurity Functions Based on Entropy" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-impurity/unit-en-decision-trees-impurity-23.png"></div>
+
+<div class="sh-page" data-page="24"><img alt="Remarks [::::::: Bayes :::" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-impurity/unit-en-decision-trees-impurity-24.png"></div>
+
+<div class="sh-page" data-page="25"><img alt="Remarks (continued) :" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-impurity/unit-en-decision-trees-impurity-25.png"></div>
+
+<div class="sh-page" data-page="26"><img alt="Impurity Functions Impurity Functions Based on Entropy" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-impurity/unit-en-decision-trees-impurity-26.png"></div>
+
+<div class="sh-page" data-page="27"><img alt="Impurity Functions Impurity Functions Based on Entropy" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-impurity/unit-en-decision-trees-impurity-27.png"></div>
+
+<div class="sh-page" data-page="28"><img alt="Impurity Functions Impurity Functions Based on Entropy" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-impurity/unit-en-decision-trees-impurity-28.png"></div>
+
+<div class="sh-page" data-page="29"><img alt="Impurity Functions Impurity Functions Based on Entropy" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-impurity/unit-en-decision-trees-impurity-29.png"></div>
+
+<div class="sh-page" data-page="30"><img alt="Impurity Functions Impurity Functions Based on Entropy" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-impurity/unit-en-decision-trees-impurity-30.png"></div>
+
+<div class="sh-page" data-page="31"><img alt="Impurity Functions Impurity Functions Based on Entropy" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-impurity/unit-en-decision-trees-impurity-31.png"></div>
+
+<div class="sh-page" data-page="32"><img alt="Impurity Functions Impurity Functions Based on Entropy" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-impurity/unit-en-decision-trees-impurity-32.png"></div>
+
+<div class="sh-page" data-page="33"><img alt="Impurity Functions Impurity Functions Based on the Gini Index" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-impurity/unit-en-decision-trees-impurity-33.png"></div>
+
+<div class="sh-page" data-page="34"><img alt="Impurity Functions Impurity Functions Based on the Gini Index" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-impurity/unit-en-decision-trees-impurity-34.png"></div>
+
+<div class="sh-page" data-page="35"><img alt="Impurity Functions Impurity Functions Based on the Gini Index" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-impurity/unit-en-decision-trees-impurity-35.png"></div>
+
+<div class="sh-page" data-page="36"><img alt="Impurity Functions Impurity Functions Based on the Gini Index" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-impurity/unit-en-decision-trees-impurity-36.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-en-decision-trees-algorithms.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-algorithms.pdf" style="--sh-pages: 26"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Chapter ML:III III. Decision Trees" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-algorithms/unit-en-decision-trees-algorithms-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Decision Tree Algorithms ID3 Algorithm" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-algorithms/unit-en-decision-trees-algorithms-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Decision Tree Algorithms ID3 Algorithm" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-algorithms/unit-en-decision-trees-algorithms-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Decision Tree Algorithms ID3 Algorithm" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-algorithms/unit-en-decision-trees-algorithms-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Decision Tree Algorithms ID3 Algorithm (pseudo code)" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-algorithms/unit-en-decision-trees-algorithms-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Decision Tree Algorithms ID3 Algorithm (pseudo code)" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-algorithms/unit-en-decision-trees-algorithms-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Decision Tree Algorithms ID3 Algorithm (pseudo code)" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-algorithms/unit-en-decision-trees-algorithms-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Decision Tree Algorithms ID3 Algorithm (pseudo code)" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-algorithms/unit-en-decision-trees-algorithms-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-algorithms/unit-en-decision-trees-algorithms-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Decision Tree Algorithms ID3 Algorithm: Example" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-algorithms/unit-en-decision-trees-algorithms-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Decision Tree Algorithms ID3 Algorithm: Example" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-algorithms/unit-en-decision-trees-algorithms-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Decision Tree Algorithms ID3 Algorithm: Example" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-algorithms/unit-en-decision-trees-algorithms-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-algorithms/unit-en-decision-trees-algorithms-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="Decision Tree Algorithms ID3 Algorithm: Example" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-algorithms/unit-en-decision-trees-algorithms-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="Decision Tree Algorithms ID3 Algorithm: Example" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-algorithms/unit-en-decision-trees-algorithms-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="Decision Tree Algorithms ID3 Algorithm: Example" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-algorithms/unit-en-decision-trees-algorithms-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="Decision Tree Algorithms ID3 Algorithm: Hypothesis Space" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-algorithms/unit-en-decision-trees-algorithms-17.png"></div>
+
+<div class="sh-page" data-page="18"><img alt="Decision Tree Algorithms ID3 Algorithm: Inductive Bias" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-algorithms/unit-en-decision-trees-algorithms-18.png"></div>
+
+<div class="sh-page" data-page="19"><img alt="Decision Tree Algorithms ID3 Algorithm: Inductive Bias" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-algorithms/unit-en-decision-trees-algorithms-19.png"></div>
+
+<div class="sh-page" data-page="20"><img alt="Decision Tree Algorithms ID3 Algorithm: Inductive Bias" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-algorithms/unit-en-decision-trees-algorithms-20.png"></div>
+
+<div class="sh-page" data-page="21"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-algorithms/unit-en-decision-trees-algorithms-21.png"></div>
+
+<div class="sh-page" data-page="22"><img alt="Decision Tree Algorithms CART Algorithm" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-algorithms/unit-en-decision-trees-algorithms-22.png"></div>
+
+<div class="sh-page" data-page="23"><img alt="Decision Tree Algorithms CART Algorithm" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-algorithms/unit-en-decision-trees-algorithms-23.png"></div>
+
+<div class="sh-page" data-page="24"><img alt="Decision Tree Algorithms CART Algorithm" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-algorithms/unit-en-decision-trees-algorithms-24.png"></div>
+
+<div class="sh-page" data-page="25"><img alt="Decision Tree Algorithms CART Algorithm" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-algorithms/unit-en-decision-trees-algorithms-25.png"></div>
+
+<div class="sh-page" data-page="26"><img alt="Decision Tree Algorithms CART Algorithm" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-algorithms/unit-en-decision-trees-algorithms-26.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-en-decision-trees-pruning.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-pruning.pdf" style="--sh-pages: 20"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Chapter ML:III III. Decision Trees" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-pruning/unit-en-decision-trees-pruning-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Decision Tree Pruning Overfitting" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-pruning/unit-en-decision-trees-pruning-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Decision Tree Pruning Overfitting" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-pruning/unit-en-decision-trees-pruning-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Decision Tree Pruning Overfitting" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-pruning/unit-en-decision-trees-pruning-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Decision Tree Pruning Overfitting" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-pruning/unit-en-decision-trees-pruning-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-pruning/unit-en-decision-trees-pruning-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Decision Tree Pruning Overfitting" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-pruning/unit-en-decision-trees-pruning-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Decision Tree Pruning Overfitting" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-pruning/unit-en-decision-trees-pruning-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-pruning/unit-en-decision-trees-pruning-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Decision Tree Pruning Overfitting" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-pruning/unit-en-decision-trees-pruning-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Decision Tree Pruning Stopping" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-pruning/unit-en-decision-trees-pruning-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Decision Tree Pruning Pruning" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-pruning/unit-en-decision-trees-pruning-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Decision Tree Pruning Pruning" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-pruning/unit-en-decision-trees-pruning-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="Decision Tree Pruning Pruning" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-pruning/unit-en-decision-trees-pruning-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="Decision Tree Pruning Pruning" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-pruning/unit-en-decision-trees-pruning-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="Decision Tree Pruning Pruning" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-pruning/unit-en-decision-trees-pruning-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="Decision Tree Pruning Pruning: Reduced Error Pruning" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-pruning/unit-en-decision-trees-pruning-17.png"></div>
+
+<div class="sh-page" data-page="18"><img alt="Decision Tree Pruning Pruning: Reduced Error Pruning" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-pruning/unit-en-decision-trees-pruning-18.png"></div>
+
+<div class="sh-page" data-page="19"><img alt="Decision Tree Pruning Pruning: Reduced Error Pruning" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-pruning/unit-en-decision-trees-pruning-19.png"></div>
+
+<div class="sh-page" data-page="20"><img alt="Decision Tree Pruning Extensions" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-decision-trees-pruning/unit-en-decision-trees-pruning-20.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-en-probability-basics.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-probability-basics.pdf" style="--sh-pages: 22"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Chapter ML:IV IV. Statistical Learning" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-probability-basics/unit-en-probability-basics-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Probability Basics Area Overview" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-probability-basics/unit-en-probability-basics-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Probability Basics Definition 1 (Random Experiment, Random Observation)" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-probability-basics/unit-en-probability-basics-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-probability-basics/unit-en-probability-basics-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Probability Basics Definition 2 (Sample Space, Event Space)" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-probability-basics/unit-en-probability-basics-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Probability Basics Definition 3 (Important Event Types)" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-probability-basics/unit-en-probability-basics-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Probability Basics Classical Concept Formation" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-probability-basics/unit-en-probability-basics-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Probability Basics Classical Concept Formation" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-probability-basics/unit-en-probability-basics-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-probability-basics/unit-en-probability-basics-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Probability Basics Axiomatic Concept Formation" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-probability-basics/unit-en-probability-basics-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Probability Basics Axiomatic Concept Formation" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-probability-basics/unit-en-probability-basics-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Probability Basics Axiomatic Concept Formation" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-probability-basics/unit-en-probability-basics-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Probability Basics Axiomatic Concept Formation" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-probability-basics/unit-en-probability-basics-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="Probability Basics Axiomatic Concept Formation" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-probability-basics/unit-en-probability-basics-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-probability-basics/unit-en-probability-basics-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="Probability Basics Conditional Probability" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-probability-basics/unit-en-probability-basics-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="Probability Basics Conditional Probability" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-probability-basics/unit-en-probability-basics-17.png"></div>
+
+<div class="sh-page" data-page="18"><img alt="Probability Basics Conditional Probability" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-probability-basics/unit-en-probability-basics-18.png"></div>
+
+<div class="sh-page" data-page="19"><img alt="Probability Basics Conditional Probability" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-probability-basics/unit-en-probability-basics-19.png"></div>
+
+<div class="sh-page" data-page="20"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-probability-basics/unit-en-probability-basics-20.png"></div>
+
+<div class="sh-page" data-page="21"><img alt="Probability Basics Independence of Events" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-probability-basics/unit-en-probability-basics-21.png"></div>
+
+<div class="sh-page" data-page="22"><img alt="Probability Basics Independence of Events" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-probability-basics/unit-en-probability-basics-22.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-en-bayesian-learning.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-bayesian-learning.pdf" style="--sh-pages: 23"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Chapter ML:IV " src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-bayesian-learning/unit-en-bayesian-learning-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Bayes Classification Single Conditional Event" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-bayesian-learning/unit-en-bayesian-learning-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Bayes Classification Single Conditional Event" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-bayesian-learning/unit-en-bayesian-learning-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Bayes Classification Combined Conditional Events" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-bayesian-learning/unit-en-bayesian-learning-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Bayes Classification Combined Conditional Events" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-bayesian-learning/unit-en-bayesian-learning-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Remarks [Information gain for classification] :" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-bayesian-learning/unit-en-bayesian-learning-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Remarks (continued) :" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-bayesian-learning/unit-en-bayesian-learning-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Bayes Classification Naive Bayes" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-bayesian-learning/unit-en-bayesian-learning-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Bayes Classification Naive Bayes" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-bayesian-learning/unit-en-bayesian-learning-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-bayesian-learning/unit-en-bayesian-learning-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Bayes Classification Naive Bayes" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-bayesian-learning/unit-en-bayesian-learning-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Bayes Classification Naive Bayes" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-bayesian-learning/unit-en-bayesian-learning-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Bayes Classification Naive Bayes" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-bayesian-learning/unit-en-bayesian-learning-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-bayesian-learning/unit-en-bayesian-learning-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="Bayes Classification Naive Bayes: Classifier Construction Summary" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-bayesian-learning/unit-en-bayesian-learning-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="Bayes Classification Naive Bayes: Classifier Construction Summary" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-bayesian-learning/unit-en-bayesian-learning-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-bayesian-learning/unit-en-bayesian-learning-17.png"></div>
+
+<div class="sh-page" data-page="18"><img alt="Bayes Classification Naive Bayes: Example" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-bayesian-learning/unit-en-bayesian-learning-18.png"></div>
+
+<div class="sh-page" data-page="19"><img alt="Bayes Classification Naive Bayes: Example" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-bayesian-learning/unit-en-bayesian-learning-19.png"></div>
+
+<div class="sh-page" data-page="20"><img alt="Bayes Classification Naive Bayes: Example" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-bayesian-learning/unit-en-bayesian-learning-20.png"></div>
+
+<div class="sh-page" data-page="21"><img alt="Bayes Classification Naive Bayes: Example" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-bayesian-learning/unit-en-bayesian-learning-21.png"></div>
+
+<div class="sh-page" data-page="22"><img alt="Bayes Classification Naive Bayes: Example" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-bayesian-learning/unit-en-bayesian-learning-22.png"></div>
+
+<div class="sh-page" data-page="23"><img alt="Bayes Classification Naive Bayes: Example" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-bayesian-learning/unit-en-bayesian-learning-23.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-en-perceptron-learning.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-perceptron-learning.pdf" style="--sh-pages: 63"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Chapter ML:VI VI. Neural Networks" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-perceptron-learning/unit-en-perceptron-learning-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Perceptron Learning The Biological Model" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-perceptron-learning/unit-en-perceptron-learning-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Perceptron Learning The Biological Model" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-perceptron-learning/unit-en-perceptron-learning-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Perceptron Learning History" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-perceptron-learning/unit-en-perceptron-learning-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Perceptron Learning The Perceptron of Rosenblatt" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-perceptron-learning/unit-en-perceptron-learning-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Perceptron Learning The Perceptron of Rosenblatt" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-perceptron-learning/unit-en-perceptron-learning-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Perceptron Learning The Perceptron of Rosenblatt" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-perceptron-learning/unit-en-perceptron-learning-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-perceptron-learning/unit-en-perceptron-learning-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Perceptron Learning Specification of Classification Problems" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-perceptron-learning/unit-en-perceptron-learning-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Perceptron Learning Computation in the Perceptron" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-perceptron-learning/unit-en-perceptron-learning-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Perceptron Learning Computation in the Perceptron" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-perceptron-learning/unit-en-perceptron-learning-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Perceptron Learning Computation in the Perceptron" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-perceptron-learning/unit-en-perceptron-learning-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-perceptron-learning/unit-en-perceptron-learning-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="Perceptron Learning Weight Adaptation" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-perceptron-learning/unit-en-perceptron-learning-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-perceptron-learning/unit-en-perceptron-learning-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="Perceptron Learning Weight Adaptation: Illustration in Input Space" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-perceptron-learning/unit-en-perceptron-learning-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="Perceptron Learning Weight Adaptation: Illustration in Input Space" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-perceptron-learning/unit-en-perceptron-learning-17.png"></div>
+
+<div class="sh-page" data-page="18"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-perceptron-learning/unit-en-perceptron-learning-18.png"></div>
+
+<div class="sh-page" data-page="19"><img alt="Perceptron Learning Example" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-perceptron-learning/unit-en-perceptron-learning-19.png"></div>
+
+<div class="sh-page" data-page="20"><img alt="Perceptron Learning Example" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-perceptron-learning/unit-en-perceptron-learning-20.png"></div>
+
+<div class="sh-page" data-page="21"><img alt="Perceptron Learning Example: Illustration in Input Space" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-perceptron-learning/unit-en-perceptron-learning-21.png"></div>
+
+<div class="sh-page" data-page="22"><img alt="Perceptron Learning Example: Illustration in Input Space" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-perceptron-learning/unit-en-perceptron-learning-22.png"></div>
+
+<div class="sh-page" data-page="23"><img alt="Perceptron Learning Example: Illustration in Input Space" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-perceptron-learning/unit-en-perceptron-learning-23.png"></div>
+
+<div class="sh-page" data-page="24"><img alt="Perceptron Learning Example: Illustration in Input Space" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-perceptron-learning/unit-en-perceptron-learning-24.png"></div>
+
+<div class="sh-page" data-page="25"><img alt="Perceptron Learning Example: Illustration in Input Space" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-perceptron-learning/unit-en-perceptron-learning-25.png"></div>
+
+<div class="sh-page" data-page="26"><img alt="Perceptron Learning Example: Illustration in Input Space" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-perceptron-learning/unit-en-perceptron-learning-26.png"></div>
+
+<div class="sh-page" data-page="27"><img alt="Perceptron Learning Example: Illustration in Input Space" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-perceptron-learning/unit-en-perceptron-learning-27.png"></div>
+
+<div class="sh-page" data-page="28"><img alt="Perceptron Learning Example: Illustration in Input Space" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-perceptron-learning/unit-en-perceptron-learning-28.png"></div>
+
+<div class="sh-page" data-page="29"><img alt="Perceptron Learning Example: Illustration in Input Space" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-perceptron-learning/unit-en-perceptron-learning-29.png"></div>
+
+<div class="sh-page" data-page="30"><img alt="Perceptron Learning Example: Illustration in Input Space" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-perceptron-learning/unit-en-perceptron-learning-30.png"></div>
+
+<div class="sh-page" data-page="31"><img alt="Perceptron Learning Perceptron Convergence Theorem" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-perceptron-learning/unit-en-perceptron-learning-31.png"></div>
+
+<div class="sh-page" data-page="32"><img alt="Perceptron Learning Perceptron Convergence Theorem" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-perceptron-learning/unit-en-perceptron-learning-32.png"></div>
+
+<div class="sh-page" data-page="33"><img alt="Perceptron Learning Perceptron Convergence Theorem: Proof" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-perceptron-learning/unit-en-perceptron-learning-33.png"></div>
+
+<div class="sh-page" data-page="34"><img alt="Perceptron Learning Perceptron Convergence Theorem: Proof" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-perceptron-learning/unit-en-perceptron-learning-34.png"></div>
+
+<div class="sh-page" data-page="35"><img alt="Perceptron Learning Perceptron Convergence Theorem: Proof" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-perceptron-learning/unit-en-perceptron-learning-35.png"></div>
+
+<div class="sh-page" data-page="36"><img alt="Perceptron Learning Perceptron Convergence Theorem: Proof" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-perceptron-learning/unit-en-perceptron-learning-36.png"></div>
+
+<div class="sh-page" data-page="37"><img alt="Perceptron Learning Perceptron Convergence Theorem: Proof" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-perceptron-learning/unit-en-perceptron-learning-37.png"></div>
+
+<div class="sh-page" data-page="38"><img alt="Perceptron Learning Perceptron Convergence Theorem: Proof" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-perceptron-learning/unit-en-perceptron-learning-38.png"></div>
+
+<div class="sh-page" data-page="39"><img alt="Perceptron Learning Perceptron Convergence Theorem: Proof" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-perceptron-learning/unit-en-perceptron-learning-39.png"></div>
+
+<div class="sh-page" data-page="40"><img alt="Perceptron Learning Perceptron Convergence Theorem: Proof" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-perceptron-learning/unit-en-perceptron-learning-40.png"></div>
+
+<div class="sh-page" data-page="41"><img alt="Perceptron Learning Perceptron Convergence Theorem: Proof" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-perceptron-learning/unit-en-perceptron-learning-41.png"></div>
+
+<div class="sh-page" data-page="42"><img alt="Perceptron Learning Perceptron Convergence Theorem: Proof" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-perceptron-learning/unit-en-perceptron-learning-42.png"></div>
+
+<div class="sh-page" data-page="43"><img alt="Perceptron Learning Perceptron Convergence Theorem: Proof" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-perceptron-learning/unit-en-perceptron-learning-43.png"></div>
+
+<div class="sh-page" data-page="44"><img alt="Perceptron Learning Perceptron Convergence Theorem: Proof" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-perceptron-learning/unit-en-perceptron-learning-44.png"></div>
+
+<div class="sh-page" data-page="45"><img alt="Perceptron Learning Perceptron Convergence Theorem: Proof" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-perceptron-learning/unit-en-perceptron-learning-45.png"></div>
+
+<div class="sh-page" data-page="46"><img alt="Perceptron Learning Perceptron Convergence Theorem: Proof" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-perceptron-learning/unit-en-perceptron-learning-46.png"></div>
+
+<div class="sh-page" data-page="47"><img alt="Perceptron Learning Perceptron Convergence Theorem: Proof" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-perceptron-learning/unit-en-perceptron-learning-47.png"></div>
+
+<div class="sh-page" data-page="48"><img alt="Perceptron Learning Perceptron Convergence Theorem: Discussion" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-perceptron-learning/unit-en-perceptron-learning-48.png"></div>
+
+<div class="sh-page" data-page="49"><img alt="Perceptron Learning Perceptron Convergence Theorem: Discussion" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-perceptron-learning/unit-en-perceptron-learning-49.png"></div>
+
+<div class="sh-page" data-page="50"><img alt="Gradient Descent Classification Error" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-perceptron-learning/unit-en-perceptron-learning-50.png"></div>
+
+<div class="sh-page" data-page="51"><img alt="Gradient Descent Classification Error" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-perceptron-learning/unit-en-perceptron-learning-51.png"></div>
+
+<div class="sh-page" data-page="52"><img alt="Gradient Descent " src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-perceptron-learning/unit-en-perceptron-learning-52.png"></div>
+
+<div class="sh-page" data-page="53"><img alt="Gradient Descent Weight Adaptation" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-perceptron-learning/unit-en-perceptron-learning-53.png"></div>
+
+<div class="sh-page" data-page="54"><img alt="Gradient Descent Weight Adaptation" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-perceptron-learning/unit-en-perceptron-learning-54.png"></div>
+
+<div class="sh-page" data-page="55"><img alt="Gradient Descent Weight Adaptation" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-perceptron-learning/unit-en-perceptron-learning-55.png"></div>
+
+<div class="sh-page" data-page="56"><img alt="Gradient Descent Weight Adaptation" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-perceptron-learning/unit-en-perceptron-learning-56.png"></div>
+
+<div class="sh-page" data-page="57"><img alt="Gradient Descent Weight Adaptation" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-perceptron-learning/unit-en-perceptron-learning-57.png"></div>
+
+<div class="sh-page" data-page="58"><img alt="Gradient Descent Weight Adaptation: Batch Gradient Descent" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-perceptron-learning/unit-en-perceptron-learning-58.png"></div>
+
+<div class="sh-page" data-page="59"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-perceptron-learning/unit-en-perceptron-learning-59.png"></div>
+
+<div class="sh-page" data-page="60"><img alt="Gradient Descent Weight Adaptation: Delta Rule" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-perceptron-learning/unit-en-perceptron-learning-60.png"></div>
+
+<div class="sh-page" data-page="61"><img alt="Gradient Descent Weight Adaptation: Incremental Gradient Descent" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-perceptron-learning/unit-en-perceptron-learning-61.png"></div>
+
+<div class="sh-page" data-page="62"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-perceptron-learning/unit-en-perceptron-learning-62.png"></div>
+
+<div class="sh-page" data-page="63"><img alt="Remarks (continued):" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-perceptron-learning/unit-en-perceptron-learning-63.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-en-multilayer-perceptron.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-multilayer-perceptron.pdf" style="--sh-pages: 22"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Chapter ML:VI " src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-multilayer-perceptron/unit-en-multilayer-perceptron-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Multilayer Perceptron Definition 1 (Linear Separability)" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-multilayer-perceptron/unit-en-multilayer-perceptron-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Multilayer Perceptron Definition 1 (Linear Separability)" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-multilayer-perceptron/unit-en-multilayer-perceptron-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Multilayer Perceptron Separability" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-multilayer-perceptron/unit-en-multilayer-perceptron-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Multilayer Perceptron Separability" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-multilayer-perceptron/unit-en-multilayer-perceptron-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Multilayer Perceptron Separability" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-multilayer-perceptron/unit-en-multilayer-perceptron-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-multilayer-perceptron/unit-en-multilayer-perceptron-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Multilayer Perceptron Computation in the Network" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-multilayer-perceptron/unit-en-multilayer-perceptron-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Multilayer Perceptron Computation in the Network" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-multilayer-perceptron/unit-en-multilayer-perceptron-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Multilayer Perceptron Computation in the Network" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-multilayer-perceptron/unit-en-multilayer-perceptron-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Multilayer Perceptron Computation in the Network" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-multilayer-perceptron/unit-en-multilayer-perceptron-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Multilayer Perceptron Computation in the Network" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-multilayer-perceptron/unit-en-multilayer-perceptron-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Multilayer Perceptron Computation in the Network" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-multilayer-perceptron/unit-en-multilayer-perceptron-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="Multilayer Perceptron Computation in the Network" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-multilayer-perceptron/unit-en-multilayer-perceptron-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-multilayer-perceptron/unit-en-multilayer-perceptron-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="Multilayer Perceptron Classification Error" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-multilayer-perceptron/unit-en-multilayer-perceptron-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="Multilayer Perceptron Weight Adaptation: Incremental Gradient Descent" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-multilayer-perceptron/unit-en-multilayer-perceptron-17.png"></div>
+
+<div class="sh-page" data-page="18"><img alt="Multilayer Perceptron Weight Adaptation: Incremental Gradient Descent" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-multilayer-perceptron/unit-en-multilayer-perceptron-18.png"></div>
+
+<div class="sh-page" data-page="19"><img alt="Multilayer Perceptron Weight Adaptation: Incremental Gradient Descent" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-multilayer-perceptron/unit-en-multilayer-perceptron-19.png"></div>
+
+<div class="sh-page" data-page="20"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-multilayer-perceptron/unit-en-multilayer-perceptron-20.png"></div>
+
+<div class="sh-page" data-page="21"><img alt="Multilayer Perceptron Weight Adaptation: Momentum Term" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-multilayer-perceptron/unit-en-multilayer-perceptron-21.png"></div>
+
+<div class="sh-page" data-page="22"><img alt="Multilayer Perceptron Weight Adaptation: Momentum Term" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-en-multilayer-perceptron/unit-en-multilayer-perceptron-22.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-de-ensemble-classifiers.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/machine-learning/unit-de-ensemble-classifiers.pdf" style="--sh-pages: 32"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Kapitel ML:IX " src="https://webis.de/downloads/lecturenotes/machine-learning/unit-de-ensemble-classifiers/unit-de-ensemble-classifiers-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Motivating Ensemble Classification Generalisierungsfähigkeit von Klassifikatoren" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-de-ensemble-classifiers/unit-de-ensemble-classifiers-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Motivating Ensemble Classification No Free Lunch Theorems" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-de-ensemble-classifiers/unit-de-ensemble-classifiers-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Motivating Ensemble Classification Instabilität von Lernverfahren" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-de-ensemble-classifiers/unit-de-ensemble-classifiers-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Motivation Ensemble-Klassifikation Zusammenfassung" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-de-ensemble-classifiers/unit-de-ensemble-classifiers-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Bagging Bootstrap Aggregating" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-de-ensemble-classifiers/unit-de-ensemble-classifiers-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-de-ensemble-classifiers/unit-de-ensemble-classifiers-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Bagging Bootstrap Aggregating" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-de-ensemble-classifiers/unit-de-ensemble-classifiers-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Bagging Algorithm:" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-de-ensemble-classifiers/unit-de-ensemble-classifiers-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Bagging Leistungsfähigkeit von Bootstrap Aggregating" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-de-ensemble-classifiers/unit-de-ensemble-classifiers-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Boosting Boosting Weak Classifiers" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-de-ensemble-classifiers/unit-de-ensemble-classifiers-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Boosting AdaBoost, Adaptive Boosting" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-de-ensemble-classifiers/unit-de-ensemble-classifiers-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Boosting Algorithm:" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-de-ensemble-classifiers/unit-de-ensemble-classifiers-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="Boosting Leistungsfähigkeit von AdaBoost.M1" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-de-ensemble-classifiers/unit-de-ensemble-classifiers-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-de-ensemble-classifiers/unit-de-ensemble-classifiers-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="Boosting Algorithm:" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-de-ensemble-classifiers/unit-de-ensemble-classifiers-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="Cascading Cascades of Classifiers" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-de-ensemble-classifiers/unit-de-ensemble-classifiers-17.png"></div>
+
+<div class="sh-page" data-page="18"><img alt="Cascading Cascades of Classifiers" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-de-ensemble-classifiers/unit-de-ensemble-classifiers-18.png"></div>
+
+<div class="sh-page" data-page="19"><img alt="Cascading Maßzahlen" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-de-ensemble-classifiers/unit-de-ensemble-classifiers-19.png"></div>
+
+<div class="sh-page" data-page="20"><img alt="Cascading Maßzahlen" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-de-ensemble-classifiers/unit-de-ensemble-classifiers-20.png"></div>
+
+<div class="sh-page" data-page="21"><img alt="Cascading Algorithm:" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-de-ensemble-classifiers/unit-de-ensemble-classifiers-21.png"></div>
+
+<div class="sh-page" data-page="22"><img alt="Cascading Anwendung: Face Detection (Main Loop)" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-de-ensemble-classifiers/unit-de-ensemble-classifiers-22.png"></div>
+
+<div class="sh-page" data-page="23"><img alt="Cascading Anwendung: Face Detection (Gesamtklassifikator)" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-de-ensemble-classifiers/unit-de-ensemble-classifiers-23.png"></div>
+
+<div class="sh-page" data-page="24"><img alt="Cascading Anwendung: Face Detection (Einzelklassifikator in Kaskade)" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-de-ensemble-classifiers/unit-de-ensemble-classifiers-24.png"></div>
+
+<div class="sh-page" data-page="25"><img alt="Cascading Anwendung: Face Detection (Einzelklassifikator in Ensemble)" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-de-ensemble-classifiers/unit-de-ensemble-classifiers-25.png"></div>
+
+<div class="sh-page" data-page="26"><img alt="Cascading Anwendung: Face Detection (alle Features)" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-de-ensemble-classifiers/unit-de-ensemble-classifiers-26.png"></div>
+
+<div class="sh-page" data-page="27"><img alt="Cascading Anwendung: Face Detection (ausgewählte Features)" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-de-ensemble-classifiers/unit-de-ensemble-classifiers-27.png"></div>
+
+<div class="sh-page" data-page="28"><img alt="Cascading Anwendung: Face Detection (Effizienz)" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-de-ensemble-classifiers/unit-de-ensemble-classifiers-28.png"></div>
+
+<div class="sh-page" data-page="29"><img alt="Cascading Anwendung: Face Detection (Effizienz beim Training)" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-de-ensemble-classifiers/unit-de-ensemble-classifiers-29.png"></div>
+
+<div class="sh-page" data-page="30"><img alt="Ensemble Classifier Trainingsmengen" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-de-ensemble-classifiers/unit-de-ensemble-classifiers-30.png"></div>
+
+<div class="sh-page" data-page="31"><img alt="Ensemble Classifier Grundlage der Entscheidung" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-de-ensemble-classifiers/unit-de-ensemble-classifiers-31.png"></div>
+
+<div class="sh-page" data-page="32"><img alt="Ensemble Classifier Literature" src="https://webis.de/downloads/lecturenotes/machine-learning/unit-de-ensemble-classifiers/unit-de-ensemble-classifiers-32.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+<!-- units end -->
+</div>
+</main>
+
+<div class="sh-modal closed" data-modal-help="" aria-hidden="true" aria-labelledby="sh-help-title" role="dialog">
+  <div class="sh-modal-content" role="document">
+    <button class="sh-modal__close sh-button sh-button--close" data-close-modal="" aria-label="Close">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" aria-labelledby="sh-close-help-title"><path d="M4 0l8 8 8-8 4 4-8 8 8 8-4 4-8-8-8 8-4-4 8-8-8-8z"/></svg>
+    </button>
+    <h2 class="sh-modal__title" id="sh-help-title">Help</h2>
+    <div class="sh-shortcut-table-wrapper">
+      <table class="sh-shortcut-table">
+        <caption class="sh-visually-hidden">Document-specific controls</caption>
+        <thead>
+          <tr>
+            <th class="sh-shortcut-table__input">
+              <span class="sh-visually-hidden">Shortcut</span>
+            </th>
+            <th class="sh-shortcut-table__action">Documents</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="sh-shortcut-table__input">
+              <div class="sh-shortcut-group">
+                <kbd aria-label="Up or down arrow key">↑/↓</kbd>
+              </div>
+            </td>
+            <td class="sh-shortcut-table__action">Navigate documents</td>
+          </tr>
+          <tr>
+            <td class="sh-shortcut-table__input">
+              <div class="sh-shortcut-group">
+                <kbd>Shift</kbd> + <kbd aria-label="Up or down arrow key">↑/↓</kbd>
+              </div>
+            </td>
+            <td class="sh-shortcut-table__action">Navigate 3 documents</td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="sh-shortcut-table">
+        <caption class="sh-visually-hidden">Page-specific controls</caption>
+        <thead>
+          <tr>
+            <th class="sh-shortcut-table__input">
+              <span class="sh-visually-hidden">Shortcut</span>
+            </th>
+            <th class="sh-shortcut-table__action">Pages</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="sh-shortcut-table__input">
+              <div class="sh-shortcut-group">
+                <kbd aria-label="Left or right arrow key">←/→</kbd>
+              </div>
+            </td>
+            <td class="sh-shortcut-table__action">Navigate pages</td>
+          </tr>
+          <tr>
+            <td class="sh-shortcut-table__input">
+              <div class="sh-shortcut-group">
+                <kbd>Shift</kbd> + <kbd>MouseWheel</kbd>
+              </div>
+            </td>
+            <td class="sh-shortcut-table__action">Navigate pages</td>
+          </tr>
+          <tr>
+            <td class="sh-shortcut-table__input">
+              <div class="sh-shortcut-group">
+                <kbd>Shift</kbd> + <kbd aria-label="Left or right arrow key">←/→</kbd>
+              </div>
+            </td>
+            <td class="sh-shortcut-table__action">Navigate 3 pages</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<footer class="uk-section uk-section-default footer-section">
+    <div class="uk-container">
+        <div class="uk-align-right@m uk-margin-top">
+            Copyright &copy; 2019 Temir Group
+            <address></address>
+        </div>
+    </div>
+</footer>
+
+<script>
+    UIkit.util.ready(() => {
+        const nav = UIkit.util.$(".global-nav");
+        const navHeight = UIkit.util.height(nav);
+
+        // correct scroll offset due to fixed navigation after page load
+        let fixScrollHeight = () => {
+            if (location.hash === "" || !UIkit.util.$(location.hash)) {
+                return;
+            }
+
+            const pos = document.documentElement.scrollTop;
+            const offset = UIkit.util.offset(UIkit.util.$(location.hash));
+
+            if (pos > navHeight * .8 && offset) {
+                document.documentElement.scrollTop = offset.top - navHeight - 20;
+            }
+        };
+
+        window.addEventListener("hashchange", fixScrollHeight, false);
+        setTimeout(fixScrollHeight, 100);
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,1097 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Webis Lecturnotes Browser Data Mining</title>
+    <meta charset="utf-8">
+    <meta name="description" content="SlideHub is a presentation/slide/talk explorer">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="copyright" content="&copy; 2019 Temir">
+    <link rel="icon" type="image/png" href="/img/favicon.png">
+
+    <link rel="stylesheet" href="/css/style.css?1548321565">
+    <link rel="stylesheet" href="/css/browser.css?1548321565">
+    <link rel="stylesheet" href="/css/browser-compatibility.css?1548321565">
+</head>
+<body class="uk-offcanvas-content">
+<script src="/js/thirdparty/uikit/uikit.min.js"></script>
+<script src="/js/thirdparty/uikit/uikit-icons.min.js"></script>
+
+<div id="offcanvas-nav" class="uk-hidden@m" data-uk-offcanvas="overlay: true; flip: true;">
+    <div class="uk-offcanvas-bar">
+        <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+
+        <!-- Mobile navigation -->
+        <nav class="uk-margin-large-top">
+            <ul class="uk-nav uk-nav-primary uk-nav-parent-icon" data-uk-nav>
+                <li>
+                    <a href="/people.html">People</a>
+                </li>
+                <li class="uk-active" class="uk-parent">
+                    <a href="#">Lecturenotes</a>
+                    <ul class="uk-nav-sub">
+                        <li><a href="/lecturenotes/overview.html">Overview</a></li>
+                        <li><a href="/lecturenotes/slides.html">Slides</a></li>
+                        <li class="uk-parent">
+                            Browser
+                            <ul class="uk-nav-sub">
+                                <li><a href="/lecturenotes/browser/algorithms-and-datastructures.html">Algorithmen und Datenstrukturen</a></li>
+                                <li><a href="/lecturenotes/browser/information-retrieval.html">Information Retrieval</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/research.html">Research</a>
+                </li>
+                <li>
+                    <a href="/publications.html">Publications</a>
+                </li>
+                <li>
+                    <a href="/data.html">Data</a>
+                </li>
+                <li>
+                    <a href="/facilities.html">Facilities</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<div class="uk-background-secondary desktop-nav global-nav" data-uk-sticky="media: @m">
+    <!-- Desktop navigation -->
+    <nav class="uk-navbar-container uk-navbar-transparent uk-container uk-light" data-uk-navbar="mode: click">
+        <div class="uk-navbar-left">
+            <ul class="uk-navbar-nav">
+                <li>
+                    <a href="/"><img src="/img/uni_leipzig_logo_v2_white-01_opt_2.png" alt="TEMIR LOGO" class="uk-logo"> Temir</a>
+                </li>
+            </ul>
+        </div>
+        <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav">
+                <li>
+                    <a href="/people.html">People</a>
+                </li>
+                <li class="nav-group-start uk-active">
+                    <a href="#">Lecturenotes</a>
+                    <div class="uk-navbar-dropdown uk-navbar-dropdown-width-3 uk-padding-remove">
+                        <div class="uk-navbar-dropdown-grid" data-uk-grid>
+                            <div class="uk-width-1-3">
+                                <ul class="uk-nav uk-navbar-dropdown-nav uk-padding-small">
+                                    <li><a href="/lecturenotes/overview.html">Overview</a></li>
+                                    <li><a href="/lecturenotes/slides.html">Slides</a></li>
+                                    <li class="nav-left-open-category">Browser</li>
+                                </ul>
+                            </div>
+                            <div class="uk-width-2-3">
+                                <ul class="uk-nav uk-navbar-dropdown-nav nav-right-open-sub uk-padding-small">
+                                    <li><a href="/lecturenotes/browser/algorithms-and-datastructures.html">Algorithmen und Datenstrukturen</a></li>
+                                    <li><a href="/lecturenotes/browser/information-retrieval.html">Information Retrieval</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="/research.html">Research</a>
+                </li>
+                <li>
+                    <a href="/publications.html">Publications</a>
+                </li>
+                <li class="nav-group-start">
+                    <a href="/data.html">Data</a>
+                </li>
+                <li>
+                    <a href="/facilities.html">Facilities</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<div class="uk-background-secondary mobile-nav global-nav" data-uk-sticky>
+    <div class="uk-navbar-container uk-navbar-transparent uk-container uk-light mobile-nav-toggle" data-uk-navbar>
+        <div class="">
+            <ul class="uk-navbar-nav">
+                <li>
+                    <a href="/"><img src="/img/uni_leipzig_logo_v2_white-01_opt_2.png" alt="TEMIR LOGO" class="uk-logo"> Temir</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="uk-navbar-right">
+            <button class="uk-button uk-navbar-item uk-light uk-button-large" type="button" data-uk-icon="icon: menu"
+                    data-uk-toggle="target: #offcanvas-nav"></button>
+        </div>
+    </div>
+</div>
+
+<div data-uk-height-viewport="expand: true">
+<script src="/js/browser.js"></script>
+
+<main class="uk-margin-medium" data-slidehub="">
+<!-- SlideHub will hook itself as a child element into [data-slidehub] -->
+<div class="slidehub-container">
+
+<!-- units start -->
+
+
+
+<div class="sh-doc" id="unit-en-dm-organization.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/data-mining/unit-en-dm-organization.pdf" style="--sh-pages: 6"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Data Mining Benno Stein" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-dm-organization/unit-en-dm-organization-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Contents I. Introduction" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-dm-organization/unit-en-dm-organization-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Objectives " src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-dm-organization/unit-en-dm-organization-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Related Fields 1. Statistics" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-dm-organization/unit-en-dm-organization-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Literature Data Mining:" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-dm-organization/unit-en-dm-organization-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Software Programming:" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-dm-organization/unit-en-dm-organization-6.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-en-dm-introduction.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/data-mining/unit-en-dm-introduction.pdf" style="--sh-pages: 10"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Chapter DM:I I. Introduction" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-dm-introduction/unit-en-dm-introduction-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Data Mining Overview Definition 1 (Knowledge Discovery in Databases, KDD" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-dm-introduction/unit-en-dm-introduction-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Data Mining Overview Definition 1 (Knowledge Discovery in Databases, KDD" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-dm-introduction/unit-en-dm-introduction-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-dm-introduction/unit-en-dm-introduction-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Data Mining Overview " src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-dm-introduction/unit-en-dm-introduction-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Data Mining Overview " src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-dm-introduction/unit-en-dm-introduction-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Data Mining Overview " src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-dm-introduction/unit-en-dm-introduction-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Retrieval " src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-dm-introduction/unit-en-dm-introduction-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-dm-introduction/unit-en-dm-introduction-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Data Mining Overview Relevant Data Mining Methods" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-dm-introduction/unit-en-dm-introduction-10.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-en-data.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/data-mining/unit-en-data.pdf" style="--sh-pages: 27"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Chapter DM:I " src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-data/unit-en-data-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="On Data " src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-data/unit-en-data-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="On Data " src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-data/unit-en-data-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="On Data " src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-data/unit-en-data-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="On Data " src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-data/unit-en-data-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="On Data " src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-data/unit-en-data-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="On Data " src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-data/unit-en-data-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="On Data " src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-data/unit-en-data-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="On Data " src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-data/unit-en-data-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="On Data " src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-data/unit-en-data-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="On Data " src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-data/unit-en-data-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="On Data " src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-data/unit-en-data-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="On Data " src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-data/unit-en-data-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-data/unit-en-data-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="On Data " src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-data/unit-en-data-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="On Data " src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-data/unit-en-data-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="On Data " src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-data/unit-en-data-17.png"></div>
+
+<div class="sh-page" data-page="18"><img alt="On Data " src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-data/unit-en-data-18.png"></div>
+
+<div class="sh-page" data-page="19"><img alt="On Data " src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-data/unit-en-data-19.png"></div>
+
+<div class="sh-page" data-page="20"><img alt="On Data " src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-data/unit-en-data-20.png"></div>
+
+<div class="sh-page" data-page="21"><img alt="On Data " src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-data/unit-en-data-21.png"></div>
+
+<div class="sh-page" data-page="22"><img alt="On Data " src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-data/unit-en-data-22.png"></div>
+
+<div class="sh-page" data-page="23"><img alt="On Data " src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-data/unit-en-data-23.png"></div>
+
+<div class="sh-page" data-page="24"><img alt="On Data " src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-data/unit-en-data-24.png"></div>
+
+<div class="sh-page" data-page="25"><img alt="On Data " src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-data/unit-en-data-25.png"></div>
+
+<div class="sh-page" data-page="26"><img alt="On Data " src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-data/unit-en-data-26.png"></div>
+
+<div class="sh-page" data-page="27"><img alt="On Data " src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-data/unit-en-data-27.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-en-cluster-analysis-basics.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-basics.pdf" style="--sh-pages: 21"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Chapter DM:II II. Cluster Analysis" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-basics/unit-en-cluster-analysis-basics-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Cluster Analysis Basics Cluster analysis is the unsupervised classification of a set of objects in groups," src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-basics/unit-en-cluster-analysis-basics-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Cluster Analysis Basics Cluster analysis is the unsupervised classification of a set of objects in groups," src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-basics/unit-en-cluster-analysis-basics-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-basics/unit-en-cluster-analysis-basics-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Cluster Analysis Basics Let x1, . . . xn denote the p-dimensional feature vectors of n objects:" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-basics/unit-en-cluster-analysis-basics-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Cluster Analysis Basics Let x1, . . . xn denote the p-dimensional feature vectors of n objects:" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-basics/unit-en-cluster-analysis-basics-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Cluster Analysis Basics Let x1, . . . xn denote the p-dimensional feature vectors of n objects:" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-basics/unit-en-cluster-analysis-basics-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Cluster Analysis Basics Definition 3 (Exclusive Clustering" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-basics/unit-en-cluster-analysis-basics-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Cluster Analysis Basics Definition 3 (Exclusive Clustering" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-basics/unit-en-cluster-analysis-basics-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Cluster Analysis Basics Definition 3 (Exclusive Clustering" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-basics/unit-en-cluster-analysis-basics-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Cluster Analysis Basics Main Stages of a Cluster Analysis" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-basics/unit-en-cluster-analysis-basics-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Cluster Analysis Basics Feature Extraction and Preprocessing" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-basics/unit-en-cluster-analysis-basics-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Cluster Analysis Basics Feature Extraction and Preprocessing" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-basics/unit-en-cluster-analysis-basics-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="Cluster Analysis Basics Computation of Distances or Similarities" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-basics/unit-en-cluster-analysis-basics-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-basics/unit-en-cluster-analysis-basics-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="Cluster Analysis Basics Computation of Distances or Similarities" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-basics/unit-en-cluster-analysis-basics-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="Cluster Analysis Basics Computation of Distances or Similarities" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-basics/unit-en-cluster-analysis-basics-17.png"></div>
+
+<div class="sh-page" data-page="18"><img alt="Cluster Analysis Basics Computation of Distances or Similarities" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-basics/unit-en-cluster-analysis-basics-18.png"></div>
+
+<div class="sh-page" data-page="19"><img alt="Cluster Analysis Basics Computation of Distances or Similarities" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-basics/unit-en-cluster-analysis-basics-19.png"></div>
+
+<div class="sh-page" data-page="20"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-basics/unit-en-cluster-analysis-basics-20.png"></div>
+
+<div class="sh-page" data-page="21"><img alt="Cluster Analysis Basics Merging Principles" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-basics/unit-en-cluster-analysis-basics-21.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-en-cluster-analysis-hierarchical.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical.pdf" style="--sh-pages: 89"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Chapter DM:II " src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Hierarchical Cluster Analysis Merging Principles" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Hierarchical Cluster Analysis Hierarchical Agglomerative Algorithm" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Hierarchical Cluster Analysis Hierarchical Agglomerative Algorithm" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Hierarchical Cluster Analysis Single Link: Cluster Distance Measure dC = Nearest Neighbor" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Hierarchical Cluster Analysis Single Link: Cluster Distance Measure dC = Nearest Neighbor" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Hierarchical Cluster Analysis Single Link: Cluster Distance Measure dC = Nearest Neighbor" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Hierarchical Cluster Analysis Single Link: Cluster Distance Measure dC = Nearest Neighbor" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Hierarchical Cluster Analysis Single Link: Cluster Distance Measure dC = Nearest Neighbor" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Hierarchical Cluster Analysis Single Link: Cluster Distance Measure dC = Nearest Neighbor" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Hierarchical Cluster Analysis Single Link: Cluster Distance Measure dC = Nearest Neighbor" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Hierarchical Cluster Analysis Single Link: Cluster Distance Measure dC = Nearest Neighbor" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Hierarchical Cluster Analysis Single Link: Cluster Distance Measure dC = Nearest Neighbor" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="Hierarchical Cluster Analysis Distance Re-Computation after each Merging Step" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="Hierarchical Cluster Analysis Distance Re-Computation after each Merging Step" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="Hierarchical Cluster Analysis Distance Re-Computation after each Merging Step" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="Hierarchical Cluster Analysis Distance Re-Computation after each Merging Step" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-17.png"></div>
+
+<div class="sh-page" data-page="18"><img alt="Hierarchical Cluster Analysis Distance Measures of Hierarchical Agglomerative Algorithms" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-18.png"></div>
+
+<div class="sh-page" data-page="19"><img alt="Hierarchical Cluster Analysis Ward Criterion" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-19.png"></div>
+
+<div class="sh-page" data-page="20"><img alt="Hierarchical Cluster Analysis Ward Criterion" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-20.png"></div>
+
+<div class="sh-page" data-page="21"><img alt="Hierarchical Cluster Analysis Ward Criterion" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-21.png"></div>
+
+<div class="sh-page" data-page="22"><img alt="Hierarchical Cluster Analysis Ward Criterion" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-22.png"></div>
+
+<div class="sh-page" data-page="23"><img alt="Hierarchical Cluster Analysis Ward Criterion" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-23.png"></div>
+
+<div class="sh-page" data-page="24"><img alt="Hierarchical Cluster Analysis Ward Criterion" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-24.png"></div>
+
+<div class="sh-page" data-page="25"><img alt="Hierarchical Cluster Analysis Ward Criterion" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-25.png"></div>
+
+<div class="sh-page" data-page="26"><img alt="Hierarchical Cluster Analysis Update Formula for Cluster Distances" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-26.png"></div>
+
+<div class="sh-page" data-page="27"><img alt="Hierarchical Cluster Analysis Update Formula for Cluster Distances" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-27.png"></div>
+
+<div class="sh-page" data-page="28"><img alt="Hierarchical Cluster Analysis Update Formula for Cluster Distances" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-28.png"></div>
+
+<div class="sh-page" data-page="29"><img alt="Hierarchical Cluster Analysis Update Formula for Cluster Distances" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-29.png"></div>
+
+<div class="sh-page" data-page="30"><img alt="Hierarchical Cluster Analysis Update Formula for Cluster Distances" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-30.png"></div>
+
+<div class="sh-page" data-page="31"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-31.png"></div>
+
+<div class="sh-page" data-page="32"><img alt="Hierarchical Cluster Analysis Chaining Problem of Single Link (dC = Nearest Neighbor)" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-32.png"></div>
+
+<div class="sh-page" data-page="33"><img alt="Hierarchical Cluster Analysis Chaining Problem of Single Link (dC = Nearest Neighbor)" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-33.png"></div>
+
+<div class="sh-page" data-page="34"><img alt="Hierarchical Cluster Analysis Chaining Problem of Single Link (dC = Nearest Neighbor)" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-34.png"></div>
+
+<div class="sh-page" data-page="35"><img alt="Hierarchical Cluster Analysis Chaining Problem of Single Link (dC = Nearest Neighbor)" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-35.png"></div>
+
+<div class="sh-page" data-page="36"><img alt="Hierarchical Cluster Analysis Chaining Problem of Single Link (dC = Nearest Neighbor)" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-36.png"></div>
+
+<div class="sh-page" data-page="37"><img alt="Hierarchical Cluster Analysis Chaining Problem of Single Link (dC = Nearest Neighbor)" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-37.png"></div>
+
+<div class="sh-page" data-page="38"><img alt="Hierarchical Cluster Analysis Chaining Problem of Single Link (dC = Nearest Neighbor)" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-38.png"></div>
+
+<div class="sh-page" data-page="39"><img alt="Hierarchical Cluster Analysis Chaining Problem of Single Link (dC = Nearest Neighbor)" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-39.png"></div>
+
+<div class="sh-page" data-page="40"><img alt="Hierarchical Cluster Analysis Chaining Problem of Single Link (dC = Nearest Neighbor)" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-40.png"></div>
+
+<div class="sh-page" data-page="41"><img alt="Hierarchical Cluster Analysis Chaining Problem of Single Link (dC = Nearest Neighbor)" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-41.png"></div>
+
+<div class="sh-page" data-page="42"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-42.png"></div>
+
+<div class="sh-page" data-page="43"><img alt="Hierarchical Cluster Analysis Chaining Problem of Single Link (dC = k-Nearest-Neighbor)" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-43.png"></div>
+
+<div class="sh-page" data-page="44"><img alt="Hierarchical Cluster Analysis Chaining Problem of Single Link (dC = k-Nearest-Neighbor)" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-44.png"></div>
+
+<div class="sh-page" data-page="45"><img alt="Hierarchical Cluster Analysis Chaining Problem of Single Link (dC = k-Nearest-Neighbor)" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-45.png"></div>
+
+<div class="sh-page" data-page="46"><img alt="Hierarchical Cluster Analysis Chaining Problem of Single Link (dC = k-Nearest-Neighbor)" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-46.png"></div>
+
+<div class="sh-page" data-page="47"><img alt="Hierarchical Cluster Analysis Chaining Problem of Single Link (dC = k-Nearest-Neighbor)" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-47.png"></div>
+
+<div class="sh-page" data-page="48"><img alt="Hierarchical Cluster Analysis Chaining Problem of Single Link (dC = k-Nearest-Neighbor)" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-48.png"></div>
+
+<div class="sh-page" data-page="49"><img alt="Hierarchical Cluster Analysis Chaining Problem of Single Link (dC = k-Nearest-Neighbor)" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-49.png"></div>
+
+<div class="sh-page" data-page="50"><img alt="Hierarchical Cluster Analysis Chaining Problem of Single Link (dC = k-Nearest-Neighbor)" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-50.png"></div>
+
+<div class="sh-page" data-page="51"><img alt="Hierarchical Cluster Analysis Chaining Problem of Single Link (dC = k-Nearest-Neighbor)" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-51.png"></div>
+
+<div class="sh-page" data-page="52"><img alt="Hierarchical Cluster Analysis Chaining Problem of Single Link (dC = k-Nearest-Neighbor)" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-52.png"></div>
+
+<div class="sh-page" data-page="53"><img alt="Hierarchical Cluster Analysis Chaining Problem of Single Link (dC = k-Nearest-Neighbor)" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-53.png"></div>
+
+<div class="sh-page" data-page="54"><img alt="Hierarchical Cluster Analysis Nesting Problem of Complete Link (dC = Furthest Neighbor)" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-54.png"></div>
+
+<div class="sh-page" data-page="55"><img alt="Hierarchical Cluster Analysis Nesting Problem of Complete Link (dC = Furthest Neighbor)" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-55.png"></div>
+
+<div class="sh-page" data-page="56"><img alt="Hierarchical Cluster Analysis Nesting Problem of Complete Link (dC = Furthest Neighbor)" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-56.png"></div>
+
+<div class="sh-page" data-page="57"><img alt="Hierarchical Cluster Analysis Nesting Problem of Complete Link (dC = Furthest Neighbor)" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-57.png"></div>
+
+<div class="sh-page" data-page="58"><img alt="Hierarchical Cluster Analysis Nesting Problem of Complete Link (dC = Furthest Neighbor)" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-58.png"></div>
+
+<div class="sh-page" data-page="59"><img alt="Hierarchical Cluster Analysis Nesting Problem of Complete Link (dC = Furthest Neighbor)" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-59.png"></div>
+
+<div class="sh-page" data-page="60"><img alt="Hierarchical Cluster Analysis Nesting Problem of Complete Link (dC = Furthest Neighbor)" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-60.png"></div>
+
+<div class="sh-page" data-page="61"><img alt="Hierarchical Cluster Analysis Nesting Problem of Complete Link (dC = Furthest Neighbor)" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-61.png"></div>
+
+<div class="sh-page" data-page="62"><img alt="Hierarchical Cluster Analysis Characteristics of Hierarchical Agglomerative Algorithms" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-62.png"></div>
+
+<div class="sh-page" data-page="63"><img alt="Hierarchical Cluster Analysis Characteristics of Hierarchical Agglomerative Algorithms" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-63.png"></div>
+
+<div class="sh-page" data-page="64"><img alt="Hierarchical Cluster Analysis Characteristics of Hierarchical Agglomerative Algorithms" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-64.png"></div>
+
+<div class="sh-page" data-page="65"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-65.png"></div>
+
+<div class="sh-page" data-page="66"><img alt="Hierarchical Cluster Analysis Merging Principles" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-66.png"></div>
+
+<div class="sh-page" data-page="67"><img alt="Hierarchical Cluster Analysis Hierarchical Divisive Algorithm" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-67.png"></div>
+
+<div class="sh-page" data-page="68"><img alt="Hierarchical Cluster Analysis Hierarchical Divisive Algorithm" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-68.png"></div>
+
+<div class="sh-page" data-page="69"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-69.png"></div>
+
+<div class="sh-page" data-page="70"><img alt="Hierarchical Cluster Analysis MinCut" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-70.png"></div>
+
+<div class="sh-page" data-page="71"><img alt="Hierarchical Cluster Analysis MinCut" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-71.png"></div>
+
+<div class="sh-page" data-page="72"><img alt="Hierarchical Cluster Analysis MinCut" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-72.png"></div>
+
+<div class="sh-page" data-page="73"><img alt="Hierarchical Cluster Analysis MinCut" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-73.png"></div>
+
+<div class="sh-page" data-page="74"><img alt="Hierarchical Cluster Analysis MinCut" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-74.png"></div>
+
+<div class="sh-page" data-page="75"><img alt="Hierarchical Cluster Analysis MinCut" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-75.png"></div>
+
+<div class="sh-page" data-page="76"><img alt="Hierarchical Cluster Analysis MinCut" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-76.png"></div>
+
+<div class="sh-page" data-page="77"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-77.png"></div>
+
+<div class="sh-page" data-page="78"><img alt="Hierarchical Cluster Analysis Splitting Problem of MinCut" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-78.png"></div>
+
+<div class="sh-page" data-page="79"><img alt="Hierarchical Cluster Analysis Splitting Problem of MinCut" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-79.png"></div>
+
+<div class="sh-page" data-page="80"><img alt="Hierarchical Cluster Analysis Splitting Problem of MinCut" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-80.png"></div>
+
+<div class="sh-page" data-page="81"><img alt="Hierarchical Cluster Analysis Splitting Problem of MinCut" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-81.png"></div>
+
+<div class="sh-page" data-page="82"><img alt="Hierarchical Cluster Analysis Splitting Problem of MinCut" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-82.png"></div>
+
+<div class="sh-page" data-page="83"><img alt="Hierarchical Cluster Analysis Splitting Problem of MinCut" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-83.png"></div>
+
+<div class="sh-page" data-page="84"><img alt="Hierarchical Cluster Analysis Splitting Problem of MinCut" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-84.png"></div>
+
+<div class="sh-page" data-page="85"><img alt="Hierarchical Cluster Analysis Splitting Problem of MinCut" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-85.png"></div>
+
+<div class="sh-page" data-page="86"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-86.png"></div>
+
+<div class="sh-page" data-page="87"><img alt="Hierarchical Cluster Analysis Combination of Hierarchical Algorithms" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-87.png"></div>
+
+<div class="sh-page" data-page="88"><img alt="Hierarchical Cluster Analysis Combination of Hierarchical Algorithms" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-88.png"></div>
+
+<div class="sh-page" data-page="89"><img alt="Hierarchical Cluster Analysis Combination of Hierarchical Algorithms" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-hierarchical/unit-en-cluster-analysis-hierarchical-89.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-en-cluster-analysis-iterative.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-iterative.pdf" style="--sh-pages: 26"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Chapter DM:II " src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-iterative/unit-en-cluster-analysis-iterative-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Iterative Cluster Analysis Merging Principles" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-iterative/unit-en-cluster-analysis-iterative-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Iterative Cluster Analysis Exemplar-Based Algorithm" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-iterative/unit-en-cluster-analysis-iterative-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Iterative Cluster Analysis Exemplar-Based Algorithm" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-iterative/unit-en-cluster-analysis-iterative-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-iterative/unit-en-cluster-analysis-iterative-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Iterative Cluster Analysis k-Means with Minimization Criterion e = Variance" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-iterative/unit-en-cluster-analysis-iterative-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Iterative Cluster Analysis k-Means with Minimization Criterion e = Variance" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-iterative/unit-en-cluster-analysis-iterative-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Iterative Cluster Analysis k-Means with Minimization Criterion e = Variance" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-iterative/unit-en-cluster-analysis-iterative-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Iterative Cluster Analysis k-Means with Minimization Criterion e = Variance" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-iterative/unit-en-cluster-analysis-iterative-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Iterative Cluster Analysis k-Means with Minimization Criterion e = Variance" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-iterative/unit-en-cluster-analysis-iterative-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Iterative Cluster Analysis k-Means with Minimization Criterion e = Variance" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-iterative/unit-en-cluster-analysis-iterative-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Iterative Cluster Analysis k-Means with Minimization Criterion e = Variance" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-iterative/unit-en-cluster-analysis-iterative-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Iterative Cluster Analysis k-Means with Minimization Criterion e = Variance" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-iterative/unit-en-cluster-analysis-iterative-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="Iterative Cluster Analysis Minimization Criteria of Exemplar-Based Algorithms" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-iterative/unit-en-cluster-analysis-iterative-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-iterative/unit-en-cluster-analysis-iterative-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="Remarks: (continued)" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-iterative/unit-en-cluster-analysis-iterative-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="Iterative Cluster Analysis k-Means versus Single Link" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-iterative/unit-en-cluster-analysis-iterative-17.png"></div>
+
+<div class="sh-page" data-page="18"><img alt="Iterative Cluster Analysis k-Means versus Single Link" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-iterative/unit-en-cluster-analysis-iterative-18.png"></div>
+
+<div class="sh-page" data-page="19"><img alt="Iterative Cluster Analysis k-Means versus Single Link" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-iterative/unit-en-cluster-analysis-iterative-19.png"></div>
+
+<div class="sh-page" data-page="20"><img alt="Iterative Cluster Analysis k-Means versus Single Link" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-iterative/unit-en-cluster-analysis-iterative-20.png"></div>
+
+<div class="sh-page" data-page="21"><img alt="Iterative Cluster Analysis k-Means versus Single Link" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-iterative/unit-en-cluster-analysis-iterative-21.png"></div>
+
+<div class="sh-page" data-page="22"><img alt="Iterative Cluster Analysis k-Means versus Single Link" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-iterative/unit-en-cluster-analysis-iterative-22.png"></div>
+
+<div class="sh-page" data-page="23"><img alt="Iterative Cluster Analysis Exclusive versus Non-Exclusive Algorithms" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-iterative/unit-en-cluster-analysis-iterative-23.png"></div>
+
+<div class="sh-page" data-page="24"><img alt="Iterative Cluster Analysis Exclusive versus Non-Exclusive Algorithms" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-iterative/unit-en-cluster-analysis-iterative-24.png"></div>
+
+<div class="sh-page" data-page="25"><img alt="Iterative Cluster Analysis Exclusive versus Non-Exclusive Algorithms" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-iterative/unit-en-cluster-analysis-iterative-25.png"></div>
+
+<div class="sh-page" data-page="26"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-iterative/unit-en-cluster-analysis-iterative-26.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-en-cluster-analysis-density.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-density.pdf" style="--sh-pages: 61"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Chapter DM:II " src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-density/unit-en-cluster-analysis-density-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Density-Based Cluster Analysis Merging Principles" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-density/unit-en-cluster-analysis-density-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Density-Based Cluster Analysis Density-based algorithms strive to partition the graph G = hV, E, wi, better: the set" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-density/unit-en-cluster-analysis-density-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Density-Based Cluster Analysis Density-based algorithms strive to partition the graph G = hV, E, wi, better: the set" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-density/unit-en-cluster-analysis-density-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Density-Based Cluster Analysis Density Estimation with Gaussian Kernel for the Example" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-density/unit-en-cluster-analysis-density-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Density-Based Cluster Analysis Density Estimation with Gaussian Kernel for the Example" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-density/unit-en-cluster-analysis-density-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Density-Based Cluster Analysis Density Estimation with Gaussian Kernel for the Example" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-density/unit-en-cluster-analysis-density-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Density-Based Cluster Analysis Density Estimation with Gaussian Kernel for the Example" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-density/unit-en-cluster-analysis-density-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-density/unit-en-cluster-analysis-density-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Density-Based Cluster Analysis DBSCAN: Density Estimation Principle" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-density/unit-en-cluster-analysis-density-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Density-Based Cluster Analysis DBSCAN: Density Estimation Principle" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-density/unit-en-cluster-analysis-density-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Density-Based Cluster Analysis DBSCAN: Cluster Interpretation" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-density/unit-en-cluster-analysis-density-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Density-Based Cluster Analysis DBSCAN: Cluster Interpretation" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-density/unit-en-cluster-analysis-density-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-density/unit-en-cluster-analysis-density-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="Density-Based Cluster Analysis DBSCAN: Algorithm" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-density/unit-en-cluster-analysis-density-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="Density-Based Cluster Analysis DBSCAN: Algorithm" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-density/unit-en-cluster-analysis-density-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="Density-Based Cluster Analysis DBSCAN" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-density/unit-en-cluster-analysis-density-17.png"></div>
+
+<div class="sh-page" data-page="18"><img alt="Density-Based Cluster Analysis DBSCAN" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-density/unit-en-cluster-analysis-density-18.png"></div>
+
+<div class="sh-page" data-page="19"><img alt="Density-Based Cluster Analysis DBSCAN" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-density/unit-en-cluster-analysis-density-19.png"></div>
+
+<div class="sh-page" data-page="20"><img alt="Density-Based Cluster Analysis DBSCAN" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-density/unit-en-cluster-analysis-density-20.png"></div>
+
+<div class="sh-page" data-page="21"><img alt="Density-Based Cluster Analysis DBSCAN" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-density/unit-en-cluster-analysis-density-21.png"></div>
+
+<div class="sh-page" data-page="22"><img alt="Density-Based Cluster Analysis DBSCAN" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-density/unit-en-cluster-analysis-density-22.png"></div>
+
+<div class="sh-page" data-page="23"><img alt="Density-Based Cluster Analysis DBSCAN" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-density/unit-en-cluster-analysis-density-23.png"></div>
+
+<div class="sh-page" data-page="24"><img alt="Density-Based Cluster Analysis DBSCAN" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-density/unit-en-cluster-analysis-density-24.png"></div>
+
+<div class="sh-page" data-page="25"><img alt="Density-Based Cluster Analysis DBSCAN" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-density/unit-en-cluster-analysis-density-25.png"></div>
+
+<div class="sh-page" data-page="26"><img alt="Density-Based Cluster Analysis DBSCAN" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-density/unit-en-cluster-analysis-density-26.png"></div>
+
+<div class="sh-page" data-page="27"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-density/unit-en-cluster-analysis-density-27.png"></div>
+
+<div class="sh-page" data-page="28"><img alt="Density-Based Cluster Analysis Merging Principles" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-density/unit-en-cluster-analysis-density-28.png"></div>
+
+<div class="sh-page" data-page="29"><img alt="Density-Based Cluster Analysis MajorClust: Density Estimation Principle" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-density/unit-en-cluster-analysis-density-29.png"></div>
+
+<div class="sh-page" data-page="30"><img alt="Density-Based Cluster Analysis MajorClust: Density Estimation Principle" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-density/unit-en-cluster-analysis-density-30.png"></div>
+
+<div class="sh-page" data-page="31"><img alt="Density-Based Cluster Analysis MajorClust: Density Estimation Principle" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-density/unit-en-cluster-analysis-density-31.png"></div>
+
+<div class="sh-page" data-page="32"><img alt="Density-Based Cluster Analysis MajorClust: Algorithm" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-density/unit-en-cluster-analysis-density-32.png"></div>
+
+<div class="sh-page" data-page="33"><img alt="Density-Based Cluster Analysis MajorClust: Algorithm" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-density/unit-en-cluster-analysis-density-33.png"></div>
+
+<div class="sh-page" data-page="34"><img alt="Density-Based Cluster Analysis MajorClust" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-density/unit-en-cluster-analysis-density-34.png"></div>
+
+<div class="sh-page" data-page="35"><img alt="Density-Based Cluster Analysis MajorClust" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-density/unit-en-cluster-analysis-density-35.png"></div>
+
+<div class="sh-page" data-page="36"><img alt="Density-Based Cluster Analysis MajorClust" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-density/unit-en-cluster-analysis-density-36.png"></div>
+
+<div class="sh-page" data-page="37"><img alt="Density-Based Cluster Analysis MajorClust" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-density/unit-en-cluster-analysis-density-37.png"></div>
+
+<div class="sh-page" data-page="38"><img alt="Density-Based Cluster Analysis MajorClust" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-density/unit-en-cluster-analysis-density-38.png"></div>
+
+<div class="sh-page" data-page="39"><img alt="Density-Based Cluster Analysis MajorClust" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-density/unit-en-cluster-analysis-density-39.png"></div>
+
+<div class="sh-page" data-page="40"><img alt="Density-Based Cluster Analysis MajorClust" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-density/unit-en-cluster-analysis-density-40.png"></div>
+
+<div class="sh-page" data-page="41"><img alt="Density-Based Cluster Analysis MajorClust" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-density/unit-en-cluster-analysis-density-41.png"></div>
+
+<div class="sh-page" data-page="42"><img alt="Density-Based Cluster Analysis MajorClust" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-density/unit-en-cluster-analysis-density-42.png"></div>
+
+<div class="sh-page" data-page="43"><img alt="Density-Based Cluster Analysis MajorClust" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-density/unit-en-cluster-analysis-density-43.png"></div>
+
+<div class="sh-page" data-page="44"><img alt="Density-Based Cluster Analysis MajorClust" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-density/unit-en-cluster-analysis-density-44.png"></div>
+
+<div class="sh-page" data-page="45"><img alt="Density-Based Cluster Analysis MajorClust" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-density/unit-en-cluster-analysis-density-45.png"></div>
+
+<div class="sh-page" data-page="46"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-density/unit-en-cluster-analysis-density-46.png"></div>
+
+<div class="sh-page" data-page="47"><img alt="Density-Based Cluster Analysis MajorClust: Density Estimation Principle" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-density/unit-en-cluster-analysis-density-47.png"></div>
+
+<div class="sh-page" data-page="48"><img alt="Density-Based Cluster Analysis MajorClust: Density Estimation Principle" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-density/unit-en-cluster-analysis-density-48.png"></div>
+
+<div class="sh-page" data-page="49"><img alt="Density-Based Cluster Analysis MajorClust: Density Estimation Principle" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-density/unit-en-cluster-analysis-density-49.png"></div>
+
+<div class="sh-page" data-page="50"><img alt="Density-Based Cluster Analysis MajorClust: Density Estimation Principle" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-density/unit-en-cluster-analysis-density-50.png"></div>
+
+<div class="sh-page" data-page="51"><img alt="Density-Based Cluster Analysis MajorClust: Density Estimation Principle" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-density/unit-en-cluster-analysis-density-51.png"></div>
+
+<div class="sh-page" data-page="52"><img alt="Density-Based Cluster Analysis MajorClust: Density Estimation Principle" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-density/unit-en-cluster-analysis-density-52.png"></div>
+
+<div class="sh-page" data-page="53"><img alt="Density-Based Cluster Analysis DBSCAN versus MajorClust: Low-Dimensional Data" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-density/unit-en-cluster-analysis-density-53.png"></div>
+
+<div class="sh-page" data-page="54"><img alt="Density-Based Cluster Analysis DBSCAN versus MajorClust: Low-Dimensional Data" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-density/unit-en-cluster-analysis-density-54.png"></div>
+
+<div class="sh-page" data-page="55"><img alt="Density-Based Cluster Analysis DBSCAN versus MajorClust: Low-Dimensional Data" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-density/unit-en-cluster-analysis-density-55.png"></div>
+
+<div class="sh-page" data-page="56"><img alt="Density-Based Cluster Analysis DBSCAN versus MajorClust: Low-Dimensional Data" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-density/unit-en-cluster-analysis-density-56.png"></div>
+
+<div class="sh-page" data-page="57"><img alt="Density-Based Cluster Analysis DBSCAN versus MajorClust: Low-Dimensional Data" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-density/unit-en-cluster-analysis-density-57.png"></div>
+
+<div class="sh-page" data-page="58"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-density/unit-en-cluster-analysis-density-58.png"></div>
+
+<div class="sh-page" data-page="59"><img alt="Density-Based Cluster Analysis DBSCAN versus MajorClust: High-Dimensional Data" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-density/unit-en-cluster-analysis-density-59.png"></div>
+
+<div class="sh-page" data-page="60"><img alt="Density-Based Cluster Analysis DBSCAN versus MajorClust: High-Dimensional Data" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-density/unit-en-cluster-analysis-density-60.png"></div>
+
+<div class="sh-page" data-page="61"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-density/unit-en-cluster-analysis-density-61.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-en-cluster-analysis-evaluation.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-evaluation.pdf" style="--sh-pages: 72"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Chapter DM:II " src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-evaluation/unit-en-cluster-analysis-evaluation-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Cluster Evaluation Overview" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-evaluation/unit-en-cluster-analysis-evaluation-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Cluster Evaluation " src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-evaluation/unit-en-cluster-analysis-evaluation-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Cluster Evaluation " src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-evaluation/unit-en-cluster-analysis-evaluation-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Cluster Evaluation " src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-evaluation/unit-en-cluster-analysis-evaluation-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Cluster Evaluation " src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-evaluation/unit-en-cluster-analysis-evaluation-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Cluster Evaluation Overview" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-evaluation/unit-en-cluster-analysis-evaluation-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Cluster Evaluation Overview" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-evaluation/unit-en-cluster-analysis-evaluation-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Cluster Evaluation Overview" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-evaluation/unit-en-cluster-analysis-evaluation-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Cluster Evaluation (1) External Validity Measures: F -Measure" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-evaluation/unit-en-cluster-analysis-evaluation-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Cluster Evaluation (1) External Validity Measures: F -Measure" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-evaluation/unit-en-cluster-analysis-evaluation-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Cluster Evaluation (1) External Validity Measures: F -Measure" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-evaluation/unit-en-cluster-analysis-evaluation-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Cluster Evaluation (1) External Validity Measures: F -Measure" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-evaluation/unit-en-cluster-analysis-evaluation-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="Cluster Evaluation (1) External Validity Measures: F -Measure" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-evaluation/unit-en-cluster-analysis-evaluation-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="Cluster Evaluation (1) External Validity Measures: F -Measure" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-evaluation/unit-en-cluster-analysis-evaluation-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="Cluster Evaluation (1) External Validity Measures: F -Measure" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-evaluation/unit-en-cluster-analysis-evaluation-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="Cluster Evaluation (1) External Validity Measures: F -Measure" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-evaluation/unit-en-cluster-analysis-evaluation-17.png"></div>
+
+<div class="sh-page" data-page="18"><img alt="Cluster Evaluation (1) External Validity Measures: F -Measure" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-evaluation/unit-en-cluster-analysis-evaluation-18.png"></div>
+
+<div class="sh-page" data-page="19"><img alt="Cluster Evaluation (1) External Validity Measures: F -Measure" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-evaluation/unit-en-cluster-analysis-evaluation-19.png"></div>
+
+<div class="sh-page" data-page="20"><img alt="Cluster Evaluation (1) External Validity Measures: F -Measure" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-evaluation/unit-en-cluster-analysis-evaluation-20.png"></div>
+
+<div class="sh-page" data-page="21"><img alt="Cluster Evaluation (1) External Validity Measures: F -Measure" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-evaluation/unit-en-cluster-analysis-evaluation-21.png"></div>
+
+<div class="sh-page" data-page="22"><img alt="Cluster Evaluation (1) External Validity Measures: F -Measure" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-evaluation/unit-en-cluster-analysis-evaluation-22.png"></div>
+
+<div class="sh-page" data-page="23"><img alt="Cluster Evaluation (1) External Validity Measures: F -Measure" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-evaluation/unit-en-cluster-analysis-evaluation-23.png"></div>
+
+<div class="sh-page" data-page="24"><img alt="Cluster Evaluation (1) External Validity Measures: F -Measure" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-evaluation/unit-en-cluster-analysis-evaluation-24.png"></div>
+
+<div class="sh-page" data-page="25"><img alt="Cluster Evaluation (1) External Validity Measures: F -Measure" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-evaluation/unit-en-cluster-analysis-evaluation-25.png"></div>
+
+<div class="sh-page" data-page="26"><img alt="Cluster Evaluation (1) External Validity Measures: F -Measure" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-evaluation/unit-en-cluster-analysis-evaluation-26.png"></div>
+
+<div class="sh-page" data-page="27"><img alt="Cluster Evaluation (1) External Validity Measures: Entropy" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-evaluation/unit-en-cluster-analysis-evaluation-27.png"></div>
+
+<div class="sh-page" data-page="28"><img alt="Cluster Evaluation (1) External Validity Measures: Entropy" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-evaluation/unit-en-cluster-analysis-evaluation-28.png"></div>
+
+<div class="sh-page" data-page="29"><img alt="Cluster Evaluation (1) External Validity Measures: Entropy" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-evaluation/unit-en-cluster-analysis-evaluation-29.png"></div>
+
+<div class="sh-page" data-page="30"><img alt="Cluster Evaluation (1) External Validity Measures: Entropy" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-evaluation/unit-en-cluster-analysis-evaluation-30.png"></div>
+
+<div class="sh-page" data-page="31"><img alt="Cluster Evaluation (1) External Validity Measures: Entropy" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-evaluation/unit-en-cluster-analysis-evaluation-31.png"></div>
+
+<div class="sh-page" data-page="32"><img alt="Cluster Evaluation (1) External Validity Measures: Rand, Jaccard" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-evaluation/unit-en-cluster-analysis-evaluation-32.png"></div>
+
+<div class="sh-page" data-page="33"><img alt="Cluster Evaluation (1) External Validity Measures: Rand, Jaccard" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-evaluation/unit-en-cluster-analysis-evaluation-33.png"></div>
+
+<div class="sh-page" data-page="34"><img alt="Cluster Evaluation (2) Internal Validity Measures: Edge Correlation" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-evaluation/unit-en-cluster-analysis-evaluation-34.png"></div>
+
+<div class="sh-page" data-page="35"><img alt="Cluster Evaluation (2) Internal Validity Measures: Edge Correlation" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-evaluation/unit-en-cluster-analysis-evaluation-35.png"></div>
+
+<div class="sh-page" data-page="36"><img alt="Cluster Evaluation (2) Internal Validity Measures: Edge Correlation" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-evaluation/unit-en-cluster-analysis-evaluation-36.png"></div>
+
+<div class="sh-page" data-page="37"><img alt="Cluster Evaluation (2) Internal Validity Measures: Edge Correlation" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-evaluation/unit-en-cluster-analysis-evaluation-37.png"></div>
+
+<div class="sh-page" data-page="38"><img alt="Cluster Evaluation (2) Internal Validity Measures: Edge Correlation" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-evaluation/unit-en-cluster-analysis-evaluation-38.png"></div>
+
+<div class="sh-page" data-page="39"><img alt="Cluster Evaluation (2) Internal Validity Measures: Edge Correlation" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-evaluation/unit-en-cluster-analysis-evaluation-39.png"></div>
+
+<div class="sh-page" data-page="40"><img alt="Cluster Evaluation (2) Internal Validity Measures: Edge Correlation" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-evaluation/unit-en-cluster-analysis-evaluation-40.png"></div>
+
+<div class="sh-page" data-page="41"><img alt="Cluster Evaluation (2) Internal Validity Measures: Edge Correlation" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-evaluation/unit-en-cluster-analysis-evaluation-41.png"></div>
+
+<div class="sh-page" data-page="42"><img alt="Cluster Evaluation (2) Internal Validity Measures: Edge Correlation" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-evaluation/unit-en-cluster-analysis-evaluation-42.png"></div>
+
+<div class="sh-page" data-page="43"><img alt="Cluster Evaluation (2) Internal Validity Measures: Edge Correlation" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-evaluation/unit-en-cluster-analysis-evaluation-43.png"></div>
+
+<div class="sh-page" data-page="44"><img alt="Cluster Evaluation (2) Internal Validity Measures: Structural Analysis" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-evaluation/unit-en-cluster-analysis-evaluation-44.png"></div>
+
+<div class="sh-page" data-page="45"><img alt="Cluster Evaluation (2) Internal Validity Measures: Structural Analysis" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-evaluation/unit-en-cluster-analysis-evaluation-45.png"></div>
+
+<div class="sh-page" data-page="46"><img alt="Cluster Evaluation (2) Internal Validity Measures: Structural Analysis" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-evaluation/unit-en-cluster-analysis-evaluation-46.png"></div>
+
+<div class="sh-page" data-page="47"><img alt="Cluster Evaluation (2) Internal Validity Measures: Structural Analysis" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-evaluation/unit-en-cluster-analysis-evaluation-47.png"></div>
+
+<div class="sh-page" data-page="48"><img alt="Cluster Evaluation (2) Internal Validity Measures: Dunn Index" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-evaluation/unit-en-cluster-analysis-evaluation-48.png"></div>
+
+<div class="sh-page" data-page="49"><img alt="Cluster Evaluation (2) Internal Validity Measures: Dunn Index" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-evaluation/unit-en-cluster-analysis-evaluation-49.png"></div>
+
+<div class="sh-page" data-page="50"><img alt="Cluster Evaluation (2) Internal Validity Measures: Dunn Index" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-evaluation/unit-en-cluster-analysis-evaluation-50.png"></div>
+
+<div class="sh-page" data-page="51"><img alt="Cluster Evaluation (2) Internal Validity Measures: Dunn Index" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-evaluation/unit-en-cluster-analysis-evaluation-51.png"></div>
+
+<div class="sh-page" data-page="52"><img alt="Cluster Evaluation (2) Internal Validity Measures: Dunn Index" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-evaluation/unit-en-cluster-analysis-evaluation-52.png"></div>
+
+<div class="sh-page" data-page="53"><img alt="Cluster Evaluation (2) Internal Validity Measures: Expected Density ρ" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-evaluation/unit-en-cluster-analysis-evaluation-53.png"></div>
+
+<div class="sh-page" data-page="54"><img alt="Cluster Evaluation (2) Internal Validity Measures: Expected Density ρ" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-evaluation/unit-en-cluster-analysis-evaluation-54.png"></div>
+
+<div class="sh-page" data-page="55"><img alt="Cluster Evaluation (2) Internal Validity Measures: Expected Density ρ" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-evaluation/unit-en-cluster-analysis-evaluation-55.png"></div>
+
+<div class="sh-page" data-page="56"><img alt="Cluster Evaluation (2) Internal Validity Measures: Expected Density ρ" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-evaluation/unit-en-cluster-analysis-evaluation-56.png"></div>
+
+<div class="sh-page" data-page="57"><img alt="Cluster Evaluation (2) Internal Validity Measures: Expected Density ρ" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-evaluation/unit-en-cluster-analysis-evaluation-57.png"></div>
+
+<div class="sh-page" data-page="58"><img alt="Cluster Evaluation (2) Internal Validity Measures: Expected Density ρ" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-evaluation/unit-en-cluster-analysis-evaluation-58.png"></div>
+
+<div class="sh-page" data-page="59"><img alt="Cluster Evaluation (2) Internal Validity Measures: Expected Density ρ" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-evaluation/unit-en-cluster-analysis-evaluation-59.png"></div>
+
+<div class="sh-page" data-page="60"><img alt="Cluster Evaluation (2) Internal Validity Measures: Expected Density ρ" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-evaluation/unit-en-cluster-analysis-evaluation-60.png"></div>
+
+<div class="sh-page" data-page="61"><img alt="Cluster Evaluation (2) Internal Validity Measures: Expected Density ρ" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-evaluation/unit-en-cluster-analysis-evaluation-61.png"></div>
+
+<div class="sh-page" data-page="62"><img alt="Cluster Evaluation (3) Relative Validity Measures: Elbow Criterion" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-evaluation/unit-en-cluster-analysis-evaluation-62.png"></div>
+
+<div class="sh-page" data-page="63"><img alt="Cluster Evaluation (3) Relative Validity Measures: Elbow Criterion" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-evaluation/unit-en-cluster-analysis-evaluation-63.png"></div>
+
+<div class="sh-page" data-page="64"><img alt="Cluster Evaluation (3) Relative Validity Measures: Elbow Criterion" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-evaluation/unit-en-cluster-analysis-evaluation-64.png"></div>
+
+<div class="sh-page" data-page="65"><img alt="Cluster Evaluation (3) Relative Validity Measures: Elbow Criterion" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-evaluation/unit-en-cluster-analysis-evaluation-65.png"></div>
+
+<div class="sh-page" data-page="66"><img alt="Cluster Evaluation (3) Relative Validity Measures: Elbow Criterion" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-evaluation/unit-en-cluster-analysis-evaluation-66.png"></div>
+
+<div class="sh-page" data-page="67"><img alt="Cluster Evaluation Correlation between External and Internal Measures" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-evaluation/unit-en-cluster-analysis-evaluation-67.png"></div>
+
+<div class="sh-page" data-page="68"><img alt="Cluster Evaluation Correlation between External and Internal Measures" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-evaluation/unit-en-cluster-analysis-evaluation-68.png"></div>
+
+<div class="sh-page" data-page="69"><img alt="Cluster Evaluation Correlation between External and Internal Measures" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-evaluation/unit-en-cluster-analysis-evaluation-69.png"></div>
+
+<div class="sh-page" data-page="70"><img alt="Cluster Evaluation Correlation between External and Internal Measures" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-evaluation/unit-en-cluster-analysis-evaluation-70.png"></div>
+
+<div class="sh-page" data-page="71"><img alt="Cluster Evaluation Correlation between External and Internal Measures" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-evaluation/unit-en-cluster-analysis-evaluation-71.png"></div>
+
+<div class="sh-page" data-page="72"><img alt="Cluster Evaluation Correlation between External and Internal Measures" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-evaluation/unit-en-cluster-analysis-evaluation-72.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-en-cluster-analysis-constrained.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-constrained.pdf" style="--sh-pages: 38"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Chapter DM:II " src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-constrained/unit-en-cluster-analysis-constrained-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Constrained Cluster Analysis Person Resolution Task" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-constrained/unit-en-cluster-analysis-constrained-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Constrained Cluster Analysis Person Resolution Task" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-constrained/unit-en-cluster-analysis-constrained-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Constrained Cluster Analysis Person Resolution Task" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-constrained/unit-en-cluster-analysis-constrained-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Constrained Cluster Analysis Person Resolution Task" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-constrained/unit-en-cluster-analysis-constrained-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Constrained Cluster Analysis Person Resolution Task" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-constrained/unit-en-cluster-analysis-constrained-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Constrained Cluster Analysis Person Resolution Task" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-constrained/unit-en-cluster-analysis-constrained-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Constrained Cluster Analysis # Referents" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-constrained/unit-en-cluster-analysis-constrained-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Constrained Cluster Analysis Applied to Multi-Document Resolution" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-constrained/unit-en-cluster-analysis-constrained-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Constrained Cluster Analysis Applied to Multi-Document Resolution" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-constrained/unit-en-cluster-analysis-constrained-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Constrained Cluster Analysis Applied to Multi-Document Resolution" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-constrained/unit-en-cluster-analysis-constrained-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Constrained Cluster Analysis Applied to Multi-Document Resolution" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-constrained/unit-en-cluster-analysis-constrained-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Constrained Cluster Analysis Applied to Multi-Document Resolution" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-constrained/unit-en-cluster-analysis-constrained-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="Constrained Cluster Analysis Applied to Multi-Document Resolution" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-constrained/unit-en-cluster-analysis-constrained-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="Constrained Cluster Analysis Idealized Class Membership Distribution over Similarities" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-constrained/unit-en-cluster-analysis-constrained-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="Constrained Cluster Analysis Membership Distribution under tf·idf Vector Space Model" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-constrained/unit-en-cluster-analysis-constrained-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="Constrained Cluster Analysis Membership Distribution under Context-Based Vector Space Model" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-constrained/unit-en-cluster-analysis-constrained-17.png"></div>
+
+<div class="sh-page" data-page="18"><img alt="Constrained Cluster Analysis Membership Distribution under Ontology Alignment Model" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-constrained/unit-en-cluster-analysis-constrained-18.png"></div>
+
+<div class="sh-page" data-page="19"><img alt="Constrained Cluster Analysis In-Depth: Multi-Class Hierarchical Classification" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-constrained/unit-en-cluster-analysis-constrained-19.png"></div>
+
+<div class="sh-page" data-page="20"><img alt="Constrained Cluster Analysis In-Depth: Multi-Class Hierarchical Classification" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-constrained/unit-en-cluster-analysis-constrained-20.png"></div>
+
+<div class="sh-page" data-page="21"><img alt="Constrained Cluster Analysis In-Depth: Multi-Class Hierarchical Classification" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-constrained/unit-en-cluster-analysis-constrained-21.png"></div>
+
+<div class="sh-page" data-page="22"><img alt="Constrained Cluster Analysis Membership Distribution under Optimized Retrieval Model Combination" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-constrained/unit-en-cluster-analysis-constrained-22.png"></div>
+
+<div class="sh-page" data-page="23"><img alt="Constrained Cluster Analysis Membership Distribution under Optimized Retrieval Model Combination" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-constrained/unit-en-cluster-analysis-constrained-23.png"></div>
+
+<div class="sh-page" data-page="24"><img alt="Constrained Cluster Analysis Membership Distribution under Optimized Retrieval Model Combination" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-constrained/unit-en-cluster-analysis-constrained-24.png"></div>
+
+<div class="sh-page" data-page="25"><img alt="Constrained Cluster Analysis Membership Distribution under Optimized Retrieval Model Combination" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-constrained/unit-en-cluster-analysis-constrained-25.png"></div>
+
+<div class="sh-page" data-page="26"><img alt="Constrained Cluster Analysis Membership Distribution under Optimized Retrieval Model Combination" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-constrained/unit-en-cluster-analysis-constrained-26.png"></div>
+
+<div class="sh-page" data-page="27"><img alt="Constrained Cluster Analysis In-Depth: Analysis of Classifier Effectiveness" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-constrained/unit-en-cluster-analysis-constrained-27.png"></div>
+
+<div class="sh-page" data-page="28"><img alt="Constrained Cluster Analysis In-Depth: Analysis of Classifier Effectiveness" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-constrained/unit-en-cluster-analysis-constrained-28.png"></div>
+
+<div class="sh-page" data-page="29"><img alt="Constrained Cluster Analysis In-Depth: Analysis of Classifier Effectiveness" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-constrained/unit-en-cluster-analysis-constrained-29.png"></div>
+
+<div class="sh-page" data-page="30"><img alt="Constrained Cluster Analysis In-Depth: Analysis of Classifier Effectiveness" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-constrained/unit-en-cluster-analysis-constrained-30.png"></div>
+
+<div class="sh-page" data-page="31"><img alt="Constrained Cluster Analysis In-Depth: Analysis of Classifier Effectiveness" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-constrained/unit-en-cluster-analysis-constrained-31.png"></div>
+
+<div class="sh-page" data-page="32"><img alt="Constrained Cluster Analysis In-Depth: Analysis of Classifier Effectiveness" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-constrained/unit-en-cluster-analysis-constrained-32.png"></div>
+
+<div class="sh-page" data-page="33"><img alt="Constrained Cluster Analysis In-Depth: Analysis of Classifier Effectiveness" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-constrained/unit-en-cluster-analysis-constrained-33.png"></div>
+
+<div class="sh-page" data-page="34"><img alt="Constrained Cluster Analysis In-Depth: Analysis of Classifier Effectiveness" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-constrained/unit-en-cluster-analysis-constrained-34.png"></div>
+
+<div class="sh-page" data-page="35"><img alt="Constrained Cluster Analysis In-Depth: Analysis of Classifier Effectiveness" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-constrained/unit-en-cluster-analysis-constrained-35.png"></div>
+
+<div class="sh-page" data-page="36"><img alt="Constrained Cluster Analysis Model Selection: Our Risk Minimization Strategy" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-constrained/unit-en-cluster-analysis-constrained-36.png"></div>
+
+<div class="sh-page" data-page="37"><img alt="Constrained Cluster Analysis Recap" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-constrained/unit-en-cluster-analysis-constrained-37.png"></div>
+
+<div class="sh-page" data-page="38"><img alt="Constrained Cluster Analysis References" src="https://webis.de/downloads/lecturenotes/data-mining/unit-en-cluster-analysis-constrained/unit-en-cluster-analysis-constrained-38.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+
+
+<div class="sh-doc" id="unit-de-self-organizing-maps.pdf" data-doc-source="https://webis.de/downloads/lecturenotes/data-mining/unit-de-self-organizing-maps.pdf" style="--sh-pages: 31"><div class="sh-doc-scrollbox"><div class="sh-page-container">
+
+<div class="sh-page" data-page="1"><img alt="Kapitel DM:III III. Nearest Neighbor Strategies" src="https://webis.de/downloads/lecturenotes/data-mining/unit-de-self-organizing-maps/unit-de-self-organizing-maps-1.png"></div>
+
+<div class="sh-page" data-page="2"><img alt="Self Organizing Maps Motivation: Räumliche Organisation von Aktivitäten im Gehirn" src="https://webis.de/downloads/lecturenotes/data-mining/unit-de-self-organizing-maps/unit-de-self-organizing-maps-2.png"></div>
+
+<div class="sh-page" data-page="3"><img alt="Self Organizing Maps Idee" src="https://webis.de/downloads/lecturenotes/data-mining/unit-de-self-organizing-maps/unit-de-self-organizing-maps-3.png"></div>
+
+<div class="sh-page" data-page="4"><img alt="Self Organizing Maps Formales Modell" src="https://webis.de/downloads/lecturenotes/data-mining/unit-de-self-organizing-maps/unit-de-self-organizing-maps-4.png"></div>
+
+<div class="sh-page" data-page="5"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/data-mining/unit-de-self-organizing-maps/unit-de-self-organizing-maps-5.png"></div>
+
+<div class="sh-page" data-page="6"><img alt="Self Organizing Maps Formales Modell" src="https://webis.de/downloads/lecturenotes/data-mining/unit-de-self-organizing-maps/unit-de-self-organizing-maps-6.png"></div>
+
+<div class="sh-page" data-page="7"><img alt="Self Organizing Maps Formales Modell" src="https://webis.de/downloads/lecturenotes/data-mining/unit-de-self-organizing-maps/unit-de-self-organizing-maps-7.png"></div>
+
+<div class="sh-page" data-page="8"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/data-mining/unit-de-self-organizing-maps/unit-de-self-organizing-maps-8.png"></div>
+
+<div class="sh-page" data-page="9"><img alt="Self Organizing Maps Algorithmus zur Gewichtsanpassung" src="https://webis.de/downloads/lecturenotes/data-mining/unit-de-self-organizing-maps/unit-de-self-organizing-maps-9.png"></div>
+
+<div class="sh-page" data-page="10"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/data-mining/unit-de-self-organizing-maps/unit-de-self-organizing-maps-10.png"></div>
+
+<div class="sh-page" data-page="11"><img alt="Self Organizing Maps Algorithmus zur Gewichtsanpassung" src="https://webis.de/downloads/lecturenotes/data-mining/unit-de-self-organizing-maps/unit-de-self-organizing-maps-11.png"></div>
+
+<div class="sh-page" data-page="12"><img alt="Self Organizing Maps Beispiel: Dimensionsreduktion mit SOMs" src="https://webis.de/downloads/lecturenotes/data-mining/unit-de-self-organizing-maps/unit-de-self-organizing-maps-12.png"></div>
+
+<div class="sh-page" data-page="13"><img alt="Self Organizing Maps Beispiel: Dimensionsreduktion mit SOMs" src="https://webis.de/downloads/lecturenotes/data-mining/unit-de-self-organizing-maps/unit-de-self-organizing-maps-13.png"></div>
+
+<div class="sh-page" data-page="14"><img alt="Self Organizing Maps Beispiel: Dimensionsreduktion mit SOMs" src="https://webis.de/downloads/lecturenotes/data-mining/unit-de-self-organizing-maps/unit-de-self-organizing-maps-14.png"></div>
+
+<div class="sh-page" data-page="15"><img alt="Self Organizing Maps Beispiel: Dimensionsreduktion mit SOMs" src="https://webis.de/downloads/lecturenotes/data-mining/unit-de-self-organizing-maps/unit-de-self-organizing-maps-15.png"></div>
+
+<div class="sh-page" data-page="16"><img alt="Self Organizing Maps Beispiel: Spezialfall 2D-SOMs" src="https://webis.de/downloads/lecturenotes/data-mining/unit-de-self-organizing-maps/unit-de-self-organizing-maps-16.png"></div>
+
+<div class="sh-page" data-page="17"><img alt="Self Organizing Maps Beispiel: Spezialfall 2D-SOMs" src="https://webis.de/downloads/lecturenotes/data-mining/unit-de-self-organizing-maps/unit-de-self-organizing-maps-17.png"></div>
+
+<div class="sh-page" data-page="18"><img alt="Self Organizing Maps Beispiel: Spezialfall 2D-SOMs" src="https://webis.de/downloads/lecturenotes/data-mining/unit-de-self-organizing-maps/unit-de-self-organizing-maps-18.png"></div>
+
+<div class="sh-page" data-page="19"><img alt="Self Organizing Maps Anwendungsbeispiel: Traveling Salesman Problem (TSP)" src="https://webis.de/downloads/lecturenotes/data-mining/unit-de-self-organizing-maps/unit-de-self-organizing-maps-19.png"></div>
+
+<div class="sh-page" data-page="20"><img alt="Self Organizing Maps Beispiel: Spezialfall Vektorquantisierung" src="https://webis.de/downloads/lecturenotes/data-mining/unit-de-self-organizing-maps/unit-de-self-organizing-maps-20.png"></div>
+
+<div class="sh-page" data-page="21"><img alt="als von allen anderen Neuronen. " src="https://webis.de/downloads/lecturenotes/data-mining/unit-de-self-organizing-maps/unit-de-self-organizing-maps-21.png"></div>
+
+<div class="sh-page" data-page="22"><img alt="Neural Gas Motivation" src="https://webis.de/downloads/lecturenotes/data-mining/unit-de-self-organizing-maps/unit-de-self-organizing-maps-22.png"></div>
+
+<div class="sh-page" data-page="23"><img alt="Neural Gas Idee" src="https://webis.de/downloads/lecturenotes/data-mining/unit-de-self-organizing-maps/unit-de-self-organizing-maps-23.png"></div>
+
+<div class="sh-page" data-page="24"><img alt="Neural Gas Formales Modell" src="https://webis.de/downloads/lecturenotes/data-mining/unit-de-self-organizing-maps/unit-de-self-organizing-maps-24.png"></div>
+
+<div class="sh-page" data-page="25"><img alt="Neural Gas Formales Modell" src="https://webis.de/downloads/lecturenotes/data-mining/unit-de-self-organizing-maps/unit-de-self-organizing-maps-25.png"></div>
+
+<div class="sh-page" data-page="26"><img alt="Remarks:" src="https://webis.de/downloads/lecturenotes/data-mining/unit-de-self-organizing-maps/unit-de-self-organizing-maps-26.png"></div>
+
+<div class="sh-page" data-page="27"><img alt="Neural Gas Formales Modell" src="https://webis.de/downloads/lecturenotes/data-mining/unit-de-self-organizing-maps/unit-de-self-organizing-maps-27.png"></div>
+
+<div class="sh-page" data-page="28"><img alt="Neural Gas Formales Modell" src="https://webis.de/downloads/lecturenotes/data-mining/unit-de-self-organizing-maps/unit-de-self-organizing-maps-28.png"></div>
+
+<div class="sh-page" data-page="29"><img alt="Neural Gas Algorithmus zur Gewichts- und Strukturanpassung" src="https://webis.de/downloads/lecturenotes/data-mining/unit-de-self-organizing-maps/unit-de-self-organizing-maps-29.png"></div>
+
+<div class="sh-page" data-page="30"><img alt="Neural Gas Algorithmus zur Gewichtsanpassung" src="https://webis.de/downloads/lecturenotes/data-mining/unit-de-self-organizing-maps/unit-de-self-organizing-maps-30.png"></div>
+
+<div class="sh-page" data-page="31"><img alt="Neural Gas Beispiel: Spezialfall Neuronales Gas in 2D" src="https://webis.de/downloads/lecturenotes/data-mining/unit-de-self-organizing-maps/unit-de-self-organizing-maps-31.png"></div>
+
+  <div class="page dummy-page" aria-hidden="true" style="visibility: hidden;"></div>
+</div></div></div>
+
+
+<!-- units end -->
+</div>
+</main>
+
+<div class="sh-modal closed" data-modal-help="" aria-hidden="true" aria-labelledby="sh-help-title" role="dialog">
+  <div class="sh-modal-content" role="document">
+    <button class="sh-modal__close sh-button sh-button--close" data-close-modal="" aria-label="Close">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" aria-labelledby="sh-close-help-title"><path d="M4 0l8 8 8-8 4 4-8 8 8 8-4 4-8-8-8 8-4-4 8-8-8-8z"/></svg>
+    </button>
+    <h2 class="sh-modal__title" id="sh-help-title">Help</h2>
+    <div class="sh-shortcut-table-wrapper">
+      <table class="sh-shortcut-table">
+        <caption class="sh-visually-hidden">Document-specific controls</caption>
+        <thead>
+          <tr>
+            <th class="sh-shortcut-table__input">
+              <span class="sh-visually-hidden">Shortcut</span>
+            </th>
+            <th class="sh-shortcut-table__action">Documents</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="sh-shortcut-table__input">
+              <div class="sh-shortcut-group">
+                <kbd aria-label="Up or down arrow key">↑/↓</kbd>
+              </div>
+            </td>
+            <td class="sh-shortcut-table__action">Navigate documents</td>
+          </tr>
+          <tr>
+            <td class="sh-shortcut-table__input">
+              <div class="sh-shortcut-group">
+                <kbd>Shift</kbd> + <kbd aria-label="Up or down arrow key">↑/↓</kbd>
+              </div>
+            </td>
+            <td class="sh-shortcut-table__action">Navigate 3 documents</td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="sh-shortcut-table">
+        <caption class="sh-visually-hidden">Page-specific controls</caption>
+        <thead>
+          <tr>
+            <th class="sh-shortcut-table__input">
+              <span class="sh-visually-hidden">Shortcut</span>
+            </th>
+            <th class="sh-shortcut-table__action">Pages</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="sh-shortcut-table__input">
+              <div class="sh-shortcut-group">
+                <kbd aria-label="Left or right arrow key">←/→</kbd>
+              </div>
+            </td>
+            <td class="sh-shortcut-table__action">Navigate pages</td>
+          </tr>
+          <tr>
+            <td class="sh-shortcut-table__input">
+              <div class="sh-shortcut-group">
+                <kbd>Shift</kbd> + <kbd>MouseWheel</kbd>
+              </div>
+            </td>
+            <td class="sh-shortcut-table__action">Navigate pages</td>
+          </tr>
+          <tr>
+            <td class="sh-shortcut-table__input">
+              <div class="sh-shortcut-group">
+                <kbd>Shift</kbd> + <kbd aria-label="Left or right arrow key">←/→</kbd>
+              </div>
+            </td>
+            <td class="sh-shortcut-table__action">Navigate 3 pages</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<footer class="uk-section uk-section-default footer-section">
+    <div class="uk-container">
+        <div class="uk-align-right@m uk-margin-top">
+            Copyright &copy; 2019 Temir Group
+            <address></address>
+        </div>
+    </div>
+</footer>
+
+<script>
+    UIkit.util.ready(() => {
+        const nav = UIkit.util.$(".global-nav");
+        const navHeight = UIkit.util.height(nav);
+
+        // correct scroll offset due to fixed navigation after page load
+        let fixScrollHeight = () => {
+            if (location.hash === "" || !UIkit.util.$(location.hash)) {
+                return;
+            }
+
+            const pos = document.documentElement.scrollTop;
+            const offset = UIkit.util.offset(UIkit.util.$(location.hash));
+
+            if (pos > navHeight * .8 && offset) {
+                document.documentElement.scrollTop = offset.top - navHeight - 20;
+            }
+        };
+
+        window.addEventListener("hashchange", fixScrollHeight, false);
+        setTimeout(fixScrollHeight, 100);
+    });
+</script>
+
+</body>
+</html>

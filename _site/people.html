@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Webis People</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Webis People">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="copyright" content="&copy; 2019 Temir">
+    <link rel="icon" type="image/png" href="/img/favicon.png">
+
+    <link rel="stylesheet" href="/css/style.css?1548321565">
+</head>
+<body class="uk-offcanvas-content">
+<script src="/js/thirdparty/uikit/uikit.min.js"></script>
+<script src="/js/thirdparty/uikit/uikit-icons.min.js"></script>
+
+<div id="offcanvas-nav" class="uk-hidden@m" data-uk-offcanvas="overlay: true; flip: true;">
+    <div class="uk-offcanvas-bar">
+        <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+
+        <!-- Mobile navigation -->
+        <nav class="uk-margin-large-top">
+            <ul class="uk-nav uk-nav-primary uk-nav-parent-icon" data-uk-nav>
+                <li class="uk-active">
+                    <a href="/people.html">People</a>
+                </li>
+                <li class="uk-parent">
+                    <a href="#">Lecturenotes</a>
+                    <ul class="uk-nav-sub">
+                        <li><a href="/lecturenotes/overview.html">Overview</a></li>
+                        <li><a href="/lecturenotes/slides.html">Slides</a></li>
+                        <li class="uk-parent">
+                            Browser
+                            <ul class="uk-nav-sub">
+                                <li><a href="/lecturenotes/browser/algorithms-and-datastructures.html">Algorithmen und Datenstrukturen</a></li>
+                                <li><a href="/lecturenotes/browser/information-retrieval.html">Information Retrieval</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/research.html">Research</a>
+                </li>
+                <li>
+                    <a href="/publications.html">Publications</a>
+                </li>
+                <li>
+                    <a href="/data.html">Data</a>
+                </li>
+                <li>
+                    <a href="/facilities.html">Facilities</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<div class="uk-background-secondary desktop-nav global-nav" data-uk-sticky="media: @m">
+    <!-- Desktop navigation -->
+    <nav class="uk-navbar-container uk-navbar-transparent uk-container uk-light" data-uk-navbar="mode: click">
+        <div class="uk-navbar-left">
+            <ul class="uk-navbar-nav">
+                <li>
+                    <a href="/"><img src="/img/uni_leipzig_logo_v2_white-01_opt_2.png" alt="TEMIR LOGO" class="uk-logo"> Temir</a>
+                </li>
+            </ul>
+        </div>
+        <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav">
+                <li class="uk-active">
+                    <a href="/people.html">People</a>
+                </li>
+                <li class="nav-group-start">
+                    <a href="#">Lecturenotes</a>
+                    <div class="uk-navbar-dropdown uk-navbar-dropdown-width-3 uk-padding-remove">
+                        <div class="uk-navbar-dropdown-grid" data-uk-grid>
+                            <div class="uk-width-1-3">
+                                <ul class="uk-nav uk-navbar-dropdown-nav uk-padding-small">
+                                    <li><a href="/lecturenotes/overview.html">Overview</a></li>
+                                    <li><a href="/lecturenotes/slides.html">Slides</a></li>
+                                    <li class="nav-left-open-category">Browser</li>
+                                </ul>
+                            </div>
+                            <div class="uk-width-2-3">
+                                <ul class="uk-nav uk-navbar-dropdown-nav nav-right-open-sub uk-padding-small">
+                                    <li><a href="/lecturenotes/browser/algorithms-and-datastructures.html">Algorithmen und Datenstrukturen</a></li>
+                                    <li><a href="/lecturenotes/browser/information-retrieval.html">Information Retrieval</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="/research.html">Research</a>
+                </li>
+                <li>
+                    <a href="/publications.html">Publications</a>
+                </li>
+                <li class="nav-group-start">
+                    <a href="/data.html">Data</a>
+                </li>
+                <li>
+                    <a href="/facilities.html">Facilities</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<div class="uk-background-secondary mobile-nav global-nav" data-uk-sticky>
+    <div class="uk-navbar-container uk-navbar-transparent uk-container uk-light mobile-nav-toggle" data-uk-navbar>
+        <div class="">
+            <ul class="uk-navbar-nav">
+                <li>
+                    <a href="/"><img src="/img/uni_leipzig_logo_v2_white-01_opt_2.png" alt="TEMIR LOGO" class="uk-logo"> Temir</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="uk-navbar-right">
+            <button class="uk-button uk-navbar-item uk-light uk-button-large" type="button" data-uk-icon="icon: menu"
+                    data-uk-toggle="target: #offcanvas-nav"></button>
+        </div>
+    </div>
+</div>
+
+<div data-uk-height-viewport="expand: true">
+<main class="uk-section uk-section-default">
+    <div class="uk-container">
+        <h1>People</h1>
+    </div>
+
+    <div class="uk-container uk-margin-medium">
+        <div id="list-heads" class="webis-list">
+
+            <div id="hagen" class="entry">
+                <div class="image people-image"><img src="people/img/hagen.jpg" alt="Matthias Hagen" /></div>
+                <div class="description">
+                    <a title="Matthias Hagen" href="http://halle.webis.de">Prof. Dr. Matthias Hagen</a>
+                    <br /> Martin-Luther-Universit&auml;t Halle-Wittenberg
+                    <br /> matthias.hagen<wbr>&#64;informatik.uni-halle.de 
+                    <p class="information">
+                        Interests: Information Retrieval, Natural&nbsp;Language Processing, Data&nbsp;Analytics and Mining
+                        <span class="space">|</span>
+                        <a title="Publications of Matthias Hagen" href="https://webis.de/publications.html#filter:author:matthias+hagen">Publications</a>
+                    </p>
+                </div>
+            </div>
+
+            <div id="potthast" class="entry">
+                <div class="image people-image"><img src="people/img/potthast.jpg" alt="Martin Potthast" /></div>
+                <div class="description">
+                    <a title="Martin Potthast" href="http://leipzig.webis.de">Junior-Prof. Dr. Martin Potthast</a>
+                    <br /> Leipzig University
+                    <br /> martin.potthast<wbr>&#64;uni-leipzig.de
+                    <p class="information">
+                        Interests: Plagiarism, Social&nbsp;Software, Writing&nbsp;Tools, Crowdsourcing, Web&nbsp;Comments
+                        <span class="space">|</span>
+                        <a title="Publications of Martin Potthast" href="https://webis.de/publications.html#filter:author:martin+potthast">Publications</a>
+                    </p>
+                </div>
+            </div>
+
+            <div id="stein" class="entry">
+                <div class="image people-image"><img src="people/img/stein.jpg" alt="Benno Stein"/></div>
+                <div class="description">
+                    <a title="Benno Stein" href="http://weimar.webis.de">Prof. Dr. Benno Stein</a>
+                    <br /> Bauhaus-<wbr>Universit&auml;t Weimar
+                    <br /> benno.stein<wbr>&#64;uni-weimar.de
+                    <p class="information">
+                        Interests: Information Retrieval, Machine&nbsp;Learning, Data&nbsp;Mining, Artificial&nbsp;Intelligence
+                        <span class="space">|</span>
+                        <a title="Publications of Benno Stein" href="https://webis.de/publications.html#filter:author:benno+stein">Publications</a>
+                    </p>
+                </div>
+            </div>
+
+            <div id="wachsmuth" class="entry">
+                <div class="image people-image"><img src="people/img/wachsmuth.jpg" alt="Henning Wachsmuth" /></div>
+                <div class="description">
+                    <a title="Henning Wachsmuth" href="http://paderborn.webis.de">Junior-Prof. Dr. Henning Wachsmuth</a>
+                    <br /> Paderborn University
+                    <br /> henningw<wbr>&#64;upb.de
+                    <p class="information">
+                        Interests: Computational Argumentation, Natural Language Processing, Artificial Intelligence
+                        <span class="space">|</span>
+                        <a title="Publications of Henning Wachsmuth" href="https://webis.de/publications.html#filter:author:henning+wachsmuth">Publications</a>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div> <!-- container -->
+</main>
+
+</div>
+
+<footer class="uk-section uk-section-default footer-section">
+    <div class="uk-container">
+        <div class="uk-align-right@m uk-margin-top">
+            Copyright &copy; 2019 Temir Group
+            <address></address>
+        </div>
+    </div>
+</footer>
+
+<script>
+    UIkit.util.ready(() => {
+        const nav = UIkit.util.$(".global-nav");
+        const navHeight = UIkit.util.height(nav);
+
+        // correct scroll offset due to fixed navigation after page load
+        let fixScrollHeight = () => {
+            if (location.hash === "" || !UIkit.util.$(location.hash)) {
+                return;
+            }
+
+            const pos = document.documentElement.scrollTop;
+            const offset = UIkit.util.offset(UIkit.util.$(location.hash));
+
+            if (pos > navHeight * .8 && offset) {
+                document.documentElement.scrollTop = offset.top - navHeight - 20;
+            }
+        };
+
+        window.addEventListener("hashchange", fixScrollHeight, false);
+        setTimeout(fixScrollHeight, 100);
+    });
+</script>
+
+</body>
+</html>
