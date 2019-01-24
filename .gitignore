@@ -1,6 +1,6 @@
 *.css.map
 .idea/
-_site/
+_site/*
 .sass-cache/
 .jekyll-metadata
 yarn-error.log
